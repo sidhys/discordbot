@@ -186,30 +186,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
         switch (args[0]) {
             
     
-            
-            case `setstatus`:
-                
-                if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
-
-                if(!args[1]) return msg.channel.send(invalidargs)
-                if(!args[2]) return msg.channel.send(invalidargs)
-
-                var statustype = args[1]
-                var statusmessage = args.slice(2).join(' ') 
-         
-                client.user.setActivity(statusmessage, {
-                    type: statustype
-                   });
-            
-                
-                   const statusembed = new Discord.MessageEmbed()
-                   .setTitle("Stanton AP Bot")
-                   .setColor('BLUE')
-                   .setDescription(`Successfully changed bot status type to ${statustype} and status message to ${statusmessage}, ${msg.author}`)
-                   .setTimestamp();
-                   msg.channel.send(statusembed) 
-
-            break;
+           
 
             case `start`:
 
@@ -1331,7 +1308,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
                     const adminhelp = new Discord.MessageEmbed()
                     .setTitle(`Stanton AP Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `start, unban, setstatus, lockdown on, urban, lyrics, lockdown off, auth, verify, obfuscatefile,  ping, 8ball, info, clear, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, obfuscate, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, reddit, yes, stfu, poll, webhookset, webhooksend `)
+                    .addField(`Commands available for user:`, `start, unban, lockdown on, urban, lyrics, lockdown off, auth, verify, obfuscatefile,  ping, 8ball, info, clear, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, obfuscate, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, reddit, yes, stfu, poll, webhookset, webhooksend `)
                     .setTimestamp();
                     return msg.channel.send(adminhelp);
 
@@ -1413,7 +1390,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
                     const adminhelp1 = new Discord.MessageEmbed()
                     .setTitle(`Stanton AP Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `start, setstatus, unban, urban, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
+                    .addField(`Commands available for user:`, `start, unban, urban, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
                     .setTimestamp();
                     return msg.channel.send(adminhelp1);
 
@@ -2154,13 +2131,37 @@ case `botlockdown`:
 
     break;
 
+     
+    case `setstatus`:
+                
+        if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+
+        if(!args[1]) return msg.channel.send(invalidargs)
+        if(!args[2]) return msg.channel.send(invalidargs)
+
+        var statustype = args[1]
+        var statusmessage = args.slice(2).join(' ') 
+ 
+        client.user.setActivity(statusmessage, {
+            type: statustype
+           });
+    
+        
+           const statusembed = new Discord.MessageEmbed()
+           .setTitle("Stanton AP Bot")
+           .setColor('BLUE')
+           .setDescription(`Successfully changed bot status type to ${statustype} and status message to ${statusmessage}, ${msg.author}`)
+           .setTimestamp();
+           msg.channel.send(statusembed) 
+
+    break;
 
     case `audit`:
 
-        if(args[1] === "true") {
+        if(args[1] === "false") {
         await auditconfig.create({Value: "true"});
         msg.channel.send('set auditconfig to: `true`')
-        } else if(args[1] === "false") {                        
+        } else if(args[1] === "true") {                        
      var auditconfigrequest = await auditconfig.findOne({Value: "true"});
      if(auditconfigrequest !== null) auditconfigrequest.deleteOne();
      msg.channel.send('set auditconfig to: `false`')
@@ -2170,7 +2171,7 @@ case `botlockdown`:
 
     case `help`:
 
-    msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`). To change a configuration, run config$<config> <value>')
+    msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$<config> <value>')
 
     break;
 }
@@ -2190,14 +2191,37 @@ case `botlockdown`:
                 }
         
             break;
-        
+         
+            case `setstatus`:
+                
+                if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+
+                if(!args[1]) return msg.channel.send(invalidargs)
+                if(!args[2]) return msg.channel.send(invalidargs)
+
+                var statustype = args[1]
+                var statusmessage = args.slice(2).join(' ') 
+         
+                client.user.setActivity(statusmessage, {
+                    type: statustype
+                   });
+            
+                
+                   const statusembed = new Discord.MessageEmbed()
+                   .setTitle("Stanton AP Bot")
+                   .setColor('BLUE')
+                   .setDescription(`Successfully changed bot status type to ${statustype} and status message to ${statusmessage}, ${msg.author}`)
+                   .setTimestamp();
+                   msg.channel.send(statusembed) 
+
+            break;
         
             case `audit`:
         
-                if(args[1] === "true") {
+                if(args[1] === "false") {
                 await auditconfig.create({Value: "false"});
                 msg.channel.send('set auditconfig to: `true`')
-                } else if(args[1] === "false") {                        
+                } else if(args[1] === "true") {                        
              var auditconfigrequest = await auditconfig.findOne({Value: "false"});
              if(auditconfigrequest !== null) auditconfigrequest.deleteOne();
              msg.channel.send('set auditconfig to: `false`')
@@ -2207,7 +2231,7 @@ case `botlockdown`:
             
             case `help`:
 
-                msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`). To change a configuration, run config$<config> <value>')
+                msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$<config> <value>')
             
                 break;
         
