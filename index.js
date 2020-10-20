@@ -52,6 +52,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
     const punishments = require('./database/punishments');
     const secureverify = require('./database/secureverify');
     const botlockdown = require('./database/botlockdown');
+    const auditconfig = require('./database/auditconfig');
     const { error } = require('console');
     const { REPL_MODE_STRICT } = require('repl');
 // end
@@ -75,7 +76,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
             client.channels.cache.get('755198714242531368').send(`$ban ${member} automatically banned by Stanton AP`)
         } else return; 
     })
-
+  
   
  client.on('message', async (msg) => {
     if(!msg.content.startsWith(PREFIX)) return;
@@ -1980,6 +1981,8 @@ client.on('message', message => {
 
 
 client.on('messageUpdate', async(oldMessage,newMessage)=>{
+    var auditconfigcheck = await auditconfig.findOne({Value: "true"});
+    if(auditconfigcheck !== null) return 
     let updateembed = new MessageEmbed()
     .setTitle('Message Edited')
     .setColor('BLUE')
@@ -1993,6 +1996,8 @@ client.on('messageUpdate', async(oldMessage,newMessage)=>{
 })
 
 client.on('messageDelete', async(message)=>{
+    var auditconfigcheck = await auditconfig.findOne({Value: "true"});
+    if(auditconfigcheck !== null) return 
     let deleteembed = new MessageEmbed()
     .setTitle('Message Deleted')
     .setColor('BLUE')
@@ -2013,6 +2018,8 @@ client.on('message', message => {
 }})
 
 client.on('guildMemberRemove', async member => {
+    var auditconfigcheck = await auditconfig.findOne({Value: "true"});
+    if(auditconfigcheck !== null) return 
 	const fetchedLogs = await member.guild.fetchAuditLogs({
 		limit: 1,
 		type: 'MEMBER_KICK',
@@ -2032,6 +2039,8 @@ client.on('guildMemberRemove', async member => {
 
 
 client.on('guildBanAdd', async (guild, user) => {
+    var auditconfigcheck = await auditconfig.findOne({Value: "true"});
+    if(auditconfigcheck !== null) return 
 	const fetchedLogs = await guild.fetchAuditLogs({
 		limit: 1,
 		type: 'MEMBER_BAN_ADD',
@@ -2049,24 +2058,87 @@ client.on('guildBanAdd', async (guild, user) => {
 	}
 });
 
-
-
-// commands that only i can use 
-
 const sidprefix = "!";
 
 client.on('message', async (msg) => {
        let args = msg.content.substring(sidprefix.length).split(" ");
-       if(!msg.content.startsWith(sidprefix )) return;
-       const sidid = "736285953039138817";
+       if(!msg.content.startsWith(sidprefix)) return;
+       const sidid = "736285953039138817"
        if(msg.author.id === sidid) {
+
+        switch (args[0]) {
+            
+    case `calendar`:
+    
+        const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
+        authorize(JSON.parse(process.env.googleinfo), listEvents);
+        
+        /**
+         * @param {Object} credentials 
+         * @param {function} callback 
+         */
+        function authorize(credentials, callback) {
+          const {client_secret, client_id, redirect_uris} = credentials.installed;
+          const oAuth2Client = new google.auth.OAuth2(
+              client_id, client_secret, redirect_uris[0]);
+        
+            oAuth2Client.setCredentials(JSON.parse(process.env.googletoken));
+            callback(oAuth2Client);
+        }
+        
+        /**
+         * @param {google.auth.OAuth2} oAuth2Client 
+         * @param {getEventsCallback} callback 
+        */
+        /**
+         * @param {google.auth.OAuth2} auth 
+         */
+        
+        function listEvents(auth) {
+          const calendar = google.calendar({version: 'v3', auth});
+          calendar.events.list({
+            calendarId: 'primary',
+            timeMin: (new Date()).toISOString(),
+            maxResults: 100,
+            singleEvents: true,
+            orderBy: 'startTime',
+          }, (err, res) => {
+            if (err) return msg.channel.send('The API returned an error: ' + err);
+            const events = res.data.items;
+            if (events.length) {
+              events.map((event, i) => {
+                const start = event.start.dateTime || event.start.date;
+                const calendarembed = new Discord.MessageEmbed()
+                .setTitle("Upcoming event")
+                .setColor('BLUE')
+                .setDescription(`${start} - ${event.summary}`)
+                .setTimestamp();
+                msg.channel.send(calendarembed)
+              });
+            } else {
+              msg.channel.send('No upcoming events found.');
+            }
+          });
+        }
+            break;
+
+        }
+        
+       }
+})
+
+const configprefix = "$";
+
+client.on('message', async (msg) => {
+       let args = msg.content.substring(configprefix.length).split(" ");
+       if(!msg.content.startsWith(configprefix)) return;
+       const configwhitelistedids = "736285953039138817" + "363843784842280960"
+       if(msg.author.id === configwhitelistedids) {
 
 
        switch (args[0]) {           
 
 case `botlockdown`:
-
-    const sidid = "736285953039138817";
 
         if(args[1] === "true") {
         await botlockdown.create({Value: "true"});
@@ -2079,59 +2151,20 @@ case `botlockdown`:
 
     break;
 
-    case `calendar`:
-    
-const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
-authorize(JSON.parse(process.env.googleinfo), listEvents);
 
-/**
- * @param {Object} credentials 
- * @param {function} callback 
- */
-function authorize(credentials, callback) {
-  const {client_secret, client_id, redirect_uris} = credentials.installed;
-  const oAuth2Client = new google.auth.OAuth2(
-      client_id, client_secret, redirect_uris[0]);
+    case `audit`:
 
-    oAuth2Client.setCredentials(JSON.parse(process.env.googletoken));
-    callback(oAuth2Client);
-}
+        if(args[1] === "true") {
+        await auditconfig.create({Value: "true"});
+        msg.channel.send('set auditconfig to: `true`')
+        } else if(args[1] === "false") {                        
+     var auditconfigrequest = await auditconfig.findOne({Value: "true"});
+     if(auditconfigrequest !== null) auditconfigrequest.deleteOne();
+     msg.channel.send('set auditconfig to: `false`')
+        }
 
-/**
- * @param {google.auth.OAuth2} oAuth2Client 
- * @param {getEventsCallback} callback 
-*/
-/**
- * @param {google.auth.OAuth2} auth 
- */
-
-function listEvents(auth) {
-  const calendar = google.calendar({version: 'v3', auth});
-  calendar.events.list({
-    calendarId: 'primary',
-    timeMin: (new Date()).toISOString(),
-    maxResults: 100,
-    singleEvents: true,
-    orderBy: 'startTime',
-  }, (err, res) => {
-    if (err) return msg.channel.send('The API returned an error: ' + err);
-    const events = res.data.items;
-    if (events.length) {
-      events.map((event, i) => {
-        const start = event.start.dateTime || event.start.date;
-        const calendarembed = new Discord.MessageEmbed()
-        .setTitle("Upcoming event")
-        .setColor('BLUE')
-        .setDescription(`${start} - ${event.summary}`)
-        .setTimestamp();
-        msg.channel.send(calendarembed)
-      });
-    } else {
-      msg.channel.send('No upcoming events found.');
-    }
-  });
-}
     break;
+
 }
        } else return;
 })
