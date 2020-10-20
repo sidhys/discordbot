@@ -1192,7 +1192,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
                     const imgembed = new MessageEmbed()
                     .setTitle(`Image`)
                     .setColor('#f3f3f3')
-                    .setImage(imgurls[getRandomInt(5)]);
+                    .setImage(imgurls[0]);
                     msg.channel.send(imgembed)
                 
                 });
