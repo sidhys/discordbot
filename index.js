@@ -2122,11 +2122,11 @@ case `botlockdown`:
 
         if(args[1] === "true") {
         await botlockdown.create({Value: "true"});
-        msg.channel.send('locked down bot')
+        msg.channel.send('set lockdown to `true`')
         } else if(args[1] === "false") {                        
      var botlockdownremoverequest = await botlockdown.findOne({Value: "true"});
      if(botlockdownremoverequest !== null) botlockdownremoverequest.deleteOne();
-     msg.channel.send('unlocked bot')
+     msg.channel.send('set lockdown to `false`')
         }
 
     break;
@@ -2146,13 +2146,8 @@ case `botlockdown`:
             type: statustype
            });
     
-        
-           const statusembed = new Discord.MessageEmbed()
-           .setTitle("Stanton AP Bot")
-           .setColor('BLUE')
-           .setDescription(`Successfully changed bot status type to ${statustype} and status message to ${statusmessage}, ${msg.author}`)
-           .setTimestamp();
-           msg.channel.send(statusembed) 
+           msg.channel.send(`set statustype to \`${statustype}\` and statusmessage to \`${statusmessage}\``)
+            
 
     break;
 
@@ -2183,11 +2178,11 @@ case `botlockdown`:
         
                 if(args[1] === "true") {
                 await botlockdown.create({Value: "true"});
-                msg.channel.send('locked down bot')
+                msg.channel.send('set lockdown to `true`')
                 } else if(args[1] === "false") {                        
              var botlockdownremoverequest = await botlockdown.findOne({Value: "true"});
              if(botlockdownremoverequest !== null) botlockdownremoverequest.deleteOne();
-             msg.channel.send('unlocked bot')
+             msg.channel.send('set lockdown to `false`')
                 }
         
             break;
@@ -2206,13 +2201,8 @@ case `botlockdown`:
                     type: statustype
                    });
             
-                
-                   const statusembed = new Discord.MessageEmbed()
-                   .setTitle("Stanton AP Bot")
-                   .setColor('BLUE')
-                   .setDescription(`Successfully changed bot status type to ${statustype} and status message to ${statusmessage}, ${msg.author}`)
-                   .setTimestamp();
-                   msg.channel.send(statusembed) 
+                   msg.channel.send(`set statustype to \`${statustype}\` and statusmessage to \`${statusmessage}\``)
+            
 
             break;
         
