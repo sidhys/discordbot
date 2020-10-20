@@ -24,16 +24,6 @@ const solenolyrics = require("solenolyrics")
 var JavaScriptObfuscator = require("javascript-obfuscator");
 const readline = require('readline');
 const {google} = require('googleapis'); 
-const Auditlog = require("discord-auditlog");
-Auditlog(client, {
-    "serverid": {
-        auditlog: "#bot-testing",	
-        movement: "in-out",
-        auditmsg: false, 
-        voice: false, 
-        trackroles: true,
-    }
-});
 /*
 const brain = require('brain.js');
 const net= new brain.NeuralNetwork()
@@ -1989,6 +1979,13 @@ client.on('message', message => {
 })
 
 
+client.on('messageUpdate', async(oldMessage,newMessage)=>{
+    require('./messageUpdate') (oldMessage, newMessage)
+})
+
+client.on('messageDelete', async(message)=>{
+    require('./messageDelete') (message)
+})
 
 
 client.on('message', message => {
@@ -1997,6 +1994,43 @@ client.on('message', message => {
        message.react('🤓');   
        return;
 }})
+
+client.on('guildMemberRemove', async member => {
+	const fetchedLogs = await member.guild.fetchAuditLogs({
+		limit: 1,
+		type: 'MEMBER_KICK',
+	});
+	const kickLog = fetchedLogs.entries.first();
+
+	if (!kickLog) return client.channels.cache.get('714822326016933900').send(`${member.user.tag} left the server.`);
+
+	const { executor, target } = kickLog;
+
+	if (target.id === member.id) {
+		client.channels.cache.get('714822326016933900').send(`${member.user.tag} was kicked by ${executor.tag}  `);
+	} else {
+		client.channels.cache.get('714822326016933900').send(`${member.user.tag} left the server, but I couldn't find amy more details.`);
+	}
+});
+
+
+client.on('guildBanAdd', async (guild, user) => {
+	const fetchedLogs = await guild.fetchAuditLogs({
+		limit: 1,
+		type: 'MEMBER_BAN_ADD',
+	});
+	const banLog = fetchedLogs.entries.first();
+
+    if (!banLog) return client.channels.cache.get('714822326016933900').send(`${user.tag} was banned from this server, but failed to find more information.`);
+    
+	const { executor, target } = banLog;
+
+	if (target.id === user.id) {
+		client.channels.cache.get('714822326016933900').send(`${user.tag} was banned by ${executor.tag}`);
+	} else {
+		client.channels.cache.get('714822326016933900').send(`${user.tag} got was banned, but I couldn't find more details.`);
+	}
+});
 
 
 
