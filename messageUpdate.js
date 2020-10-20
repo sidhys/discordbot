@@ -6,7 +6,7 @@ module.exports=async(oldMessage,newMessage)=>{
     .setDescription(`Message by <@${message.author.id}> edited in <#${oldMessage.channel.id}>`)
     .addField('Before',oldMessage.content,true)
     .addField('After',newMessage.content,true)
-    let channel = message.guild.channels.cache.find(ch=> ch.id === "714822326016933900")
+    let channel = oldMessage.guild.channels.cache.find(ch=> ch.id === "714822326016933900")
     if(!channel) return;
     channel.send(deleteembed)
 }
