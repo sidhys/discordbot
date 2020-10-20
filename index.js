@@ -2156,10 +2156,10 @@ case `botlockdown`:
     case `audit`:
 
         if(args[1] === "true") {
-        await auditconfig.create({Value: "true"});
+        await auditconfig.create({Value: "false"});
         msg.channel.send('set auditconfig to: `true`')
         } else if(args[1] === "false") {                        
-     var auditconfigrequest = await auditconfig.findOne({Value: "true"});
+     var auditconfigrequest = await auditconfig.findOne({Value: "false"});
      if(auditconfigrequest !== null) auditconfigrequest.deleteOne();
      msg.channel.send('set auditconfig to: `false`')
         }
@@ -2188,10 +2188,10 @@ case `botlockdown`:
             case `audit`:
         
                 if(args[1] === "true") {
-                await auditconfig.create({Value: "true"});
+                await auditconfig.create({Value: "false"});
                 msg.channel.send('set auditconfig to: `true`')
                 } else if(args[1] === "false") {                        
-             var auditconfigrequest = await auditconfig.findOne({Value: "true"});
+             var auditconfigrequest = await auditconfig.findOne({Value: "false"});
              if(auditconfigrequest !== null) auditconfigrequest.deleteOne();
              msg.channel.send('set auditconfig to: `false`')
                 }
