@@ -1392,7 +1392,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
                     const adminhelp1 = new Discord.MessageEmbed()
                     .setTitle(`Stanton AP Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `start, unban, urban, lyrics, lockdown on, obfuscate, lockdown off, getsrc, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
+                    .addField(`Commands available for user:`, `start, unban, urban, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
                     .setTimestamp();
                     return msg.channel.send(adminhelp1);
 
@@ -1592,7 +1592,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
            const srcembed = new Discord.MessageEmbed()
            .setTitle("Bot Source Code")
            .setColor('BLUE')
-           .setDescription('https://github.com/sidhys1/scpapbot2') 
+           .setDescription('https://github.com/sidhys1/stantonapbot') 
            .setTimestamp();
            msg.channel.send(srcembed)
   
