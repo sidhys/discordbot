@@ -33,6 +33,8 @@ const serializer = require('./src/serialize')
 
 
 const token = "🤣🤣🤣 you really thought you could grab my token lmaooooooooooooooooooooooooo";
+
+
 (async () => {
     mongoose.connect(process.env.mongodioasdju90u31u209pjd0a9upfjc, { // <- not real database credentials, its a variable
         useNewUrlParser: true,
@@ -81,7 +83,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
  client.on('message', async (msg) => {
     if(!msg.content.startsWith(PREFIX)) return;
     var lockdowncheck = await botlockdown.findOne({Value: "true"});
-    if(lockdowncheck !== null) return msg.channel.send('Bot was locked down by developer.') 
+    if(lockdowncheck !== null) return msg.channel.send('Bot was locked down.') 
     var TimeTook = Date.now() - msg.createdTimestamp; 
         let args = msg.content.substring(PREFIX.length).split(" ")  
         if (!msg.guild) return; 
