@@ -27,7 +27,7 @@ const {google} = require('googleapis');
 const Auditlog = require("discord-auditlog");
 Auditlog(client, {
     "serverid": {
-        auditlog: "💢𝕒𝕦𝕕𝕚𝕥-𝕝𝕠𝕘𝕤⚠",	
+        auditlog: "#bot-testing",	
         movement: "in-out",
         auditmsg: false, 
         voice: false, 
