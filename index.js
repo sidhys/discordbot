@@ -2127,7 +2127,7 @@ client.on('message', async (msg) => {
        }
 })
 
-const configprefix = "$config ";
+const configprefix = "config$";
 
 client.on('message', async (msg) => {
        let args = msg.content.substring(configprefix.length).split(" ");
