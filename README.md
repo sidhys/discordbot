@@ -5,7 +5,7 @@ This project is licensed under the MIT license. If you're going to use this code
 
 # Stanton AP Bot
 
-This project is a bot for the discord server "Stanton AP". It includes databases, neural networks, and other things that require knowledge of the coding language (JavaScript). The bot's key features include commands for database bans ("Hackbans"), images, COVID-19 tracking, and normal moderation. While there are more commands, these are it's main, and hardest to make, ones.
+This project is a bot for the discord server "Stanton AP". It includes databases, a neural network, and other things that require knowledge of the coding language (JavaScript). The bot's key features include commands for database bans ("Hackbans"), images, and COVID-19 tracking, on top of it's normal moderation. While there are more commands, these are it's main, and hardest to make, ones.
 
 
 # Affiliations
