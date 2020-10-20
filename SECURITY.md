@@ -12,4 +12,8 @@ All versions are supported.
 
 To report a vulnerability, please DM Sid#1000 on "Discord".
 
-Your vulnerability report should have information such as what file, when it happened (Date), and information to contact you. 
+Your vulnerability report should have information such as what file the problem was in, when the problem happened (Date), and information to contact you. 
+
+## Vulnerability updates
+
+To view updates on vulnerabilities, please check the discord server.
