@@ -2132,8 +2132,9 @@ const configprefix = "$";
 client.on('message', async (msg) => {
        let args = msg.content.substring(configprefix.length).split(" ");
        if(!msg.content.startsWith(configprefix)) return;
-       const configwhitelistedids = "736285953039138817" + "363843784842280960"
-       if(msg.author.id === configwhitelistedids) {
+       const configwhitelistedid = "736285953039138817" 
+       const configwhitelistedid2 = "363843784842280960" 
+       if(msg.author.id === configwhitelistedid) {
 
 
        switch (args[0]) {           
@@ -2166,6 +2167,39 @@ case `botlockdown`:
     break;
 
 }
+       } else if(msg.author.id === configwhitelistedid2) {
+           
+       switch (args[0]) {           
+
+        case `botlockdown`:
+        
+                if(args[1] === "true") {
+                await botlockdown.create({Value: "true"});
+                msg.channel.send('locked down bot')
+                } else if(args[1] === "false") {                        
+             var botlockdownremoverequest = await botlockdown.findOne({Value: "true"});
+             if(botlockdownremoverequest !== null) botlockdownremoverequest.deleteOne();
+             msg.channel.send('unlocked bot')
+                }
+        
+            break;
+        
+        
+            case `audit`:
+        
+                if(args[1] === "true") {
+                await auditconfig.create({Value: "true"});
+                msg.channel.send('set auditconfig to: `true`')
+                } else if(args[1] === "false") {                        
+             var auditconfigrequest = await auditconfig.findOne({Value: "true"});
+             if(auditconfigrequest !== null) auditconfigrequest.deleteOne();
+             msg.channel.send('set auditconfig to: `false`')
+                }
+        
+            break;
+        
+        }
+
        } else return;
 })
 
