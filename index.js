@@ -2158,10 +2158,10 @@ case `botlockdown`:
     case `audit`:
 
         if(args[1] === "true") {
-        await auditconfig.create({Value: "false"});
+        await auditconfig.create({Value: "true"});
         msg.channel.send('set auditconfig to: `true`')
         } else if(args[1] === "false") {                        
-     var auditconfigrequest = await auditconfig.findOne({Value: "false"});
+     var auditconfigrequest = await auditconfig.findOne({Value: "true"});
      if(auditconfigrequest !== null) auditconfigrequest.deleteOne();
      msg.channel.send('set auditconfig to: `false`')
         }
