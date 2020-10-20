@@ -24,7 +24,16 @@ const solenolyrics = require("solenolyrics")
 var JavaScriptObfuscator = require("javascript-obfuscator");
 const readline = require('readline');
 const {google} = require('googleapis'); 
-
+const Auditlog = require("discord-auditlog");
+Auditlog(client, {
+    "serverid": {
+        auditlog: "💢𝕒𝕦𝕕𝕚𝕥-𝕝𝕠𝕘𝕤⚠",	
+        movement: "in-out",
+        auditmsg: false, 
+        voice: false, 
+        trackroles: true,
+    }
+});
 /*
 const brain = require('brain.js');
 const net= new brain.NeuralNetwork()
@@ -205,7 +214,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
                    .setColor('BLUE')
                    .setDescription(`Successfully changed bot status type to ${statustype} and status message to ${statusmessage}, ${msg.author}`)
                    .setTimestamp();
-                   msg.channel.send(statusembed)
+                   msg.channel.send(statusembed) 
 
             break;
 
