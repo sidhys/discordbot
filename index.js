@@ -2168,6 +2168,11 @@ case `botlockdown`:
 
     break;
 
+    case `help`:
+
+    msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`). To change a configuration, run config$<config> <value>')
+
+    break;
 }
        } else if(msg.author.id === configwhitelistedid2) {
            
@@ -2199,6 +2204,12 @@ case `botlockdown`:
                 }
         
             break;
+            
+            case `help`:
+
+                msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`). To change a configuration, run config$<config> <value>')
+            
+                break;
         
         }
 
