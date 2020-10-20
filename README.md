@@ -1,7 +1,7 @@
 # stantonapbot
 
 
-This project is licensed under the MIT license. If you're going to use this code, please read the License.
+This project is licensed under the MIT license. If you're going to use a part of this project's code, please read the License.
 
 
 # Stanton AP Bot
