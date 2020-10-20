@@ -31,7 +31,6 @@ const net= new brain.NeuralNetwork()
 const trainData  = require('./src/training-data')
 const serializer = require('./src/serialize')
 */
-const clientstatus= "tst"  
 
 
 const token = "🤣🤣🤣 you really thought you could grab my token lmaooooooooooooooooooooooooo";
@@ -45,9 +44,6 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
     client.on('ready', () => {
         console.log("Bot online! Connected as " + client.user.tag + "✅")
         eval(client)
-        client.user.setActivity(clientstatus, {
-         type: 'WATCHING'
-        });
     })
     
 // databases
@@ -189,6 +185,22 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
             
     
             
+            case `setstatus`:
+                
+                if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+
+                if(!args[1]) return msg.channel.send(invalidargs)
+                if(!args[2]) return msg.channel.send(invalidargs)
+
+                var statustype = args[1]
+                var statusmessage = args.slice(2).join(' ') 
+         
+                client.user.setActivity(statusmessage, {
+                    type: statustype
+                   });
+            
+
+            break;
 
             case `start`:
 
