@@ -1980,11 +1980,28 @@ client.on('message', message => {
 
 
 client.on('messageUpdate', async(oldMessage,newMessage)=>{
-    require('./messageUpdate') (oldMessage, newMessage)
+    let updateembed = new MessageEmbed()
+    .setTitle('Message Edited')
+    .setColor('BLUE')
+    .setDescription(`Message by <@${oldMessage.author.id}> edited in <#${oldMessage.channel.id}>`)
+    .addField('Before',oldMessage.content,true)
+    .addField('After', newMessage.content,true)
+    .setTimestamp()
+    let channel = oldMessage.guild.channels.cache.find(ch=> ch.id === "714822326016933900")
+    if(!channel) return;
+    channel.send(updateembed)   
 })
 
 client.on('messageDelete', async(message)=>{
-    require('./messageDelete') (message)
+    let deleteembed = new MessageEmbed()
+    .setTitle('Message Deleted')
+    .setColor('BLUE')
+    .setDescription(`Message by <@${message.author.id}> deleted in <#${message.channel.id}>`)
+    .addField('Message Content',message.content,true)
+    .setTimestamp()
+    let channel = message.guild.channels.cache.find(ch=> ch.id === "714822326016933900")
+    if(!channel) return;
+    channel.send(deleteembed)
 })
 
 
@@ -2009,7 +2026,7 @@ client.on('guildMemberRemove', async member => {
 	if (target.id === member.id) {
 		client.channels.cache.get('714822326016933900').send(`${member.user.tag} was kicked by ${executor.tag}  `);
 	} else {
-		client.channels.cache.get('714822326016933900').send(`${member.user.tag} left the server, but I couldn't find amy more details.`);
+		client.channels.cache.get('714822326016933900').send(`${member.user.tag} left the server, but I couldn't find any more details.`);
 	}
 });
 
@@ -2028,7 +2045,7 @@ client.on('guildBanAdd', async (guild, user) => {
 	if (target.id === user.id) {
 		client.channels.cache.get('714822326016933900').send(`${user.tag} was banned by ${executor.tag}`);
 	} else {
-		client.channels.cache.get('714822326016933900').send(`${user.tag} got was banned, but I couldn't find more details.`);
+		client.channels.cache.get('714822326016933900').send(`${user.tag} got was banned, but I couldn't find any more details.`);
 	}
 });
 
