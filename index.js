@@ -2118,13 +2118,13 @@ case `botlockdown`:
 
     case `reactions`:
         
-        if(args[1] === "true") {
+        if(args[1] === "false") {
             await reactions.create({Value: "true"});
-            msg.channel.send('set reactions to `true`')
-            } else if(args[1] === "false") {                        
+            msg.channel.send('set reactions to `false`')
+            } else if(args[1] === "true") {                        
          var reactionsreqeust = await reactions.findOne({Value: "true"});
          if(reactionsreqeust !== null) reactionsreqeust.deleteOne();
-         msg.channel.send('set reactions to `false`')
+         msg.channel.send('set reactions to `true`')
             }
 
         break;
@@ -2186,13 +2186,13 @@ case `botlockdown`:
             
     case `reactions`:
         
-        if(args[1] === "true") {
+        if(args[1] === "false") {
             await reactions.create({Value: "true"});
-            msg.channel.send('set reactions to `true`')
-            } else if(args[1] === "false") {                        
+            msg.channel.send('set reactions to `false`')
+            } else if(args[1] === "true") {                        
          var reactionsreqeust = await reactions.findOne({Value: "true"});
          if(reactionsreqeust !== null) reactionsreqeust.deleteOne();
-         msg.channel.send('set reactions to `false`')
+         msg.channel.send('set reactions to `true`')
             }
 
         break;
