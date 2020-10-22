@@ -1791,8 +1791,7 @@ if(reactioncheck !== null) return;
 }
   })
 
-
-client.on('message', message => {
+  client.on('message', async (message) => {
     if (!message.guild) return;
     var reactioncheck = await reactions.findOne({Value: "true"});
     if(reactioncheck !== null) return; 
@@ -1802,8 +1801,7 @@ client.on('message', message => {
     }
 }})
 
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
@@ -1813,8 +1811,7 @@ if(reactioncheck !== null) return;
             return message.react('💀')
     }   
 }})
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
@@ -1824,8 +1821,7 @@ if(reactioncheck !== null) return;
    return message.react('💀')
     }
 }})
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
@@ -1836,8 +1832,7 @@ if(reactioncheck !== null) return;
     }
 }})
 
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
@@ -1848,8 +1843,7 @@ if(reactioncheck !== null) return;
     }
 }})
 
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
@@ -1860,9 +1854,7 @@ if(reactioncheck !== null) return;
     }
 }})
 
-
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
@@ -1874,8 +1866,7 @@ if(reactioncheck !== null) return;
 }})
    
 
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
@@ -1886,7 +1877,7 @@ if(reactioncheck !== null) return;
     }
 }})
 
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
@@ -1897,8 +1888,7 @@ if(reactioncheck !== null) return;
     }
 }})
 
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
@@ -1910,8 +1900,7 @@ if(reactioncheck !== null) return;
 }})
 
 
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
@@ -1924,8 +1913,7 @@ if(reactioncheck !== null) return;
     }
 }})
 
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
@@ -1939,8 +1927,7 @@ if(reactioncheck !== null) return;
 }})
 
 
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     if(message.guild.id === "708842168588042260") {
     if (message.member.roles.cache.some(r => r.id === "712852530232688640")) { 
@@ -1982,8 +1969,7 @@ client.on('messageDelete', async(message)=>{
     channel.send(deleteembed)
 })
 
-
-client.on('message', message => {
+client.on('message', async (message) => {
     if (!message.guild) return;
     
 var reactioncheck = await reactions.findOne({Value: "true"});
