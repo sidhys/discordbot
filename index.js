@@ -31,6 +31,8 @@ const trainData  = require('./src/training-data')
 const serializer = require('./src/serialize')
 */
 
+    
+
 
 const token = "🤣🤣🤣 you really thought you could grab my token lmaooooooooooooooooooooooooo";
 
@@ -55,27 +57,28 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
     const secureverify = require('./database/secureverify');
     const botlockdown = require('./database/botlockdown');
     const auditconfig = require('./database/auditconfig');
+    const react = require ('./database/reactions');
     const { error } = require('console');
     const { REPL_MODE_STRICT } = require('repl');
+const reactions = require('./database/reactions');
 // end
 
     
-    client.on(`guildMemberAdd`, async (member) => {      
-        const verifyembed2 = new Discord.MessageEmbed()
-        .setTitle("Stanton AP Bot")
-        .setColor('BLUE')
-        .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${member.id}. From there, simply read the rules and do $verify in #🔐𝙖𝙘𝙘𝙚𝙥𝙩-𝙩𝙝𝙚-𝙧𝙪𝙡𝙚𝙨🔑`)
-        .setTimestamp();
-        member.send(verifyembed2)
- })
-          
+client.on(`guildMemberAdd`, async (member) => {      
+    const verifyembed2 = new Discord.MessageEmbed()
+    .setTitle("Stanton AP Bot")
+    .setColor('BLUE')
+    .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${member.id}. From there, simply read the rules and do $verify in #🔐𝙖𝙘𝙘𝙚𝙥𝙩-𝙩𝙝𝙚-𝙧𝙪𝙡𝙚𝙨🔑`)
+    .setTimestamp();
+    member.send(verifyembed2)
+})
 
     client.on(`guildMemberAdd`, async (member) => {
   var addbanmemberid = member.id
            var addbancheck = await databasebanneds.findOne({userid:addbanmemberid});
         if(addbancheck !== null) {
             console.log('Database banned user found, attemping to ban them.');
-            client.channels.cache.get('755198714242531368').send(`$ban ${member} automatically banned by Stanton AP`)
+            client.channels.cache.get('755198714242531368').send(`$ban ${member} automatically banned by bot.`)
         } else return; 
     })
   
@@ -112,76 +115,24 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
         .setTimestamp();
         
         
-        
-        
         var tokens = [
-            "a", 
-            "b",
-            "c",
-            "d",
-            "e",
-            "f",
-            "g",
-            "h",
-            "i",
-            "j",
-            "k",
-            "l",
-            "m",
-            "n",
-            "o",
-            "q",
-            "r",
-            "s",
-            "t",
-            "u",
-            "v",
-            "w",
-            "x",
-            "y",
-            "z",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "0",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "Y",
-            "Z"
-           ]       
+            "a", "b", "c","d","e","f","g","h","i","j","k","l","m","n","o","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z"]       
+
+         
+            function generateToken() {
+                var chars = tokens;
+                var token = '';
+                for(var i = 0; i < 20; i++) {
+                    token += chars[Math.floor(Math.random() * chars.length)];
+                }
+                return token;
+            }  
+    
+            var firetokengenerator = generateToken();
 
 
-        if (msg.member.roles.cache.some(r => r.id === "752527225026510930")) return msg.channel.send(Youdonthavepermsembed)
 
-
-        firetokengenerator = tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] +tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] +tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] +tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] +tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] +tokens[Math.floor(Math.random() * tokens.length)] + tokens[Math.floor(Math.random() * tokens.length)] 
+ 
 
         switch (args[0]) {
             
@@ -1158,10 +1109,6 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
                 if (parts[0] === "$img") { 
                     image(msg, parts);
                 }
-
-                function getRandomInt(max) {
-                    return Math.floor(Math.random() * Math.floor(max));
-                  }
             
 
             function image(message, parts) {
@@ -1718,6 +1665,9 @@ client.on('message', message => {
       client.on('message', async (message) => {
        if (message.content.toLowerCase() === '$stfu') {
         if (!message.guild) return;
+        
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
           await message.delete()
           const fetched = await message.channel.messages.fetch({ limit: 1 })
           if (fetched && fetched.first()) {
@@ -1741,6 +1691,9 @@ client.on('message', message => {
        client.on('message', async (message) => {
         if (message.content.toLowerCase() === '$yes') {
          if (!message.guild) return;
+         
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
            await message.delete()
            const fetched = await message.channel.messages.fetch({ limit: 1 })
            if (fetched && fetched.first()) {
@@ -1760,6 +1713,9 @@ client.on('message', message => {
     
       client.on('message', async (message) => {
        if (message.content.toLowerCase() === '$poll') {
+           
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
         if (!message.guild) return;
           await message.delete()
           const fetched = await message.channel.messages.fetch({ limit: 1 })
@@ -1823,6 +1779,9 @@ client.on('message', message => {
   client.on('message', async (message) => {
    if (message.content.toLowerCase().includes('nice')) {    
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
       const fetched = await message.channel.messages.fetch({ limit: 1 })
       if (fetched && fetched.first()) {
@@ -1835,6 +1794,8 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    var reactioncheck = await reactions.findOne({Value: "true"});
+    if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
         if (message.content.toLowerCase().includes('goat')) {
             return message.react('🐐')
@@ -1844,6 +1805,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
         if (message.content.toLowerCase().includes('oof')) {
             return message.react('💀')
@@ -1852,6 +1816,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") { 
     if (message.content.toLowerCase().includes('dead')) {
    return message.react('💀')
@@ -1860,6 +1827,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
     if (message.content.toLowerCase().includes('100')) {
     return message.react('💯')
@@ -1869,6 +1839,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
     if (message.content.toLowerCase().includes('nerd')) {
    return message.react('🤓')
@@ -1878,6 +1851,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
     if (message.content.toLowerCase().includes('hot')) {
     return message.react('🥵')
@@ -1888,6 +1864,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
     if (message.content.toLowerCase().includes('bot')) {
     return message.react('🤖')
@@ -1898,6 +1877,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
     if (message.content.toLowerCase().includes('ok')) {
     return message.react('👌')
@@ -1906,6 +1888,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
     if (message.content.toLowerCase().includes('okay')) {
     return message.react('👌')
@@ -1915,6 +1900,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
     if (message.content.toLowerCase().startsWith('k')) {
    return message.react('👌')
@@ -1925,6 +1913,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
     if (message.content.toLowerCase().includes('corona')) {
     message.react('😷')
@@ -1936,6 +1927,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if(message.guild.id === "708842168588042260") {
     if (message.content.toLowerCase().includes('virus')) {
     message.react('😷')
@@ -1991,6 +1985,9 @@ client.on('messageDelete', async(message)=>{
 
 client.on('message', message => {
     if (!message.guild) return;
+    
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
     if (message.member.roles.cache.some(r => r.id === "761740733732093974")) {
        message.react('🤓');   
        return;
@@ -2106,6 +2103,8 @@ client.on('message', async (msg) => {
        }
 })
 
+
+
 const configprefix = "config$";
 
 client.on('message', async (msg) => {
@@ -2131,6 +2130,18 @@ case `botlockdown`:
 
     break;
 
+    case `reactions`:
+        
+        if(args[1] === "true") {
+            await reactions.create({Value: "true"});
+            msg.channel.send('set reactions to `true`')
+            } else if(args[1] === "false") {                        
+         var reactionsreqeust = await reactions.findOne({Value: "true"});
+         if(reactionsreqeust !== null) reactionsreqeust.deleteOne();
+         msg.channel.send('set reactions to `false`')
+            }
+
+        break;
      
     case `setstatus`:
                 
@@ -2166,7 +2177,7 @@ case `botlockdown`:
 
     case `help`:
 
-    msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$<config> <value>')
+    msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$<config> <value>')
 
     break;
 }
@@ -2186,6 +2197,20 @@ case `botlockdown`:
                 }
         
             break;
+            
+    case `reactions`:
+        
+        if(args[1] === "true") {
+            await reactions.create({Value: "true"});
+            msg.channel.send('set reactions to `true`')
+            } else if(args[1] === "false") {                        
+         var reactionsreqeust = await reactions.findOne({Value: "true"});
+         if(reactionsreqeust !== null) reactionsreqeust.deleteOne();
+         msg.channel.send('set reactions to `false`')
+            }
+
+        break;
+     
          
             case `setstatus`:
                 
@@ -2220,8 +2245,7 @@ case `botlockdown`:
             break;
             
             case `help`:
-
-                msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$<config> <value>')
+                msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$<config> <value>')
             
                 break;
         
