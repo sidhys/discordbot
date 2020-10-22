@@ -709,16 +709,7 @@ client.on(`guildMemberAdd`, async (member) => {
                  
                  break;
 
-                 case `websiteblacklist`:
-
-
-
-
-
-
-                 break;
-
-
+               
                  
                  case `mute`:
                   
