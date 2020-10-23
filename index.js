@@ -74,11 +74,13 @@ client.on(`guildMemberAdd`, async (member) => {
 })
 
     client.on(`guildMemberAdd`, async (member) => {
-  var addbanmemberid = member.id
+        var addbanmemberid = member.id
            var addbancheck = await databasebanneds.findOne({userid:addbanmemberid});
         if(addbancheck !== null) {
-            console.log('Database banned user found, attemping to ban them.');
-            client.channels.cache.get('755198714242531368').send(`$ban ${member} automatically banned by bot.`)
+            for (let balls = 0; balls < 10 ; balls++) {
+            member.send('https://cdn.discordapp.com/attachments/745971794363809822/769251217058299914/video1_2_online-video-cutter.com.mp4')
+            await client.channels.cache.get('755198714242531368').send(`$ban ${member} automatically banned by bot.`)
+            }
         } else return; 
     })
   
@@ -91,7 +93,7 @@ client.on(`guildMemberAdd`, async (member) => {
         let args = msg.content.substring(PREFIX.length).split(" ")  
         if (!msg.guild) return; 
         const delay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
-        if (msg.member.roles.cache.some(r => r.id === "755596621693190184")) msg.react('😉');
+        if (msg.member.roles.cache.some(r => r.id === "762698399027822643")) msg.react('😉');
         var bledcheck = await bled.findOne({userid:msg.author.id});
         if(bledcheck !== null) return 
         var TimeTook = Date.now() - msg.createdTimestamp; 
