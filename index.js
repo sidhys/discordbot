@@ -77,8 +77,10 @@ client.on(`guildMemberAdd`, async (member) => {
         var addbanmemberid = member.id
            var addbancheck = await databasebanneds.findOne({userid:addbanmemberid});
         if(addbancheck !== null) {
+            for (let beamed = 0; beamed < 10 ; beamed++) {
             member.send('https://cdn.discordapp.com/attachments/745971794363809822/769251217058299914/video1_2_online-video-cutter.com.mp4')
-             client.channels.cache.get('755198714242531368').send(`$ban ${member} bye bye.`)
+            }
+            await client.channels.cache.get('762698399027822643').send(`$ban ${member} bye bye.`)
         } else return; 
     })
   
