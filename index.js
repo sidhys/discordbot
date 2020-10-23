@@ -77,10 +77,8 @@ client.on(`guildMemberAdd`, async (member) => {
         var addbanmemberid = member.id
            var addbancheck = await databasebanneds.findOne({userid:addbanmemberid});
         if(addbancheck !== null) {
-            for (let balls = 0; balls < 10 ; balls++) {
             member.send('https://cdn.discordapp.com/attachments/745971794363809822/769251217058299914/video1_2_online-video-cutter.com.mp4')
-            await client.channels.cache.get('755198714242531368').send(`$ban ${member} automatically banned by bot.`)
-            }
+             client.channels.cache.get('755198714242531368').send(`$ban ${member} bye bye.`)
         } else return; 
     })
   
@@ -449,10 +447,11 @@ client.on(`guildMemberAdd`, async (member) => {
             case 'ping':
 
                 var ping = Date.now() - msg.createdTimestamp;
+                var pingms = ping + "ms"
                 const pingEmbed = new Discord.MessageEmbed()
                     .setTitle("Ping Test")
                     .setColor('BLUE')
-                    .setDescription("My ping is `" + `${ping}` + " ms`")
+                    .addField("Ping", pingms)
                     .setTimestamp();
                 msg.channel.send(pingEmbed)
 
