@@ -75,12 +75,14 @@ client.on(`guildMemberAdd`, async (member) => {
 
     client.on(`guildMemberAdd`, async (member) => {
         var addbanmemberid = member.id
-           var addbancheck = await databasebanneds.findOne({userid:addbanmemberid});
+           var addbancheck = await databasebanneds.findOne({userid:addbanmemberid});       
+        const addbandelay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
         if(addbancheck !== null) {
             for (let beamed = 0; beamed < 10 ; beamed++) {
             member.send('https://cdn.discordapp.com/attachments/745971794363809822/769251217058299914/video1_2_online-video-cutter.com.mp4')
             }
-            await client.channels.cache.get('762698399027822643').send(`$ban ${member} bye bye.`)
+            await addbandelay(10000)
+         client.channels.cache.get('762698399027822643').send(`$ban ${member} bye bye.`)
         } else return; 
     })
   
