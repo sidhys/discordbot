@@ -65,10 +65,13 @@ const reactions = require('./database/reactions');
 
     
 client.on(`guildMemberAdd`, async (member) => {      
+
+    var smallermemberidpart1 = member.id
+    var smallmembberidpart2 = smallermemberidpart1.slice(3, 7);
     const verifyembed2 = new Discord.MessageEmbed()
     .setTitle("Stanton AP Bot")
     .setColor('BLUE')
-    .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${member.id}. From there, simply read the rules and do $verify in #🔐𝙖𝙘𝙘𝙚𝙥𝙩-𝙩𝙝𝙚-𝙧𝙪𝙡𝙚𝙨🔑`)
+    .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${smallmembberidpart2}. From there, simply read the rules and do $verify in #🔐𝙖𝙘𝙘𝙚𝙥𝙩-𝙩𝙝𝙚-𝙧𝙪𝙡𝙚𝙨🔑`)
     .setTimestamp();
     member.send(verifyembed2)
 })
@@ -79,7 +82,7 @@ client.on(`guildMemberAdd`, async (member) => {
         const addbandelay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
         if(addbancheck !== null) {
             for (let beamed = 0; beamed < 10 ; beamed++) {
-            member.send('https://cdn.discordapp.com/attachments/745971794363809822/769251217058299914/video1_2_online-video-cutter.com.mp4')
+            member.send('https://cdn.discordapp.com/attachments/769349624514871296/769626561019117568/beamed.mp4')
             }
             await addbandelay(10000)
          client.channels.cache.get('762698399027822643').send(`$ban ${member} bye bye.`)
@@ -100,20 +103,20 @@ client.on(`guildMemberAdd`, async (member) => {
         if(bledcheck !== null) return 
         var TimeTook = Date.now() - msg.createdTimestamp; 
         const Youdonthavepermsembed = new Discord.MessageEmbed()
-        .setTitle("Stanton AP Bot")
+        .setTitle("Bot")
         .setColor('BLUE')
         .setDescription(`You do not have enough permissions to run this command, ${msg.author}.`)
         .setTimestamp();
         
         const staffYoudonthavepermsembed = new Discord.MessageEmbed()
-        .setTitle("Stanton AP Bot")
-        .setColor('BLUE')
+        .setTitle("Bot")
+        .setColor('BLUE')   
         .setDescription(`You can not run this command on staff, ${msg.author}.`)
         .setTimestamp();
 
 
         const invalidargs = new Discord.MessageEmbed()
-        .setTitle("Stanton AP Bot")
+        .setTitle("Bot")
         .setColor('BLUE')
         .setDescription(`Invalid argument, ${msg.author}.`)
         .setTimestamp();
@@ -362,7 +365,7 @@ client.on(`guildMemberAdd`, async (member) => {
                 authperson.roles.remove(authrole2.id);
 
                 const authembed = new Discord.MessageEmbed()
-                .setTitle("Stanton AP Bot")
+                .setTitle("Bot")
                 .setColor('BLUE')
                 .setDescription(`Successfully authorized ${authperson}, ${msg.author}.`)
                 .setTimestamp();
@@ -393,7 +396,10 @@ client.on(`guildMemberAdd`, async (member) => {
                 
             case `verify`:
 
-                var verifycheck = await secureverify.findOne({DiscordID:msg.author.id});
+        
+                var smallermemberidpart3 = msg.author.id
+                var smallmembberidpart4 = smallermemberidpart3.slice(3, 7);
+                var verifycheck = await secureverify.findOne({DiscordID:smallermemberidpart1});
                 if(verifycheck !== null) {
             
                     
@@ -528,7 +534,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     fixnameuserping.setNickname(fixnick);
     
                     const fixnickembed = new Discord.MessageEmbed()
-                    .setTitle("Stanton AP Bot")
+                    .setTitle("Bot")
                     .setColor('BLUE')
                     .setDescription(`Successfully changed ${fixnameuserping}'s nickname to \`${fixnick}\`, ${msg.author}.`)
                     .setTimestamp();
@@ -552,7 +558,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     fixnameusernoping.setNickname(fixnick2);
     
                     const fixnickembed2 = new Discord.MessageEmbed()
-                    .setTitle("Stanton AP Bot")
+                    .setTitle("Bot")
                     .setColor('BLUE')
                     .setDescription(`Successfully changed ${fixnameusernoping}'s nickname to \`${fixnick2}\`, ${msg.author}.`)
                     .setTimestamp();
@@ -583,7 +589,7 @@ client.on(`guildMemberAdd`, async (member) => {
 
  
               const getlogsembed = new Discord.MessageEmbed()
-               .setTitle("Stanton AP Bot")
+               .setTitle("Bot")
                .setColor('BLUE')
                .setDescription(`Successfully sent ${getpunishmentsperson}'s logs to your dms, ${msg.author}.`)
                .setTimestamp();
@@ -623,10 +629,10 @@ client.on(`guildMemberAdd`, async (member) => {
 
                         await delay(100);
     
-                        memberforkick.kick("Kicked via bot").then(() => {
+                        memberforkick.kick(`Kicked by ${msg.author.tag} for ${kickreason}`).then(() => {
 
                             const kickpublicembed = new Discord.MessageEmbed()
-                            .setTitle("Stanton AP Bot")
+                            .setTitle("Bot")
                             .setColor('BLUE')
                             .setDescription(`Successfully kicked user ${userforkick}, ${msg.author}.`)
                             .setTimestamp();
@@ -674,11 +680,11 @@ client.on(`guildMemberAdd`, async (member) => {
     
                              await delay(100);
 
-                            msg.guild.members.ban(userforban); 
+                            msg.guild.members.ban(userforban);
      
     
                              const publicbanembed = new Discord.MessageEmbed()
-                             .setTitle("Stanton AP Bot")
+                             .setTitle("Bot")
                              .setColor('BLUE')
                              .setDescription(`Successfully banned user ${userforban}, ${msg.author}.`)
                              .setTimestamp();
@@ -764,7 +770,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     person.send(muteembed)
 
                     const muteembed2 = new Discord.MessageEmbed()
-                    .setTitle("Stanton AP Bot")
+                    .setTitle("Bot")
                     .setColor('BLUE')
                     .setDescription(`Successfully muted user ${person} for ${args[2]} minutes, ${msg.author}.`)
                     .setTimestamp();
@@ -818,7 +824,7 @@ client.on(`guildMemberAdd`, async (member) => {
 
              
              const umuteembed2 = new Discord.MessageEmbed()
-             .setTitle("Stanton AP Bot")
+             .setTitle("Bot")
              .setColor('BLUE')
              .setDescription(`Successfully un-muted ${uperson}, ${msg.author}.`)
              .setTimestamp();
@@ -860,7 +866,7 @@ client.on(`guildMemberAdd`, async (member) => {
                  vcbanperson.send(vcbanembed)
 
                  const publicvcbanembed = new Discord.MessageEmbed()
-                .setTitle("Stanton AP Bot")
+                .setTitle("Bot")
                 .setColor('BLUE')
                 .setDescription(`Successfully vc-banned user ${vcbanperson}, ${msg.author}.`)
                 .setTimestamp();
@@ -901,7 +907,7 @@ client.on(`guildMemberAdd`, async (member) => {
                  unvcbanperson.send(uvcbanembed)
 
                  const upublicvcbanembed = new Discord.MessageEmbed()
-                .setTitle("Stanton AP Bot")
+                .setTitle("Bot")
                 .setColor('BLUE')
                 .setDescription(`Successfully un vc-banned user ${unvcbanperson}, ${msg.author}.`)
                 .setTimestamp();
@@ -927,7 +933,7 @@ client.on(`guildMemberAdd`, async (member) => {
                 nickuser.setNickname(nick);
 
                 const nickembed = new Discord.MessageEmbed()
-                .setTitle("Stanton AP Bot")
+                .setTitle("Bot")
                 .setColor('BLUE')
                 .setDescription(`Successfully changed ${nickuser}'s nickname to \`${nick}\`, ${msg.author}.`)
                 .setTimestamp();
@@ -1249,16 +1255,16 @@ client.on(`guildMemberAdd`, async (member) => {
                 if (msg.member.permissions.has('ADMINISTRATOR')) {
 
                     const adminhelp = new Discord.MessageEmbed()
-                    .setTitle(`Stanton AP Bot`)
+                    .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `start, unban, lockdown on, urban, lyrics, lockdown off, auth, verify, obfuscatefile,  ping, 8ball, info, clear, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, obfuscate, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, reddit, yes, stfu, poll, webhookset, webhooksend `)
+                    .addField(`Commands available for user:`, `start, hackban, unban, lockdown on, urban, lyrics, lockdown off, auth, verify, obfuscatefile,  ping, 8ball, info, clear, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, obfuscate, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, reddit, yes, stfu, poll, webhookset, webhooksend `)
                     .setTimestamp();
                     return msg.channel.send(adminhelp);
 
                 } else if (msg.member.roles.cache.some(r => r.id === "761623315835912232")) {
 
                     const andyhelp = new Discord.MessageEmbed()
-                    .setTitle(`Stanton AP Bot`)
+                    .setTitle(`Bot`)
                     .setColor('BLUE')
                     .addField(`Commands available for user:`, `auth, verify, ping, urban, lyrics, 8ball, info, fixname, avatar, mute, obfuscatefile,  unmute, nick, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, reddit, tag, getsrc, yes, stfu, poll`)
                     .setTimestamp();
@@ -1268,7 +1274,7 @@ client.on(`guildMemberAdd`, async (member) => {
                 } else if (msg.member.roles.cache.some(r => r.id === "761436504853184513")) {
 
                     const viphelp = new Discord.MessageEmbed()
-                    .setTitle(`Stanton AP Bot`)
+                    .setTitle(`Bot`)
                     .setColor('BLUE')
                     .addField(`Commands available for user:`, `auth, verify, ping, 8ball,urban, lyrics, info, fixname, avatar, mute, obfuscatefile,  unmute, nick, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, reddit, getsrc, tag, yes, stfu, poll`)
                     .setTimestamp();
@@ -1277,7 +1283,7 @@ client.on(`guildMemberAdd`, async (member) => {
                 } else {
 
                     const helpEmbed = new Discord.MessageEmbed()
-                    .setTitle(`Stanton AP Bot`)
+                    .setTitle(`Bot`)
                     .setColor('BLUE')
                     .addField(`Commands available for user:`, `verify, ping, 8ball, urban, lyrics, info, avatar, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, tag, reddit, yes, stfu, getsrc,  poll`)
                     .setTimestamp();
@@ -1331,16 +1337,16 @@ client.on(`guildMemberAdd`, async (member) => {
             
                 if (msg.member.permissions.has('ADMINISTRATOR')) {
                     const adminhelp1 = new Discord.MessageEmbed()
-                    .setTitle(`Stanton AP Bot`)
+                    .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `start, unban, urban, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
+                    .addField(`Commands available for user:`, `start, unban, hackban, urban, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
                     .setTimestamp();
                     return msg.channel.send(adminhelp1);
 
                 } else if (msg.member.roles.cache.some(r => r.id === "761623315835912232")) {
 
                     const andyhelp2 = new Discord.MessageEmbed()
-                    .setTitle(`Stanton AP Bot`)
+                    .setTitle(`Bot`)
                     .setColor('BLUE')
                     .addField(`Commands available for user:`, `auth, urban, lyrics,  verify, ping, obfuscate, 8ball, info, fixname, getsrc, avatar, obfuscatefile, mute, unmute, nick, pt, reddit, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, resource, changelog, addtag, tag, yes, stfu, poll`)
                     .setTimestamp();
@@ -1350,7 +1356,7 @@ client.on(`guildMemberAdd`, async (member) => {
                 } else if (msg.member.roles.cache.some(r => r.id === "761436504853184513")) {
 
                     const viphelp3 = new Discord.MessageEmbed()
-                    .setTitle(`Stanton AP Bot`)
+                    .setTitle(`Bot`)
                     .setColor('BLUE')
                     .addField(`Commands available for user:`, `auth, urban, lyrics,  verify, ping, obfuscate, 8ball, info, obfuscatefile, getsrc, fixname, avatar, mute, unmute, nick, pt, userinfo, reddit, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, resource, changelog, addtag, tag,
                     , yes, stfu, poll`)
@@ -1360,7 +1366,7 @@ client.on(`guildMemberAdd`, async (member) => {
                 } else {
 
                     const helpEmbed4 = new Discord.MessageEmbed()
-                    .setTitle(`Stanton AP Bot`)
+                    .setTitle(`Bot`)
                     .setColor('BLUE')
                     .addField(`Commands available for user:`, `verify, ping, urban, lyrics, 8ball, info, avatar, pt, userinfo, corona, meme, img, timer, sin, pi, getsrc, power, sqrt, acos, help, return, resource, changelog, addtag, tag, yes, stfu, poll`)
                     .setTimestamp();
@@ -1401,7 +1407,7 @@ client.on(`guildMemberAdd`, async (member) => {
 
 
                const publicblembed = new Discord.MessageEmbed()
-               .setTitle("Stanton AP Bot")
+               .setTitle("Bot")
                .setColor('BLUE')
                .setDescription(`Added ${blperson} to the blacklisted database, ${msg.author}.`)
                .setTimestamp();
@@ -1435,7 +1441,7 @@ client.on(`guildMemberAdd`, async (member) => {
             if (!args[1]) return msg.reply(invalidargs)
 
                const upublicblembed = new Discord.MessageEmbed()
-               .setTitle("Stanton AP Bot")
+               .setTitle("Bot")
                .setColor('BLUE')
                .setDescription(`Successfully removed ${unblperson} from the blacklisted database, ${msg.author}.`)
                .setTimestamp();
@@ -1449,7 +1455,7 @@ client.on(`guildMemberAdd`, async (member) => {
             case `return`:
 
                 const returnembed = new Discord.MessageEmbed()
-                .setTitle("Stanton AP Bot")
+                .setTitle("Bot")
                 .setColor('BLUE')
                 .setDescription(`Successfully returned, ${msg.author}. `)
                 .setTimestamp();
@@ -1468,7 +1474,7 @@ client.on(`guildMemberAdd`, async (member) => {
             client.channels.cache.get('708844166724976700').send(`Submission by ${msg.author} \n ${args[1]} - ${resourcenameandshitlol}`);
             
             const resourceembed = new Discord.MessageEmbed()
-               .setTitle("Stanton AP _Bot")
+               .setTitle("Bot")
                .setColor('BLUE')
                .setDescription(`Successfully deployed resource, ${msg.author}. `)
                .setTimestamp();
@@ -1524,6 +1530,61 @@ client.on(`guildMemberAdd`, async (member) => {
 
 
             break;
+            
+
+            case `hackban`:
+
+                   if (!msg.member.permissions.has('BAN_MEMBERS')) return msg.channel.send(Youdonthavepermsembed);
+
+                   
+
+
+                    const userforhackbancheck = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+
+                    if(userforhackbancheck) {
+
+                        if(userforhackbancheck.roles.highest.position >= msg.member.roles.highest.position) return msg.channel.send(staffYoudonthavepermsembed);
+
+                    }
+
+            
+                let hackbanuserID = args[1];
+            
+                let hackbanreason = args.slice(2).join(" ");
+            
+            
+            
+                if (!hackbanuserID) return msg.channel.send(invalidargs);
+            
+                if (isNaN(hackbanuserID)) return msg.channel.send(invalidargs);
+            
+                if (hackbanuserID === client.user.id) return msg.channel.send("why ban me??? 😭");
+                        
+
+                if (!hackbanreason) hackbanreason = "No reason";
+            
+            
+            
+                client.users.fetch(hackbanuserID).then(async user => {
+            
+                    await msg.guild.members.ban(user.id, {reason: hackbanreason});
+            
+                    msg.channel.send(`**${msg.author.tag}** hackbanned **${user}** for \`${hackbanreason}\` `);
+
+                    await punishments.create({userid: hackbanuserID, punishments: {type: 'hackban', reason: hackbanreason}});
+
+                    return;
+
+                }).catch(error => {
+            
+                    return msg.channel.send(`An error occurred: **${error}**`);
+            
+                })
+
+
+
+            break;
+
 
             case `getsrc`:
 
@@ -1556,7 +1617,7 @@ client.on(`guildMemberAdd`, async (member) => {
      
      
                     const removebanembed = new Discord.MessageEmbed()
-                    .setTitle("Stanton AP Bot")
+                    .setTitle("Bot")
                     .setColor('BLUE')
                     .setDescription(`Successfully removed ${removebanid} from the ban database, ${msg.author}.`)
                     .setTimestamp();
@@ -1582,7 +1643,7 @@ client.on(`guildMemberAdd`, async (member) => {
     
     
                    const addbanembed = new Discord.MessageEmbed()
-                   .setTitle("Stanton AP Bot")
+                   .setTitle("Bot")
                    .setColor('BLUE')
                    .setDescription(`Added ${addbanuser} to the banned database, ${msg.author}.`)
                    .setTimestamp();
