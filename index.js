@@ -1503,16 +1503,10 @@ client.on(`guildMemberAdd`, async (member) => {
             case `tags`:
 
             
-        var tagss = await tags.find({Guild: msg.guild.id});
+        var tagss = await tags.findOne({Guild: msg.guild.id});
     
-            var poopiepants;
-            for (poopiepants = 0; poopiepants < tagss.length; poopiepants++) {
-                msg.channel.send(tagss.Name)
-            }
-
-
-
-            msg.member.send(`Tags in this server - ${tagss}`); 
+       
+            msg.member.send(`Tags in this server - ${tagss.Name}`); 
               
             break;
 
