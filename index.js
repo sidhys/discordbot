@@ -1528,8 +1528,8 @@ client.on(`guildMemberAdd`, async (member) => {
                      })
                     newData.save();
                     msg.channel.send(`Tag ${args[1]} has been saved.`);
-                    if(err) {
-                        return console.log(err)
+                    if(error) {
+                        return console.log(error)
                     }
                  }
             })
@@ -1558,9 +1558,10 @@ client.on(`guildMemberAdd`, async (member) => {
             
                 custom.findOne({Guild: msg.guild.id, Name: args[1]}, async(err,data) => {
                     if(err) throw err;
-                    if(data){
-                     return msg.channel.send(data.Content);
-                    } else return msg.channel.send('Could not find tag.')
+                    if(data) { 
+                        return msg.channel.send(data.Content);
+                }
+                else return msg.channel.send('Could not find tag.')
                 })
     
                 
