@@ -1501,11 +1501,13 @@ client.on(`guildMemberAdd`, async (member) => {
            .setTimestamp();
            msg.channel.send(changelogembed)
             break;
-            case `showtags`:
+
+
+            case `tags`:
 
                 tags.find({Guild: msg.guild.id}, async(err,data) => {
                     if(err) throw err;
-                    if(data) return msg.channel.send(data.Name);
+                    if(data) return msg.channel.send('Tags' + data.Name);
                     else return msg.channel.send('no tags')
                 })
 
@@ -1547,7 +1549,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed)
                      data.Content = args.slice(2).join(" ")
                      data.save();
-                     msg.channel.send(`Tag ${args[1]} has been overridden.`);
+                     msg.channel.send(`Tag ${args[1]} has been edited.`);
                  } else if(!data) {
                     return msg.channel.send('that tag doesnt exist. use `$addtag` to add it.')
                  }
