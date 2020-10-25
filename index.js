@@ -1521,8 +1521,11 @@ client.on(`guildMemberAdd`, async (member) => {
                  if(data) {
                     msg.channel.send('that tag already exists. use `$edittag` to edit it. ')
                  } else if(!data) {
+                     
+                    await tags.create({authorid: hackbanuserID, punishments: {type: 'hackban', reason: hackbanreason}});
+
                      let newData = new tags({
-                         authorID: msg.author.id,
+                         Guild: msg.guild.id,
                          Name: args[1],
                          Content: args.slice(2).join(" "),
                      })
