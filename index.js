@@ -591,11 +591,8 @@ client.on(`guildMemberAdd`, async (member) => {
 
 
                     if(!args[1]) return
-                    var punishmentss = await punishments.findOne({userid: getpunishmentspersonid});
-                    console.log(punishmentss);
-                    msg.member.send( `${getpunishmentsperson}'s latest punishment - ` + punishmentss);
-                    msg.member.send(`To see all of user's punishments, contact sid.`)
-
+                    var punishmentss = await punishments.find({userid: getpunishmentspersonid});
+                    msg.member.send( `${getpunishmentsperson}'s punishmentss - ${punishmentss}`);
  
               const getlogsembed = new Discord.MessageEmbed()
                .setTitle("Bot")
@@ -1505,13 +1502,18 @@ client.on(`guildMemberAdd`, async (member) => {
 
             case `tags`:
 
-                tags.find({Guild: msg.guild.id}, async(err,data) => {
-                    if(err) throw err;
-                    if(data) return msg.channel.send('Tags' + data.Name);
-                    else return msg.channel.send('no tags')
-                })
+            
+                var tagss = await tags.find({Guil: msg.guild.id});
+    
+            var a;
+            for (a = 0; a < tagss.length; a++) {
+                msg.channel.send(tagss.Name)
+            }
 
 
+
+            msg.member.send(`Tags in this server - ${tagss.Name}`); 
+              
             break;
 
             case `addtag`:
