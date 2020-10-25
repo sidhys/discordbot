@@ -398,8 +398,8 @@ client.on(`guildMemberAdd`, async (member) => {
 
         
                 var smallermemberidpart3 = msg.author.id
-                var smallmembberidpart4 = smallermemberidpart3.slice(3, 7);
-                var verifycheck = await secureverify.findOne({DiscordID:smallermemberidpart1});
+                var smallermemberidpart4 = smallermemberidpart3.slice(3, 7);
+                var verifycheck = await secureverify.findOne({DiscordID:smallermemberidpart4});
                 if(verifycheck !== null) {
             
                     
@@ -415,6 +415,13 @@ client.on(`guildMemberAdd`, async (member) => {
 
                 msg.channel.send(verifysuccess)
                 
+                
+                var deleteverifyreq = await databasebanneds.findOne({DiscordID:smallermemberidpart4 });
+                if(deleteverifyreq !== null) {
+                deleteverifyreq.deleteOne();
+                 } else {
+                    return msg.channel.send('error')
+                }
             } else {
                 msg.channel.send('check dms')
                 const verifyembed3 = new Discord.MessageEmbed()
