@@ -1560,11 +1560,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     if(err) throw err;
                     if(data){
                      return msg.channel.send(data.Content);
-                    } else if(error) {
-                        msg.channel.send(error)
-                    } else {
-                     return msg.channel.send('Could not find tag.')
-                    }
+                    } else return msg.channel.send('Could not find tag.')
                 })
     
                 
