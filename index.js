@@ -51,7 +51,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
     
 // databases
     const bled = require('./database/bled')
-    const custom = require('./database/tags')
+    const tags = require('./database/tags')
     const databasebanneds = require('./database/banned');
     const punishments = require('./database/punishments');
     const secureverify = require('./database/secureverify');
@@ -1503,7 +1503,7 @@ client.on(`guildMemberAdd`, async (member) => {
             break;
             case `showtags`:
 
-                custom.find({Guild: msg.guild.id}, async(err,data) => {
+                tags.find({Guild: msg.guild.id}, async(err,data) => {
                     if(err) throw err;
                     if(data) return msg.channel.send(data.Name);
                     else return msg.channel.send('no tags')
@@ -1516,12 +1516,12 @@ client.on(`guildMemberAdd`, async (member) => {
 
             if(!args[1]) return msg.channel.send(invalidargs);
             if(!args.slice(2).join(" ")) return msg.channel.send(invalidargs);
-            custom.findOne({ Guild: msg.guild.id, Name: args[1]},async(err,data) => {
+            tags.findOne({ Guild: msg.guild.id, Name: args[1]},async(err,data) => {
                  if(err) throw err;
                  if(data) {
                     msg.channel.send('that tag already exists. use `$edittag` to edit it. ')
                  } else if(!data) {
-                     let newData = new custom({
+                     let newData = new tags({
                          authorID: msg.author.id,
                          Name: args[1],
                          Content: args.slice(2).join(" "),
@@ -1540,7 +1540,7 @@ client.on(`guildMemberAdd`, async (member) => {
 
             if(!args[1]) return msg.channel.send(invalidargs);
             if(!args.slice(2).join(" ")) return msg.channel.send(invalidargs);
-            custom.findOne({ Guild: msg.guild.id, Name: args[1]},async(err,data) => {
+            tags.findOne({ Guild: msg.guild.id, Name: args[1]},async(err,data) => {
                  if(err) throw err;
                  if(data) {
                     if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed)
@@ -1556,7 +1556,7 @@ client.on(`guildMemberAdd`, async (member) => {
 
             case `tag`:
             
-                custom.findOne({Guild: msg.guild.id, Name: args[1]}, async(err,data) => {
+                tags.findOne({Guild: msg.guild.id, Name: args[1]}, async(err,data) => {
                     if(err) throw err;
                     if(data) { 
                         return msg.channel.send(data.Content);
