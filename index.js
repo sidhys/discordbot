@@ -424,10 +424,12 @@ client.on(`guildMemberAdd`, async (member) => {
                 }
             } else {
                 msg.channel.send('check dms')
+                var smallermemberidpart5 = msg.author.id
+                var smallermemberidpart6 = smallermemberidpart5.slice(3, 7);
                 const verifyembed3 = new Discord.MessageEmbed()
                 .setTitle("Stanton AP Bot")
                 .setColor('BLUE')
-                .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${msg.author.id}. From there, simply read the rules and do $verify in #🔐𝙖𝙘𝙘𝙚𝙥𝙩-𝙩𝙝𝙚-𝙧𝙪𝙡𝙚𝙨🔑 `)
+                .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${smallermemberidpart6}. From there, simply read the rules and do $verify in #🔐𝙖𝙘𝙘𝙚𝙥𝙩-𝙩𝙝𝙚-𝙧𝙪𝙡𝙚𝙨🔑 `)
                 .setTimestamp();
                 msg.author.send(verifyembed3)
 
