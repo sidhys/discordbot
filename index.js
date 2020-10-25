@@ -1558,8 +1558,13 @@ client.on(`guildMemberAdd`, async (member) => {
             
                 custom.findOne({Guild: msg.guild.id, Name: args[1]}, async(err,data) => {
                     if(err) throw err;
-                    if(data) return msg.channel.send(data.Content);
-                    else return msg.channel.send('Could not find tag.')
+                    if(data){
+                     return msg.channel.send(data.Content);
+                    } else if(error) {
+                        msg.channel.send(error)
+                    } else {
+                     return msg.channel.send('Could not find tag.')
+                    }
                 })
     
                 
