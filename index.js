@@ -1528,8 +1528,8 @@ client.on(`guildMemberAdd`, async (member) => {
                      })
                     newData.save();
                     msg.channel.send(`Tag ${args[1]} has been saved.`);
-                    if(error) {
-                        return console.log(error)
+                    if(err) {
+                        return console.log(err)
                     }
                  }
             })
