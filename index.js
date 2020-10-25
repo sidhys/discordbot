@@ -416,7 +416,7 @@ client.on(`guildMemberAdd`, async (member) => {
                 msg.channel.send(verifysuccess)
                 
                 
-                var deleteverifyreq = await databasebanneds.findOne({DiscordID:smallermemberidpart4 });
+                var deleteverifyreq = await secureverify.findOne({DiscordID:smallermemberidpart4 });
                 if(deleteverifyreq !== null) {
                 deleteverifyreq.deleteOne();
                  } else {
