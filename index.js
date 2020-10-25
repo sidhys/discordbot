@@ -1494,7 +1494,7 @@ client.on(`guildMemberAdd`, async (member) => {
            const changelogembed = new Discord.MessageEmbed()
            .setTitle("Changelog")
            .setColor('RANDOM')
-           .addField('9/30/2020 - Fixed mutes, added global id support.')
+           .addField('who tf evenreads this ')
            .setTimestamp();
            msg.channel.send(changelogembed)
             break;
@@ -1512,7 +1512,7 @@ client.on(`guildMemberAdd`, async (member) => {
 
 
 
-            msg.member.send(`Tags in this server - ${tagss.Name}`); 
+            msg.member.send(`Tags in this server - ${tagss}`); 
               
             break;
 
