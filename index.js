@@ -1541,7 +1541,7 @@ client.on(`guildMemberAdd`, async (member) => {
             custom.findOne({ Guild: msg.guild.id, Name: args[1]},async(err,data) => {
                  if(err) throw err;
                  if(data) {
-                    if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(`That tag already exists. You are not authorized to update other people's tags, ${msg.author}.`);
+                    if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed)
                      data.Content = args.slice(2).join(" ")
                      data.save();
                      msg.channel.send(`Tag ${args[1]} has been overridden.`);
@@ -1551,6 +1551,17 @@ client.on(`guildMemberAdd`, async (member) => {
             })
 
             break;
+
+            case `tag`:
+            
+                custom.findOne({Guild: msg.guild.id, Name: args[1]}, async(err,data) => {
+                    if(err) throw err;
+                    if(data) return msg.channel.send(data.Content);
+                    else return msg.channel.send('Could not find tag.')
+                })
+    
+                
+         break;
             
 
             case `hackban`:
