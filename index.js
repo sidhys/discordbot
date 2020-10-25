@@ -1525,10 +1525,12 @@ client.on(`guildMemberAdd`, async (member) => {
                          authorID: msg.author.id,
                          Name: args[1],
                          Content: args.slice(2).join(" "),
-
                      })
                     newData.save();
                     msg.channel.send(`Tag ${args[1]} has been saved.`);
+                    if(error) {
+                        return console.log(error)
+                    }
                  }
             })
 
