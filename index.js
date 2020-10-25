@@ -1501,9 +1501,40 @@ client.on(`guildMemberAdd`, async (member) => {
            .setTimestamp();
            msg.channel.send(changelogembed)
             break;
+            case `showtags`:
 
+                custom.find({Guild: msg.guild.id}, async(err,data) => {
+                    if(err) throw err;
+                    if(data) return msg.channel.send(data.Name);
+                    else return msg.channel.send('no tags')
+                })
+
+
+            break;
 
             case `addtag`:
+
+            if(!args[1]) return msg.channel.send(invalidargs);
+            if(!args.slice(2).join(" ")) return msg.channel.send(invalidargs);
+            custom.findOne({ Guild: msg.guild.id, Name: args[1]},async(err,data) => {
+                 if(err) throw err;
+                 if(data) {
+                    msg.channel.send('that tag already exists. use `$edittag` to edit it. ')
+                 } else if(!data) {
+                     let newData = new custom({
+                         authorID: msg.author.id,
+                         Name: args[1],
+                         Content: args.slice(2).join(" "),
+
+                     })
+                    newData.save();
+                    msg.channel.send(`Tag ${args[1]} has been saved.`);
+                 }
+            })
+
+            break;
+            
+            case `edittag`:
 
             if(!args[1]) return msg.channel.send(invalidargs);
             if(!args.slice(2).join(" ")) return msg.channel.send(invalidargs);
@@ -1515,28 +1546,9 @@ client.on(`guildMemberAdd`, async (member) => {
                      data.save();
                      msg.channel.send(`Tag ${args[1]} has been overridden.`);
                  } else if(!data) {
-                     let newData = new custom({
-                         Guild: msg.guild.id,
-                         Name: args[1],
-                         Content: args.slice(2).join(" "),
-                     })
-                    newData.save();
-                    msg.channel.send(`Tag ${args[1]} has been saved.`);
+                    return msg.channel.send('that tag doesnt exist. use `$addtag` to add it.')
                  }
             })
-
-            break;
-
-
-            case `tag`:
-            
-            custom.findOne({Guild: msg.guild.id, Name: args[1]}, async(err,data) => {
-                if(err) throw err;
-                if(data) return msg.channel.send(data.Content);
-                else return msg.channel.send('Could not find tag.')
-            })
-
-
 
             break;
             
