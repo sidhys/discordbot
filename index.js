@@ -60,7 +60,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
     const react = require ('./database/reactions');
     const { error } = require('console');
     const { REPL_MODE_STRICT } = require('repl');
-const reactions = require('./database/reactions');
+    const reactions = require('./database/reactions');
 // end
 
     
@@ -71,7 +71,7 @@ client.on(`guildMemberAdd`, async (member) => {
     const verifyembed2 = new Discord.MessageEmbed()
     .setTitle("Stanton AP Bot")
     .setColor('BLUE')
-    .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${smallmembberidpart2}. From there, simply read the rules and do $verify in #🔐𝙖𝙘𝙘𝙚𝙥𝙩-𝙩𝙝𝙚-𝙧𝙪𝙡𝙚𝙨🔑`)
+    .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${smallmembberidpart2}. From there, simply read the rules and do $verify in <#714839351778869258>`)
     .setTimestamp();
     member.send(verifyembed2)
 })
@@ -429,7 +429,7 @@ client.on(`guildMemberAdd`, async (member) => {
                 const verifyembed3 = new Discord.MessageEmbed()
                 .setTitle("Stanton AP Bot")
                 .setColor('BLUE')
-                .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${smallermemberidpart6}. From there, simply read the rules and do $verify in #🔐𝙖𝙘𝙘𝙚𝙥𝙩-𝙩𝙝𝙚-𝙧𝙪𝙡𝙚𝙨🔑 `)
+                .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${smallermemberidpart6}. From there, simply read the rules and do $verify in <#714839351778869258>`)
                 .setTimestamp();
                 msg.author.send(verifyembed3)
 
@@ -1263,7 +1263,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const adminhelp = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `start, hackban, unban, lockdown on, urban, lyrics, lockdown off, auth, verify, obfuscatefile,  ping, 8ball, info, clear, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, obfuscate, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, reddit, yes, stfu, poll, webhookset, webhooksend `)
+                    .addField(`Commands available for user:`, `start, hackban, unban, lockdown on, urban, lyrics, lockdown off, auth, verify, obfuscatefile,  ping, 8ball, info, clear, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, obfuscate, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, reddit, yes, stfu, poll, webhookset, webhooksend `)
                     .setTimestamp();
                     return msg.channel.send(adminhelp);
 
@@ -1345,7 +1345,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const adminhelp1 = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `start, unban, hackban, urban, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
+                    .addField(`Commands available for user:`, `start, unban, hackban, urban, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
                     .setTimestamp();
                     return msg.channel.send(adminhelp1);
 
@@ -1499,16 +1499,6 @@ client.on(`guildMemberAdd`, async (member) => {
            msg.channel.send(changelogembed)
             break;
 
-
-            case `tags`:
-
-            
-        var tagss = await tags.findOne({Guild: msg.guild.id});
-    
-       
-            msg.member.send(`Tags in this server - ${tagss.Name}`); 
-              
-            break;
 
             case `addtag`:
 
