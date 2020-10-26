@@ -2298,7 +2298,7 @@ case `botlockdown`:
 
     case `help`:
 
-    msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`) ,audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config!`config` `value`')
+  msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`) ,audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `config!<configuration to change> <arguments>`');
 
     break;
 }
@@ -2406,7 +2406,7 @@ case `botlockdown`:
             break;
             
             case `help`:
-                msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`) ,audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config!`config` `value`')   
+                msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`) ,audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `config!<configuration to change> <arguments>`')   
             
                 break;
         
