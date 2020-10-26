@@ -1,8 +1,38 @@
 // if you want to use this, contact me on discord: Sid#1000
 // commented out things are being worked on
+
+
+
+(async () => {
+    mongoose.connect(process.env.mongodioasdju90u31u209pjd0a9upfjc, { // <- not real database credentials, its a variable
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    }).then(() => console.log('Connected to database! ✅'));
+})();
+
+
+
+
+client.on('ready', () => {
+    console.log("Bot online! Connected as " + client.user.tag + "✅")
+    eval(client)
+})
+
+
+const bled = require('./database/bled')
+const tags = require('./database/tags')
+const prefix = require('./database/prefix')
+const databasebanneds = require('./database/banned');
+const punishments = require('./database/punishments');
+const secureverify = require('./database/secureverify');
+const botlockdown = require('./database/botlockdown');
+const auditconfig = require('./database/auditconfig');
+const react = require ('./database/reactions');
+const { error } = require('console');
+const { REPL_MODE_STRICT } = require('repl');
+const reactions = require('./database/reactions');
 const Discord = require('discord.js');
 const client = new Discord.Client({partials: ["MESSAGE", "CHANNEL", "REACTION"]});
-const PREFIX = "$";
 const { Webhook } = require('discord-webhook-node');
 var version = '1.4.6';
 const { MessageEmbed } = require('discord.js')
@@ -15,6 +45,7 @@ const request = require('request');
 const { METHODS } = require('snekfetch');
 const { relativeTimeRounding, invalid } = require('moment');  
 const Antiraid = require("anti-raid");
+const notmainPREFIX = "$"
 const mongoose = require('mongoose');
 const api = require("imageapi.js");
 const querystring = require('querystring')
@@ -31,39 +62,10 @@ const trainData  = require('./src/training-data')
 const serializer = require('./src/serialize')
 */
 
-    
 
 
 const token = "🤣🤣🤣 you really thought you could grab my token lmaooooooooooooooooooooooooo";
 
-
-(async () => {
-    mongoose.connect(process.env.mongodioasdju90u31u209pjd0a9upfjc, { // <- not real database credentials, its a variable
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    }).then(() => console.log('Connected to database! ✅'));
-})();
-
-    client.on('ready', () => {
-        console.log("Bot online! Connected as " + client.user.tag + "✅")
-        eval(client)
-    })
-    
-// databases
-    const bled = require('./database/bled')
-    const tags = require('./database/tags')
-    const databasebanneds = require('./database/banned');
-    const punishments = require('./database/punishments');
-    const secureverify = require('./database/secureverify');
-    const botlockdown = require('./database/botlockdown');
-    const auditconfig = require('./database/auditconfig');
-    const react = require ('./database/reactions');
-    const { error } = require('console');
-    const { REPL_MODE_STRICT } = require('repl');
-    const reactions = require('./database/reactions');
-// end
-
-    
 client.on(`guildMemberAdd`, async (member) => {      
 
     var smallermemberidpart1 = member.id
@@ -91,7 +93,17 @@ client.on(`guildMemberAdd`, async (member) => {
   
   
  client.on('message', async (msg) => {
-    if(!msg.content.startsWith(PREFIX)) return;
+    const prefixdata = await prefix.findOne({
+        GuildID: msg.guild.id
+    });
+    if(prefixdata) {
+        const mainprefix = prefixdata.Prefix;
+        if(!msg.content.startsWith(mainprefix)) return;
+    } else if (!data) {
+        const mainprefix = "!"
+        if(!msg.content.startsWith(mainprefix)) return;
+        msg.channel.send('stfu make a prefix using $prefix `desired prefix` first so bot works better')
+    }   
     var lockdowncheck = await botlockdown.findOne({Value: "true"});
     if(lockdowncheck !== null) return msg.channel.send('Bot was locked down.') 
     var TimeTook = Date.now() - msg.createdTimestamp; 
@@ -162,6 +174,43 @@ client.on(`guildMemberAdd`, async (member) => {
                          msg.channel.send(`$start ${starttime} ${startmessage}`)    
                          }, ms(starttime));                     
 
+
+            break;
+
+            case `prefix`:
+
+
+                const prefixdata = await prefix.findOne({
+                    GuildID: msg.guild.id
+                });
+            
+                if (!args[1]) return msg.channel.send(invalidargs);
+            
+                if (args[1].length > 5) return msg.channel.send('prefix is too long, make it shorter or stfu')
+            
+                if (prefixdata) {
+                    await prefix.findOneAndRemove({
+                        GuildID: msg.guild.id
+                    })
+                    
+                    msg.channel.send(`updated prefix to \`${args[1]}\` `);
+            
+                    let newData = new prefixModel({
+                        Prefix: args[1],
+                        GuildID: msg.guild.id
+                    })
+                    
+                    newData.save();
+                } else if (!prefixdata) {
+                    msg.channel.send(`updated prefix to \`${args[1]}\``);
+            
+                    let newData = new prefixModel({
+                        Prefix: args[0],
+                        GuildID: msg.guild.id
+                    })
+                    newData.save();
+                }
+            
 
             break;
 
@@ -1811,11 +1860,11 @@ if(reactioncheck !== null) return;
   let hook;
   client.on('message', async message => {
   
-      if (message.content.startsWith(PREFIX)) {
+      if (message.content.startsWith(notmainPREFIX)) {
         if(message.author.bot) return;
         if (!message.guild) return;
-          const args = message.content.slice(PREFIX.length).trim().split(/ +/);
-          const input = message.content.slice(PREFIX.length).trim().split(' '); 
+          const args = message.content.slice(notmainPREFIX.length).trim().split(/ +/);
+          const input = message.content.slice(notmainPREFIX.length).trim().split(' '); 
           const command = input.shift();
           const commandArgs = input.join(' ');    
        
