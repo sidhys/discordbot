@@ -97,10 +97,9 @@ client.on(`guildMemberAdd`, async (member) => {
  client.on('message', async (msg) => {
     const prefixdata = await prefix.findOne({
         GuildID: msg.guild.id
-    });
-        const mainprefix = "!"
+    })
+        const mainprefix = prefixdata.Prefix;
         if(!msg.content.startsWith(mainprefix)) return;
-        msg.channel.send('stfu make a prefix using $prefix `desired prefix` first so bot works better') 
     var lockdowncheck = await botlockdown.findOne({Value: "true"});
     if(lockdowncheck !== null) return msg.channel.send('Bot was locked down.') 
     var TimeTook = Date.now() - msg.createdTimestamp; 
