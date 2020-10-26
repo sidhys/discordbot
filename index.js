@@ -99,10 +99,8 @@ client.on(`guildMemberAdd`, async (member) => {
         GuildID: msg.guild.id
     })
     
-    if (message.content.toLowerCase().startsWith('<@!747789318831079506> prefix')) {
-
+    if (msg.content.toLowerCase().startsWith('<@!747789318831079506>')) {
         msg.channel.send(`My prefix is currently \`${prefixdata.Prefix}\` `)
-
     }
         
     
@@ -2408,7 +2406,7 @@ case `botlockdown`:
             break;
             
             case `help`:
-                msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`) ,audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$`config` `value`')
+                msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`) ,audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$`config` `value`')   
             
                 break;
         
