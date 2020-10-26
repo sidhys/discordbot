@@ -98,18 +98,13 @@ client.on(`guildMemberAdd`, async (member) => {
     const prefixdata = await prefix.findOne({
         GuildID: msg.guild.id
     });
-    if(prefixdata) {
-        const mainprefix = prefixdata.Prefix;
-        if(!msg.content.startsWith(mainprefix)) return;
-    } else if (!prefixdata) {
-        const mainprefix = "!"
+        const mainprefix = "$"
         if(!msg.content.startsWith(mainprefix)) return;
         msg.channel.send('stfu make a prefix using $prefix `desired prefix` first so bot works better')
-    }   
     var lockdowncheck = await botlockdown.findOne({Value: "true"});
     if(lockdowncheck !== null) return msg.channel.send('Bot was locked down.') 
     var TimeTook = Date.now() - msg.createdTimestamp; 
-        let args = msg.content.substring(mainprefix.length).split(" ")  
+        let args = msg.content.substring(mainprefix.length).split(" ")      
         if (!msg.guild) return; 
         const delay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
         if (msg.member.roles.cache.some(r => r.id === "762698399027822643")) msg.react('😉');
