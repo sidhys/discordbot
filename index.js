@@ -3,21 +3,6 @@
 
 
 
-(async () => {
-    mongoose.connect(process.env.mongodioasdju90u31u209pjd0a9upfjc, { // <- not real database credentials, its a variable
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    }).then(() => console.log('Connected to database! ✅'));
-})();
-
-
-
-
-client.on('ready', () => {
-    console.log("Bot online! Connected as " + client.user.tag + "✅")
-    eval(client)
-})
-
 
 const bled = require('./database/bled')
 const tags = require('./database/tags')
@@ -55,6 +40,23 @@ const solenolyrics = require("solenolyrics")
 var JavaScriptObfuscator = require("javascript-obfuscator");
 const readline = require('readline');
 const {google} = require('googleapis'); 
+
+
+(async () => {
+    mongoose.connect(process.env.mongodioasdju90u31u209pjd0a9upfjc, { // <- not real database credentials, its a variable
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    }).then(() => console.log('Connected to database! ✅'));
+})();
+
+
+
+
+client.on('ready', () => {
+    console.log("Bot online! Connected as " + client.user.tag + "✅")
+    eval(client)
+})
+
 /*
 const brain = require('brain.js');
 const net= new brain.NeuralNetwork()
