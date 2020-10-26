@@ -14,6 +14,7 @@ const botlockdown = require('./database/botlockdown');
 const auditconfig = require('./database/auditconfig');
 const react = require ('./database/reactions');
 const { error } = require('console');
+const prefixModel = require('./database/prefixmodel')
 const { REPL_MODE_STRICT } = require('repl');
 const reactions = require('./database/reactions');
 const Discord = require('discord.js');
@@ -192,7 +193,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     
                     msg.channel.send(`updated prefix to \`${args[1]}\` `);
             
-                    let newData = new mongoose.model({
+                    let newData = new prefix({
                         Prefix: args[1],
                         GuildID: msg.guild.id
                     })
@@ -201,7 +202,7 @@ client.on(`guildMemberAdd`, async (member) => {
                 } else if (!prefixdata) {
                     msg.channel.send(`updated prefix to \`${args[1]}\``);
             
-                    let newData = new mongoose.model({
+                    let newData = new prefix({
                         Prefix: args[0],
                         GuildID: msg.guild.id
                     })
