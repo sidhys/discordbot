@@ -14,7 +14,6 @@ const botlockdown = require('./database/botlockdown');
 const auditconfig = require('./database/auditconfig');
 const react = require ('./database/reactions');
 const { error } = require('console');
-const prefixModel = require('./database/prefixmodel')
 const { REPL_MODE_STRICT } = require('repl');
 const reactions = require('./database/reactions');
 const Discord = require('discord.js');
