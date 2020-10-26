@@ -101,7 +101,7 @@ client.on(`guildMemberAdd`, async (member) => {
     if(prefixdata) {
         const mainprefix = prefixdata.Prefix;
         if(!msg.content.startsWith(mainprefix)) return;
-    } else if (!data) {
+    } else if (!prefixdata) {
         const mainprefix = "!"
         if(!msg.content.startsWith(mainprefix)) return;
         msg.channel.send('stfu make a prefix using $prefix `desired prefix` first so bot works better')
