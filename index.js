@@ -98,6 +98,14 @@ client.on(`guildMemberAdd`, async (member) => {
     const prefixdata = await prefix.findOne({
         GuildID: msg.guild.id
     })
+    
+    if (message.content.toLowerCase().startsWith('<@!747789318831079506> prefix')) {
+
+        msg.channel.send(`My prefix is currently \`${prefixdata.Prefix}\` `)
+
+    }
+        
+    
         const mainprefix = prefixdata.Prefix;
         if(!msg.content.startsWith(mainprefix)) return;
     var lockdowncheck = await botlockdown.findOne({Value: "true"});
@@ -173,42 +181,7 @@ client.on(`guildMemberAdd`, async (member) => {
 
             break;
 
-            case `prefix`:
-
-
-                const prefixdata = await prefix.findOne({
-                    GuildID: msg.guild.id
-                });
-            
-                if (!args[1]) return msg.channel.send(invalidargs);
-            
-                if (args[1].length > 5) return msg.channel.send('prefix is too long, make it shorter or stfu')
-            
-                if (prefixdata) {
-                    await prefix.findOneAndRemove({
-                        GuildID: msg.guild.id
-                    })
-                    
-                    msg.channel.send(`updated prefix to \`${args[1]}\` `);
-            
-                    let newData = new prefix({
-                        Prefix: args[1],
-                        GuildID: msg.guild.id
-                    })
-                    
-                    newData.save();
-                } else if (!prefixdata) {
-                    msg.channel.send(`updated prefix to \`${args[1]}\``);
-            
-                    let newData = new prefix({
-                        Prefix: args[0],
-                        GuildID: msg.guild.id
-                    })
-                    newData.save();
-                }
-            
-
-            break;
+       
 
             case `obfuscate`:
                                 
@@ -1308,7 +1281,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const adminhelp = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `start, hackban, unban, lockdown on, urban, lyrics, lockdown off, auth, verify, obfuscatefile,  ping, 8ball, info, clear, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, obfuscate, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, reddit, yes, stfu, poll, webhookset, webhooksend `)
+                    .addField(`Commands available for user:`, `start, prefix, hackban, unban, lockdown on, urban, lyrics, lockdown off, auth, verify, obfuscatefile,  ping, 8ball, info, clear, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, obfuscate, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, reddit, yes, stfu, poll, webhookset, webhooksend `)
                     .setTimestamp();
                     return msg.channel.send(adminhelp);
 
@@ -1390,7 +1363,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const adminhelp1 = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `start, unban, hackban, urban, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
+                    .addField(`Commands available for user:`, `start, prefix, unban, hackban, urban, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
                     .setTimestamp();
                     return msg.channel.send(adminhelp1);
 
@@ -2230,6 +2203,43 @@ client.on('message', async (msg) => {
 
        switch (args[0]) {           
 
+        case `prefix`:
+
+        
+            const prefixdata = await prefix.findOne({
+                GuildID: msg.guild.id
+            });
+        
+            if (!args[1]) return msg.channel.send(invalidargs);
+        
+            if (args[1].length > 5) return msg.channel.send('prefix is too long, make it shorter or stfu')
+        
+            if (prefixdata) {
+                await prefix.findOneAndRemove({
+                    GuildID: msg.guild.id
+                })
+                
+                msg.channel.send(`updated prefix to \`${args[1]}\` `);
+        
+                let newData = new prefix({
+                    Prefix: args[1],
+                    GuildID: msg.guild.id
+                })
+                
+                newData.save();
+            } else if (!prefixdata) {
+                msg.channel.send(`updated prefix to \`${args[1]}\``);
+        
+                let newData = new prefix({
+                    Prefix: args[0],
+                    GuildID: msg.guild.id
+                })
+                newData.save();
+            }
+        
+
+        break;
+
 case `botlockdown`:
 
         if(args[1] === "true") {
@@ -2290,13 +2300,53 @@ case `botlockdown`:
 
     case `help`:
 
-    msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$<config> <value>')
+    msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`) ,audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$`config` `value`')
 
     break;
 }
        } else if(msg.author.id === configwhitelistedid2) {
            
-       switch (args[0]) {           
+       switch (args[0]) {       
+           
+        case `prefix`:
+
+        
+            const prefixdata = await prefix.findOne({
+                GuildID: msg.guild.id
+            });
+        
+            if (!args[1]) return msg.channel.send(invalidargs);
+        
+            if (args[1].length > 5) return msg.channel.send('prefix is too long, make it shorter or stfu')
+        
+            if (prefixdata) {
+                await prefix.findOneAndRemove({
+                    GuildID: msg.guild.id
+                })
+                
+                msg.channel.send(`updated prefix to \`${args[1]}\` `);
+        
+                let newData = new prefix({
+                    Prefix: args[1],
+                    GuildID: msg.guild.id
+                })
+                
+                newData.save();
+            } else if (!prefixdata) {
+                msg.channel.send(`updated prefix to \`${args[1]}\``);
+        
+                let newData = new prefix({
+                    Prefix: args[0],
+                    GuildID: msg.guild.id
+                })
+                newData.save();
+            }
+        
+
+
+
+
+        break;
 
         case `botlockdown`:
         
@@ -2358,7 +2408,7 @@ case `botlockdown`:
             break;
             
             case `help`:
-                msg.channel.send('Available configurations: botlockdown (`true` or `false`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$<config> <value>')
+                msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`) ,audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run config$`config` `value`')
             
                 break;
         
