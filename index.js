@@ -2278,8 +2278,6 @@ client.on('message', async (msg) => {
         
             if (!args[1]) return msg.channel.send(invalidargs);
         
-            if (args[1].length > 5) return msg.channel.send('prefix is too long, make it shorter or stfu')
-        
             if (prefixdata) {
                 await prefix.findOneAndRemove({
                     GuildID: msg.guild.id
