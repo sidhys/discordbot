@@ -1270,6 +1270,81 @@ client.on(`guildMemberAdd`, async (member) => {
             msg.reply(`Result - **${acosresult}**`)
 
 
+            break; 
+            
+            case `goat`:
+
+            if(!args[1]) {
+               return msg.channel.send(invalidargs)
+            } else if(!args[2]) {
+                return msg.channel.send(invalidargs)
+            } else {
+               
+            }
+
+            const baseurl = process.env.baseurl;
+            let goatquery = args.slice(1).join(" ");
+            let goatbody = `{"params":"distinct=true&facetFilters=()&hitsPerPage=1&page=0&query=${goatquery}"}`
+            let goatresp = await axios.post(baseurl, goatbody);
+
+            if(error) {
+                console.log('Error')
+                console.log(error)
+            } else if (!error) {
+
+
+            }
+            let goatresp2 = goatresp.data['hits'][0];
+            if (goatresp2 == null) {
+                const goaterror = new Discord.MessageEmbed()
+                .setTitle('Bot')
+                .setDescription('Product was most likely not found on Goat. Please try again later.')
+                .setTimestamp();
+               return msg.channel.send(goaterror);
+            }
+    
+            let DropDate = new Date(goatresp2['release_date'])
+
+            const goatsuceess = new Discord.MessageEmbed()
+            .setTitle(goatresp2['name'])
+            .setURL('https://www.goat.com/sneakers/' + goatresp2['slug'])
+            .addFields(
+                {
+                    name: 'Brand',
+                    value:  goatresp2['brand_name'],
+                    inline: true
+                },       
+                {
+                    name: "Drop Date",
+                    value: `${DropDate.getFullYear()}-${DropDate.getMonth()}-${DropDate.getDate()}`,
+                    inline: true
+                },
+                {
+                
+                    name: `Size`,
+                    value: goatresp2['size'],
+                    inline: true
+                },
+                {
+                    name : `Retail`,
+                    value: `(goatresp2['retail_price_cents_usd']/100).toFixed(2)`,
+                    inline: true
+                },
+                {
+                    name: ``,
+                    value: `(goatresp2['lowest_price_cents_usd']/100).toFixed(2)`,
+                    inline: true
+                }
+                )
+
+            
+           if (goatresp2['has_picture']) {
+           goatsuceess.setThumbnail(goatresp2['main_picture_url'])
+         }
+
+           goatsuceess.setTimestamp();    
+            msg.channel.send(goatsuceess);
+
             break;
 
             case `help`:
@@ -1279,7 +1354,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const adminhelp = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `start, hackban, unban, lockdown on, urban, lyrics, lockdown off, auth, verify, obfuscatefile,  ping, 8ball, info, clear, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, obfuscate, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, reddit, yes, stfu, poll, webhookset, webhooksend `)
+                    .addField(`Commands available for user:`, `start, hackban, goat, unban, lockdown on, urban, lyrics, lockdown off, auth, verify, obfuscatefile,  ping, 8ball, info, clear, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, obfuscate, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, reddit, yes, stfu, poll, webhookset, webhooksend `)
                     .setTimestamp();
                     return msg.channel.send(adminhelp);
 
@@ -1288,7 +1363,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const andyhelp = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `auth, verify, ping, urban, lyrics, 8ball, info, fixname, avatar, mute, obfuscatefile,  unmute, nick, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, reddit, tag, getsrc, yes, stfu, poll`)
+                    .addField(`Commands available for user:`, `auth, verify, ping, goat, urban, lyrics, 8ball, info, fixname, avatar, mute, obfuscatefile,  unmute, nick, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, reddit, tag, getsrc, yes, stfu, poll`)
                     .setTimestamp();
                     return msg.channel.send(andyhelp)
                     
@@ -1298,7 +1373,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const viphelp = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `auth, verify, ping, 8ball,urban, lyrics, info, fixname, avatar, mute, obfuscatefile,  unmute, nick, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, reddit, getsrc, tag, yes, stfu, poll`)
+                    .addField(`Commands available for user:`, `auth, verify, ping, 8ball, goat, urban, lyrics, info, fixname, avatar, mute, obfuscatefile,  unmute, nick, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, reddit, getsrc, tag, yes, stfu, poll`)
                     .setTimestamp();
                     return msg.channel.send(viphelp)
                     
@@ -1307,7 +1382,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const helpEmbed = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `verify, ping, 8ball, urban, lyrics, info, avatar, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, tag, reddit, yes, stfu, getsrc,  poll`)
+                    .addField(`Commands available for user:`, `verify, ping, 8ball, urban, goat, lyrics, info, avatar, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, tag, reddit, yes, stfu, getsrc,  poll`)
                     .setTimestamp();
         
                     msg.channel.send(helpEmbed)
@@ -1361,7 +1436,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const adminhelp1 = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `start, unban, hackban, urban, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
+                    .addField(`Commands available for user:`, `start, unban, hackban, urban, goat, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
                     .setTimestamp();
                     return msg.channel.send(adminhelp1);
 
@@ -1370,7 +1445,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const andyhelp2 = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `auth, urban, lyrics,  verify, ping, obfuscate, 8ball, info, fixname, getsrc, avatar, obfuscatefile, mute, unmute, nick, pt, reddit, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, resource, changelog, addtag, tag, yes, stfu, poll`)
+                    .addField(`Commands available for user:`, `auth, urban, lyrics, verify, ping, goat, obfuscate, 8ball, info, fixname, getsrc, avatar, obfuscatefile, mute, unmute, nick, pt, reddit, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, resource, changelog, addtag, tag, yes, stfu, poll`)
                     .setTimestamp();
                     return msg.channel.send(andyhelp2)
                     
@@ -1380,7 +1455,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const viphelp3 = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `auth, urban, lyrics,  verify, ping, obfuscate, 8ball, info, obfuscatefile, getsrc, fixname, avatar, mute, unmute, nick, pt, userinfo, reddit, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, resource, changelog, addtag, tag,
+                    .addField(`Commands available for user:`, `auth, urban, lyrics,  verify, ping, goat, obfuscate, 8ball, info, obfuscatefile, getsrc, fixname, avatar, mute, unmute, nick, pt, userinfo, reddit, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, resource, changelog, addtag, tag,
                     , yes, stfu, poll`)
                     .setTimestamp();
                     return msg.channel.send(viphelp3)
@@ -1390,7 +1465,7 @@ client.on(`guildMemberAdd`, async (member) => {
                     const helpEmbed4 = new Discord.MessageEmbed()
                     .setTitle(`Bot`)
                     .setColor('BLUE')
-                    .addField(`Commands available for user:`, `verify, ping, urban, lyrics, 8ball, info, avatar, pt, userinfo, corona, meme, img, timer, sin, pi, getsrc, power, sqrt, acos, help, return, resource, changelog, addtag, tag, yes, stfu, poll`)
+                    .addField(`Commands available for user:`, `verify, ping, urban, lyrics, 8ball, info, goat, avatar, pt, userinfo, corona, meme, img, timer, sin, pi, getsrc, power, sqrt, acos, help, return, resource, changelog, addtag, tag, yes, stfu, poll`)
                     .setTimestamp();
         
                     msg.channel.send(helpEmbed4)
