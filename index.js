@@ -1282,11 +1282,11 @@ client.on(`guildMemberAdd`, async (member) => {
             let goatquery = args.slice(1).join(" ");
             let goatbody = `{"params":"distinct=true&facetFilters=()&hitsPerPage=1&page=0&query=${goatquery}"}`
             let goatresp = await axios.post(baseurl, goatbody);
-
-            if(error) {
+            if (goatresp.status !== 200 || resp.data === '') {
                 console.log('Error')
+                msg.channel.send('error')
                 console.log(error)
-            } 
+        }
             let goatresp2 = goatresp.data['hits'][0];
             if (goatresp2 == null) {
                 const goaterror = new Discord.MessageEmbed()
