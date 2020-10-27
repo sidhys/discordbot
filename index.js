@@ -1276,10 +1276,6 @@ client.on(`guildMemberAdd`, async (member) => {
 
             if(!args[1]) {
                return msg.channel.send(invalidargs)
-            } else if(!args[2]) {
-                return msg.channel.send(invalidargs)
-            } else {
-               
             }
 
             const baseurl = process.env.baseurl;
@@ -1290,15 +1286,12 @@ client.on(`guildMemberAdd`, async (member) => {
             if(error) {
                 console.log('Error')
                 console.log(error)
-            } else if (!error) {
-
-
-            }
+            } 
             let goatresp2 = goatresp.data['hits'][0];
             if (goatresp2 == null) {
                 const goaterror = new Discord.MessageEmbed()
                 .setTitle('Bot')
-                .setDescription('Product was most likely not found on Goat. Please try again later.')
+                .setDescription('Error')
                 .setTimestamp();
                return msg.channel.send(goaterror);
             }
@@ -1309,7 +1302,7 @@ client.on(`guildMemberAdd`, async (member) => {
             .setTitle(goatresp2['name'])
             .setURL('https://www.goat.com/sneakers/' + goatresp2['slug'])
             .addFields(
-                {
+                {   
                     name: 'Brand',
                     value:  goatresp2['brand_name'],
                     inline: true
