@@ -2151,10 +2151,12 @@ client.on('guildMemberRemove', async member => {
 	const fetchedLogs = await member.guild.fetchAuditLogs({
 		limit: 1,
 		type: 'MEMBER_KICK',
-	});
+    });
+    if(!member.guild.id === '708842168588042260') return
 	const kickLog = fetchedLogs.entries.first();
 
-	if (!kickLog) return client.channels.cache.get('714822326016933900').send(`${member.user.tag} left the server.`);
+    if (!kickLog) return client.channels.cache.get('714822326016933900').send(`${member.user.tag} left the server.`);
+    
 
 	const { executor, target } = kickLog;
 
@@ -2172,7 +2174,8 @@ client.on('guildBanAdd', async (guild, user) => {
 	const fetchedLogs = await guild.fetchAuditLogs({
 		limit: 1,
 		type: 'MEMBER_BAN_ADD',
-	});
+    });
+    if(!member.guild.id === '708842168588042260') return
 	const banLog = fetchedLogs.entries.first();
 
     if (!banLog) return client.channels.cache.get('714822326016933900').send(`${user.tag} was banned from this server, but failed to find more information.`);
