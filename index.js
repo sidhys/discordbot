@@ -1645,7 +1645,7 @@ client.on(`guildMemberAdd`, async (member) => {
 
             let reloadvar = args.slice(1).join(" ");
             if (msg.author.id !== "736285953039138817") return false;
-            // reloads entire bot because why not
+            // reloads entire bot because why not           
             client.destroy();
             await delay(1000)
             client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
@@ -2272,7 +2272,7 @@ client.on('message', async (msg) => {
 
 
 
-const configprefix = "config!";
+const configprefix = "s!";
 
 client.on('message', async (msg) => {
        let args = msg.content.substring(configprefix.length).split(" ");
@@ -2379,7 +2379,7 @@ client.on('message', async (msg) => {
 
     case `help`:
 
-  msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`) ,audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `config!<configuration to change> <arguments>`');
+  msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `<prefix><configuration to change> <arguments>`');
 
     break;
 }
@@ -2487,7 +2487,7 @@ client.on('message', async (msg) => {
             break;
             
             case `help`:
-                msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`) ,audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `config!<configuration to change> <arguments>`')   
+                msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `config!<configuration to change> <arguments>`')   
             
                 break;
         
