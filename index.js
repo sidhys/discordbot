@@ -1848,7 +1848,7 @@ client.on('message', message => {
          
           if (command === 'webhookset') {
               
-            if(!args[1]) return msg.channel.send('usage: `<prefix> <discord webhook link>`')
+            if(!args[1]) return message.channel.send('usage: `<prefix> <discord webhook link>`')
               if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send('no')
   
                webhookthing = args[1];
@@ -1861,8 +1861,8 @@ client.on('message', message => {
     
             } else if (command === 'webhooksend') {
   
-                if(!args[1]) return msg.channel.send('usage: `<prefix> <amount of times to send message> <message>`')
-                if(!args[2]) return msg.channel.send('usage: `<prefix> <amount of times to send message> <message>`')
+                if(!args[1]) return message.channel.send('usage: `<prefix> <amount of times to send message> <message>`')
+                if(!args[2]) return message.channel.send('usage: `<prefix> <amount of times to send message> <message>`')
               if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send('no')
   
               if(!hook) return message.channel.send('Set a webhook first.')
