@@ -1848,7 +1848,7 @@ client.on('message', message => {
   
                webhookthing = args[1];
   
-              if(!webhookthing.toLowerCase().includes('https://discordapp.com/api/webhooks/')) return message.channel.send('Please use a discord webhook link.'); 
+              if(!webhookthing.toLowerCase().includes('com/api/webhooks/')) return message.channel.send('Please use a discord webhook link.'); 
   
                  hook = new Webhook(`${args[1]}`)
             
