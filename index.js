@@ -1828,296 +1828,297 @@ client.on('message', message => {
     })
 
 
+
+
+
+    let hook;
+    client.on('message', async message => {
     
-      const addReactions = (message) => {
+        if (message.content.startsWith(notmainPREFIX)) {
+          if(message.author.bot) return;
+          if (!message.guild) return;
+            const args = message.content.slice(notmainPREFIX.length).trim().split(/ +/);
+            const input = message.content.slice(notmainPREFIX.length).trim().split(' '); 
+            const command = input.shift();
+            const commandArgs = input.join(' ');    
+         
+          if (command === 'webhookset') {
+              
+              if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send('no')
+  
+               webhookthing = args[1];
+  
+              if(!webhookthing.toLowerCase().includes('https://discordapp.com/api/webhooks/')) return message.channel.send('Please use a discord webhook link.'); 
+  
+                 hook = new Webhook(`${args[1]}`)
+            
+                message.channel.send(`Set webhook to the url, ${message.author}.`); 
+    
+            } else if (command === 'webhooksend') {
+  
+              if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send('no')
+  
+              if(!hook) return message.channel.send('Set a webhook first.')
+                
+         wbhvar = args.slice(1).join(' ')
+    
+          hook.send(`${wbhvar}`)
+    
+          message.channel.send(`Sent message through the webhook, ${message.author}`)
+    
+          }  
+          
+    
+        }
+    });
+
+  
+    
+    const addReactions = (message) => {
         message.react('🇸')
         message.react('🇹')
         message.react('🇫')
         message.react('🇺')
 
         setTimeout(() => {
-          message.react('🇹')
+        message.react('🇹')
         }, 750) 
-       }
+    }
     
-      client.on('message', async (message) => {
-       if (message.content.toLowerCase() === '$stfu') {
+    client.on('message', async (message) => {
+    if (message.content.toLowerCase() === '$stfu') {
         if (!message.guild) return;
         
 var reactioncheck = await reactions.findOne({Value: "true"});
 if(reactioncheck !== null) return; 
-          await message.delete()
-          const fetched = await message.channel.messages.fetch({ limit: 1 })
-          if (fetched && fetched.first()) {
+        await message.delete()
+        const fetched = await message.channel.messages.fetch({ limit: 1 })
+        if (fetched && fetched.first()) {
             addReactions(fetched.first())
-          }
         }
-      })
+        }
+    })
 
 
 
-      
-      const addReactionss = (message) => {
+    
+    const addReactionss = (message) => {
         message.react('🇾')
         message.react('🇪')
-          setTimeout(() => {
-          message.react('🇸')
-        }, 750) 
-       }
-    
-
-       client.on('message', async (message) => {
-        if (message.content.toLowerCase() === '$yes') {
-         if (!message.guild) return;
-         
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-           await message.delete()
-           const fetched = await message.channel.messages.fetch({ limit: 1 })
-           if (fetched && fetched.first()) {
-             addReactionss(fetched.first())
-           }
-         }
-       })
- 
-
-
-      const addReaction = (message) => {
-        message.react('👍')
         setTimeout(() => {
-          message.react('👎')
-        }, 750)
-      }
+        message.react('🇸')
+        }, 750) 
+    }
     
-      client.on('message', async (message) => {
-       if (message.content.toLowerCase() === '$poll') {
-           
+
+    client.on('message', async (message) => {
+        if (message.content.toLowerCase() === '$yes') {
+        if (!message.guild) return;
+        
 var reactioncheck = await reactions.findOne({Value: "true"});
 if(reactioncheck !== null) return; 
-        if (!message.guild) return;
-          await message.delete()
-          const fetched = await message.channel.messages.fetch({ limit: 1 })
-          if (fetched && fetched.first()) {
-            addReaction(fetched.first())
-          }
+        await message.delete()
+        const fetched = await message.channel.messages.fetch({ limit: 1 })
+        if (fetched && fetched.first()) {
+            addReactionss(fetched.first())
         }
-      })
+        }
+    })
 
 
-  let hook;
-  client.on('message', async message => {
-  
-      if (message.content.startsWith(notmainPREFIX)) {
-        if(message.author.bot) return;
-        if (!message.guild) return;
-          const args = message.content.slice(notmainPREFIX.length).trim().split(/ +/);
-          const input = message.content.slice(notmainPREFIX.length).trim().split(' '); 
-          const command = input.shift();
-          const commandArgs = input.join(' ');    
-       
-        if (command === 'webhookset') {
-            
-            if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send('no')
 
-             webhookthing = args[1];
-
-            if(!webhookthing.toLowerCase().includes('https://discordapp.com/api/webhooks/')) return message.channel.send('Please use a discord webhook link.'); 
-
-               hook = new Webhook(`${args[1]}`)
-          
-              message.channel.send(`Set webhook to the url, ${message.author}.`); 
-  
-          } else if (command === 'webhooksend') {
-
-            if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send('no')
-
-            if(!hook) return message.channel.send('Set a webhook first.')
-              
-       wbhvar = args.slice(1).join(' ')
-  
-        hook.send(`${wbhvar}`)
-  
-        message.channel.send(`Sent message through the webhook, ${message.author}`)
-  
-        }  
-        
-  
-      }
-  });
-  
-
-
-  const addReactionsss = (message) => {
-    message.react('6️⃣')
+  const addReaction = (message) => {
+    message.react('👍')
     setTimeout(() => {
-      message.react('9️⃣')
-    }, 750) 
-   }
+      message.react('👎')
+    }, 750)
+  }
 
   client.on('message', async (message) => {
-   if (message.content.toLowerCase().includes('nice')) {    
-    if (!message.guild) return;
-    
+   if (message.content.toLowerCase() === '$poll') {
+       
 var reactioncheck = await reactions.findOne({Value: "true"});
 if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
+    if (!message.guild) return;
+      await message.delete()
       const fetched = await message.channel.messages.fetch({ limit: 1 })
       if (fetched && fetched.first()) {
-        addReactionsss(fetched.first())
+        addReaction(fetched.first())
       }
     }
-}
   })
 
-  client.on('message', async (message) => {
-    if (!message.guild) return;
-    var reactioncheck = await reactions.findOne({Value: "true"});
-    if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
-        if (message.content.toLowerCase().includes('goat')) {
-            return message.react('🐐')
-    }
-}})
+
+
+const addReactionsss = (message) => {
+message.react('6️⃣')
+setTimeout(() => {
+  message.react('9️⃣')
+}, 750) 
+}
 
 client.on('message', async (message) => {
-    if (!message.guild) return;
-    
+if (message.content.toLowerCase().includes('nice')) {    
+if (!message.guild) return;
+
 var reactioncheck = await reactions.findOne({Value: "true"});
 if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
-        if (message.content.toLowerCase().includes('oof')) {
-            return message.react('💀')
-    }   
-}})
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") { 
-    if (message.content.toLowerCase().includes('dead')) {
-   return message.react('💀')
-    }
-}})
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
-    if (message.content.toLowerCase().includes('100')) {
-    return message.react('💯')
-    }
-}})
-
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
-    if (message.content.toLowerCase().includes('nerd')) {
-   return message.react('🤓')
-    }
-}})
-
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
-    if (message.content.toLowerCase().includes('hot')) {
-    return message.react('🥵')
-    }
-}})
-
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
-    if (message.content.toLowerCase().includes('bot')) {
-    return message.react('🤖')
-    }
-}})
-   
-
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
-    if (message.content.toLowerCase().includes('ok')) {
-    return message.react('👌')
-    }
-}})
-
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
-    if (message.content.toLowerCase().includes('okay')) {
-    return message.react('👌')
-    }
-}})
-
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
-    if (message.content.toLowerCase().startsWith('k')) {
-   return message.react('👌')
-    }
-}})
-
-
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
-    if (message.content.toLowerCase().includes('corona')) {
-    message.react('😷')
-    message.react('🦠');
-    return;
-    }
-}})
-
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-    if(message.guild.id === "708842168588042260") {
-    if (message.content.toLowerCase().includes('virus')) {
-    message.react('😷')
-    message.react('🦠');
-    return;
-    }
-}})
-
-
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    if(message.guild.id === "708842168588042260") {
-    if (message.member.roles.cache.some(r => r.id === "712852530232688640")) { 
-    if (message.content.toLowerCase().includes('girl')) {
-       message.react('🤰');      
-       message.channel.send('uh oh horny allen is back!!!');
-    } 
-  } else return 
+if(message.guild.id === "708842168588042260") {
+  const fetched = await message.channel.messages.fetch({ limit: 1 })
+  if (fetched && fetched.first()) {
+    addReactionsss(fetched.first())
+  }
+}
 }
 })
 
+client.on('message', async (message) => {
+if (!message.guild) return;
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+    if (message.content.toLowerCase().includes('goat')) {
+        return message.react('🐐')
+}
+}})
 
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+    if (message.content.toLowerCase().includes('oof')) {
+        return message.react('💀')
+}   
+}})
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") { 
+if (message.content.toLowerCase().includes('dead')) {
+return message.react('💀')
+}
+}})
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('100')) {
+return message.react('💯')
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('nerd')) {
+return message.react('🤓')
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('hot')) {
+return message.react('🥵')
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('bot')) {
+return message.react('🤖')
+}
+}})
+
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('ok')) {
+return message.react('👌')
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('okay')) {
+return message.react('👌')
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().startsWith('k')) {
+return message.react('👌')
+}
+}})
+
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('corona')) {
+message.react('😷')
+message.react('🦠');
+return;
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('virus')) {
+message.react('😷')
+message.react('🦠');
+return;
+}
+}})
+
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+if(message.guild.id === "708842168588042260") {
+if (message.member.roles.cache.some(r => r.id === "712852530232688640")) { 
+if (message.content.toLowerCase().includes('girl')) {
+   message.react('🤰');      
+   message.channel.send('uh oh horny allen is back!!!');
+} 
+} else return 
+}
+})
 client.on('messageUpdate', async(oldMessage,newMessage)=>{
     var auditconfigcheck = await auditconfig.findOne({Value: "true"});
     if(auditconfigcheck !== null) return 
@@ -2147,15 +2148,6 @@ client.on('messageDelete', async(message)=>{
     channel.send(deleteembed)
 })
 
-client.on('message', async (message) => {
-    if (!message.guild) return;
-    
-var reactioncheck = await reactions.findOne({Value: "true"});
-if(reactioncheck !== null) return; 
-    if (message.member.roles.cache.some(r => r.id === "761740733732093974")) {
-       message.react('🤓');   
-       return;
-}})
 
 client.on('guildMemberRemove', async member => {
     var auditconfigcheck = await auditconfig.findOne({Value: "true"});
@@ -2272,7 +2264,7 @@ client.on('message', async (msg) => {
 
 
 
-const configprefix = "s!";
+const configprefix = "c!";
 
 client.on('message', async (msg) => {
        let args = msg.content.substring(configprefix.length).split(" ");
@@ -2379,7 +2371,7 @@ client.on('message', async (msg) => {
 
     case `help`:
 
-  msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `<prefix><configuration to change> <arguments>`');
+  msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `c!<configuration to change> <arguments>`');
 
     break;
 }
@@ -2487,7 +2479,7 @@ client.on('message', async (msg) => {
             break;
             
             case `help`:
-                msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `config!<configuration to change> <arguments>`')   
+                msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `c!<configuration to change> <arguments>`')   
             
                 break;
         
