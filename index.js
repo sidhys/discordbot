@@ -1646,7 +1646,7 @@ client.on(`guildMemberAdd`, async (member) => {
             if (msg.author.id !== "736285953039138817") return false;
             msg.channel.send('reloading...');
             client.destroy();
-            client.login(process.env.token);
+            client.login(process.env.NzQ3Nzg5MzE4ODMxMDc5NTA2.X0T_Eg.YMic4q7g-wlpZ1AlxHZ_MjS4rPA);
 
             msg.channel.send(`successfully reloaded ${reloadvar}`)
 
