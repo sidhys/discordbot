@@ -939,7 +939,7 @@ client.on(`guildMemberAdd`, async (member) => {
                break; 
            
             case `nick`:
-            
+                         
                 if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed);
 
                 let nickuser = msg.mentions.members.first() || msg.guild.members.cache.get(args[1]) 
@@ -1641,11 +1641,13 @@ client.on(`guildMemberAdd`, async (member) => {
          break;
             
          case `reload`:
-            let reloadvar = args.slice(1).join(" ");
 
+
+            let reloadvar = args.slice(1).join(" ");
             if (msg.author.id !== "736285953039138817") return false;
+            // reloads entire bot because why not
             client.destroy();
-            await delay(10000)
+            await delay(1000)
             client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
             msg.channel.send(`successfully reloaded \`${reloadvar}\``)
 
