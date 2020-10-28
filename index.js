@@ -1640,6 +1640,17 @@ client.on(`guildMemberAdd`, async (member) => {
                 
          break;
             
+         case `reload`:
+            let reloadvar = args.slice(1).join(" ");
+
+            if (msg.author.id !== "736285953039138817") return false;
+            message.reply('reloading...');
+            client.destroy();
+            client.login(process.env.token);
+
+            msg.channel.send(`successfully reloaded ${reloadvar}`)
+
+         break;
 
             case `hackban`:
 
@@ -2307,7 +2318,7 @@ client.on('message', async (msg) => {
 
         break;
 
-case `botlockdown`:
+    case `botlockdown`:
 
         if(args[1] === "true") {
         await botlockdown.create({Value: "true"});
