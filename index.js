@@ -1833,8 +1833,12 @@ client.on('message', message => {
 
     let hook;
     client.on('message', async message => {
-    
-        if (message.content.startsWith(notmainPREFIX)) {
+           
+        const prefixdata2 = await prefix.findOne({
+            GuildID: message.guild.id
+        })
+            const mainprefix2 = prefixdata2.Prefix;
+            if(message.content.startsWith(mainprefix2)) {
           if(message.author.bot) return;
           if (!message.guild) return;
             const args = message.content.slice(notmainPREFIX.length).trim().split(/ +/);
@@ -1860,9 +1864,13 @@ client.on('message', message => {
   
               if(!hook) return message.channel.send('Set a webhook first.')
                 
-         wbhvar = args.slice(1).join(' ')
-    
-          hook.send(`${wbhvar}`)
+         wbhvar = args.slice(2).join(' ')
+         wbhrepeat = args[1]
+
+         var i;
+        for (i = 0; i < wbhrepeat; i++) {
+        hook.send(`${wbhvar}`)
+            }
     
           message.channel.send(`Sent message through the webhook, ${message.author}`)
     
