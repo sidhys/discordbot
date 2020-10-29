@@ -27,7 +27,6 @@ const cheerio = require('cheerio');
 const request = require('request');
 const { METHODS } = require('snekfetch');
 const { relativeTimeRounding, invalid } = require('moment');  
-const Antiraid = require("anti-raid");
 const notmainPREFIX = "$"
 const mongoose = require('mongoose');
 const api = require("imageapi.js");
@@ -62,12 +61,10 @@ const trainData  = require('./src/training-data')
 const serializer = require('./src/serialize')
 */
 
-
-
+// protects bot against token grabbers
 const token = "🤣🤣🤣 you really thought you could grab my token lmaooooooooooooooooooooooooo";
 
 client.on(`guildMemberAdd`, async (member) => {      
-
     var smallermemberidpart1 = member.id
     var smallmembberidpart2 = smallermemberidpart1.slice(3, 7);
     const verifyembed2 = new Discord.MessageEmbed()
@@ -139,12 +136,12 @@ client.on(`guildMemberAdd`, async (member) => {
 
          
             function generateToken() {
-                var chars = tokens;
-                var token = '';
+                var tokencharacters = tokens;
+                var finaltoken = '';
                 for(var i = 0; i < 20; i++) {
-                    token += chars[Math.floor(Math.random() * chars.length)];
+                    finaltoken += tokencharacters[Math.floor(Math.random() * tokencharacters.length)];
                 }
-                return token;
+                return finaltoken;
             }  
     
 
@@ -314,7 +311,7 @@ client.on(`guildMemberAdd`, async (member) => {
 
                 
             break;
-*/
+        */
             case `lockdown`:
                
                 if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
@@ -994,8 +991,8 @@ client.on(`guildMemberAdd`, async (member) => {
                     .setImage(member.user.displayAvatarURL({dynamic : true}))
                     .addField("Member ID", member.id)
                     .addField('Roles', `<@&${member._roles.join('> <@&')}>`)
-                    .addField("Account Created On:", ` ${moment.utc(member.user.createdAt).format("dddd, MMMM Do YYYY")}`, true) 
-                    .addField('Joined the server At', `${joineddate}`)
+                    .addField("Account Creation Date:", ` ${moment.utc(member.user.createdAt).format("dddd, MMMM Do YYYY")}`, true) 
+                    .addField('Server Join Date', `${joineddate}`)
                     .addField("Status", status)
                 
                     msg.channel.send(userEmbed);
@@ -1142,6 +1139,7 @@ client.on(`guildMemberAdd`, async (member) => {
                         "User-Agent": "Chrome"
                     }
                 };
+
                 request(options, function(error, response, responseBody) {
                     if (error) {
                         return;
@@ -1167,14 +1165,13 @@ client.on(`guildMemberAdd`, async (member) => {
             }
 
             const imgfilter = m => m.content.startsWith('n');
-            msg.channel.awaitMessages(imgfilter, { max: 4, time: 100000, errors: ['time'] })
+            msg.channel.awaitMessages(imgfilter, { max: 4, time: 100000, errors: ['n'] })
             .then(collected => {
                 var parts = msg.content.split(" "); 
                 if (parts[0] === "n") { 
                     image(msg, parts)
                 }            
             })
-
             
            break;
 
