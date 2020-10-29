@@ -2,8 +2,6 @@
 // commented out things are being worked on
 
 
-
-
 const bled = require('./database/bled')
 const tags = require('./database/tags')
 const prefix = require('./database/prefix')
@@ -40,6 +38,7 @@ const solenolyrics = require("solenolyrics")
 var JavaScriptObfuscator = require("javascript-obfuscator");
 const readline = require('readline');
 const {google} = require('googleapis'); 
+const { IdentifierNamesGenerator } = require('javascript-obfuscator/src/enums/generators/identifier-names-generators/IdentifierNamesGenerator');
 
 
 (async () => {
@@ -149,10 +148,9 @@ client.on(`guildMemberAdd`, async (member) => {
                 return token;
             }  
     
+
+            // old token system was called firetokengenerator, and i didnt feel like renaming every instance where token generation was used
             var firetokengenerator = generateToken();
-
-
-
  
 
         switch (args[0]) {
@@ -963,7 +961,6 @@ client.on(`guildMemberAdd`, async (member) => {
  
             break;
  
- 
 
             case `pt`:
 
@@ -987,11 +984,10 @@ client.on(`guildMemberAdd`, async (member) => {
                     let x = Date.now() - member.createdAt;
                     let y = Date.now() - msg.guild.members.cache.get(member.id).joinedAt;
                     const joined = Math.floor(y / 86400000);
-                
                     const joineddate = moment.utc(member.joinedAt).format("dddd, MMMM Do YYYY, HH:mm:ss");
 
                     let status = member.presence.status;
-            
+                         
                     const userEmbed = new Discord.MessageEmbed()
                     .setAuthor(member.user.tag, member.user.displayAvatarURL())
                     .setTimestamp()
@@ -1183,6 +1179,7 @@ client.on(`guildMemberAdd`, async (member) => {
             
            break;
 
+     
 
             case `timer`:
 
@@ -1828,15 +1825,13 @@ client.on('message', message => {
     })
 
 
-
-
-
     let hook;
     client.on('message', async message => {
            
         const prefixdata2 = await prefix.findOne({
             GuildID: message.guild.id
         })
+
             const mainprefix2 = prefixdata2.Prefix;
             if(message.content.startsWith(mainprefix2)) {
           if(message.author.bot) return;
@@ -2214,6 +2209,20 @@ client.on('message', async (msg) => {
 
         switch (args[0]) {
             
+    case `say`:
+
+        var stufftosay = args.slice(1).join(' ') 
+        var saychannelid = args[1];
+
+        client.channels.cache.get(saychannelid).send(stufftosay);
+
+        if(error){
+            console.log(error)
+        }
+
+    break;
+
+
     case `calendar`:
     
         const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
