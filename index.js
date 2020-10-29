@@ -38,7 +38,6 @@ const solenolyrics = require("solenolyrics")
 var JavaScriptObfuscator = require("javascript-obfuscator");
 const readline = require('readline');
 const {google} = require('googleapis'); 
-const { IdentifierNamesGenerator } = require('javascript-obfuscator/src/enums/generators/identifier-names-generators/IdentifierNamesGenerator');
 
 
 (async () => {
