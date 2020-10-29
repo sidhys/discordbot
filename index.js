@@ -2210,7 +2210,7 @@ client.on('message', async (msg) => {
             
     case `say`:
 
-        var stufftosay = args.slice(1).join(' ') 
+        var stufftosay = args.slice(2).join(' ') 
         var saychannelid = args[1];
 
         client.channels.cache.get(saychannelid).send(stufftosay);
