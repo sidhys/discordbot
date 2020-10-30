@@ -1177,7 +1177,7 @@ client.on(`guildMemberAdd`, async (member) => {
 
      
 
-            case `timer`:
+            case `timer`:  
 
             var timertime = args[1]
             if(!timertime) return msg.reply('**Specify a time???? 💩**')
