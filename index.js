@@ -2285,8 +2285,9 @@ const configprefix = "c!";
 client.on('message', async (msg) => {
        let args = msg.content.substring(configprefix.length).split(" ");
        if(!msg.content.startsWith(configprefix)) return;
-       const configwhitelistedid = "736285953039138817" 
-       const configwhitelistedid2 = "363843784842280960" 
+       const configwhitelistedid = "736285953039138817";
+       const configwhitelistedid2 = "363843784842280960";
+       const configwhitelistedid3 = '696379479433674834';
        if(msg.author.id === configwhitelistedid) {
 
 
@@ -2501,7 +2502,117 @@ client.on('message', async (msg) => {
         
         }
 
-       } else return;
+       } else if(msg.author.id === configwhitelistedid3) {
+           
+        switch (args[0]) {       
+            
+         case `prefix`:
+ 
+         
+             const prefixdata = await prefix.findOne({
+                 GuildID: msg.guild.id
+             });
+         
+             if (!args[1]) return msg.channel.send(invalidargs);
+         
+             if (args[1].length > 5) return msg.channel.send('prefix is too long, make it shorter or stfu')
+         
+             if (prefixdata) {
+                 await prefix.findOneAndRemove({
+                     GuildID: msg.guild.id
+                 })
+                 
+                 msg.channel.send(`updated prefix to \`${args[1]}\` `);
+         
+                 let newData = new prefix({
+                     Prefix: args[1],
+                     GuildID: msg.guild.id
+                 })
+                 
+                 newData.save();
+             } else if (!prefixdata) {
+                 msg.channel.send(`updated prefix to \`${args[1]}\``);
+         
+                 let newData = new prefix({
+                     Prefix: args[0],
+                     GuildID: msg.guild.id
+                 })
+                 newData.save();
+             }
+         
+ 
+ 
+ 
+ 
+         break;
+ 
+         case `botlockdown`:
+         
+                 if(args[1] === "true") {
+                 await botlockdown.create({Value: "true"});
+                 msg.channel.send('set lockdown to `true`')
+                 } else if(args[1] === "false") {                        
+              var botlockdownremoverequest = await botlockdown.findOne({Value: "true"});
+              if(botlockdownremoverequest !== null) botlockdownremoverequest.deleteOne();
+              msg.channel.send('set lockdown to `false`')
+                 }
+         
+             break;
+             
+     case `reactions`:
+         
+         if(args[1] === "false") {
+             await reactions.create({Value: "true"});
+             msg.channel.send('set reactions to `false`')
+             } else if(args[1] === "true") {                        
+          var reactionsreqeust = await reactions.findOne({Value: "true"});
+          if(reactionsreqeust !== null) reactionsreqeust.deleteOne();
+          msg.channel.send('set reactions to `true`')
+             }
+ 
+         break;
+      
+          
+             case `setstatus`:
+                 
+                 if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+ 
+                 if(!args[1]) return msg.channel.send(invalidargs)
+                 if(!args[2]) return msg.channel.send(invalidargs)
+ 
+                 var statustype = args[1]
+                 var statusmessage = args.slice(2).join(' ') 
+          
+                 client.user.setActivity(statusmessage, {
+                     type: statustype
+                    });
+             
+                    msg.channel.send(`set statustype to \`${statustype}\` and statusmessage to \`${statusmessage}\``)
+             
+ 
+             break;
+         
+             case `audit`:
+         
+                 if(args[1] === "false") {
+                 await auditconfig.create({Value: "false"});
+                 msg.channel.send('set auditconfig to: `false`')
+                 } else if(args[1] === "true") {                        
+              var auditconfigrequest = await auditconfig.findOne({Value: "false"});
+              if(auditconfigrequest !== null) auditconfigrequest.deleteOne();
+              msg.channel.send('set auditconfig to: `true`')
+                 }
+         
+             break;
+             
+             case `help`:
+                 msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `c!<configuration to change> <arguments>`')   
+             
+                 break;
+         
+         }
+ 
+        } else return;
 })
 
 
