@@ -1,1 +1,2626 @@
-const _0x3b93=['ping','prefix\x20is\x20too\x20long,\x20make\x20it\x20shorter\x20or\x20stfu','okay','getMonth','goat','712852530232688640','check\x20dms','baseurl','./database/punishments','discord-webhook-node','text/html','8ball','\x20minutes\x20with\x20reason\x20','googleapis','obfuscated.txt','node-fetch','channels','findOne','env','Bot\x20Langauge','**Specify\x20a\x20time????\x20💩**','Bot','get','getlogs','say','power','Your\x20mute\x20time\x20in\x20','login','Stanton\x20AP\x20Bot','...','Could\x20not\x20find\x20data\x20on\x20***','permissions','deleteOne','set\x20auditconfig\x20to:\x20`false`','clear','Bot\x20Information','KICK_MEMBERS','https://www.goat.com/sneakers/','_roles','guildBanAdd','Bot\x20Source\x20Code','installed','resource','help','Random\x20Meme','<@!747789318831079506>','endsWith','messages','Successfully\x20changed\x20','word','$yes','floor','Error\x20finding\x20target.\x20I\x27ve\x20logged\x20error\x20information\x20to\x20console.','No\x20reason','reply','\x20posted\x20a\x20ip\x20logger.','successfully\x20reloaded\x20`','Size','toLowerCase','You\x20were\x20banned\x20from\x20','addban','webhooksend','\x20has\x20been\x20edited.','set\x20lockdown\x20to\x20`true`','Requested\x20by\x20','thumbs_down','setNickname','user','entries','add','An\x20error\x20occurred:\x20**','nerd','util','>\x20edited\x20in\x20<#','mongodioasdju90u31u209pjd0a9upfjc','Available\x20configurations:\x20botlockdown\x20(`true`\x20or\x20`false`),\x20prefix\x20(`value`),\x20audit\x20(`true`\x20or\x20`false`),\x20reactions\x20(`true`\x20or\x20`false`),\x20setstatus\x20(`TYPE`\x20`value`).\x20To\x20change\x20a\x20configuration,\x20run\x20`c!<configuration\x20to\x20change>\x20<arguments>`','Un\x20VC\x20Ban','Message\x20Deleted','off','.image\x20a.link','My\x20prefix\x20is\x20currently\x20`','Rating','attachments','getDate','BAN_MEMBERS','\x20was\x20banned\x20by\x20','requestAuthorFor','Online','Successfully\x20un-muted\x20','dead','After','webhookset','**\x20','message','Neural\x20networks','\x20was\x20banned\x20from\x20this\x20server,\x20but\x20failed\x20to\x20find\x20more\x20information.','shut\x20up','761623315835912232','utc','exc','https://cdn.discordapp.com/attachments/769349624514871296/769626561019117568/beamed.mp4','corona','setAuthor','OAuth2','Bot\x20online!\x20Connected\x20as\x20','setColor','\x27s\x20punishmentss\x20-\x20','getFullYear','readline','VC\x20Banned','736285953039138817','channel','No\x20results\x20were\x20found\x20for\x20**','meme','roles','substring','sqrt','remove','Muted','obfuscatefile','audit','cheerio','\x20👎.','find','\x20made\x20a\x20request\x20to\x20remove\x20the\x20server\x20lockdown.','permalink','todayDeaths','Avatar','No\x20upcoming\x20events\x20found.','Removing\x20the\x20lockdown.\x20This\x20might\x20take\x20a\x20while.','didnt\x20ask\x20g','//\x20this\x20file\x20was\x20obfuscated\x20using\x20sids\x20obfuscation\x20\x0a','Error\x20while\x20obfuscating.','createdAt','Error','MANAGE_NICKNAMES','pow','acos','reactions','addFields','auth,\x20verify,\x20ping,\x208ball,\x20goat,\x20urban,\x20lyrics,\x20info,\x20fixname,\x20avatar,\x20mute,\x20obfuscatefile,\x20\x20unmute,\x20nick,\x20pt,\x20userinfo,\x20corona,\x20meme,\x20img,\x20timer,\x20sin,\x20pi,\x20power,\x20sqrt,\x20acos,\x20help,\x20return,\x20obfuscate,\x20resource,\x20changelog,\x20addtag,\x20reddit,\x20getsrc,\x20tag,\x20yes,\x20stfu,\x20poll','setImage','User\x20is\x20already\x20blacklisted.','I\x27m\x20in\x20','filter','toLocaleString','nick','Usage:\x20$resource\x20quizlet.com\x20\x22study\x20guide\x22','format','googletoken','calendar','slug','Recoveries\x20Today:','save','708842168588042260','fetch','dnd','brain.js\x20(GPU\x20accelerated)','https://catsnthings.fun','1.4.6','//\x20this\x20file\x20was\x20obfuscated\x20using\x20sids\x20obfuscation\x20\x0a\x20','`\x20and\x20statusmessage\x20to\x20`','Drop\x20Date','setActivity','fill','users','Image\x20from\x20r/','data','servers','`,\x20','bgr98hu0jwoihash98r2jofwqino','status','Maybe','parse','guild','\x20servers!','set\x20lockdown\x20to\x20`false`','unverified','fetchAuditLogs','items','JavaScript','content','Content','Message\x20Content','nice','obfuscate','Obfuscated!\x20Took\x20','displayAvatarURL','request','9️⃣','Server','join','thumbs_up','https://api.urbandictionary.com/v0/define?','start,\x20unban,\x20hackban,\x20urban,\x20goat,\x20lyrics,\x20lockdown\x20on,\x20obfuscate,\x20lockdown\x20off,\x20auth,\x20obfuscatefile,\x20verify,\x20ping,\x208ball,\x20info,\x20clear,\x20reddit,\x20fixname,\x20getlogs,\x20kick,\x20ban,\x20avatar,\x20mute,\x20unmute,\x20vcban,\x20unvcban,\x20nick,\x20pt,\x20userinfo,\x20bannedusers,\x20corona,\x20meme,\x20img,\x20timer,\x20sin,\x20pi,\x20power,\x20sqrt,\x20acos,\x20help,\x20botblacklist,\x20unbotblacklist,\x20return,\x20resource,\x20changelog,\x20addtag,\x20edittag,\x20tag,\x20getsrc,\x20addban,\x20removeban,\x20yes,\x20stfu,\x20poll,\x20webhookset,\x20webhooksend','https://i.giphy.com/YPbrUhP9Ryhgi2psz3.gif','error','This\x20server\x20has\x20','hackban','./database/auditconfig','updated\x20prefix\x20to\x20`','includes','Changelog','botlockdown','cases','bulkDelete','Offline\x20or\x20Invisible','VC\x20Ban','Probably\x20not','Brand','708844166724976700','awaitMessages','connect','Client','lockdown','Hosting','date','online','Idle','reddit','hot','member','main_picture_url','Total\x20Recovered:','Ping\x20Test','714822326016933900','slice','moment','Image','GET','Message\x20by\x20<@','destroy','unbotblacklist','unmute','started\x20timed\x20message\x20👍','javascript-obfuscator','\x20\x0a\x20','messageUpdate','setTitle','RANDOM','You\x20need\x20to\x20specify\x20something\x20you\x20want\x20to\x20search\x20the\x20urban\x20dictionary','return','Commands\x20available\x20for\x20user:','hits','**\x20for\x20`','position','Locking\x20down\x20channels.\x20This\x20might\x20take\x20a\x20while.','https://corona.lmao.ninja/v2','Definition','Internal\x20error,\x20','Result\x20-\x20**','mute','Lyrics\x20for\x20','\x20for\x20','fixname','auth,\x20urban,\x20lyrics,\x20\x20verify,\x20ping,\x20goat,\x20obfuscate,\x208ball,\x20info,\x20obfuscatefile,\x20getsrc,\x20fixname,\x20avatar,\x20mute,\x20unmute,\x20nick,\x20pt,\x20userinfo,\x20reddit,\x20corona,\x20meme,\x20img,\x20timer,\x20sin,\x20pi,\x20power,\x20sqrt,\x20acos,\x20help,\x20return,\x20resource,\x20changelog,\x20addtag,\x20tag,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20,\x20yes,\x20stfu,\x20poll','3.141592653589793','\x20made\x20a\x20request\x20to\x20lock\x20down\x20the\x20server.','set\x20reactions\x20to\x20`false`','Set\x20timer\x20for\x20','Successfully\x20kicked\x20user\x20','MessageEmbed','\x20with\x20reason\x20','joinedAt','create','Successfully\x20removed\x20','.\x20From\x20there,\x20simply\x20read\x20the\x20rules\x20and\x20do\x20$verify\x20in\x20<#714839351778869258>','Roles','\x27s\x20nickname\x20to\x20`','\x20to\x20the\x20blacklisted\x20database,\x20','Version\x20','Verified','start','Successfully\x20banned\x20user\x20','true','\x20posted\x20a\x20IP\x20logger.\x20ID\x20-\x20','Successfully\x20muted\x20user\x20','\x20from\x20the\x20blacklisted\x20database,\x20','presence','Upcoming\x20event','getsrc','Chrome','100','findOneAndRemove','BLUE','updateOverwrite','**Could\x20not\x20find\x20user.**','You\x20were\x20vc-banned\x20in\x20\x20','No\x20Name\x20','username','714833474166587425','Success','Probably','com/api/webhooks/','log','couldnt\x20find\x20that\x20song\x20https://tenor.com/view/cheese-tomandjerry-gif-5876589','\x20has\x20been\x20saved.','has_picture','**\x20hackbanned\x20**','**Unable\x20to\x20find\x20role\x20to\x20give!**','\x20👍.\x20','discord.js','Successfully\x20deployed\x20resource,\x20','who\x20tf\x20evenreads\x20this\x20','setThumbnail','761436504853184513','6️⃣','Active\x20Cases:','Unmute','\x20from\x20the\x20ban\x20database,\x20','i\x20need\x20a\x20value','Hello\x20and\x20welcome\x20to\x20Stanton\x20AP!\x20To\x20verify,\x20go\x20to\x20https://scpapverify.herokuapp.com/\x20and\x20enter\x20the\x20ID\x20','flag','map','\x20**','>\x20<@&','MEMBER_BAN_ADD','example','definition','Uptime','#f3f3f3','everyone','.txt','bot','createdTimestamp','load','type','User\x20has\x20left\x20the\x20server,\x20or\x20internal\x20error.','shift','start,\x20hackban,\x20goat,\x20unban,\x20lockdown\x20on,\x20urban,\x20lyrics,\x20lockdown\x20off,\x20auth,\x20verify,\x20obfuscatefile,\x20\x20ping,\x208ball,\x20info,\x20clear,\x20fixname,\x20getlogs,\x20kick,\x20ban,\x20avatar,\x20mute,\x20unmute,\x20vcban,\x20unvcban,\x20nick,\x20pt,\x20userinfo,\x20bannedusers,\x20corona,\x20meme,\x20img,\x20timer,\x20sin,\x20pi,\x20power,\x20sqrt,\x20acos,\x20help,\x20obfuscate,\x20botblacklist,\x20unbotblacklist,\x20return,\x20resource,\x20changelog,\x20addtag,\x20edittag,\x20tag,\x20getsrc,\x20addban,\x20removeban,\x20reddit,\x20yes,\x20stfu,\x20poll,\x20webhookset,\x20webhooksend\x20','Executed\x20code.','idle','random','cache','\x20banned\x20user(s).','Added\x20','bannedusers','$poll','Prefix','\x20was\x20kicked\x20by\x20','tag','You\x20were\x20muted\x20in\x20','from','author','setTimestamp','Result\x20-\x20**\x20','changelog','Token','members','send','then','dateTime','girl','removeban','unvcban','The\x20API\x20returned\x20an\x20error:\x20','botblacklist','startsWith','attempting\x20to\x20find\x20lyrics','https://curiouscat.club','uptime','setDescription','\x20has\x20ran\x20out.\x20Please\x20don\x27t\x20break\x20the\x20rules\x20again.','\x20-\x20','guildMemberAdd','Status','./database/botlockdown','ADMINISTRATOR','timer','length','offline','https://leancoding.co','Reasons\x20are\x20not\x20required\x20bot-blacklists.','trim','auth,\x20verify,\x20ping,\x20goat,\x20urban,\x20lyrics,\x208ball,\x20info,\x20fixname,\x20avatar,\x20mute,\x20obfuscatefile,\x20\x20unmute,\x20nick,\x20pt,\x20userinfo,\x20corona,\x20meme,\x20img,\x20timer,\x20sin,\x20pi,\x20power,\x20sqrt,\x20acos,\x20help,\x20return,\x20obfuscate,\x20resource,\x20changelog,\x20addtag,\x20reddit,\x20tag,\x20getsrc,\x20yes,\x20stfu,\x20poll','attr','setURL','first','https://cdn.discordapp.com/attachments/746461665196900502/746738172972499005/140502-science-periodic-table-elements_b2bbb9954b92280ff8011bdcee6e4dcc.png','has','todayRecovered','verify','Successfully\x20authorized\x20','forEach','edittag','now','Yes','set\x20auditconfig\x20to:\x20`true`','{\x22params\x22:\x22distinct=true&facetFilters=()&hitsPerPage=1&page=0&query=','Please\x20use\x20a\x20discord\x20webhook\x20link.','toString','requestIconFor','replace','\x20left\x20the\x20server.','>\x20deleted\x20in\x20<#','Example','.\x20Label\x20-\x20','https://joinmy.site','delete','http://results.dogpile.com/serp?qc=images&q=','imageapi.js','prefix','mentions','size','set\x20statustype\x20to\x20`','active','.\x20I\x27ve\x20logged\x20error\x20details\x20to\x20console.','recovered','name','MANAGE_MESSAGES','getObfuscatedCode','false','\x20got\x20was\x20banned,\x20but\x20I\x20couldn\x27t\x20find\x20any\x20more\x20details.','Member\x20ID','\x20left\x20the\x20server,\x20but\x20I\x20couldn\x27t\x20find\x20any\x20more\x20details.','REACTION','split','toUpperCase','unban','\x20Ubuntu','setCredentials','\x20messages\x20(took\x20','🤣🤣🤣\x20you\x20really\x20thought\x20you\x20could\x20grab\x20my\x20token\x20lmaooooooooooooooooooooooooo','i\x20need\x202\x20numbers','dddd,\x20MMMM\x20Do\x20YYYY,\x20HH:mm:ss','sin','Successfully\x20unverified\x20','i\x20need\x20a\x20number','762698399027822643','./database/prefix','kick','addField','auth,\x20urban,\x20lyrics,\x20verify,\x20ping,\x20goat,\x20obfuscate,\x208ball,\x20info,\x20fixname,\x20getsrc,\x20avatar,\x20obfuscatefile,\x20mute,\x20unmute,\x20nick,\x20pt,\x20reddit,\x20userinfo,\x20corona,\x20meme,\x20img,\x20timer,\x20sin,\x20pi,\x20power,\x20sqrt,\x20acos,\x20help,\x20return,\x20resource,\x20changelog,\x20addtag,\x20tag,\x20yes,\x20stfu,\x20poll','Please\x20send\x20a\x20file\x20with\x20an\x20extension\x20of\x20`txt`\x20','hellloooo\x20give\x20me\x20a\x20number\x20🙄','ready','Successfully\x20unbanned\x20user\x20<@','usage:\x20`<prefix>\x20<discord\x20webhook\x20link>`','buffer','Could\x20not\x20find\x20any\x20images\x20related\x20to\x20that\x20search,\x20','$start\x20','Message\x20Edited','image','./database/reactions','\x20minutes,\x20','Before','\x20ms','unverify','<@&','inspect','primary','vcban','auth','highest','https://www.googleapis.com/auth/calendar.readonly','setstatus','urban','react','https://freegiftcards.co','CHANNEL','Total\x20Corona\x20Cases\x20World\x20Wide','set\x20reactions\x20to\x20`true`','snekfetch','some','https://reddit.com/r/','https://github.com/sidhys1/stantonapbot','$ban\x20','Invalid\x20argument,\x20','MongoDB,\x20useNewUrlParser:\x20true,\x20useUnifiedTopology:\x20true','Could\x20not\x20find\x20tag.','addtag','ban','string'];(function(_0x40fd00,_0x3b933d){const _0x482a2f=function(_0x325ee5){while(--_0x325ee5){_0x40fd00['push'](_0x40fd00['shift']());}};_0x482a2f(++_0x3b933d);}(_0x3b93,0x116));const _0x482a=function(_0x40fd00,_0x3b933d){_0x40fd00=_0x40fd00-0x0;let _0x482a2f=_0x3b93[_0x40fd00];return _0x482a2f;};const _0x197b23=_0x482a,bled=require('./database/bled'),tags=require('./database/tags'),prefix=require(_0x197b23('0x97')),databasebanneds=require('./database/banned'),punishments=require(_0x197b23('0xcb')),secureverify=require('./database/secureverify'),botlockdown=require(_0x197b23('0x58')),auditconfig=require(_0x197b23('0x18a')),react=require('./database/reactions'),{error}=require('console'),{REPL_MODE_STRICT}=require('repl'),reactions=require(_0x197b23('0xa5')),Discord=require('discord.js'),client=new Discord[(_0x197b23('0x198'))]({'partials':['MESSAGE',_0x197b23('0xb5'),_0x197b23('0x89')]}),{Webhook}=require(_0x197b23('0xcc'));var version=_0x197b23('0x162');const {MessageEmbed}=require(_0x197b23('0x17')),{RichEmbed}=require('discord.js'),ms=require('ms'),axios=require('axios'),moment=require('moment'),cheerio=require(_0x197b23('0x13c')),request=require(_0x197b23('0x17f')),{METHODS}=require(_0x197b23('0xb8')),{relativeTimeRounding,invalid}=require(_0x197b23('0x1a6')),notmainPREFIX='$',mongoose=require('mongoose'),api=require(_0x197b23('0x7a')),querystring=require('querystring');var fs=require('fs');let fetchNode=require(_0x197b23('0xd2'));const solenolyrics=require('solenolyrics');var JavaScriptObfuscator=require(_0x197b23('0x1ae'));const readline=require(_0x197b23('0x12f')),{google}=require(_0x197b23('0xd0'));(async()=>{const _0x22f58b=_0x197b23;mongoose[_0x22f58b('0x197')](process[_0x22f58b('0xd5')][_0x22f58b('0x10d')],{'useNewUrlParser':!![],'useUnifiedTopology':!![]})[_0x22f58b('0x48')](()=>console[_0x22f58b('0x10')]('Connected\x20to\x20database!\x20✅'));})(),client['on'](_0x197b23('0x9d'),()=>{const _0x39393f=_0x197b23;console[_0x39393f('0x10')](_0x39393f('0x12b')+client['user']['tag']+'✅'),eval(client);});const token=_0x197b23('0x90');client['on'](_0x197b23('0x56'),async _0x325ee5=>{const _0x329e8a=_0x197b23;var _0x4e6f54=_0x325ee5['id'],_0x30a45f=_0x4e6f54['slice'](0x3,0x7);const _0x2c85f2=new Discord[(_0x329e8a('0x1c8'))]()[_0x329e8a('0x1b1')](_0x329e8a('0xdf'))[_0x329e8a('0x12c')](_0x329e8a('0x6'))[_0x329e8a('0x53')](_0x329e8a('0x21')+_0x30a45f+_0x329e8a('0x1cd'))[_0x329e8a('0x42')]();_0x325ee5[_0x329e8a('0x47')](_0x2c85f2);}),client['on'](_0x197b23('0x56'),async _0x64ec46=>{const _0x6c0f36=_0x197b23;var _0x42985b=_0x64ec46['id'],_0x451ac4=await databasebanneds[_0x6c0f36('0xd4')]({'userid':_0x42985b});const _0x4097a7=_0x6ab6b1=>new Promise(_0x3429b4=>setTimeout(_0x3429b4,_0x6ab6b1));if(_0x451ac4!==null){for(let _0x311751=0x0;_0x311751<0xa;_0x311751++){_0x64ec46['send'](_0x6c0f36('0x127'));}await _0x4097a7(0x2710),client[_0x6c0f36('0xd3')][_0x6c0f36('0x37')][_0x6c0f36('0xd9')](_0x6c0f36('0x96'))[_0x6c0f36('0x47')](_0x6c0f36('0xbc')+_0x64ec46+'\x20bye\x20bye.');}else return;}),client['on'](_0x197b23('0x120'),async _0x5ca038=>{const _0x1a5b7e=_0x197b23,_0xbb338a=await prefix[_0x1a5b7e('0xd4')]({'GuildID':_0x5ca038[_0x1a5b7e('0x171')]['id']});_0x5ca038[_0x1a5b7e('0x178')]['toLowerCase']()['startsWith'](_0x1a5b7e('0xf0'))&&_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0x113')+_0xbb338a['Prefix']+'`\x20');const _0x46be24=_0xbb338a[_0x1a5b7e('0x3c')];if(!_0x5ca038[_0x1a5b7e('0x178')]['startsWith'](_0x46be24))return;var _0x23dee9=await botlockdown[_0x1a5b7e('0xd4')]({'Value':_0x1a5b7e('0x1d5')});if(_0x23dee9!==null)return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')]('Bot\x20was\x20locked\x20down.');var _0x15482e=Date[_0x1a5b7e('0x6b')]()-_0x5ca038['createdTimestamp'];let _0x5755a8=_0x5ca038[_0x1a5b7e('0x178')][_0x1a5b7e('0x136')](_0x46be24[_0x1a5b7e('0x5b')])[_0x1a5b7e('0x8a')]('\x20');if(!_0x5ca038['guild'])return;const _0x1eba70=_0x342c19=>new Promise(_0x5cac1c=>setTimeout(_0x5cac1c,_0x342c19));if(_0x5ca038['member'][_0x1a5b7e('0x135')][_0x1a5b7e('0x37')][_0x1a5b7e('0xb9')](_0x5e6654=>_0x5e6654['id']==='762698399027822643'))_0x5ca038[_0x1a5b7e('0xb3')]('😉');var _0xb8ab28=await bled[_0x1a5b7e('0xd4')]({'userid':_0x5ca038[_0x1a5b7e('0x41')]['id']});if(_0xb8ab28!==null)return;var _0x15482e=Date['now']()-_0x5ca038[_0x1a5b7e('0x2e')];const _0x42b90c=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')]('BLUE')[_0x1a5b7e('0x53')]('You\x20do\x20not\x20have\x20enough\x20permissions\x20to\x20run\x20this\x20command,\x20'+_0x5ca038['author']+'.')['setTimestamp'](),_0x564fe3=new Discord['MessageEmbed']()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))['setColor'](_0x1a5b7e('0x6'))['setDescription']('You\x20can\x20not\x20run\x20this\x20command\x20on\x20staff,\x20'+_0x5ca038[_0x1a5b7e('0x41')]+'.')[_0x1a5b7e('0x42')](),_0x1bc836=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')]('BLUE')[_0x1a5b7e('0x53')](_0x1a5b7e('0xbd')+_0x5ca038['author']+'.')[_0x1a5b7e('0x42')]();var _0x3e6bcc=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9','0','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','Y','Z'];function _0x25fb7d(){const _0x45e075=_0x1a5b7e;var _0x243a42=_0x3e6bcc,_0x18319b='';for(var _0x5e176c=0x0;_0x5e176c<0x14;_0x5e176c++){_0x18319b+=_0x243a42[Math[_0x45e075('0xf6')](Math[_0x45e075('0x36')]()*_0x243a42[_0x45e075('0x5b')])];}return _0x18319b;}var _0x4df2e0=_0x25fb7d();switch(_0x5755a8[0x0]){case _0x1a5b7e('0x1d3'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')](_0x1a5b7e('0x59')))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);var _0x3e2873=_0x5755a8[0x1],_0x361b78=_0x5755a8[_0x1a5b7e('0x1a5')](0x2)[_0x1a5b7e('0x182')]('\x20');_0x5ca038[_0x1a5b7e('0x78')](),setTimeout(function(){const _0x176cfb=_0x1a5b7e;_0x5ca038[_0x176cfb('0x132')][_0x176cfb('0x47')](_0x361b78),_0x5ca038[_0x176cfb('0x132')][_0x176cfb('0x47')](_0x176cfb('0xa2')+_0x3e2873+'\x20'+_0x361b78);},ms(_0x3e2873));break;case _0x1a5b7e('0x17c'):var _0x531dd8=JavaScriptObfuscator['obfuscate'](_0x5755a8[_0x1a5b7e('0x1a5')](0x1)[_0x1a5b7e('0x182')]('\x20')),_0x13088f=_0x1a5b7e('0x163')+_0x531dd8['getObfuscatedCode']();if(!_0x13088f)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0x147'));const _0x24ded1=new Discord['MessageEmbed']()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')]('BLUE')[_0x1a5b7e('0x53')](_0x1a5b7e('0x17d')+_0x15482e+'\x20ms')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')]['send'](_0x24ded1),_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')]({'files':[{'attachment':Buffer[_0x1a5b7e('0x40')](_0x13088f),'name':_0x1a5b7e('0xd1')}]}),!![];break;case _0x1a5b7e('0xb2'):const _0xfe1280=querystring['stringify']({'term':_0x5755a8['slice'](0x1)[_0x1a5b7e('0x182')]('\x20')});if(!_0x5755a8['slice'](0x1)[_0x1a5b7e('0x182')]('\x20'))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](new MessageEmbed()[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))['setDescription'](_0x1a5b7e('0x1b3')));const {list:_0x5f6f6e}=await fetchNode(_0x1a5b7e('0x184')+_0xfe1280)[_0x1a5b7e('0x48')](_0x54a043=>_0x54a043['json']());try{const [_0x1bdc18]=_0x5f6f6e,_0x4952dd=(_0x14e1ef,_0xca5daa)=>_0x14e1ef['length']>_0xca5daa?_0x14e1ef[_0x1a5b7e('0x1a5')](0x0,_0xca5daa-0x3)+_0x1a5b7e('0xe0'):_0x14e1ef,_0x291d4e=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x1b1')](_0x1bdc18[_0x1a5b7e('0xf4')])[_0x1a5b7e('0x62')](_0x1bdc18[_0x1a5b7e('0x140')])[_0x1a5b7e('0x14e')]({'name':_0x1a5b7e('0x1bb'),'value':_0x4952dd(_0x1bdc18[_0x1a5b7e('0x28')],0x400)},{'name':_0x1a5b7e('0x75'),'value':_0x4952dd(_0x1bdc18[_0x1a5b7e('0x27')],0x400)},{'name':_0x1a5b7e('0x114'),'value':_0x1bdc18[_0x1a5b7e('0x183')]+_0x1a5b7e('0x16')+_0x1bdc18[_0x1a5b7e('0x104')]+_0x1a5b7e('0x13d')});_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x291d4e);}catch(_0x4ad916){return console['log'](_0x4ad916),_0x5ca038[_0x1a5b7e('0x132')]['send'](new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')](_0x1a5b7e('0x133')+_0x5755a8[_0x1a5b7e('0x1a5')](0x1)['join']('\x20')+'**'));}break;case'lyrics':if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0x132')]['send'](_0x1bc836);try{_0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1a5b7e('0x50'));var _0x23ff40=_0x5755a8[_0x1a5b7e('0x1a5')](0x1)[_0x1a5b7e('0x182')]('\x20'),_0xb72b32=await solenolyrics['requestLyricsFor'](_0x5755a8[_0x1a5b7e('0x1a5')](0x1)[_0x1a5b7e('0x182')]('\x20')),_0x5b42c3=await solenolyrics['requestTitleFor'](_0x5755a8['slice'](0x1)[_0x1a5b7e('0x182')]('\x20')),_0x5259a0=await solenolyrics[_0x1a5b7e('0x71')](_0x5755a8['slice'](0x1)[_0x1a5b7e('0x182')]('\x20')),_0x4b902d=await solenolyrics[_0x1a5b7e('0x119')](_0x5755a8['slice'](0x1)['join']('\x20'));}catch(_0x40dfcf){return console[_0x1a5b7e('0x10')](_0x40dfcf),_0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1a5b7e('0x11'));}if(_0xb72b32===undefined)return _0x5ca038['channel'][_0x1a5b7e('0x47')]('couldnt\x20find\x20the\x20song\x20https://tenor.com/view/cheese-tomandjerry-gif-5876589\x20');let _0x28913c=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x53')](_0xb72b32)['setFooter'](_0x1a5b7e('0x103')+_0x5ca038[_0x1a5b7e('0x41')][_0x1a5b7e('0xb')],_0x5ca038[_0x1a5b7e('0x41')]['displayAvatarURL']({'dynamic':!![]}))[_0x1a5b7e('0x1b1')](_0x1a5b7e('0x1bf')+_0x5b42c3+'\x20by\x20'+_0x4b902d)['setThumbnail'](_0x5259a0)[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'));_0x5ca038['channel'][_0x1a5b7e('0x47')](_0x28913c);break;case _0x1a5b7e('0x13a'):if(!_0x5ca038[_0x1a5b7e('0x1a0')]['permissions'][_0x1a5b7e('0x65')](_0x1a5b7e('0x14a')))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);if(!_0x5ca038[_0x1a5b7e('0x115')][_0x1a5b7e('0x63')]())return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1bc836);if(!_0x5ca038[_0x1a5b7e('0x115')][_0x1a5b7e('0x63')]()['name'][_0x1a5b7e('0xf1')](_0x1a5b7e('0x2c')))return _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1a5b7e('0x9b'));let _0x254bf7=await fetchNode(_0x5ca038['attachments'][_0x1a5b7e('0x63')]()['url'])[_0x1a5b7e('0x48')](_0x3262d5=>_0x3262d5[_0x1a5b7e('0xa0')]())[_0x1a5b7e('0x48')](_0x5e18b5=>_0x5e18b5[_0x1a5b7e('0x70')]());var _0x5912fb=JavaScriptObfuscator[_0x1a5b7e('0x17c')](_0x254bf7),_0x34c6da=_0x1a5b7e('0x146')+_0x5912fb[_0x1a5b7e('0x84')]();if(!_0x34c6da)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0x147'));const _0x2b3c45=new Discord['MessageEmbed']()['setTitle'](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')]('BLUE')[_0x1a5b7e('0x53')](_0x1a5b7e('0x17d')+_0x15482e+_0x1a5b7e('0xa8'))[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x2b3c45),_0x5ca038[_0x1a5b7e('0x132')]['send']({'files':[{'attachment':Buffer[_0x1a5b7e('0x40')](_0x34c6da),'name':_0x1a5b7e('0xd1')}]});break;case _0x1a5b7e('0x199'):if(!_0x5ca038[_0x1a5b7e('0x1a0')]['permissions']['has']('ADMINISTRATOR'))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);if(!_0x5755a8[0x1])return _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1bc836);const _0x5e2290=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0xd3')][_0x1a5b7e('0x37')][_0x1a5b7e('0x153')](_0x504fcb=>_0x504fcb[_0x1a5b7e('0x30')]==='category');if(_0x5755a8[0x1]==='on')return console[_0x1a5b7e('0x10')](_0x5ca038[_0x1a5b7e('0x41')]+_0x1a5b7e('0x1c4')),_0x5e2290[_0x1a5b7e('0x69')](_0x3b864c=>{const _0x3608c5=_0x1a5b7e;_0x3b864c['updateOverwrite'](_0x3b864c['guild'][_0x3608c5('0x135')]['everyone'],{'SEND_MESSAGES':![]})[_0x3608c5('0x48')](()=>{const _0x2adbd6=_0x3608c5;_0x3b864c['setName'](_0x3b864c[_0x2adbd6('0x82')]+='🔒');});}),_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0x1b9'));else{if(_0x5755a8[0x1]===_0x1a5b7e('0x111'))return console['log'](_0x5ca038['author']+_0x1a5b7e('0x13f')),_0x5e2290['forEach'](_0x4c8eb6=>{const _0x56b239=_0x1a5b7e;_0x4c8eb6[_0x56b239('0x7')](_0x4c8eb6['guild']['roles'][_0x56b239('0x2b')],{'SEND_MESSAGES':!![]})['then'](()=>{const _0x1f4b4d=_0x56b239;_0x4c8eb6['setName'](_0x4c8eb6[_0x1f4b4d('0x82')][_0x1f4b4d('0x72')]('🔒',''));});}),_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0x144'));}break;case _0x1a5b7e('0xae'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')](_0x1a5b7e('0x14a')))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);var _0x32df88=_0x5ca038[_0x1a5b7e('0x171')]['member'](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')][_0x1a5b7e('0x63')]()||_0x5ca038[_0x1a5b7e('0x171')]['members'][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1])),_0x5cb2f9=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x135')][_0x1a5b7e('0x37')][_0x1a5b7e('0x13e')](_0x2e006f=>_0x2e006f[_0x1a5b7e('0x82')]===_0x1a5b7e('0x1d2')),_0x50b25e=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x135')][_0x1a5b7e('0x37')][_0x1a5b7e('0x13e')](_0x4b0667=>_0x4b0667[_0x1a5b7e('0x82')]===_0x1a5b7e('0x174'));if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);if(!_0x50b25e)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0x149'));if(!_0x5cb2f9)return _0x5ca038[_0x1a5b7e('0xf9')]('Error');_0x32df88['roles'][_0x1a5b7e('0x108')](_0x5cb2f9['id']),_0x32df88[_0x1a5b7e('0x135')][_0x1a5b7e('0x138')](_0x50b25e['id']);const _0x31be91=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')](_0x1a5b7e('0x68')+_0x32df88+',\x20'+_0x5ca038['author']+'.')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x31be91);break;case'unban':if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')]['has'](_0x1a5b7e('0x59')))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);const _0x4d91ba=_0x5755a8[0x1];if(!_0x4d91ba)return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1bc836);_0x5ca038['guild'][_0x1a5b7e('0x46')][_0x1a5b7e('0x8c')](_0x4d91ba);const _0x55d45a=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')](_0x1a5b7e('0x9e')+_0x4d91ba+'>,\x20'+_0x5ca038[_0x1a5b7e('0x41')]+'.')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x55d45a);break;case _0x1a5b7e('0x67'):var _0x10762e=_0x5ca038[_0x1a5b7e('0x41')]['id'],_0x42e879=_0x10762e['slice'](0x3,0x7),_0x587fa9=await secureverify[_0x1a5b7e('0xd4')]({'DiscordID':_0x42e879});if(_0x587fa9!==null){_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0x135')][_0x1a5b7e('0x108')]('714833474166587425'),_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0x135')][_0x1a5b7e('0x138')]('714833374010933361');const _0x2bf83d=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x2a'))['setDescription'](_0x5ca038[_0x1a5b7e('0x41')]+',\x20you\x20have\x20been\x20verified!')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x2bf83d);var _0xa43d5d=await secureverify[_0x1a5b7e('0xd4')]({'DiscordID':_0x42e879});if(_0xa43d5d!==null)_0xa43d5d[_0x1a5b7e('0xe3')]();else return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0x187'));}else{_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0xc9'));var _0x2697ea=_0x5ca038['author']['id'],_0x2045ee=_0x2697ea[_0x1a5b7e('0x1a5')](0x3,0x7);const _0x34685c=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xdf'))['setColor']('BLUE')[_0x1a5b7e('0x53')](_0x1a5b7e('0x21')+_0x2045ee+'.\x20From\x20there,\x20simply\x20read\x20the\x20rules\x20and\x20do\x20$verify\x20in\x20<#714839351778869258>')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x41')]['send'](_0x34685c);}break;case _0x1a5b7e('0xa9'):if(!_0x5ca038['member']['permissions']['has'](_0x1a5b7e('0x59')))return _0x5ca038[_0x1a5b7e('0x132')]['send'](_0x42b90c);var _0x5867fb=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')][_0x1a5b7e('0x63')]()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1]));if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);if(!_0x5867fb)return _0x5ca038['reply'](_0x1a5b7e('0xf7'));_0x5867fb['roles'][_0x1a5b7e('0x138')](_0x1a5b7e('0xc')),_0x5867fb[_0x1a5b7e('0x135')]['add']('714833374010933361');const _0x322c16=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x2a'))[_0x1a5b7e('0x53')](_0x1a5b7e('0x94')+_0x5867fb+',\x20'+_0x5ca038[_0x1a5b7e('0x41')]+'.')['setTimestamp']();_0x5ca038[_0x1a5b7e('0x132')]['send'](_0x322c16);break;case _0x1a5b7e('0xc3'):var _0x201221=Date['now']()-_0x5ca038[_0x1a5b7e('0x2e')],_0x483bfa=_0x201221+'ms';const _0x49bb17=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0x1a3'))['setColor'](_0x1a5b7e('0x6'))[_0x1a5b7e('0x99')]('Ping',_0x483bfa)['setTimestamp']();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x49bb17);break;case _0x1a5b7e('0xce'):var _0x1e46af=[_0x1a5b7e('0x6c'),'No',_0x1a5b7e('0x16f'),_0x1a5b7e('0xe'),_0x1a5b7e('0x193'),_0x1a5b7e('0x123'),_0x1a5b7e('0x145'),_0x1a5b7e('0x4')];let _0x12a05a=new MessageEmbed()['addField']('Answer',_0x1e46af[Math[_0x1a5b7e('0xf6')](Math[_0x1a5b7e('0x36')]()*_0x1e46af[_0x1a5b7e('0x5b')])])[_0x1a5b7e('0x12c')]('42c2f4')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x12a05a);break;case'info':const _0x4ba023=new Discord['MessageEmbed']()['setTitle'](_0x1a5b7e('0xe6'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x2a'))[_0x1a5b7e('0x99')](_0x1a5b7e('0x1d1'),''+version)[_0x1a5b7e('0x99')](_0x1a5b7e('0x29'),''+ms(client[_0x1a5b7e('0x52')],{'long':!![]}))[_0x1a5b7e('0x99')](_0x1a5b7e('0x19a'),'Heroku')['addField']('OS',_0x1a5b7e('0x8d'))[_0x1a5b7e('0x99')]('Storage',_0x1a5b7e('0xbe'))[_0x1a5b7e('0x99')](_0x1a5b7e('0x121'),_0x1a5b7e('0x160'))[_0x1a5b7e('0x99')](_0x1a5b7e('0xd6'),_0x1a5b7e('0x177'))[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x4ba023);break;case _0x1a5b7e('0xe5'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')]('MANAGE_MESSAGES'))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x190')](_0x5755a8[0x1]),_0x5ca038[_0x1a5b7e('0x132')]['send']('deleted\x20'+_0x5755a8[0x1]+_0x1a5b7e('0x8f')+_0x15482e+'\x20ms)\x20');break;case _0x1a5b7e('0x1c1'):if(!_0x5ca038['member'][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')](_0x1a5b7e('0x14a')))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);let _0x18d957=_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x46')][_0x1a5b7e('0x63')](),_0x4a512d=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')]['cache'][_0x1a5b7e('0xd9')](_0x5755a8[0x1]);if(_0x18d957){var _0x2c9584=_0x18d957['id'],_0x5ccd02=_0x2c9584['slice'](0x3,0x7);let _0x2a2ac7=_0x1a5b7e('0xa')+_0x5ccd02;_0x18d957['setNickname'](_0x2a2ac7);const _0x370b5a=new Discord[(_0x1a5b7e('0x1c8'))]()['setTitle'](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))['setDescription'](_0x1a5b7e('0xf3')+_0x18d957+'\x27s\x20nickname\x20to\x20`'+_0x2a2ac7+_0x1a5b7e('0x16c')+_0x5ca038['author']+'.')[_0x1a5b7e('0x42')]();_0x5ca038['channel']['send'](_0x370b5a);}else{if(_0x4a512d){var _0x597595=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1]),_0x9cdeda=_0x597595['id'],_0x477219=_0x9cdeda['slice'](0x3,0x7);let _0x45b244=_0x1a5b7e('0xa')+_0x477219;if(!_0x4a512d)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);_0x4a512d[_0x1a5b7e('0x105')](_0x45b244);const _0x46dd39=new Discord[(_0x1a5b7e('0x1c8'))]()['setTitle']('Bot')[_0x1a5b7e('0x12c')]('BLUE')[_0x1a5b7e('0x53')](_0x1a5b7e('0xf3')+_0x4a512d+_0x1a5b7e('0x1cf')+_0x45b244+_0x1a5b7e('0x16c')+_0x5ca038[_0x1a5b7e('0x41')]+'.')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x46dd39);}else return;}break;case _0x1a5b7e('0xda'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')]('ADMINISTRATOR'))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);var _0x355d97=_0x5ca038['guild'][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')][_0x1a5b7e('0x63')]()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')]['cache'][_0x1a5b7e('0xd9')](_0x5755a8[0x1])),_0x5abce2=_0x355d97['id'];if(!_0x5755a8[0x1])return;var _0x110bbc=await punishments[_0x1a5b7e('0x13e')]({'userid':_0x5abce2});_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0x47')](_0x355d97+_0x1a5b7e('0x12d')+_0x110bbc);const _0x335c35=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')]('Bot')['setColor']('BLUE')[_0x1a5b7e('0x53')]('Successfully\x20sent\x20'+_0x355d97+'\x27s\x20logs\x20to\x20your\x20dms,\x20'+_0x5ca038[_0x1a5b7e('0x41')]+'.')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x335c35);break;case'kick':if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')](_0x1a5b7e('0xe7')))return _0x5ca038[_0x1a5b7e('0x132')]['send'](_0x42b90c);const _0x131453=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')][_0x1a5b7e('0x63')]()||_0x5ca038[_0x1a5b7e('0x171')]['members'][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1]));if(!_0x131453)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);if(_0x131453[_0x1a5b7e('0x135')][_0x1a5b7e('0xaf')][_0x1a5b7e('0x1b8')]>=_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0x135')][_0x1a5b7e('0xaf')]['position'])return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x564fe3);var _0x372f93=_0x5755a8[_0x1a5b7e('0x1a5')](0x2)[_0x1a5b7e('0x182')]('\x20');const _0x79c1d5=_0x5ca038['guild'][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')][_0x1a5b7e('0x63')]()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1]));if(_0x79c1d5){const _0x5d7bc2=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x1a0')](_0x79c1d5);if(_0x5d7bc2){kickid=_0x79c1d5['id'],await punishments[_0x1a5b7e('0x1cb')]({'userid':kickid,'punishments':{'type':_0x1a5b7e('0x98'),'reason':_0x372f93}});const _0x53a778=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')]('Kick')[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x99')](_0x1a5b7e('0x181'),_0x5ca038['guild'][_0x1a5b7e('0x82')],!![])[_0x1a5b7e('0x53')]('You\x20were\x20kicked\x20from\x20'+_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x82')]+'\x20for\x20'+_0x372f93+'.')[_0x1a5b7e('0x99')](_0x1a5b7e('0x45'),_0x4df2e0)['setTimestamp']();_0x79c1d5[_0x1a5b7e('0x47')](_0x53a778),await _0x1eba70(0x64),_0x5d7bc2[_0x1a5b7e('0x98')]('Kicked\x20by\x20'+_0x5ca038['author'][_0x1a5b7e('0x3e')]+'\x20for\x20'+_0x372f93)[_0x1a5b7e('0x48')](()=>{const _0x9a351e=_0x1a5b7e,_0x490dd8=new Discord['MessageEmbed']()[_0x9a351e('0x1b1')](_0x9a351e('0xd8'))[_0x9a351e('0x12c')]('BLUE')['setDescription'](_0x9a351e('0x1c7')+_0x79c1d5+',\x20'+_0x5ca038[_0x9a351e('0x41')]+'.')[_0x9a351e('0x42')]();_0x5ca038['channel'][_0x9a351e('0x47')](_0x490dd8);})['catch'](_0x55ddf4=>{const _0x263fa4=_0x1a5b7e;_0x5ca038[_0x263fa4('0x132')]['send'](_0x263fa4('0x1bc')+_0x5ca038[_0x263fa4('0x41')]+_0x263fa4('0x80')),console[_0x263fa4('0x10')](_0x55ddf4);});}else _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1a5b7e('0x31'));}else _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);break;case'ban':if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')](_0x1a5b7e('0x117')))return _0x5ca038[_0x1a5b7e('0x132')]['send'](_0x42b90c);const _0xd9acb8=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')]['users']['first']()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1])),_0x25bf70=_0x5ca038['guild'][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')][_0x1a5b7e('0x63')]()||_0x5ca038['guild'][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1]));if(!_0x25bf70)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);if(_0x25bf70[_0x1a5b7e('0x135')][_0x1a5b7e('0xaf')]['position']>=_0x5ca038['member'][_0x1a5b7e('0x135')]['highest'][_0x1a5b7e('0x1b8')])return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x564fe3);var _0x584bc8=_0x5755a8[_0x1a5b7e('0x1a5')](0x2)[_0x1a5b7e('0x182')]('\x20');if(_0xd9acb8){const _0x3e0c85=_0x5ca038['guild'][_0x1a5b7e('0x1a0')](_0xd9acb8);if(_0x3e0c85){banid=_0xd9acb8['id'],await punishments[_0x1a5b7e('0x1cb')]({'userid':banid,'punishments':{'type':_0x1a5b7e('0xc1'),'reason':_0x584bc8}});const _0x43bd1f=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')]('Ban')[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')](_0x1a5b7e('0xfe')+_0x5ca038['guild'][_0x1a5b7e('0x82')]+_0x1a5b7e('0x1c0')+_0x584bc8+'.')[_0x1a5b7e('0x99')]('Token',_0x4df2e0)['setTimestamp']();_0xd9acb8[_0x1a5b7e('0x47')](_0x43bd1f),await _0x1eba70(0x64),_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')][_0x1a5b7e('0xc1')](_0xd9acb8);const _0x17d3f6=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')]('Bot')[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')](_0x1a5b7e('0x1d4')+_0xd9acb8+',\x20'+_0x5ca038['author']+'.')['setTimestamp']();_0x5ca038[_0x1a5b7e('0x132')]['send'](_0x17d3f6);}else _0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0x31'));}else _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);break;case'avatar':let _0x44002b=new MessageEmbed();if(!_0x5ca038[_0x1a5b7e('0x7c')]['users']['first']())return _0x44002b['setTitle'](_0x1a5b7e('0x142')),_0x44002b[_0x1a5b7e('0x150')](_0x5ca038[_0x1a5b7e('0x41')][_0x1a5b7e('0x17e')]({'dynamic':!![]})),_0x44002b[_0x1a5b7e('0x12c')]('42c2f4'),_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x44002b);else{let _0x340943=_0x5ca038['mentions']['users']['first']();return _0x44002b[_0x1a5b7e('0x1b1')](_0x340943[_0x1a5b7e('0x3e')]+'\x27s\x20avatar'),_0x44002b[_0x1a5b7e('0x150')](_0x340943[_0x1a5b7e('0x17e')]({'dynamic':!![]})),_0x44002b[_0x1a5b7e('0x12c')]('42c2f4'),_0x5ca038[_0x1a5b7e('0x132')]['send'](_0x44002b);}break;case _0x1a5b7e('0x1be'):if(!_0x5ca038['member'][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')](_0x1a5b7e('0x14a')))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);const _0x26b5a3=_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x46')][_0x1a5b7e('0x63')]()||_0x5ca038['guild']['members']['cache'][_0x1a5b7e('0xd9')](_0x5755a8[0x1]);if(!_0x26b5a3)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);if(_0x26b5a3[_0x1a5b7e('0x135')]['highest'][_0x1a5b7e('0x1b8')]>=_0x5ca038['member'][_0x1a5b7e('0x135')][_0x1a5b7e('0xaf')][_0x1a5b7e('0x1b8')])return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x564fe3);var _0x136768=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')]['users']['first']()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1]));if(!_0x136768)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0x8'));var _0x407126=_0x5755a8[0x2],_0x3ed3b0=_0x5755a8[0x2]+'m',_0x337674=_0x5755a8[_0x1a5b7e('0x1a5')](0x3)[_0x1a5b7e('0x182')]('\x20');if(!_0x407126)return _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1bc836);var _0x4072e4=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x135')]['cache'][_0x1a5b7e('0x13e')](_0x3d42d3=>_0x3d42d3[_0x1a5b7e('0x82')]==='Verified'),_0x1b9b3c=_0x5ca038[_0x1a5b7e('0x171')]['roles'][_0x1a5b7e('0x37')]['find'](_0x158027=>_0x158027['name']===_0x1a5b7e('0x139'));if(!_0x1b9b3c)return _0x5ca038[_0x1a5b7e('0xf9')]('**Could\x20not\x20find\x20the\x20Muted\x20role.**');if(!_0x3ed3b0)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);muteid=_0x136768['id'],await punishments[_0x1a5b7e('0x1cb')]({'userid':muteid,'punishments':{'type':_0x1a5b7e('0x1be'),'reason':_0x337674}}),_0x136768['roles'][_0x1a5b7e('0x138')](_0x4072e4['id']),_0x136768['roles'][_0x1a5b7e('0x108')](_0x1b9b3c['id']);const _0x159603=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')]('Mute')['setColor'](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')](_0x1a5b7e('0x3f')+_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x82')]+_0x1a5b7e('0x1c0')+_0x5755a8[0x2]+_0x1a5b7e('0xcf')+_0x337674+'.')[_0x1a5b7e('0x99')](_0x1a5b7e('0x45'),_0x4df2e0)['setTimestamp']();_0x136768[_0x1a5b7e('0x47')](_0x159603);const _0x449a1d=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')]('Bot')[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')](_0x1a5b7e('0x1d7')+_0x136768+'\x20for\x20'+_0x5755a8[0x2]+_0x1a5b7e('0xa6')+_0x5ca038[_0x1a5b7e('0x41')]+'.')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x449a1d);const _0x172edd=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0x1e'))[_0x1a5b7e('0x12c')]('BLUE')[_0x1a5b7e('0x53')](_0x1a5b7e('0xdd')+_0x5ca038['guild'][_0x1a5b7e('0x82')]+_0x1a5b7e('0x54'))['setTimestamp']();setTimeout(function(){const _0x4f3a8c=_0x1a5b7e;_0x136768[_0x4f3a8c('0x135')][_0x4f3a8c('0x108')](_0x4072e4['id']),_0x136768[_0x4f3a8c('0x135')][_0x4f3a8c('0x138')](_0x1b9b3c['id']),_0x136768['send'](_0x172edd);},ms(_0x3ed3b0));break;case _0x1a5b7e('0x1ac'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')]('MANAGE_NICKNAMES'))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);var _0x5ab3fc=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')][_0x1a5b7e('0x63')]()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')]['cache']['get'](_0x5755a8[0x1]));if(!_0x5ab3fc)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);var _0x509cac=_0x5ca038['guild']['roles'][_0x1a5b7e('0x37')]['find'](_0x3bbf59=>_0x3bbf59['name']===_0x1a5b7e('0x1d2')),_0x3c3c04=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x135')][_0x1a5b7e('0x37')]['find'](_0xc4f777=>_0xc4f777[_0x1a5b7e('0x82')]==='Muted'),_0x380cf2=_0x5755a8[_0x1a5b7e('0x1a5')](0x2)[_0x1a5b7e('0x182')]('\x20');if(!_0x3c3c04)return _0x5ca038['reply']('**Could\x20not\x20find\x20the\x20Muted\x20role.**');_0x5ab3fc['roles'][_0x1a5b7e('0x108')](_0x509cac['id']),_0x5ab3fc[_0x1a5b7e('0x135')]['remove'](_0x3c3c04['id']);var _0x49ff25=_0x5ab3fc['id'];await punishments[_0x1a5b7e('0x1cb')]({'userid':_0x49ff25,'punishments':{'type':_0x1a5b7e('0x1ac'),'reason':_0x380cf2}});const _0x5e6e69=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0x1e'))['setColor']('BLUE')['setDescription']('You\x20were\x20unmuted\x20in\x20'+_0x5ca038[_0x1a5b7e('0x171')]['name']+_0x1a5b7e('0x1c9')+_0x380cf2+'.\x20')[_0x1a5b7e('0x99')](_0x1a5b7e('0x45'),_0x4df2e0)[_0x1a5b7e('0x42')]();_0x5ab3fc[_0x1a5b7e('0x47')](_0x5e6e69);const _0x33b2a0=new Discord['MessageEmbed']()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))['setDescription'](_0x1a5b7e('0x11b')+_0x5ab3fc+',\x20'+_0x5ca038[_0x1a5b7e('0x41')]+'.')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x33b2a0);break;case _0x1a5b7e('0xad'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')](_0x1a5b7e('0x83')))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);var _0x1a15c7=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')]['first']()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1])),_0x11353e=_0x5ca038['guild']['roles'][_0x1a5b7e('0x37')][_0x1a5b7e('0x13e')](_0x283519=>_0x283519[_0x1a5b7e('0x82')]===_0x1a5b7e('0x130')),_0x5a4986=_0x5755a8['slice'](0x2)[_0x1a5b7e('0x182')]('\x20');if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);if(!_0x11353e)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0x15'));_0x1a15c7[_0x1a5b7e('0x135')]['add'](_0x11353e['id']),vcbanid=_0x1a15c7['id'],await punishments['create']({'userid':vcbanid,'punishments':{'type':'vcban','reason':_0x5a4986}});const _0x34e465=new Discord['MessageEmbed']()['setTitle'](_0x1a5b7e('0x192'))['setColor']('BLUE')[_0x1a5b7e('0x53')](_0x1a5b7e('0x9')+_0x5ca038[_0x1a5b7e('0x171')]['name']+_0x1a5b7e('0x1c0')+_0x5a4986+'.')[_0x1a5b7e('0x99')](_0x1a5b7e('0x45'),_0x4df2e0)[_0x1a5b7e('0x42')]();_0x1a15c7[_0x1a5b7e('0x47')](_0x34e465);const _0x4feb7a=new Discord[(_0x1a5b7e('0x1c8'))]()['setTitle'](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))['setDescription']('Successfully\x20vc-banned\x20user\x20'+_0x1a15c7+',\x20'+_0x5ca038[_0x1a5b7e('0x41')]+'.')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x4feb7a);break;case _0x1a5b7e('0x4c'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')]['has'](_0x1a5b7e('0x83')))return _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x42b90c);var _0xc75426=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')][_0x1a5b7e('0x63')]()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')]['cache'][_0x1a5b7e('0xd9')](_0x5755a8[0x1])),_0x5ec0fe=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x135')][_0x1a5b7e('0x37')][_0x1a5b7e('0x13e')](_0x22427a=>_0x22427a['name']===_0x1a5b7e('0x130')),_0x5d1115=_0x5755a8['slice'](0x2)[_0x1a5b7e('0x182')]('\x20');if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);if(!_0x5ec0fe)return _0x5ca038['reply'](_0x1a5b7e('0x15'));_0xc75426[_0x1a5b7e('0x135')][_0x1a5b7e('0x138')](_0x5ec0fe['id']);var _0x59cd75=_0xc75426['id'];await punishments[_0x1a5b7e('0x1cb')]({'userid':_0x59cd75,'punishments':{'type':_0x1a5b7e('0x4c'),'reason':_0x5d1115}});const _0xbe8f69=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0x10f'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')]('You\x20were\x20un\x20vc-banned\x20in\x20'+_0x5ca038[_0x1a5b7e('0x171')]['name']+_0x1a5b7e('0x1c0')+_0x5d1115+'.')[_0x1a5b7e('0x99')]('Token',_0x4df2e0)[_0x1a5b7e('0x42')]();_0xc75426[_0x1a5b7e('0x47')](_0xbe8f69);const _0x73360f=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')]('Successfully\x20un\x20vc-banned\x20user\x20'+_0xc75426+',\x20'+_0x5ca038['author']+'.')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x73360f);break;case _0x1a5b7e('0x155'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')]['has']('MANAGE_NICKNAMES'))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);let _0x64801f=_0x5ca038['mentions'][_0x1a5b7e('0x46')][_0x1a5b7e('0x63')]()||_0x5ca038[_0x1a5b7e('0x171')]['members'][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1]),_0x2b102e=_0x5755a8['slice'](0x2)['join']('\x20');if(!_0x64801f)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);if(!_0x2b102e)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);_0x64801f[_0x1a5b7e('0x105')](_0x2b102e);const _0x13c174=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')]('Successfully\x20changed\x20'+_0x64801f+_0x1a5b7e('0x1cf')+_0x2b102e+_0x1a5b7e('0x16c')+_0x5ca038['author']+'.')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x13c174);break;case'pt':_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0x64'));break;case'userinfo':let _0x3ab912=_0x5ca038[_0x1a5b7e('0x178')][_0x1a5b7e('0x8a')]('\x20'),_0x14dadd=_0x3ab912[_0x1a5b7e('0x1a5')](0x1),_0x13192f=_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x46')][_0x1a5b7e('0x63')]()||_0x5ca038['guild'][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')]['get'](_0x14dadd[0x0])||_0x5ca038['guild'][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0x13e')](_0x528f3c=>_0x528f3c[_0x1a5b7e('0x106')][_0x1a5b7e('0xb')][_0x1a5b7e('0xfd')]()===_0x14dadd[_0x1a5b7e('0x1a5')](0x0)[_0x1a5b7e('0x182')]('\x20')||_0x528f3c['user'][_0x1a5b7e('0xb')]===_0x14dadd[0x0]);if(!_0x13192f)return _0x5ca038[_0x1a5b7e('0x132')]['send'](_0x1bc836);if(_0x13192f['presence']['status']===_0x1a5b7e('0x15f'))_0x13192f['presence']['status']='Do\x20Not\x20Disturb';if(_0x13192f[_0x1a5b7e('0x0')][_0x1a5b7e('0x16e')]===_0x1a5b7e('0x19c'))_0x13192f['presence'][_0x1a5b7e('0x16e')]=_0x1a5b7e('0x11a');if(_0x13192f[_0x1a5b7e('0x0')][_0x1a5b7e('0x16e')]===_0x1a5b7e('0x35'))_0x13192f[_0x1a5b7e('0x0')]['status']=_0x1a5b7e('0x19d');if(_0x13192f['presence']['status']===_0x1a5b7e('0x5c'))_0x13192f[_0x1a5b7e('0x0')][_0x1a5b7e('0x16e')]=_0x1a5b7e('0x191');let _0x2b3809=Date[_0x1a5b7e('0x6b')]()-_0x13192f[_0x1a5b7e('0x148')],_0x253bd6=Date[_0x1a5b7e('0x6b')]()-_0x5ca038['guild'][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x13192f['id'])['joinedAt'];const _0x352a2a=Math['floor'](_0x253bd6/0x5265c00),_0x176400=moment[_0x1a5b7e('0x125')](_0x13192f[_0x1a5b7e('0x1ca')])[_0x1a5b7e('0x157')](_0x1a5b7e('0x92'));let _0x812a30=_0x13192f[_0x1a5b7e('0x0')][_0x1a5b7e('0x16e')];const _0x651e91=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x129')](_0x13192f[_0x1a5b7e('0x106')][_0x1a5b7e('0x3e')],_0x13192f[_0x1a5b7e('0x106')]['displayAvatarURL']())[_0x1a5b7e('0x42')]()[_0x1a5b7e('0x12c')]('BLUE')[_0x1a5b7e('0x150')](_0x13192f['user']['displayAvatarURL']({'dynamic':!![]}))[_0x1a5b7e('0x99')](_0x1a5b7e('0x87'),_0x13192f['id'])['addField'](_0x1a5b7e('0x1ce'),_0x1a5b7e('0xaa')+_0x13192f[_0x1a5b7e('0xe9')][_0x1a5b7e('0x182')](_0x1a5b7e('0x25'))+'>')[_0x1a5b7e('0x99')]('Account\x20Creation\x20Date:','\x20'+moment[_0x1a5b7e('0x125')](_0x13192f[_0x1a5b7e('0x106')][_0x1a5b7e('0x148')])[_0x1a5b7e('0x157')]('dddd,\x20MMMM\x20Do\x20YYYY'),!![])[_0x1a5b7e('0x99')]('Server\x20Join\x20Date',''+_0x176400)['addField'](_0x1a5b7e('0x57'),_0x812a30);_0x5ca038['channel'][_0x1a5b7e('0x47')](_0x651e91);break;case _0x1a5b7e('0x3a'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')](_0x1a5b7e('0x117')))return _0x5ca038['channel']['send'](_0x42b90c);_0x5ca038[_0x1a5b7e('0x171')]['fetchBans']()[_0x1a5b7e('0x48')](_0xb8e694=>{const _0xadecb4=_0x1a5b7e;_0x5ca038['channel'][_0xadecb4('0x47')](_0xadecb4('0x188')+_0xb8e694[_0xadecb4('0x7d')]+_0xadecb4('0x38'));});break;case _0x1a5b7e('0x128'):if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1bc836);const _0x19c639=_0x1a5b7e('0x1ba');let _0x5947ef,_0x36c992,_0x302aa9;try{_0x5947ef=_0x5755a8[0x1]?_0x19c639+'/countries/'+_0x5755a8[0x1]:_0x19c639+'/all',_0x36c992=await axios[_0x1a5b7e('0xd9')](_0x5947ef),_0x302aa9=_0x36c992[_0x1a5b7e('0x16a')];}catch(_0x5b5748){return _0x5ca038[_0x1a5b7e('0x132')]['send'](_0x1a5b7e('0xe1')+_0x5755a8[0x1]+'***.');}const _0x4f5b80=new MessageEmbed()['setTitle'](_0x5755a8[0x1]?_0x5755a8[0x1][_0x1a5b7e('0x8b')]()+'\x20Stats':_0x1a5b7e('0xb6'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x2a'))['setThumbnail'](_0x5755a8[0x0]?_0x302aa9['countryInfo'][_0x1a5b7e('0x22')]:_0x1a5b7e('0x186'))[_0x1a5b7e('0x14e')]({'name':'Total\x20Cases:','value':_0x302aa9[_0x1a5b7e('0x18f')][_0x1a5b7e('0x154')](),'inline':!![]},{'name':'Total\x20Deaths:','value':_0x302aa9['deaths'][_0x1a5b7e('0x154')](),'inline':!![]},{'name':_0x1a5b7e('0x1a2'),'value':_0x302aa9[_0x1a5b7e('0x81')]['toLocaleString'](),'inline':!![]},{'name':_0x1a5b7e('0x1d'),'value':_0x302aa9[_0x1a5b7e('0x7f')]['toLocaleString'](),'inline':!![]},{'name':'​','value':'​','inline':!![]},{'name':'Critical\x20Cases:','value':_0x302aa9['critical'][_0x1a5b7e('0x154')](),'inline':!![]},{'name':_0x1a5b7e('0x15b'),'value':_0x302aa9[_0x1a5b7e('0x66')][_0x1a5b7e('0x154')]()['replace']('-',''),'inline':!![]},{'name':'Deaths\x20Today:','value':_0x302aa9[_0x1a5b7e('0x141')][_0x1a5b7e('0x154')](),'inline':!![]});await _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x4f5b80);break;case _0x1a5b7e('0x134'):const _0x27ffab='https://some-random-api.ml/meme';let _0x596d54,_0x22913c;try{_0x22913c=await axios['get'](_0x27ffab),_0x596d54=_0x22913c[_0x1a5b7e('0x16a')];}catch(_0x2de5c9){return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0x1bc')+_0x5ca038[_0x1a5b7e('0x41')]+_0x1a5b7e('0x80'));}const _0x2e18a7=new MessageEmbed()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xef'))['setColor'](_0x1a5b7e('0x2a'))[_0x1a5b7e('0x150')](_0x596d54[_0x1a5b7e('0xa4')]);await _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x2e18a7);break;case _0x1a5b7e('0x19e'):let _0x23a2a0=_0x5ca038[_0x1a5b7e('0x178')][_0x1a5b7e('0x1a5')](0x8);ccan;if(!_0x23a2a0)return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1bc836);try{let _0x41d67c=await api(_0x23a2a0,!![]);const _0x190f0a=new MessageEmbed()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0x169')+_0x23a2a0)[_0x1a5b7e('0x12c')](_0x1a5b7e('0x1b2'))[_0x1a5b7e('0x150')](_0x41d67c)[_0x1a5b7e('0x62')](_0x1a5b7e('0xba')+_0x23a2a0);_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x190f0a);}catch(_0x11628c){_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x11628c);}break;case'img':var _0x491718=_0x5ca038['content']['split']('\x20');_0x491718[0x0]==='$img'&&_0x580f21(_0x5ca038,_0x491718);function _0x580f21(_0x46e1ad,_0x3bf10b){const _0x402589=_0x1a5b7e;var _0x2b9f05=_0x3bf10b[_0x402589('0x1a5')](0x1)[_0x402589('0x182')]('\x20'),_0x4a45e7={'url':_0x402589('0x79')+_0x2b9f05,'method':_0x402589('0x1a8'),'headers':{'Accept':_0x402589('0xcd'),'User-Agent':_0x402589('0x3')}};request(_0x4a45e7,function(_0x75cb88,_0x74cfa6,_0x1294c9){const _0x23d1d5=_0x402589;if(_0x75cb88)return;$=cheerio[_0x23d1d5('0x2f')](_0x1294c9);var _0x5a163a=$(_0x23d1d5('0x112')),_0x348296=new Array(_0x5a163a['length'])[_0x23d1d5('0x167')](0x0)[_0x23d1d5('0x23')]((_0x213aaf,_0x38fff2)=>_0x5a163a['eq'](_0x38fff2)[_0x23d1d5('0x61')]('href'));if(!_0x348296[_0x23d1d5('0x5b')])return _0x5ca038['channel']['send'](_0x23d1d5('0xa1')+_0x5ca038[_0x23d1d5('0x41')]+'.');const _0x4a2876=new MessageEmbed()['setTitle'](_0x23d1d5('0x1a7'))['setColor'](_0x23d1d5('0x2a'))[_0x23d1d5('0x150')](_0x348296[0x0]);_0x5ca038['channel'][_0x23d1d5('0x47')](_0x4a2876);});}const _0x600ca5=_0x391343=>_0x391343[_0x1a5b7e('0x178')][_0x1a5b7e('0x4f')]('n');_0x5ca038['channel'][_0x1a5b7e('0x196')](_0x600ca5,{'max':0x4,'time':0x186a0,'errors':['n']})[_0x1a5b7e('0x48')](_0x1a0edf=>{const _0x3b8041=_0x1a5b7e;var _0x1ef821=_0x5ca038[_0x3b8041('0x178')][_0x3b8041('0x8a')]('\x20');_0x1ef821[0x0]==='n'&&_0x580f21(_0x5ca038,_0x1ef821);});break;case _0x1a5b7e('0x5a'):var _0x2b7993=_0x5755a8[0x1];if(!_0x2b7993)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0xd7'));var _0x32b3c2=_0x5755a8[_0x1a5b7e('0x1a5')](0x2)['join']('\x20');_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0x1c6')+_0x2b7993+_0x1a5b7e('0x76')+_0x32b3c2),setTimeout(function(){const _0x2ff822=_0x1a5b7e;_0x5ca038[_0x2ff822('0x132')][_0x2ff822('0x47')]('**'+_0x5ca038['author']+'\x20your\x20timer\x20is\x20over.\x20Label\x20-\x20'+_0x32b3c2+_0x2ff822('0x24'));},ms(_0x2b7993));break;case'sin':var _0x1d4f0c=_0x5755a8[0x1];if(!_0x1d4f0c)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0x9c'));var _0x37c8cb=Math[_0x1a5b7e('0x93')](_0x1d4f0c);_0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1a5b7e('0x1bd')+_0x37c8cb+_0x1a5b7e('0x11f'));break;case'pi':_0x5ca038['reply'](_0x1a5b7e('0x1c3'));break;case _0x1a5b7e('0xdc'):var _0x34bcba=_0x5755a8[0x1],_0x18e39d=_0x5755a8[0x2];if(!_0x34bcba)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0x91'));if(!_0x18e39d)return _0x5ca038['reply'](_0x1a5b7e('0x91'));var _0x540656=Math[_0x1a5b7e('0x14b')](_0x34bcba,_0x18e39d);_0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0x43')+_0x540656+'**');break;case'sqrt':var _0x4b5cd4=_0x5755a8[0x1];if(!_0x4b5cd4)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0x95'));var _0x1b6f2a=Math[_0x1a5b7e('0x137')](_0x4b5cd4);_0x5ca038[_0x1a5b7e('0xf9')]('Result\x20-\x20**'+_0x1b6f2a+'**');break;case _0x1a5b7e('0x14c'):var _0x3190a9=_0x5755a8[0x1];if(!_0x3190a9)return _0x5ca038[_0x1a5b7e('0xf9')](_0x1a5b7e('0x20'));var _0x5e36b0=Math[_0x1a5b7e('0x14c')](_0x3190a9);_0x5ca038['reply']('Result\x20-\x20**'+_0x5e36b0+'**');break;case _0x1a5b7e('0xc7'):if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1bc836);const _0x108a27=process['env'][_0x1a5b7e('0xca')];let _0xd95746=_0x5755a8[_0x1a5b7e('0x1a5')](0x1)[_0x1a5b7e('0x182')]('\x20'),_0x2d2988=_0x1a5b7e('0x6e')+_0xd95746+'\x22}',_0xbbff67=await axios['post'](_0x108a27,_0x2d2988);(_0xbbff67[_0x1a5b7e('0x16e')]!==0xc8||resp[_0x1a5b7e('0x16a')]==='')&&(console[_0x1a5b7e('0x10')](_0x1a5b7e('0x149')),_0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1a5b7e('0x187')),console[_0x1a5b7e('0x10')](error));let _0x293b3f=_0xbbff67[_0x1a5b7e('0x16a')][_0x1a5b7e('0x1b6')][0x0];if(_0x293b3f==null){const _0x54a8fc=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')]('Bot')[_0x1a5b7e('0x53')]('Error')[_0x1a5b7e('0x42')]();return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x54a8fc);}let _0x280115=new Date(_0x293b3f['release_date']);const _0x2450e5=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x293b3f[_0x1a5b7e('0x82')])[_0x1a5b7e('0x62')](_0x1a5b7e('0xe8')+_0x293b3f[_0x1a5b7e('0x15a')])[_0x1a5b7e('0x14e')]({'name':_0x1a5b7e('0x194'),'value':_0x293b3f['brand_name'],'inline':!![]},{'name':_0x1a5b7e('0x165'),'value':_0x280115[_0x1a5b7e('0x12e')]()+'-'+_0x280115[_0x1a5b7e('0xc6')]()+'-'+_0x280115[_0x1a5b7e('0x116')](),'inline':!![]},{'name':_0x1a5b7e('0xfc'),'value':_0x293b3f[_0x1a5b7e('0x7d')],'inline':!![]},{'name':'Retail','value':'(goatresp2[\x27retail_price_cents_usd\x27]/100).toFixed(2)','inline':!![]},{'name':'','value':'(goatresp2[\x27lowest_price_cents_usd\x27]/100).toFixed(2)','inline':!![]});_0x293b3f[_0x1a5b7e('0x13')]&&_0x2450e5[_0x1a5b7e('0x1a')](_0x293b3f[_0x1a5b7e('0x1a1')]);_0x2450e5[_0x1a5b7e('0x42')](),_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x2450e5);break;case'help':if(_0x5ca038[_0x1a5b7e('0x1a0')]['permissions'][_0x1a5b7e('0x65')](_0x1a5b7e('0x59'))){const _0x51ffaa=new Discord[(_0x1a5b7e('0x1c8'))]()['setTitle'](_0x1a5b7e('0xd8'))['setColor'](_0x1a5b7e('0x6'))['addField'](_0x1a5b7e('0x1b5'),_0x1a5b7e('0x33'))['setTimestamp']();return _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x51ffaa);}else{if(_0x5ca038['member']['roles'][_0x1a5b7e('0x37')][_0x1a5b7e('0xb9')](_0x2a975a=>_0x2a975a['id']===_0x1a5b7e('0x124'))){const _0x3b76f2=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))['addField']('Commands\x20available\x20for\x20user:',_0x1a5b7e('0x60'))[_0x1a5b7e('0x42')]();return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x3b76f2);}else{if(_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0x135')][_0x1a5b7e('0x37')]['some'](_0x2f73e8=>_0x2f73e8['id']===_0x1a5b7e('0x1b'))){const _0x1d9fd4=new Discord[(_0x1a5b7e('0x1c8'))]()['setTitle'](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x99')](_0x1a5b7e('0x1b5'),_0x1a5b7e('0x14f'))[_0x1a5b7e('0x42')]();return _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1d9fd4);}else{const _0x3f0a9c=new Discord['MessageEmbed']()[_0x1a5b7e('0x1b1')]('Bot')['setColor'](_0x1a5b7e('0x6'))[_0x1a5b7e('0x99')](_0x1a5b7e('0x1b5'),'verify,\x20ping,\x208ball,\x20urban,\x20goat,\x20lyrics,\x20info,\x20avatar,\x20pt,\x20userinfo,\x20corona,\x20meme,\x20img,\x20timer,\x20sin,\x20pi,\x20power,\x20sqrt,\x20acos,\x20help,\x20return,\x20obfuscate,\x20resource,\x20changelog,\x20addtag,\x20tag,\x20reddit,\x20yes,\x20stfu,\x20getsrc,\x20\x20poll')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x3f0a9c);}}}break;case _0x1a5b7e('0x16b'):_0x5ca038[_0x1a5b7e('0x132')]['send'](_0x1a5b7e('0x152')+client['guilds'][_0x1a5b7e('0x37')][_0x1a5b7e('0x7d')]+_0x1a5b7e('0x172'));break;case _0x1a5b7e('0x126'):const _0x15322c=_0x1a5b7e('0x131');if(_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')]['has'](_0x1a5b7e('0x59'))){if(!_0x5ca038[_0x1a5b7e('0x41')]['id']===_0x15322c)return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);const _0x527ff1=_0x5ca038[_0x1a5b7e('0x178')]['split']('\x20')[_0x1a5b7e('0x1a5')](0x1);try{const _0x3067c2=_0x527ff1[_0x1a5b7e('0x182')]('\x20'),_0x54ee85=_0x3067c2[_0x1a5b7e('0x72')]('$exc','');let _0xa97b98=eval(_0x54ee85);if(typeof _0xa97b98!==_0x1a5b7e('0xc2'))_0xa97b98=require(_0x1a5b7e('0x10b'))[_0x1a5b7e('0xab')](_0xa97b98);_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0x34'));}catch(_0x113248){_0x5ca038[_0x1a5b7e('0x132')]['send'](''+_0x113248);}}else return;break;case'?':if(_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')]('ADMINISTRATOR')){const _0x5460b1=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')]('Bot')[_0x1a5b7e('0x12c')]('BLUE')[_0x1a5b7e('0x99')](_0x1a5b7e('0x1b5'),_0x1a5b7e('0x185'))[_0x1a5b7e('0x42')]();return _0x5ca038['channel']['send'](_0x5460b1);}else{if(_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0x135')][_0x1a5b7e('0x37')]['some'](_0x755604=>_0x755604['id']===_0x1a5b7e('0x124'))){const _0x86869f=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))['addField'](_0x1a5b7e('0x1b5'),_0x1a5b7e('0x9a'))[_0x1a5b7e('0x42')]();return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x86869f);}else{if(_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0x135')]['cache'][_0x1a5b7e('0xb9')](_0x44fdf1=>_0x44fdf1['id']==='761436504853184513')){const _0xe9f89=new Discord['MessageEmbed']()[_0x1a5b7e('0x1b1')]('Bot')['setColor'](_0x1a5b7e('0x6'))[_0x1a5b7e('0x99')](_0x1a5b7e('0x1b5'),_0x1a5b7e('0x1c2'))[_0x1a5b7e('0x42')]();return _0x5ca038[_0x1a5b7e('0x132')]['send'](_0xe9f89);}else{const _0x56f495=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')]('Bot')[_0x1a5b7e('0x12c')]('BLUE')[_0x1a5b7e('0x99')](_0x1a5b7e('0x1b5'),'verify,\x20ping,\x20urban,\x20lyrics,\x208ball,\x20info,\x20goat,\x20avatar,\x20pt,\x20userinfo,\x20corona,\x20meme,\x20img,\x20timer,\x20sin,\x20pi,\x20getsrc,\x20power,\x20sqrt,\x20acos,\x20help,\x20return,\x20resource,\x20changelog,\x20addtag,\x20tag,\x20yes,\x20stfu,\x20poll')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x56f495);}}}break;case _0x1a5b7e('0x4e'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')](_0x1a5b7e('0x59')))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);const _0x3b22c3=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')][_0x1a5b7e('0x63')]()||_0x5ca038['guild'][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')]['get'](_0x5755a8[0x1]));if(!_0x3b22c3)return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1bc836);if(_0x3b22c3[_0x1a5b7e('0x135')][_0x1a5b7e('0xaf')]['position']>=_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0x135')][_0x1a5b7e('0xaf')][_0x1a5b7e('0x1b8')])return _0x5ca038[_0x1a5b7e('0x132')]['send'](_0x564fe3);var _0xa6a92=_0x5ca038['guild'][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')]['users'][_0x1a5b7e('0x63')]()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1])),_0xea0f0d=_0xa6a92['id'],_0x55b53c=await bled[_0x1a5b7e('0xd4')]({'userid':_0xea0f0d});if(_0x55b53c!==null)return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0x151'));await punishments[_0x1a5b7e('0x1cb')]({'userid':_0xea0f0d,'punishments':{'type':_0x1a5b7e('0x4e'),'reason':_0x1a5b7e('0x5e')}});if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);await bled[_0x1a5b7e('0x1cb')]({'userid':_0xea0f0d});const _0x26f81c=new Discord[(_0x1a5b7e('0x1c8'))]()['setTitle'](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))['setDescription'](_0x1a5b7e('0x39')+_0xa6a92+_0x1a5b7e('0x1d0')+_0x5ca038['author']+'.')[_0x1a5b7e('0x42')]();_0x5ca038['channel'][_0x1a5b7e('0x47')](_0x26f81c);break;case _0x1a5b7e('0x1ab'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')]('ADMINISTRATOR'))return _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x42b90c);const _0x59f05f=_0x5ca038[_0x1a5b7e('0x171')]['member'](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')][_0x1a5b7e('0x63')]()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1]));if(!_0x59f05f)return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1bc836);var _0x2b57b0=_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')]['users']['first']()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')][_0x1a5b7e('0x37')][_0x1a5b7e('0xd9')](_0x5755a8[0x1])),_0x801cb3=_0x2b57b0['id'];await punishments[_0x1a5b7e('0x1cb')]({'userid':_0x801cb3,'punishments':{'type':'unbotblacklist','reason':'Reasons\x20are\x20not\x20required\x20for\x20un\x20bot-blacklists'}});var _0x320e47=await bled[_0x1a5b7e('0xd4')]({'userid':_0x801cb3});if(_0x320e47!==null)_0x320e47[_0x1a5b7e('0xe3')]();if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);const _0x166861=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')]('Successfully\x20removed\x20'+_0x2b57b0+_0x1a5b7e('0x1d8')+_0x5ca038[_0x1a5b7e('0x41')]+'.')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x166861);break;case _0x1a5b7e('0x1b4'):const _0xd61786=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')]('Successfully\x20returned,\x20'+_0x5ca038[_0x1a5b7e('0x41')]+'.\x20')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0xd61786);return;break;case _0x1a5b7e('0xed'):if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0x132')]['send']('Usage:\x20$resource\x20quizlet.com\x20\x22study\x20guide\x22');resourcenameandshitlol=_0x5755a8['slice'](0x2)[_0x1a5b7e('0x182')]('\x20');if(!resourcenameandshitlol)return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0x156'));client[_0x1a5b7e('0xd3')][_0x1a5b7e('0x37')]['get'](_0x1a5b7e('0x195'))[_0x1a5b7e('0x47')]('Submission\x20by\x20'+_0x5ca038[_0x1a5b7e('0x41')]+_0x1a5b7e('0x1af')+_0x5755a8[0x1]+_0x1a5b7e('0x55')+resourcenameandshitlol);const _0x28d1d2=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0xd8'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')](_0x1a5b7e('0x18')+_0x5ca038[_0x1a5b7e('0x41')]+'.\x20')[_0x1a5b7e('0x42')]();_0x5ca038['channel'][_0x1a5b7e('0x47')](_0x28d1d2);break;case _0x1a5b7e('0x44'):const _0x38a90b=new Discord['MessageEmbed']()[_0x1a5b7e('0x1b1')](_0x1a5b7e('0x18d'))[_0x1a5b7e('0x12c')](_0x1a5b7e('0x1b2'))[_0x1a5b7e('0x99')](_0x1a5b7e('0x19'))[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x38a90b);break;case _0x1a5b7e('0xc0'):if(!_0x5755a8[0x1])return _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1bc836);if(!_0x5755a8[_0x1a5b7e('0x1a5')](0x2)[_0x1a5b7e('0x182')]('\x20'))return _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1bc836);tags[_0x1a5b7e('0xd4')]({'Guild':_0x5ca038[_0x1a5b7e('0x171')]['id'],'Name':_0x5755a8[0x1]},async(_0x4eed05,_0xcc5b2c)=>{const _0x49c78d=_0x1a5b7e;if(_0x4eed05)throw _0x4eed05;if(_0xcc5b2c)_0x5ca038['channel'][_0x49c78d('0x47')]('that\x20tag\x20already\x20exists.\x20use\x20`$edittag`\x20to\x20edit\x20it.\x20');else{if(!_0xcc5b2c){let _0x52d859=new tags({'Guild':_0x5ca038[_0x49c78d('0x171')]['id'],'Name':_0x5755a8[0x1],'Content':_0x5755a8[_0x49c78d('0x1a5')](0x2)['join']('\x20')});_0x52d859['save'](),_0x5ca038[_0x49c78d('0x132')][_0x49c78d('0x47')]('Tag\x20'+_0x5755a8[0x1]+_0x49c78d('0x12'));if(error)return console[_0x49c78d('0x10')](error);}}});break;case _0x1a5b7e('0x6a'):if(!_0x5755a8[0x1])return _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x1bc836);if(!_0x5755a8[_0x1a5b7e('0x1a5')](0x2)[_0x1a5b7e('0x182')]('\x20'))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1bc836);tags[_0x1a5b7e('0xd4')]({'Guild':_0x5ca038[_0x1a5b7e('0x171')]['id'],'Name':_0x5755a8[0x1]},async(_0x5506cb,_0x4a0698)=>{const _0x49ca17=_0x1a5b7e;if(_0x5506cb)throw _0x5506cb;if(_0x4a0698){if(!_0x5ca038[_0x49ca17('0x1a0')][_0x49ca17('0xe2')]['has']('MANAGE_NICKNAMES'))return _0x5ca038[_0x49ca17('0x132')]['send'](_0x42b90c);_0x4a0698[_0x49ca17('0x179')]=_0x5755a8[_0x49ca17('0x1a5')](0x2)[_0x49ca17('0x182')]('\x20'),_0x4a0698[_0x49ca17('0x15c')](),_0x5ca038['channel']['send']('Tag\x20'+_0x5755a8[0x1]+_0x49ca17('0x101'));}else{if(!_0x4a0698)return _0x5ca038[_0x49ca17('0x132')][_0x49ca17('0x47')]('that\x20tag\x20doesnt\x20exist.\x20use\x20`$addtag`\x20to\x20add\x20it.');}});break;case _0x1a5b7e('0x3e'):tags[_0x1a5b7e('0xd4')]({'Guild':_0x5ca038[_0x1a5b7e('0x171')]['id'],'Name':_0x5755a8[0x1]},async(_0x445d72,_0x1bb090)=>{const _0x18945c=_0x1a5b7e;if(_0x445d72)throw _0x445d72;if(_0x1bb090)return _0x5ca038[_0x18945c('0x132')]['send'](_0x1bb090['Content']);else return _0x5ca038[_0x18945c('0x132')][_0x18945c('0x47')](_0x18945c('0xbf'));});break;case'reload':let _0xa501a7=_0x5755a8[_0x1a5b7e('0x1a5')](0x1)[_0x1a5b7e('0x182')]('\x20');if(_0x5ca038[_0x1a5b7e('0x41')]['id']!==_0x1a5b7e('0x131'))return![];client[_0x1a5b7e('0x1aa')](),await _0x1eba70(0x3e8),client['login'](process[_0x1a5b7e('0xd5')][_0x1a5b7e('0x16d')]),_0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1a5b7e('0xfb')+_0xa501a7+'`');break;case _0x1a5b7e('0x189'):if(!_0x5ca038[_0x1a5b7e('0x1a0')]['permissions'][_0x1a5b7e('0x65')]('BAN_MEMBERS'))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);const _0x32fe91=_0x5ca038['guild'][_0x1a5b7e('0x1a0')](_0x5ca038[_0x1a5b7e('0x7c')][_0x1a5b7e('0x168')]['first']()||_0x5ca038[_0x1a5b7e('0x171')][_0x1a5b7e('0x46')]['cache'][_0x1a5b7e('0xd9')](_0x5755a8[0x1]));if(_0x32fe91){if(_0x32fe91[_0x1a5b7e('0x135')][_0x1a5b7e('0xaf')][_0x1a5b7e('0x1b8')]>=_0x5ca038['member'][_0x1a5b7e('0x135')][_0x1a5b7e('0xaf')][_0x1a5b7e('0x1b8')])return _0x5ca038['channel'][_0x1a5b7e('0x47')](_0x564fe3);}let _0xf8f7e3=_0x5755a8[0x1],_0x314557=_0x5755a8[_0x1a5b7e('0x1a5')](0x2)[_0x1a5b7e('0x182')]('\x20');if(!_0xf8f7e3)return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1bc836);if(isNaN(_0xf8f7e3))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x1bc836);if(_0xf8f7e3===client[_0x1a5b7e('0x106')]['id'])return _0x5ca038['channel'][_0x1a5b7e('0x47')]('why\x20ban\x20me???\x20😭');if(!_0x314557)_0x314557=_0x1a5b7e('0xf8');client[_0x1a5b7e('0x168')][_0x1a5b7e('0x15e')](_0xf8f7e3)[_0x1a5b7e('0x48')](async _0x148fc8=>{const _0x11d3db=_0x1a5b7e;await _0x5ca038[_0x11d3db('0x171')][_0x11d3db('0x46')][_0x11d3db('0xc1')](_0x148fc8['id'],{'reason':_0x314557}),_0x5ca038[_0x11d3db('0x132')]['send']('**'+_0x5ca038[_0x11d3db('0x41')][_0x11d3db('0x3e')]+_0x11d3db('0x14')+_0x148fc8+_0x11d3db('0x1b7')+_0x314557+'`\x20'),await punishments['create']({'userid':_0xf8f7e3,'punishments':{'type':'hackban','reason':_0x314557}});return;})['catch'](_0x52caa4=>{const _0x567a7b=_0x1a5b7e;return _0x5ca038[_0x567a7b('0x132')][_0x567a7b('0x47')](_0x567a7b('0x109')+_0x52caa4+'**');});break;case _0x1a5b7e('0x2'):const _0x571ea1=new Discord[(_0x1a5b7e('0x1c8'))]()['setTitle'](_0x1a5b7e('0xeb'))[_0x1a5b7e('0x12c')]('BLUE')[_0x1a5b7e('0x53')](_0x1a5b7e('0xbb'))[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')]['send'](_0x571ea1);break;case _0x1a5b7e('0x4b'):if(!_0x5ca038['member'][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')](_0x1a5b7e('0x59')))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);var _0x17ac20=_0x5755a8[0x1];if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);var _0x4e3ddb=await databasebanneds['findOne']({'userid':_0x17ac20});if(_0x4e3ddb!==null)_0x4e3ddb[_0x1a5b7e('0xe3')]();const _0x19ecef=new Discord[(_0x1a5b7e('0x1c8'))]()['setTitle']('Bot')[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))['setDescription'](_0x1a5b7e('0x1cc')+_0x17ac20+_0x1a5b7e('0x1f')+_0x5ca038[_0x1a5b7e('0x41')]+'.')[_0x1a5b7e('0x42')]();_0x5ca038[_0x1a5b7e('0x132')]['send'](_0x19ecef);break;case _0x1a5b7e('0xff'):if(!_0x5ca038[_0x1a5b7e('0x1a0')][_0x1a5b7e('0xe2')][_0x1a5b7e('0x65')](_0x1a5b7e('0x59')))return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')](_0x42b90c);addbanuser=_0x5755a8[0x1];var _0x5f3963=await databasebanneds[_0x1a5b7e('0xd4')]({'userid':addbanuser});if(_0x5f3963!==null)return _0x5ca038[_0x1a5b7e('0x132')][_0x1a5b7e('0x47')]('User\x20is\x20already\x20on\x20the\x20ban\x20database.');if(!_0x5755a8[0x1])return _0x5ca038[_0x1a5b7e('0xf9')](_0x1bc836);await databasebanneds[_0x1a5b7e('0x1cb')]({'userid':addbanuser});const _0x2f80a9=new Discord[(_0x1a5b7e('0x1c8'))]()[_0x1a5b7e('0x1b1')]('Bot')[_0x1a5b7e('0x12c')](_0x1a5b7e('0x6'))[_0x1a5b7e('0x53')](_0x1a5b7e('0x39')+addbanuser+'\x20to\x20the\x20banned\x20database,\x20'+_0x5ca038[_0x1a5b7e('0x41')]+'.')[_0x1a5b7e('0x42')]();_0x5ca038['channel'][_0x1a5b7e('0x47')](_0x2f80a9);break;}}),client['on'](_0x197b23('0x120'),_0x5e074c=>{const _0x2b11b7=_0x197b23;if(!_0x5e074c[_0x2b11b7('0x171')])return;const _0x4a15dc=_0x5e074c[_0x2b11b7('0x171')]['channels'][_0x2b11b7('0x37')][_0x2b11b7('0x153')](_0x2dec03=>_0x2dec03['id']===_0x2b11b7('0x1a4'));if(!_0x4a15dc)return;if(_0x5e074c['content'][_0x2b11b7('0xfd')]()[_0x2b11b7('0x18c')]('https://grabify.link'))_0x5e074c[_0x2b11b7('0x78')](),_0x5e074c[_0x2b11b7('0x132')][_0x2b11b7('0x47')](_0x5e074c[_0x2b11b7('0x41')]+_0x2b11b7('0xfa')),client[_0x2b11b7('0xd3')][_0x2b11b7('0x37')][_0x2b11b7('0xd9')](_0x2b11b7('0x1a4'))['send'](_0x5e074c[_0x2b11b7('0x41')]+'\x20posted\x20a\x20IP\x20logger.\x20ID\x20-\x20'+_0x5e074c[_0x2b11b7('0x41')]['id']);else{if(_0x5e074c[_0x2b11b7('0x178')][_0x2b11b7('0xfd')]()['includes'](_0x2b11b7('0x5d')))_0x5e074c[_0x2b11b7('0x78')](),_0x5e074c[_0x2b11b7('0x132')][_0x2b11b7('0x47')](_0x5e074c[_0x2b11b7('0x41')]+_0x2b11b7('0xfa')),client['channels'][_0x2b11b7('0x37')]['get']('714822326016933900')[_0x2b11b7('0x47')](_0x5e074c['author']+'\x20posted\x20a\x20IP\x20logger.\x20ID\x20-\x20'+_0x5e074c[_0x2b11b7('0x41')]['id']);else{if(_0x5e074c[_0x2b11b7('0x178')][_0x2b11b7('0xfd')]()[_0x2b11b7('0x18c')]('https://stopify.co'))_0x5e074c[_0x2b11b7('0x78')](),_0x5e074c[_0x2b11b7('0x132')][_0x2b11b7('0x47')](_0x5e074c[_0x2b11b7('0x41')]+_0x2b11b7('0xfa')),client[_0x2b11b7('0xd3')]['cache']['get'](_0x2b11b7('0x1a4'))[_0x2b11b7('0x47')](_0x5e074c[_0x2b11b7('0x41')]+_0x2b11b7('0x1d6')+_0x5e074c[_0x2b11b7('0x41')]['id']);else{if(_0x5e074c['content'][_0x2b11b7('0xfd')]()[_0x2b11b7('0x18c')](_0x2b11b7('0xb4')))_0x5e074c[_0x2b11b7('0x78')](),_0x5e074c[_0x2b11b7('0x132')][_0x2b11b7('0x47')](_0x5e074c[_0x2b11b7('0x41')]+_0x2b11b7('0xfa')),client[_0x2b11b7('0xd3')][_0x2b11b7('0x37')][_0x2b11b7('0xd9')](_0x2b11b7('0x1a4'))[_0x2b11b7('0x47')](_0x5e074c[_0x2b11b7('0x41')]+_0x2b11b7('0x1d6')+_0x5e074c['author']['id']);else{if(_0x5e074c[_0x2b11b7('0x178')]['toLowerCase']()['includes'](_0x2b11b7('0x77')))_0x5e074c[_0x2b11b7('0x78')](),_0x5e074c['channel'][_0x2b11b7('0x47')](_0x5e074c[_0x2b11b7('0x41')]+'\x20posted\x20a\x20ip\x20logger.'),client['channels']['cache']['get'](_0x2b11b7('0x1a4'))[_0x2b11b7('0x47')](_0x5e074c[_0x2b11b7('0x41')]+_0x2b11b7('0x1d6')+_0x5e074c[_0x2b11b7('0x41')]['id']);else{if(_0x5e074c['content']['toLowerCase']()[_0x2b11b7('0x18c')](_0x2b11b7('0x51')))_0x5e074c[_0x2b11b7('0x78')](),_0x5e074c[_0x2b11b7('0x132')][_0x2b11b7('0x47')](_0x5e074c['author']+'\x20posted\x20a\x20ip\x20logger.'),client[_0x2b11b7('0xd3')][_0x2b11b7('0x37')][_0x2b11b7('0xd9')]('714822326016933900')['send'](_0x5e074c[_0x2b11b7('0x41')]+_0x2b11b7('0x1d6')+_0x5e074c[_0x2b11b7('0x41')]['id']);else{if(_0x5e074c[_0x2b11b7('0x178')][_0x2b11b7('0xfd')]()[_0x2b11b7('0x18c')](_0x2b11b7('0x161')))_0x5e074c['delete'](),_0x5e074c[_0x2b11b7('0x132')]['send'](_0x5e074c['author']+_0x2b11b7('0xfa')),client['channels'][_0x2b11b7('0x37')]['get'](_0x2b11b7('0x1a4'))[_0x2b11b7('0x47')](_0x5e074c['author']+_0x2b11b7('0x1d6')+_0x5e074c[_0x2b11b7('0x41')]['id']);else{if(_0x5e074c[_0x2b11b7('0x178')][_0x2b11b7('0xfd')]()[_0x2b11b7('0x18c')]('https://catsnthing.com'))_0x5e074c[_0x2b11b7('0x78')](),_0x5e074c[_0x2b11b7('0x132')][_0x2b11b7('0x47')](_0x5e074c[_0x2b11b7('0x41')]+_0x2b11b7('0xfa')),client[_0x2b11b7('0xd3')][_0x2b11b7('0x37')][_0x2b11b7('0xd9')](_0x2b11b7('0x1a4'))[_0x2b11b7('0x47')](_0x5e074c['author']+_0x2b11b7('0x1d6')+_0x5e074c['author']['id']);else _0x5e074c['content'][_0x2b11b7('0xfd')]()[_0x2b11b7('0x18c')](_0x2b11b7('0x1ad'))&&_0x5e074c[_0x2b11b7('0x78')]();}}}}}}}});let hook;client['on'](_0x197b23('0x120'),async _0x476f86=>{const _0xa64eb5=_0x197b23,_0x356a1a=await prefix[_0xa64eb5('0xd4')]({'GuildID':_0x476f86[_0xa64eb5('0x171')]['id']}),_0x4c8baf=_0x356a1a[_0xa64eb5('0x3c')];if(_0x476f86[_0xa64eb5('0x178')][_0xa64eb5('0x4f')](_0x4c8baf)){if(_0x476f86[_0xa64eb5('0x41')]['bot'])return;if(!_0x476f86[_0xa64eb5('0x171')])return;const _0x5dd9c6=_0x476f86[_0xa64eb5('0x178')][_0xa64eb5('0x1a5')](notmainPREFIX['length'])[_0xa64eb5('0x5f')]()[_0xa64eb5('0x8a')](/ +/),_0x39d51e=_0x476f86[_0xa64eb5('0x178')][_0xa64eb5('0x1a5')](notmainPREFIX[_0xa64eb5('0x5b')])['trim']()[_0xa64eb5('0x8a')]('\x20'),_0xdc0a5e=_0x39d51e[_0xa64eb5('0x32')](),_0x284285=_0x39d51e[_0xa64eb5('0x182')]('\x20');if(_0xdc0a5e===_0xa64eb5('0x11e')){if(!_0x5dd9c6[0x1])return _0x476f86['channel']['send'](_0xa64eb5('0x9f'));if(!_0x476f86[_0xa64eb5('0x1a0')][_0xa64eb5('0xe2')][_0xa64eb5('0x65')](_0xa64eb5('0x59')))return _0x476f86['channel'][_0xa64eb5('0x47')]('no');webhookthing=_0x5dd9c6[0x1];if(!webhookthing[_0xa64eb5('0xfd')]()[_0xa64eb5('0x18c')](_0xa64eb5('0xf')))return _0x476f86[_0xa64eb5('0x132')][_0xa64eb5('0x47')](_0xa64eb5('0x6f'));hook=new Webhook(''+_0x5dd9c6[0x1]),_0x476f86['channel']['send']('Set\x20webhook\x20to\x20the\x20url,\x20'+_0x476f86[_0xa64eb5('0x41')]+'.');}else{if(_0xdc0a5e===_0xa64eb5('0x100')){if(!_0x5dd9c6[0x1])return _0x476f86[_0xa64eb5('0x132')][_0xa64eb5('0x47')]('usage:\x20`<prefix>\x20<amount\x20of\x20times\x20to\x20send\x20message>\x20<message>`');if(!_0x5dd9c6[0x2])return _0x476f86['channel']['send']('usage:\x20`<prefix>\x20<amount\x20of\x20times\x20to\x20send\x20message>\x20<message>`');if(!_0x476f86[_0xa64eb5('0x1a0')][_0xa64eb5('0xe2')][_0xa64eb5('0x65')](_0xa64eb5('0x59')))return _0x476f86[_0xa64eb5('0x132')][_0xa64eb5('0x47')]('no');if(!hook)return _0x476f86[_0xa64eb5('0x132')]['send']('Set\x20a\x20webhook\x20first.');wbhvar=_0x5dd9c6[_0xa64eb5('0x1a5')](0x2)[_0xa64eb5('0x182')]('\x20'),wbhrepeat=_0x5dd9c6[0x1];var _0xd1e492;for(_0xd1e492=0x0;_0xd1e492<wbhrepeat;_0xd1e492++){hook[_0xa64eb5('0x47')](''+wbhvar);}_0x476f86[_0xa64eb5('0x132')][_0xa64eb5('0x47')]('Sent\x20message\x20through\x20the\x20webhook,\x20'+_0x476f86[_0xa64eb5('0x41')]);}}}});const addReactions=_0x169022=>{const _0x3c0040=_0x197b23;_0x169022[_0x3c0040('0xb3')]('🇸'),_0x169022[_0x3c0040('0xb3')]('🇹'),_0x169022[_0x3c0040('0xb3')]('🇫'),_0x169022[_0x3c0040('0xb3')]('🇺'),setTimeout(()=>{const _0x381978=_0x3c0040;_0x169022[_0x381978('0xb3')]('🇹');},0x2ee);};client['on'](_0x197b23('0x120'),async _0x2fa55c=>{const _0x46cbe6=_0x197b23;if(_0x2fa55c[_0x46cbe6('0x178')][_0x46cbe6('0xfd')]()==='$stfu'){if(!_0x2fa55c['guild'])return;var _0x5d7a17=await reactions['findOne']({'Value':_0x46cbe6('0x1d5')});if(_0x5d7a17!==null)return;await _0x2fa55c['delete']();const _0x1e80d6=await _0x2fa55c[_0x46cbe6('0x132')][_0x46cbe6('0xf2')]['fetch']({'limit':0x1});_0x1e80d6&&_0x1e80d6[_0x46cbe6('0x63')]()&&addReactions(_0x1e80d6['first']());}});const addReactionss=_0x292abb=>{const _0xa3a01f=_0x197b23;_0x292abb[_0xa3a01f('0xb3')]('🇾'),_0x292abb[_0xa3a01f('0xb3')]('🇪'),setTimeout(()=>{const _0x5d95d5=_0xa3a01f;_0x292abb[_0x5d95d5('0xb3')]('🇸');},0x2ee);};client['on'](_0x197b23('0x120'),async _0x5b2e19=>{const _0x23718f=_0x197b23;if(_0x5b2e19[_0x23718f('0x178')][_0x23718f('0xfd')]()===_0x23718f('0xf5')){if(!_0x5b2e19[_0x23718f('0x171')])return;var _0x359997=await reactions['findOne']({'Value':_0x23718f('0x1d5')});if(_0x359997!==null)return;await _0x5b2e19[_0x23718f('0x78')]();const _0x3a9674=await _0x5b2e19[_0x23718f('0x132')][_0x23718f('0xf2')][_0x23718f('0x15e')]({'limit':0x1});_0x3a9674&&_0x3a9674[_0x23718f('0x63')]()&&addReactionss(_0x3a9674[_0x23718f('0x63')]());}});const addReaction=_0x34b97a=>{const _0x257741=_0x197b23;_0x34b97a[_0x257741('0xb3')]('👍'),setTimeout(()=>{const _0x55208f=_0x257741;_0x34b97a[_0x55208f('0xb3')]('👎');},0x2ee);};client['on'](_0x197b23('0x120'),async _0xf41f45=>{const _0xd36cb1=_0x197b23;if(_0xf41f45[_0xd36cb1('0x178')][_0xd36cb1('0xfd')]()===_0xd36cb1('0x3b')){var _0x421c5c=await reactions[_0xd36cb1('0xd4')]({'Value':_0xd36cb1('0x1d5')});if(_0x421c5c!==null)return;if(!_0xf41f45['guild'])return;await _0xf41f45[_0xd36cb1('0x78')]();const _0x229ea7=await _0xf41f45['channel']['messages'][_0xd36cb1('0x15e')]({'limit':0x1});_0x229ea7&&_0x229ea7[_0xd36cb1('0x63')]()&&addReaction(_0x229ea7[_0xd36cb1('0x63')]());}});const addReactionsss=_0x5666b2=>{const _0x3ebbb8=_0x197b23;_0x5666b2['react'](_0x3ebbb8('0x1c')),setTimeout(()=>{const _0x428234=_0x3ebbb8;_0x5666b2[_0x428234('0xb3')](_0x428234('0x180'));},0x2ee);};client['on']('message',async _0x47fc97=>{const _0x152d4a=_0x197b23;if(_0x47fc97[_0x152d4a('0x178')][_0x152d4a('0xfd')]()[_0x152d4a('0x18c')](_0x152d4a('0x17b'))){if(!_0x47fc97[_0x152d4a('0x171')])return;var _0x5b9082=await reactions['findOne']({'Value':'true'});if(_0x5b9082!==null)return;if(_0x47fc97[_0x152d4a('0x171')]['id']===_0x152d4a('0x15d')){const _0x633d49=await _0x47fc97[_0x152d4a('0x132')][_0x152d4a('0xf2')][_0x152d4a('0x15e')]({'limit':0x1});_0x633d49&&_0x633d49[_0x152d4a('0x63')]()&&addReactionsss(_0x633d49[_0x152d4a('0x63')]());}}}),client['on'](_0x197b23('0x120'),async _0x360fb4=>{const _0x3398dd=_0x197b23;if(!_0x360fb4[_0x3398dd('0x171')])return;var _0x586582=await reactions['findOne']({'Value':_0x3398dd('0x1d5')});if(_0x586582!==null)return;if(_0x360fb4['guild']['id']===_0x3398dd('0x15d')){if(_0x360fb4[_0x3398dd('0x178')][_0x3398dd('0xfd')]()['includes'](_0x3398dd('0xc7')))return _0x360fb4['react']('🐐');}}),client['on']('message',async _0x2182f9=>{const _0x576787=_0x197b23;if(!_0x2182f9['guild'])return;var _0x52ec9f=await reactions[_0x576787('0xd4')]({'Value':_0x576787('0x1d5')});if(_0x52ec9f!==null)return;if(_0x2182f9['guild']['id']===_0x576787('0x15d')){if(_0x2182f9[_0x576787('0x178')][_0x576787('0xfd')]()[_0x576787('0x18c')]('oof'))return _0x2182f9[_0x576787('0xb3')]('💀');}}),client['on']('message',async _0x198499=>{const _0x4ee5ac=_0x197b23;if(!_0x198499[_0x4ee5ac('0x171')])return;var _0x421a5b=await reactions['findOne']({'Value':_0x4ee5ac('0x1d5')});if(_0x421a5b!==null)return;if(_0x198499['guild']['id']===_0x4ee5ac('0x15d')){if(_0x198499[_0x4ee5ac('0x178')][_0x4ee5ac('0xfd')]()[_0x4ee5ac('0x18c')](_0x4ee5ac('0x11c')))return _0x198499[_0x4ee5ac('0xb3')]('💀');}}),client['on'](_0x197b23('0x120'),async _0x27dae1=>{const _0x49a4e9=_0x197b23;if(!_0x27dae1[_0x49a4e9('0x171')])return;var _0x36f133=await reactions[_0x49a4e9('0xd4')]({'Value':_0x49a4e9('0x1d5')});if(_0x36f133!==null)return;if(_0x27dae1[_0x49a4e9('0x171')]['id']===_0x49a4e9('0x15d')){if(_0x27dae1[_0x49a4e9('0x178')][_0x49a4e9('0xfd')]()[_0x49a4e9('0x18c')](_0x49a4e9('0x4')))return _0x27dae1[_0x49a4e9('0xb3')]('💯');}}),client['on']('message',async _0x53d1d1=>{const _0x259002=_0x197b23;if(!_0x53d1d1['guild'])return;var _0x4f47e7=await reactions[_0x259002('0xd4')]({'Value':'true'});if(_0x4f47e7!==null)return;if(_0x53d1d1[_0x259002('0x171')]['id']===_0x259002('0x15d')){if(_0x53d1d1[_0x259002('0x178')]['toLowerCase']()[_0x259002('0x18c')](_0x259002('0x10a')))return _0x53d1d1[_0x259002('0xb3')]('🤓');}}),client['on'](_0x197b23('0x120'),async _0x4287a0=>{const _0x4e7808=_0x197b23;if(!_0x4287a0['guild'])return;var _0xe2fd05=await reactions[_0x4e7808('0xd4')]({'Value':_0x4e7808('0x1d5')});if(_0xe2fd05!==null)return;if(_0x4287a0[_0x4e7808('0x171')]['id']===_0x4e7808('0x15d')){if(_0x4287a0['content'][_0x4e7808('0xfd')]()[_0x4e7808('0x18c')](_0x4e7808('0x19f')))return _0x4287a0[_0x4e7808('0xb3')]('🥵');}}),client['on']('message',async _0x52d478=>{const _0x4c0bd6=_0x197b23;if(!_0x52d478[_0x4c0bd6('0x171')])return;var _0x3e58f8=await reactions[_0x4c0bd6('0xd4')]({'Value':_0x4c0bd6('0x1d5')});if(_0x3e58f8!==null)return;if(_0x52d478[_0x4c0bd6('0x171')]['id']===_0x4c0bd6('0x15d')){if(_0x52d478[_0x4c0bd6('0x178')]['toLowerCase']()[_0x4c0bd6('0x18c')](_0x4c0bd6('0x2d')))return _0x52d478['react']('🤖');}}),client['on'](_0x197b23('0x120'),async _0x3d2fe3=>{const _0x254a35=_0x197b23;if(!_0x3d2fe3[_0x254a35('0x171')])return;var _0x206f5f=await reactions[_0x254a35('0xd4')]({'Value':_0x254a35('0x1d5')});if(_0x206f5f!==null)return;if(_0x3d2fe3['guild']['id']===_0x254a35('0x15d')){if(_0x3d2fe3[_0x254a35('0x178')][_0x254a35('0xfd')]()[_0x254a35('0x18c')]('ok'))return _0x3d2fe3[_0x254a35('0xb3')]('👌');}}),client['on']('message',async _0xbc1221=>{const _0x1b7cd1=_0x197b23;if(!_0xbc1221[_0x1b7cd1('0x171')])return;var _0x9e8583=await reactions[_0x1b7cd1('0xd4')]({'Value':_0x1b7cd1('0x1d5')});if(_0x9e8583!==null)return;if(_0xbc1221['guild']['id']===_0x1b7cd1('0x15d')){if(_0xbc1221[_0x1b7cd1('0x178')][_0x1b7cd1('0xfd')]()[_0x1b7cd1('0x18c')](_0x1b7cd1('0xc5')))return _0xbc1221[_0x1b7cd1('0xb3')]('👌');}}),client['on'](_0x197b23('0x120'),async _0x34223a=>{const _0x5a1d17=_0x197b23;if(!_0x34223a[_0x5a1d17('0x171')])return;var _0x59a62e=await reactions['findOne']({'Value':_0x5a1d17('0x1d5')});if(_0x59a62e!==null)return;if(_0x34223a['guild']['id']===_0x5a1d17('0x15d')){if(_0x34223a[_0x5a1d17('0x178')][_0x5a1d17('0xfd')]()[_0x5a1d17('0x4f')]('k'))return _0x34223a[_0x5a1d17('0xb3')]('👌');}}),client['on'](_0x197b23('0x120'),async _0x323560=>{const _0x478666=_0x197b23;if(!_0x323560[_0x478666('0x171')])return;var _0x554b6d=await reactions[_0x478666('0xd4')]({'Value':'true'});if(_0x554b6d!==null)return;if(_0x323560[_0x478666('0x171')]['id']===_0x478666('0x15d')){if(_0x323560[_0x478666('0x178')][_0x478666('0xfd')]()[_0x478666('0x18c')](_0x478666('0x128'))){_0x323560[_0x478666('0xb3')]('😷'),_0x323560[_0x478666('0xb3')]('🦠');return;}}}),client['on']('message',async _0x20d2df=>{const _0x14575b=_0x197b23;if(!_0x20d2df['guild'])return;var _0x502401=await reactions[_0x14575b('0xd4')]({'Value':_0x14575b('0x1d5')});if(_0x502401!==null)return;if(_0x20d2df[_0x14575b('0x171')]['id']===_0x14575b('0x15d')){if(_0x20d2df[_0x14575b('0x178')][_0x14575b('0xfd')]()[_0x14575b('0x18c')]('virus')){_0x20d2df[_0x14575b('0xb3')]('😷'),_0x20d2df[_0x14575b('0xb3')]('🦠');return;}}}),client['on'](_0x197b23('0x120'),async _0x4a413f=>{const _0x2adc24=_0x197b23;if(!_0x4a413f[_0x2adc24('0x171')])return;if(_0x4a413f['guild']['id']===_0x2adc24('0x15d')){if(_0x4a413f['member'][_0x2adc24('0x135')][_0x2adc24('0x37')][_0x2adc24('0xb9')](_0x237ddb=>_0x237ddb['id']===_0x2adc24('0xc8')))_0x4a413f[_0x2adc24('0x178')][_0x2adc24('0xfd')]()['includes'](_0x2adc24('0x4a'))&&(_0x4a413f['react']('🤰'),_0x4a413f['channel'][_0x2adc24('0x47')]('uh\x20oh\x20horny\x20allen\x20is\x20back!!!'));else return;}}),client['on'](_0x197b23('0x1b0'),async(_0x5c03e3,_0x44915d)=>{const _0x3b25dd=_0x197b23;var _0xa8d72=await auditconfig['findOne']({'Value':'true'});if(_0xa8d72!==null)return;let _0x52b401=new MessageEmbed()[_0x3b25dd('0x1b1')](_0x3b25dd('0xa3'))['setColor']('BLUE')[_0x3b25dd('0x53')](_0x3b25dd('0x1a9')+_0x5c03e3['author']['id']+_0x3b25dd('0x10c')+_0x5c03e3['channel']['id']+'>')['addField'](_0x3b25dd('0xa7'),_0x5c03e3[_0x3b25dd('0x178')],!![])['addField'](_0x3b25dd('0x11d'),_0x44915d['content'],!![])[_0x3b25dd('0x42')](),_0x20377d=_0x5c03e3['guild'][_0x3b25dd('0xd3')][_0x3b25dd('0x37')][_0x3b25dd('0x13e')](_0x261405=>_0x261405['id']===_0x3b25dd('0x1a4'));if(!_0x20377d)return;_0x20377d[_0x3b25dd('0x47')](_0x52b401);}),client['on']('messageDelete',async _0x5a8e0f=>{const _0x5c12c8=_0x197b23;var _0x434902=await auditconfig[_0x5c12c8('0xd4')]({'Value':'true'});if(_0x434902!==null)return;let _0x4ef693=new MessageEmbed()[_0x5c12c8('0x1b1')](_0x5c12c8('0x110'))['setColor'](_0x5c12c8('0x6'))[_0x5c12c8('0x53')](_0x5c12c8('0x1a9')+_0x5a8e0f[_0x5c12c8('0x41')]['id']+_0x5c12c8('0x74')+_0x5a8e0f[_0x5c12c8('0x132')]['id']+'>')[_0x5c12c8('0x99')](_0x5c12c8('0x17a'),_0x5a8e0f[_0x5c12c8('0x178')],!![])[_0x5c12c8('0x42')](),_0x12adde=_0x5a8e0f[_0x5c12c8('0x171')][_0x5c12c8('0xd3')][_0x5c12c8('0x37')][_0x5c12c8('0x13e')](_0x51bef7=>_0x51bef7['id']==='714822326016933900');if(!_0x12adde)return;_0x12adde[_0x5c12c8('0x47')](_0x4ef693);}),client['on']('guildMemberRemove',async _0x2b8bb6=>{const _0xe9621b=_0x197b23;var _0x383084=await auditconfig[_0xe9621b('0xd4')]({'Value':'true'});if(_0x383084!==null)return;const _0xe75b5a=await _0x2b8bb6['guild']['fetchAuditLogs']({'limit':0x1,'type':'MEMBER_KICK'});if(!guild['id']=='708842168588042260')return;const _0x1539e7=_0xe75b5a[_0xe9621b('0x107')][_0xe9621b('0x63')]();if(!_0x1539e7)return client[_0xe9621b('0xd3')][_0xe9621b('0x37')][_0xe9621b('0xd9')]('714822326016933900')[_0xe9621b('0x47')](_0x2b8bb6[_0xe9621b('0x106')][_0xe9621b('0x3e')]+_0xe9621b('0x73'));const {executor:_0x42da20,target:_0x46a96c}=_0x1539e7;_0x46a96c['id']===_0x2b8bb6['id']?client[_0xe9621b('0xd3')][_0xe9621b('0x37')][_0xe9621b('0xd9')](_0xe9621b('0x1a4'))[_0xe9621b('0x47')](_0x2b8bb6[_0xe9621b('0x106')][_0xe9621b('0x3e')]+_0xe9621b('0x3d')+_0x42da20[_0xe9621b('0x3e')]+'\x20\x20'):client[_0xe9621b('0xd3')][_0xe9621b('0x37')]['get'](_0xe9621b('0x1a4'))['send'](_0x2b8bb6[_0xe9621b('0x106')][_0xe9621b('0x3e')]+_0xe9621b('0x88'));}),client['on'](_0x197b23('0xea'),async(_0x1e6f8d,_0x192707)=>{const _0x60dd33=_0x197b23;var _0x32511b=await auditconfig['findOne']({'Value':_0x60dd33('0x1d5')});if(_0x32511b!==null)return;const _0x5a341c=await _0x1e6f8d[_0x60dd33('0x175')]({'limit':0x1,'type':_0x60dd33('0x26')});if(!_0x1e6f8d['id']=='708842168588042260')return;const _0x11c44f=_0x5a341c[_0x60dd33('0x107')][_0x60dd33('0x63')]();if(!_0x11c44f)return client[_0x60dd33('0xd3')][_0x60dd33('0x37')]['get'](_0x60dd33('0x1a4'))[_0x60dd33('0x47')](_0x192707[_0x60dd33('0x3e')]+_0x60dd33('0x122'));const {executor:_0x27432b,target:_0x55e019}=_0x11c44f;_0x55e019['id']===_0x192707['id']?client[_0x60dd33('0xd3')][_0x60dd33('0x37')]['get'](_0x60dd33('0x1a4'))[_0x60dd33('0x47')](_0x192707[_0x60dd33('0x3e')]+_0x60dd33('0x118')+_0x27432b[_0x60dd33('0x3e')]):client[_0x60dd33('0xd3')][_0x60dd33('0x37')]['get'](_0x60dd33('0x1a4'))[_0x60dd33('0x47')](_0x192707[_0x60dd33('0x3e')]+_0x60dd33('0x86'));});const sidprefix='!';client['on'](_0x197b23('0x120'),async _0x20f061=>{const _0x598d34=_0x197b23;let _0x3488c7=_0x20f061[_0x598d34('0x178')]['substring'](sidprefix[_0x598d34('0x5b')])[_0x598d34('0x8a')]('\x20');if(!_0x20f061['content'][_0x598d34('0x4f')](sidprefix))return;const _0x278c65='736285953039138817';if(_0x20f061['author']['id']===_0x278c65)switch(_0x3488c7[0x0]){case _0x598d34('0xdb'):var _0x3d92c4=_0x3488c7[_0x598d34('0x1a5')](0x2)[_0x598d34('0x182')]('\x20'),_0x35c9f2=_0x3488c7[0x1];client[_0x598d34('0xd3')][_0x598d34('0x37')][_0x598d34('0xd9')](_0x35c9f2)[_0x598d34('0x47')](_0x3d92c4);error&&console['log'](error);break;case _0x598d34('0x159'):const _0x268673=[_0x598d34('0xb0')];_0xd417e0(JSON['parse'](process[_0x598d34('0xd5')]['googleinfo']),_0x3fcc8c);function _0xd417e0(_0x2e85b6,_0x10f370){const _0x55352e=_0x598d34,{client_secret:_0xd2efe6,client_id:_0x37048f,redirect_uris:_0x3b2213}=_0x2e85b6[_0x55352e('0xec')],_0x3ef986=new google['auth'][(_0x55352e('0x12a'))](_0x37048f,_0xd2efe6,_0x3b2213[0x0]);_0x3ef986[_0x55352e('0x8e')](JSON[_0x55352e('0x170')](process[_0x55352e('0xd5')][_0x55352e('0x158')])),_0x10f370(_0x3ef986);}function _0x3fcc8c(_0x9e1b2c){const _0x162ce4=_0x598d34,_0x432f48=google[_0x162ce4('0x159')]({'version':'v3','auth':_0x9e1b2c});_0x432f48['events']['list']({'calendarId':_0x162ce4('0xac'),'timeMin':new Date()['toISOString'](),'maxResults':0x64,'singleEvents':!![],'orderBy':'startTime'},(_0x542251,_0x151768)=>{const _0x187630=_0x162ce4;if(_0x542251)return _0x20f061['channel'][_0x187630('0x47')](_0x187630('0x4d')+_0x542251);const _0x133987=_0x151768[_0x187630('0x16a')][_0x187630('0x176')];_0x133987[_0x187630('0x5b')]?_0x133987[_0x187630('0x23')]((_0x58707d,_0x310165)=>{const _0x33cf53=_0x187630,_0x3bada5=_0x58707d['start'][_0x33cf53('0x49')]||_0x58707d['start'][_0x33cf53('0x19b')],_0xf4328=new Discord[(_0x33cf53('0x1c8'))]()[_0x33cf53('0x1b1')](_0x33cf53('0x1'))[_0x33cf53('0x12c')]('BLUE')['setDescription'](_0x3bada5+_0x33cf53('0x55')+_0x58707d['summary'])[_0x33cf53('0x42')]();_0x20f061[_0x33cf53('0x132')][_0x33cf53('0x47')](_0xf4328);}):_0x20f061[_0x187630('0x132')][_0x187630('0x47')](_0x187630('0x143'));});}break;}});const configprefix='c!';client['on']('message',async _0x1e5371=>{const _0x4489ce=_0x197b23;let _0x2a6c80=_0x1e5371[_0x4489ce('0x178')][_0x4489ce('0x136')](configprefix[_0x4489ce('0x5b')])[_0x4489ce('0x8a')]('\x20');if(!_0x1e5371[_0x4489ce('0x178')][_0x4489ce('0x4f')](configprefix))return;const _0x389578=_0x4489ce('0x131'),_0x2bf942='363843784842280960',_0x3387ee='696379479433674834';if(_0x1e5371[_0x4489ce('0x41')]['id']===_0x389578)switch(_0x2a6c80[0x0]){case _0x4489ce('0x7b'):const _0x230eea=await prefix[_0x4489ce('0xd4')]({'GuildID':_0x1e5371['guild']['id']});if(!_0x2a6c80[0x1])return _0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](invalidargs);if(_0x230eea){await prefix['findOneAndRemove']({'GuildID':_0x1e5371['guild']['id']}),_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')]('updated\x20prefix\x20to\x20`'+_0x2a6c80[0x1]+'`\x20');let _0x12af34=new prefix({'Prefix':_0x2a6c80[0x1],'GuildID':_0x1e5371[_0x4489ce('0x171')]['id']});_0x12af34[_0x4489ce('0x15c')]();}else{if(!_0x230eea){_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')]('updated\x20prefix\x20to\x20`'+_0x2a6c80[0x1]+'`');let _0x1a658d=new prefix({'Prefix':_0x2a6c80[0x0],'GuildID':_0x1e5371['guild']['id']});_0x1a658d[_0x4489ce('0x15c')]();}}break;case _0x4489ce('0x18e'):if(_0x2a6c80[0x1]==='true')await botlockdown['create']({'Value':_0x4489ce('0x1d5')}),_0x1e5371[_0x4489ce('0x132')]['send'](_0x4489ce('0x102'));else{if(_0x2a6c80[0x1]==='false'){var _0x135707=await botlockdown[_0x4489ce('0xd4')]({'Value':'true'});if(_0x135707!==null)_0x135707[_0x4489ce('0xe3')]();_0x1e5371['channel']['send']('set\x20lockdown\x20to\x20`false`');}}break;case _0x4489ce('0x14d'):if(_0x2a6c80[0x1]==='false')await reactions[_0x4489ce('0x1cb')]({'Value':'true'}),_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')]('set\x20reactions\x20to\x20`false`');else{if(_0x2a6c80[0x1]===_0x4489ce('0x1d5')){var _0x501079=await reactions[_0x4489ce('0xd4')]({'Value':_0x4489ce('0x1d5')});if(_0x501079!==null)_0x501079[_0x4489ce('0xe3')]();_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0xb7'));}}break;case _0x4489ce('0xb1'):if(!_0x1e5371['member'][_0x4489ce('0xe2')][_0x4489ce('0x65')]('ADMINISTRATOR'))return _0x1e5371['channel']['send'](Youdonthavepermsembed);if(!_0x2a6c80[0x1])return _0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](invalidargs);if(!_0x2a6c80[0x2])return _0x1e5371[_0x4489ce('0x132')]['send'](invalidargs);var _0x35421f=_0x2a6c80[0x1],_0x22490a=_0x2a6c80[_0x4489ce('0x1a5')](0x2)[_0x4489ce('0x182')]('\x20');client['user']['setActivity'](_0x22490a,{'type':_0x35421f}),_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')]('set\x20statustype\x20to\x20`'+_0x35421f+'`\x20and\x20statusmessage\x20to\x20`'+_0x22490a+'`');break;case _0x4489ce('0x13b'):if(_0x2a6c80[0x1]==='false')await auditconfig[_0x4489ce('0x1cb')]({'Value':_0x4489ce('0x1d5')}),_0x1e5371['channel']['send'](_0x4489ce('0xe4'));else{if(_0x2a6c80[0x1]==='true'){var _0x1339d1=await auditconfig['findOne']({'Value':'true'});if(_0x1339d1!==null)_0x1339d1[_0x4489ce('0xe3')]();_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0x6d'));}}break;case _0x4489ce('0xee'):_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')]('Available\x20configurations:\x20botlockdown\x20(`true`\x20or\x20`false`),\x20prefix\x20(`value`),\x20audit\x20(`true`\x20or\x20`false`),\x20reactions\x20(`true`\x20or\x20`false`),\x20setstatus\x20(`TYPE`\x20`value`).\x20To\x20change\x20a\x20configuration,\x20run\x20`c!<configuration\x20to\x20change>\x20<arguments>`');break;}else{if(_0x1e5371[_0x4489ce('0x41')]['id']===_0x2bf942)switch(_0x2a6c80[0x0]){case _0x4489ce('0x7b'):const _0x4680fd=await prefix[_0x4489ce('0xd4')]({'GuildID':_0x1e5371[_0x4489ce('0x171')]['id']});if(!_0x2a6c80[0x1])return _0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](invalidargs);if(_0x2a6c80[0x1][_0x4489ce('0x5b')]>0x5)return _0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0xc4'));if(_0x4680fd){await prefix[_0x4489ce('0x5')]({'GuildID':_0x1e5371[_0x4489ce('0x171')]['id']}),_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0x18b')+_0x2a6c80[0x1]+'`\x20');let _0x5adb56=new prefix({'Prefix':_0x2a6c80[0x1],'GuildID':_0x1e5371['guild']['id']});_0x5adb56[_0x4489ce('0x15c')]();}else{if(!_0x4680fd){_0x1e5371['channel']['send']('updated\x20prefix\x20to\x20`'+_0x2a6c80[0x1]+'`');let _0x4f665d=new prefix({'Prefix':_0x2a6c80[0x0],'GuildID':_0x1e5371[_0x4489ce('0x171')]['id']});_0x4f665d[_0x4489ce('0x15c')]();}}break;case _0x4489ce('0x18e'):if(_0x2a6c80[0x1]===_0x4489ce('0x1d5'))await botlockdown[_0x4489ce('0x1cb')]({'Value':_0x4489ce('0x1d5')}),_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0x102'));else{if(_0x2a6c80[0x1]===_0x4489ce('0x85')){var _0x135707=await botlockdown[_0x4489ce('0xd4')]({'Value':_0x4489ce('0x1d5')});if(_0x135707!==null)_0x135707['deleteOne']();_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0x173'));}}break;case'reactions':if(_0x2a6c80[0x1]===_0x4489ce('0x85'))await reactions['create']({'Value':_0x4489ce('0x1d5')}),_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0x1c5'));else{if(_0x2a6c80[0x1]===_0x4489ce('0x1d5')){var _0x501079=await reactions['findOne']({'Value':_0x4489ce('0x1d5')});if(_0x501079!==null)_0x501079[_0x4489ce('0xe3')]();_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0xb7'));}}break;case _0x4489ce('0xb1'):if(!_0x1e5371[_0x4489ce('0x1a0')][_0x4489ce('0xe2')]['has'](_0x4489ce('0x59')))return _0x1e5371['channel'][_0x4489ce('0x47')](Youdonthavepermsembed);if(!_0x2a6c80[0x1])return _0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](invalidargs);if(!_0x2a6c80[0x2])return _0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](invalidargs);var _0x35421f=_0x2a6c80[0x1],_0x22490a=_0x2a6c80[_0x4489ce('0x1a5')](0x2)[_0x4489ce('0x182')]('\x20');client[_0x4489ce('0x106')][_0x4489ce('0x166')](_0x22490a,{'type':_0x35421f}),_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0x7e')+_0x35421f+'`\x20and\x20statusmessage\x20to\x20`'+_0x22490a+'`');break;case _0x4489ce('0x13b'):if(_0x2a6c80[0x1]===_0x4489ce('0x85'))await auditconfig['create']({'Value':_0x4489ce('0x85')}),_0x1e5371[_0x4489ce('0x132')]['send'](_0x4489ce('0xe4'));else{if(_0x2a6c80[0x1]===_0x4489ce('0x1d5')){var _0x1339d1=await auditconfig['findOne']({'Value':_0x4489ce('0x85')});if(_0x1339d1!==null)_0x1339d1[_0x4489ce('0xe3')]();_0x1e5371[_0x4489ce('0x132')]['send'](_0x4489ce('0x6d'));}}break;case _0x4489ce('0xee'):_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0x10e'));break;}else{if(_0x1e5371[_0x4489ce('0x41')]['id']===_0x3387ee)switch(_0x2a6c80[0x0]){case _0x4489ce('0x7b'):const _0x4aac14=await prefix[_0x4489ce('0xd4')]({'GuildID':_0x1e5371[_0x4489ce('0x171')]['id']});if(!_0x2a6c80[0x1])return _0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](invalidargs);if(_0x2a6c80[0x1][_0x4489ce('0x5b')]>0x5)return _0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0xc4'));if(_0x4aac14){await prefix[_0x4489ce('0x5')]({'GuildID':_0x1e5371[_0x4489ce('0x171')]['id']}),_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0x18b')+_0x2a6c80[0x1]+'`\x20');let _0x6af0e1=new prefix({'Prefix':_0x2a6c80[0x1],'GuildID':_0x1e5371[_0x4489ce('0x171')]['id']});_0x6af0e1[_0x4489ce('0x15c')]();}else{if(!_0x4aac14){_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0x18b')+_0x2a6c80[0x1]+'`');let _0x45059a=new prefix({'Prefix':_0x2a6c80[0x0],'GuildID':_0x1e5371[_0x4489ce('0x171')]['id']});_0x45059a['save']();}}break;case _0x4489ce('0x18e'):if(_0x2a6c80[0x1]==='true')await botlockdown['create']({'Value':_0x4489ce('0x1d5')}),_0x1e5371['channel'][_0x4489ce('0x47')](_0x4489ce('0x102'));else{if(_0x2a6c80[0x1]===_0x4489ce('0x85')){var _0x135707=await botlockdown[_0x4489ce('0xd4')]({'Value':'true'});if(_0x135707!==null)_0x135707[_0x4489ce('0xe3')]();_0x1e5371['channel'][_0x4489ce('0x47')]('set\x20lockdown\x20to\x20`false`');}}break;case'reactions':if(_0x2a6c80[0x1]===_0x4489ce('0x85'))await reactions['create']({'Value':_0x4489ce('0x1d5')}),_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0x1c5'));else{if(_0x2a6c80[0x1]===_0x4489ce('0x1d5')){var _0x501079=await reactions[_0x4489ce('0xd4')]({'Value':_0x4489ce('0x1d5')});if(_0x501079!==null)_0x501079['deleteOne']();_0x1e5371[_0x4489ce('0x132')]['send'](_0x4489ce('0xb7'));}}break;case'setstatus':if(!_0x1e5371[_0x4489ce('0x1a0')]['permissions'][_0x4489ce('0x65')](_0x4489ce('0x59')))return _0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](Youdonthavepermsembed);if(!_0x2a6c80[0x1])return _0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](invalidargs);if(!_0x2a6c80[0x2])return _0x1e5371[_0x4489ce('0x132')]['send'](invalidargs);var _0x35421f=_0x2a6c80[0x1],_0x22490a=_0x2a6c80[_0x4489ce('0x1a5')](0x2)[_0x4489ce('0x182')]('\x20');client[_0x4489ce('0x106')]['setActivity'](_0x22490a,{'type':_0x35421f}),_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')]('set\x20statustype\x20to\x20`'+_0x35421f+_0x4489ce('0x164')+_0x22490a+'`');break;case'audit':if(_0x2a6c80[0x1]===_0x4489ce('0x85'))await auditconfig[_0x4489ce('0x1cb')]({'Value':'false'}),_0x1e5371[_0x4489ce('0x132')][_0x4489ce('0x47')](_0x4489ce('0xe4'));else{if(_0x2a6c80[0x1]===_0x4489ce('0x1d5')){var _0x1339d1=await auditconfig[_0x4489ce('0xd4')]({'Value':'false'});if(_0x1339d1!==null)_0x1339d1[_0x4489ce('0xe3')]();_0x1e5371[_0x4489ce('0x132')]['send'](_0x4489ce('0x6d'));}}break;case _0x4489ce('0xee'):_0x1e5371['channel']['send'](_0x4489ce('0x10e'));break;}else return;}}}),client[_0x197b23('0xde')](process[_0x197b23('0xd5')][_0x197b23('0x16d')]);
+// if you want to use this, contact me on discord: Sid#1000
+// commented out things are being worked on
+
+
+const bled = require('./database/bled')
+const tags = require('./database/tags')
+const prefix = require('./database/prefix')
+const databasebanneds = require('./database/banned');
+const punishments = require('./database/punishments');
+const secureverify = require('./database/secureverify');
+const botlockdown = require('./database/botlockdown');
+const auditconfig = require('./database/auditconfig');
+const react = require ('./database/reactions');
+const { error } = require('console');
+const { REPL_MODE_STRICT } = require('repl');
+const reactions = require('./database/reactions');
+const Discord = require('discord.js');
+const client = new Discord.Client({partials: ["MESSAGE", "CHANNEL", "REACTION"]});
+const { Webhook } = require('discord-webhook-node');
+var version = '1.4.6';
+const { MessageEmbed } = require('discord.js')
+const { RichEmbed } = require('discord.js')
+const ms = require('ms');
+const axios = require('axios');
+const moment = require('moment');
+const cheerio = require('cheerio');
+const request = require('request');
+const { METHODS } = require('snekfetch');
+const { relativeTimeRounding, invalid } = require('moment');  
+const notmainPREFIX = "$"
+const mongoose = require('mongoose');
+const api = require("imageapi.js");
+const querystring = require('querystring')
+var fs = require("fs");
+let fetchNode = require("node-fetch");
+const solenolyrics = require("solenolyrics")
+var JavaScriptObfuscator = require("javascript-obfuscator");
+const readline = require('readline');
+const {google} = require('googleapis'); 
+
+
+(async () => {
+    mongoose.connect(process.env.mongodioasdju90u31u209pjd0a9upfjc, { // <- not real database credentials, its a variable
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    }).then(() => console.log('Connected to database! ✅'));
+})();
+
+
+
+
+client.on('ready', () => {
+    console.log("Bot online! Connected as " + client.user.tag + "✅")
+    eval(client)
+})
+
+/*
+const brain = require('brain.js');
+const net= new brain.NeuralNetwork()
+const trainData  = require('./src/training-data')
+const serializer = require('./src/serialize')
+*/
+
+// protects bot against token grabbers
+const token = "🤣🤣🤣 you really thought you could grab my token lmaooooooooooooooooooooooooo";
+
+client.on(`guildMemberAdd`, async (member) => {      
+    var smallermemberidpart1 = member.id
+    var smallmembberidpart2 = smallermemberidpart1.slice(3, 7);
+    const verifyembed2 = new Discord.MessageEmbed()
+    .setTitle("Stanton AP Bot")
+    .setColor('BLUE')
+    .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${smallmembberidpart2}. From there, simply read the rules and do $verify in <#714839351778869258>`)
+    .setTimestamp();
+    member.send(verifyembed2)
+})
+
+    client.on(`guildMemberAdd`, async (member) => {
+        var addbanmemberid = member.id
+           var addbancheck = await databasebanneds.findOne({userid:addbanmemberid});       
+        const addbandelay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
+        if(addbancheck !== null) {
+            for (let beamed = 0; beamed < 10 ; beamed++) {
+            member.send('https://cdn.discordapp.com/attachments/769349624514871296/769626561019117568/beamed.mp4')
+            }
+            await addbandelay(10000)
+         client.channels.cache.get('762698399027822643').send(`$ban ${member} bye bye.`)
+        } else return; 
+    })
+  
+  
+ client.on('message', async (msg) => {
+    const prefixdata = await prefix.findOne({
+        GuildID: msg.guild.id
+    })
+    
+    if (msg.content.toLowerCase().startsWith('<@!747789318831079506>')) {
+        msg.channel.send(`My prefix is currently \`${prefixdata.Prefix}\` `)
+    }
+        
+    
+        const mainprefix = prefixdata.Prefix;
+        if(!msg.content.startsWith(mainprefix)) return;
+    var lockdowncheck = await botlockdown.findOne({Value: "true"});
+    if(lockdowncheck !== null) return msg.channel.send('Bot was locked down.') 
+    var TimeTook = Date.now() - msg.createdTimestamp; 
+        let args = msg.content.substring(mainprefix.length).split(" ")  
+        if (!msg.guild) return; 
+        const delay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
+        if (msg.member.roles.cache.some(r => r.id === "762698399027822643")) msg.react('😉');
+        var bledcheck = await bled.findOne({userid:msg.author.id});
+        if(bledcheck !== null) return 
+        var TimeTook = Date.now() - msg.createdTimestamp; 
+        const Youdonthavepermsembed = new Discord.MessageEmbed()
+        .setTitle("Bot")
+        .setColor('BLUE')
+        .setDescription(`You do not have enough permissions to run this command, ${msg.author}.`)
+        .setTimestamp();
+        
+        const staffYoudonthavepermsembed = new Discord.MessageEmbed()
+        .setTitle("Bot")
+        .setColor('BLUE')   
+        .setDescription(`You can not run this command on staff, ${msg.author}.`)
+        .setTimestamp();
+
+
+        const invalidargs = new Discord.MessageEmbed()
+        .setTitle("Bot")
+        .setColor('BLUE')
+        .setDescription(`Invalid argument, ${msg.author}.`)
+        .setTimestamp();
+        
+        
+        var tokens = [
+            "a", "b", "c","d","e","f","g","h","i","j","k","l","m","n","o","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z"]       
+
+         
+            function generateToken() {
+                var tokencharacters = tokens;
+                var finaltoken = '';
+                for(var i = 0; i < 20; i++) {
+                    finaltoken += tokencharacters[Math.floor(Math.random() * tokencharacters.length)];
+                }
+                return finaltoken;
+            }  
+    
+
+            // old token system was called firetokengenerator, and i didnt feel like renaming every instance where token generation was used
+            var firetokengenerator = generateToken();
+ 
+
+        switch (args[0]) {
+            
+    
+           
+
+            case `start`:
+
+            
+                if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+        
+                var starttime = args[1];
+                var startmessage = args.slice(2).join(' ')
+
+
+                msg.delete();
+
+                    setTimeout(function() {
+                         msg.channel.send(startmessage);
+                         msg.channel.send(`$start ${starttime} ${startmessage}`)    
+                         }, ms(starttime));                     
+
+
+            break;
+
+       
+
+            case `obfuscate`:
+                                
+                
+                var obfuscationResult = JavaScriptObfuscator.obfuscate(args.slice(1).join(' '));
+                
+                var obfuscationOutput = `// this file was obfuscated using sids obfuscation \n ` + obfuscationResult.getObfuscatedCode()
+      
+                         
+                if(!obfuscationOutput) return msg.reply('Error while obfuscating.');
+
+                const obfuscateEmbed = new Discord.MessageEmbed()
+                .setTitle("Bot")
+                .setColor('BLUE')
+                .setDescription(`Obfuscated! Took ${TimeTook} ms`)
+                .setTimestamp();
+                msg.channel.send(obfuscateEmbed)
+
+             
+                msg.channel.send({
+                    files:[
+                        {
+                            attachment: Buffer.from(obfuscationOutput),
+                            name: "obfuscated.txt"
+                        }
+                    ]
+                }); true;
+                
+            break;
+
+            case `urban`:
+                const searchString = querystring.stringify({ term: args.slice(1).join(" ") })
+
+        if (!args.slice(1).join(" ")) return msg.channel.send(new MessageEmbed()
+            .setColor("BLUE")
+            .setDescription(`You need to specify something you want to search the urban dictionary`)
+        )
+
+        const { list } = await fetchNode(`https://api.urbandictionary.com/v0/define?${searchString}`).then(response => response.json())
+
+        try {
+            const [answer] = list
+
+            const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str)
+
+            const embed = new Discord.MessageEmbed()
+                .setColor("BLUE")
+                .setTitle(answer.word)
+                .setURL(answer.permalink)
+                .addFields(
+                    { name: 'Definition', value: trim(answer.definition, 1024) },
+                    { name: 'Example', value: trim(answer.example, 1024) },
+                    { name: 'Rating', value: `${answer.thumbs_up} 👍. ${answer.thumbs_down} 👎.` },
+                )
+            msg.channel.send(embed)
+        } catch (error) {
+            console.log(error)
+            return msg.channel.send(new Discord.MessageEmbed()
+                .setColor("BLUE")
+                .setDescription(`No results were found for **${args.slice(1).join(" ")}**`)
+            )
+        }
+
+
+            break;
+
+            case 'lyrics':
+
+          if (!args[1]) return msg.channel.send(invalidargs)
+        try {
+            msg.channel.send('attempting to find lyrics')
+            var songTitle = args.slice(1).join(' ')
+            var lyrics = await solenolyrics.requestLyricsFor(args.slice(1).join(' '));
+            var title = await solenolyrics.requestTitleFor(args.slice(1).join(' '));
+            var albumCover = await solenolyrics.requestIconFor(args.slice(1).join(' '));
+            var songAuthor = await solenolyrics.requestAuthorFor(args.slice(1).join(' '));
+        } catch (err) {
+            console.log(err)
+            return msg.channel.send(`couldnt find that song https://tenor.com/view/cheese-tomandjerry-gif-5876589`);
+        }
+
+        if(lyrics === undefined) return msg.channel.send(`couldnt find the song https://tenor.com/view/cheese-tomandjerry-gif-5876589 `)
+        let lyricsEmbed = new Discord.MessageEmbed()
+            .setDescription(lyrics)
+            .setFooter(`Requested by ${msg.author.username}`, msg.author.displayAvatarURL({ 
+                dynamic: true
+            }))
+            .setTitle(`Lyrics for ${title} by ${songAuthor}`)
+            .setThumbnail(albumCover)
+            .setColor("BLUE");
+
+            msg.channel.send(lyricsEmbed)
+            
+    
+        break;
+
+            case `obfuscatefile`:
+                if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed);
+                if (!msg.attachments.first()) return msg.channel.send(invalidargs);
+            if (!msg.attachments.first().name.endsWith(".txt")) return msg.channel.send("Please send a file with an extension of \`txt\` ");
+            let obfuscatefileinput = await fetchNode(msg.attachments.first().url).then(res => res.buffer()).then(buffer => buffer.toString());
+            var obfuscatefileresult = JavaScriptObfuscator.obfuscate(obfuscatefileinput);
+            
+            var obfuscatefileoutput = `// this file was obfuscated using sids obfuscation \n` +   obfuscatefileresult.getObfuscatedCode();
+            if(!obfuscatefileoutput) return msg.reply('Error while obfuscating.');
+            
+            const obfuscatefileEmbed = new Discord.MessageEmbed()
+            .setTitle("Bot")
+            .setColor('BLUE')
+            .setDescription(`Obfuscated! Took ${TimeTook} ms`)
+            .setTimestamp();
+            msg.channel.send(obfuscatefileEmbed)
+             
+            msg.channel.send({
+                files:[
+                    {
+                        attachment: Buffer.from(obfuscatefileoutput),
+                        name: "obfuscated.txt"
+                    }
+                ]
+            });
+            
+            
+            break;
+
+            /* case `train`:
+
+        if(!args[1]) return msg.channel.send(invalidargs)
+
+        net.train(serializer.serialize(trainData),{log: false})
+
+        const trainoutput = net.run(serializer.encode(args.slice(1).join(' ')))
+
+        msg.channel.send(trainoutput)
+
+                
+            break;
+        */
+            case `lockdown`:
+               
+                if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+    
+    
+                if(!args[1]) return msg.channel.send(invalidargs)
+    
+                const lockdownchannels = msg.guild.channels.cache.filter(ch => ch.type === 'category');
+    
+                if(args[1] === 'on') {
+    
+                    console.log(`${msg.author} made a request to lock down the server.`)
+    
+                    lockdownchannels.forEach(channel => {
+                    channel.updateOverwrite(channel.guild.roles.everyone, {
+                        SEND_MESSAGES: false
+                    }).then(() => {
+                        channel.setName(channel.name += '🔒')
+                    }) 
+                        
+                    })
+    
+                    return msg.channel.send(`Locking down channels. This might take a while.`)
+                
+                } else if (args[1] === 'off') {
+                    
+    
+                    console.log(`${msg.author} made a request to remove the server lockdown.`)
+                    
+                    lockdownchannels.forEach(channel => {
+                        channel.updateOverwrite(channel.guild.roles.everyone, {
+                          SEND_MESSAGES: true
+                        }).then(() => {
+                            channel.setName(channel.name.replace('🔒', ''))
+    
+                        })
+                    })
+                    return msg.channel.send(`Removing the lockdown. This might take a while.`)
+                    
+                }
+    
+    
+                break;
+
+            case `auth`: 
+                    
+            if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed);
+
+             var authperson = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+
+             var authrole = msg.guild.roles.cache.find(role => role.name === "Verified");
+             var authrole2 = msg.guild.roles.cache.find(role => role.name === "unverified");
+
+                    if (!args[1]) return msg.reply(invalidargs)
+
+
+                if (!authrole2) return msg.reply('Error');
+                if (!authrole) return msg.reply('Error');
+                
+                authperson.roles.add(authrole.id);
+                authperson.roles.remove(authrole2.id);
+
+                const authembed = new Discord.MessageEmbed()
+                .setTitle("Bot")
+                .setColor('BLUE')
+                .setDescription(`Successfully authorized ${authperson}, ${msg.author}.`)
+                .setTimestamp();
+                msg.channel.send(authembed)
+
+            break;
+            
+            case `unban`:
+                  
+                if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+                 
+                    const unbantarget = args[1]
+
+                    if(!unbantarget) return msg.channel.send(invalidargs)
+
+                    msg.guild.members.unban(unbantarget)
+
+                    const unbanembed = new Discord.MessageEmbed()
+                    .setTitle("Bot")
+                    .setColor('BLUE')
+                    .setDescription(`Successfully unbanned user <@${unbantarget}>, ${msg.author}.`)
+                    .setTimestamp();
+                     msg.channel.send(unbanembed)
+
+                    break;
+
+
+                
+            case `verify`:
+
+        
+                var smallermemberidpart3 = msg.author.id
+                var smallermemberidpart4 = smallermemberidpart3.slice(3, 7);
+                var verifycheck = await secureverify.findOne({DiscordID:smallermemberidpart4});
+                if(verifycheck !== null) {
+            
+                    
+                msg.member.roles.add("714833474166587425");
+                msg.member.roles.remove("714833374010933361");
+                            
+
+                  const verifysuccess = new Discord.MessageEmbed()
+                       .setTitle("Success")
+                       .setColor('#f3f3f3')
+                       .setDescription(`${msg.author}, you have been verified!`)
+                       .setTimestamp();
+
+                msg.channel.send(verifysuccess)
+                
+                
+                var deleteverifyreq = await secureverify.findOne({DiscordID:smallermemberidpart4 });
+                if(deleteverifyreq !== null) {
+                deleteverifyreq.deleteOne();
+                 } else {
+                    return msg.channel.send('error')
+                }
+            } else {
+                msg.channel.send('check dms')
+                var smallermemberidpart5 = msg.author.id
+                var smallermemberidpart6 = smallermemberidpart5.slice(3, 7);
+                const verifyembed3 = new Discord.MessageEmbed()
+                .setTitle("Stanton AP Bot")
+                .setColor('BLUE')
+                .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${smallermemberidpart6}. From there, simply read the rules and do $verify in <#714839351778869258>`)
+                .setTimestamp();
+                msg.author.send(verifyembed3)
+
+            }
+
+             break;
+
+             case `unverify`:
+                  
+                if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+
+                var unverifyperson = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+
+                   if (!args[1]) return msg.reply(invalidargs)
+   
+                   if (!unverifyperson) return msg.reply("Error finding target. I've logged error information to console.");
+                   
+                    
+                unverifyperson.roles.remove("714833474166587425");
+                unverifyperson.roles.add("714833374010933361");
+                            
+
+                  const unverifysuccess = new Discord.MessageEmbed()
+                       .setTitle("Success")
+                       .setColor('#f3f3f3')
+                       .setDescription(`Successfully unverified ${unverifyperson}, ${msg.author}.`)
+                       .setTimestamp();
+
+                msg.channel.send(unverifysuccess)
+      
+
+             break;
+
+            case 'ping':
+
+                var ping = Date.now() - msg.createdTimestamp;
+                var pingms = ping + "ms"
+                const pingEmbed = new Discord.MessageEmbed()
+                    .setTitle("Ping Test")
+                    .setColor('BLUE')
+                    .addField("Ping", pingms)
+                    .setTimestamp();
+                msg.channel.send(pingEmbed)
+
+                break
+
+                case `8ball`:
+                   
+                    var res = [
+                        "Yes",
+                        "No",
+                        "Maybe",
+                        "Probably",
+                        "Probably not",
+                        "shut up",
+                        "didnt ask g",
+                        "100"
+                    ]       
+
+                        let embed = new MessageEmbed()
+                        .addField("Answer", (res[Math.floor(Math.random() * res.length)]))
+                        .setColor('42c2f4')
+                        .setTimestamp();
+                        msg.channel.send(embed)
+              
+              
+                    break;
+
+            case "info":
+                      
+                const infoEmbed = new Discord.MessageEmbed()
+                .setTitle("Bot Information")
+                .setColor('#f3f3f3')
+                .addField('Version ', `${version}`)
+                .addField('Uptime',`${ms(client.uptime, { long: true})}`)
+                .addField('Hosting', 'Heroku')
+                .addField('OS', ' Ubuntu')
+                .addField('Storage', 'MongoDB, useNewUrlParser: true, useUnifiedTopology: true')
+                .addField("Neural networks", 'brain.js (GPU accelerated)')
+                .addField('Bot Langauge', 'JavaScript')
+                .setTimestamp();
+            msg.channel.send(infoEmbed)
+                break;
+
+            case "clear":
+              
+            if (!msg.member.permissions.has('MANAGE_MESSAGES')) return msg.channel.send(Youdonthavepermsembed);
+                if (!args[1]) return msg.reply(invalidargs)
+                msg.channel.bulkDelete(args[1]);
+                msg.channel.send(`deleted ${args[1]} messages (took ${TimeTook} ms) `)
+                break;
+
+           
+                case `fixname`:
+
+                    if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed);
+
+                    let fixnameuserping = msg.mentions.members.first() 
+                    
+                    let fixnameusernoping = msg.guild.members.cache.get(args[1]) 
+
+                    if(fixnameuserping) {
+
+                    var fixnamestart = fixnameuserping.id 
+
+                    var fixnamecomplete = fixnamestart.slice(3, 7);
+
+                    let fixnick = 'No Name ' + fixnamecomplete         
+    
+            
+                    fixnameuserping.setNickname(fixnick);
+    
+                    const fixnickembed = new Discord.MessageEmbed()
+                    .setTitle("Bot")
+                    .setColor('BLUE')
+                    .setDescription(`Successfully changed ${fixnameuserping}'s nickname to \`${fixnick}\`, ${msg.author}.`)
+                    .setTimestamp();
+
+                    msg.channel.send(fixnickembed)
+     
+
+                    } else  if(fixnameusernoping) {
+
+                    
+                    var fixnamenoping2 = msg.guild.members.cache.get(args[1]) 
+
+                    var fixnamenoping3 = fixnamenoping2.id
+
+                   var fixnamecomplete2 = fixnamenoping3.slice(3, 7)
+
+                    let fixnick2 = 'No Name ' + fixnamecomplete2        
+    
+                    if(!fixnameusernoping) return msg.reply(invalidargs);
+            
+                    fixnameusernoping.setNickname(fixnick2);
+    
+                    const fixnickembed2 = new Discord.MessageEmbed()
+                    .setTitle("Bot")
+                    .setColor('BLUE')
+                    .setDescription(`Successfully changed ${fixnameusernoping}'s nickname to \`${fixnick2}\`, ${msg.author}.`)
+                    .setTimestamp();
+                    msg.channel.send(fixnickembed2)
+     
+
+                    } else return;
+
+
+                break;
+
+
+                case `getlogs`:
+
+                
+                   if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+          
+                  var getpunishmentsperson =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+
+                   var getpunishmentspersonid = getpunishmentsperson.id 
+
+
+                    if(!args[1]) return
+                    var punishmentss = await punishments.find({userid: getpunishmentspersonid});
+                    msg.member.send( `${getpunishmentsperson}'s punishmentss - ${punishmentss}`);
+ 
+              const getlogsembed = new Discord.MessageEmbed()
+               .setTitle("Bot")
+               .setColor('BLUE')
+               .setDescription(`Successfully sent ${getpunishmentsperson}'s logs to your dms, ${msg.author}.`)
+               .setTimestamp();
+ 
+              msg.channel.send(getlogsembed)
+
+                break;
+
+                case `kick`:
+                  
+                    
+                   if (!msg.member.permissions.has('KICK_MEMBERS')) return msg.channel.send(Youdonthavepermsembed);
+
+                    const userforkickcheck =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+                    if(!userforkickcheck) return msg.reply(invalidargs);
+                    if(userforkickcheck.roles.highest.position >= msg.member.roles.highest.position) return  msg.channel.send(staffYoudonthavepermsembed);
+                    var kickreason = args.slice(2).join(' ')
+                    const userforkick =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+                    if (userforkick) {
+                        const memberforkick = msg.guild.member(userforkick);
+    
+                        if (memberforkick) {
+
+                    kickid = userforkick.id 
+                            
+                    await punishments.create({userid: kickid, punishments: {type: 'kick', reason: kickreason}});
+                             
+                         const kickEmbed = new Discord.MessageEmbed()
+                        .setTitle("Kick")
+                        .setColor('BLUE') 
+                        .addField('Server', msg.guild.name, true)
+                        .setDescription(`You were kicked from ${ msg.guild.name} for ${kickreason}.`)
+                        .addField("Token", firetokengenerator)
+                        .setTimestamp();
+                        userforkick.send(kickEmbed)
+
+
+                        await delay(100);
+    
+                        memberforkick.kick(`Kicked by ${msg.author.tag} for ${kickreason}`).then(() => {
+
+                            const kickpublicembed = new Discord.MessageEmbed()
+                            .setTitle("Bot")
+                            .setColor('BLUE')
+                            .setDescription(`Successfully kicked user ${userforkick}, ${msg.author}.`)
+                            .setTimestamp();
+                             msg.channel.send(kickpublicembed)
+
+                             
+
+    
+                            }).catch(err => {
+                                msg.channel.send(`Internal error, ${msg.author}. I've logged error details to console.`)
+                                console.log(err);
+                            });
+                        } else {
+                            msg.channel.send(`User has left the server, or internal error.`)
+                        }
+                    } else {
+                        msg.reply(invalidargs)
+                    }
+                    break;
+
+
+                case `ban`:
+                   if (!msg.member.permissions.has('BAN_MEMBERS')) return msg.channel.send(Youdonthavepermsembed);
+                 const userforban =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+                    const userforbancheck = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+                    if(!userforbancheck) return msg.reply(invalidargs);
+                    if(userforbancheck.roles.highest.position >= msg.member.roles.highest.position) return  msg.channel.send(staffYoudonthavepermsembed);
+                    var banreason = args.slice(2).join(' ')
+                    if (userforban) {
+                        const memberforban = msg.guild.member(userforban);
+                        if (memberforban) {
+
+
+                            banid = userforban.id
+
+                            await punishments.create({userid: banid, punishments: {type: 'ban', reason: banreason}});
+
+                            const banembed = new Discord.MessageEmbed()
+                            .setTitle("Ban")
+                            .setColor('BLUE')
+                            .setDescription(`You were banned from ${ msg.guild.name} for ${banreason}.`)
+                            .addField("Token", firetokengenerator)
+                            .setTimestamp();
+                             userforban.send(banembed)
+    
+                             await delay(100);
+
+                            msg.guild.members.ban(userforban);
+     
+    
+                             const publicbanembed = new Discord.MessageEmbed()
+                             .setTitle("Bot")
+                             .setColor('BLUE')
+                             .setDescription(`Successfully banned user ${userforban}, ${msg.author}.`)
+                             .setTimestamp();
+                              msg.channel.send(publicbanembed)
+
+                                
+                        } else {
+                            msg.reply('User has left the server, or internal error.')
+                        }
+                    } else {
+                        msg.reply(invalidargs)
+                    }
+                    break;
+
+                 case `avatar`: 
+
+
+
+                 let avatarEmbed = new MessageEmbed();
+                 if(!msg.mentions.users.first()){
+                        avatarEmbed.setTitle(`Avatar`);
+                        avatarEmbed.setImage(msg.author.displayAvatarURL({dynamic : true}));
+                        avatarEmbed.setColor('42c2f4');
+                        return msg.channel.send(avatarEmbed)
+
+                 }else{ 
+                      let User = msg.mentions.users.first();
+                      avatarEmbed.setTitle(`${User.tag}'s avatar`)
+                      avatarEmbed.setImage(User.displayAvatarURL({dynamic : true})); 
+                      avatarEmbed.setColor('42c2f4');
+                      return msg.channel.send(avatarEmbed);
+                 }
+                 
+                 break;
+
+               
+                 
+                 case `mute`:
+                  
+            if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed);
+                    const userformutecheck = (msg.mentions.members.first() || msg.guild.members.cache.get(args[1]));
+                    if(!userformutecheck) return msg.reply(invalidargs);
+                   if(userformutecheck.roles.highest.position >= msg.member.roles.highest.position) return  msg.channel.send(staffYoudonthavepermsembed)
+                    var person = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+                    if(!person) return msg.reply("**Could not find user.**");
+
+                        var dontcrashonmuteplease = args[2]
+                        var time = args[2] + 'm';   
+                        var mutereason = args.slice(3).join(' ')
+
+
+                    if(!dontcrashonmuteplease) return msg.channel.send(invalidargs);
+
+                
+                    var mainrole = msg.guild.roles.cache.find(role => role.name === "Verified");    
+                    var muterole = msg.guild.roles.cache.find(role => role.name === "Muted");
+   
+
+                    if(!muterole) return msg.reply("**Could not find the Muted role.**");
+
+                    if(!time){
+                     return msg.reply(invalidargs);
+                    }
+
+                    muteid = person.id
+
+
+
+                    await punishments.create({userid: muteid, punishments: {type: 'mute', reason: mutereason}});
+
+
+                    
+                    person.roles.remove(mainrole.id);
+                    person.roles.add(muterole.id);
+
+
+                    const muteembed = new Discord.MessageEmbed()
+                    .setTitle("Mute")
+                    .setColor('BLUE')
+                    .setDescription(`You were muted in ${msg.guild.name} for ${args[2]} minutes with reason ${mutereason}.`)
+                    .addField("Token", firetokengenerator)
+                    .setTimestamp();
+                    person.send(muteembed)
+
+                    const muteembed2 = new Discord.MessageEmbed()
+                    .setTitle("Bot")
+                    .setColor('BLUE')
+                    .setDescription(`Successfully muted user ${person} for ${args[2]} minutes, ${msg.author}.`)
+                    .setTimestamp();
+                    msg.channel.send(muteembed2)
+
+                    const muteembed3 = new Discord.MessageEmbed()
+                    .setTitle('Unmute')
+                    .setColor(`BLUE`)
+                    .setDescription(`Your mute time in ${msg.guild.name} has ran out. Please don't break the rules again.`)
+                    .setTimestamp();
+
+
+                    setTimeout(function() {
+                         person.roles.add(mainrole.id);
+                         person.roles.remove(muterole.id);
+                         person.send(muteembed3)
+                         }, ms(time));                                                                                                                                                                     
+                
+                break;
+
+             case `unmute`:  
+
+             if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed);
+             var uperson = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+             if(!uperson) return msg.reply(invalidargs);
+             
+
+             var umainrole = msg.guild.roles.cache.find(role => role.name === "Verified");
+             var umuterole = msg.guild.roles.cache.find(role => role.name === "Muted");
+             var umreason = args.slice(2).join(' ')
+
+             if(!umuterole) return msg.reply("**Could not find the Muted role.**");
+   
+             uperson.roles.add(umainrole.id);
+             uperson.roles.remove(umuterole.id);
+
+
+             var unmuteid = uperson.id
+
+
+             await punishments.create({userid: unmuteid, punishments: {type: 'unmute', reason: umreason}});
+
+
+             const umuteembed = new Discord.MessageEmbed()
+             .setTitle("Unmute")
+             .setColor('BLUE')
+             .setDescription(`You were unmuted in ${msg.guild.name} with reason ${umreason}. `)
+             .addField("Token", firetokengenerator)
+             .setTimestamp();
+             uperson.send(umuteembed)
+
+             
+             const umuteembed2 = new Discord.MessageEmbed()
+             .setTitle("Bot")
+             .setColor('BLUE')
+             .setDescription(`Successfully un-muted ${uperson}, ${msg.author}.`)
+             .setTimestamp();
+             msg.channel.send(umuteembed2)
+
+
+            break;
+            
+         
+
+
+             case `vcban`:
+                
+            if (!msg.member.permissions.has('MANAGE_MESSAGES')) return msg.channel.send(Youdonthavepermsembed);   
+             var vcbanperson = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+                var vcbanrole = msg.guild.roles.cache.find(role => role.name === "VC Banned");
+                var vcbanreason = args.slice(2).join(' ')
+
+                if (!args[1]) return msg.reply(invalidargs)
+
+
+                if (!vcbanrole) return msg.reply("**Unable to find role to give!**");
+                
+                vcbanperson.roles.add(vcbanrole.id);
+
+
+                vcbanid = vcbanperson.id
+
+
+                await punishments.create({userid: vcbanid, punishments: {type: 'vcban', reason: vcbanreason}});
+
+
+                const vcbanembed = new Discord.MessageEmbed()
+                .setTitle("VC Ban")
+                .setColor('BLUE')
+                .setDescription(`You were vc-banned in  ${msg.guild.name} for ${vcbanreason}.`)
+                .addField("Token", firetokengenerator)
+                .setTimestamp();
+                 vcbanperson.send(vcbanembed)
+
+                 const publicvcbanembed = new Discord.MessageEmbed()
+                .setTitle("Bot")
+                .setColor('BLUE')
+                .setDescription(`Successfully vc-banned user ${vcbanperson}, ${msg.author}.`)
+                .setTimestamp();
+                msg.channel.send(publicvcbanembed)
+
+
+                break;
+
+           case  `unvcban`:
+          
+            if (!msg.member.permissions.has('MANAGE_MESSAGES')) return msg.channel.send(Youdonthavepermsembed);
+            var unvcbanperson = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+               var unvcbanrole = msg.guild.roles.cache.find(role => role.name === "VC Banned");
+               var unvcbanreason = args.slice(2).join(' ')
+
+               if (!args[1]) return msg.reply(invalidargs)
+
+
+               if (!unvcbanrole) return msg.reply("**Unable to find role to give!**");
+               
+               unvcbanperson.roles.remove(unvcbanrole.id);
+
+
+
+               var unvcbanid = unvcbanperson.id
+
+
+               await punishments.create({userid: unvcbanid, punishments: {type: 'unvcban', reason: unvcbanreason}});
+
+
+
+               const uvcbanembed = new Discord.MessageEmbed()
+                .setTitle("Un VC Ban")
+                .setColor('BLUE')
+                .setDescription(`You were un vc-banned in ${msg.guild.name} for ${unvcbanreason}.`)
+                .addField("Token", firetokengenerator)
+                .setTimestamp();
+                 unvcbanperson.send(uvcbanembed)
+
+                 const upublicvcbanembed = new Discord.MessageEmbed()
+                .setTitle("Bot")
+                .setColor('BLUE')
+                .setDescription(`Successfully un vc-banned user ${unvcbanperson}, ${msg.author}.`)
+                .setTimestamp();
+                msg.channel.send(upublicvcbanembed)
+
+
+               break; 
+           
+            case `nick`:
+                         
+                if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed);
+
+                let nickuser = msg.mentions.members.first() || msg.guild.members.cache.get(args[1]) 
+
+                let nick = args.slice(2).join(" ");             
+
+
+                if(!nickuser) return msg.reply(invalidargs);
+            
+                if (!nick) return msg.reply(invalidargs);
+
+
+                nickuser.setNickname(nick);
+
+                const nickembed = new Discord.MessageEmbed()
+                .setTitle("Bot")
+                .setColor('BLUE')
+                .setDescription(`Successfully changed ${nickuser}'s nickname to \`${nick}\`, ${msg.author}.`)
+                .setTimestamp();
+                msg.channel.send(nickembed)
+ 
+            break;
+ 
+
+            case `pt`:
+
+                    msg.channel.send('https://cdn.discordapp.com/attachments/746461665196900502/746738172972499005/140502-science-periodic-table-elements_b2bbb9954b92280ff8011bdcee6e4dcc.png');
+
+                    break;
+                         
+            case `userinfo`:
+
+                    let userArray = msg.content.split(" ");
+                    let userArgs = userArray.slice(1);
+                    let member = msg.mentions.members.first() || msg.guild.members.cache.get(userArgs[0]) || msg.guild.members.cache.find(x => x.user.username.toLowerCase() === userArgs.slice(0).join(" ") || x.user.username === userArgs[0])
+                
+                    if(!member) return msg.channel.send(invalidargs)
+
+                    if (member.presence.status === 'dnd') member.presence.status = 'Do Not Disturb';
+                    if (member.presence.status === 'online') member.presence.status = 'Online';
+                    if (member.presence.status === 'idle') member.presence.status = 'Idle';
+                    if (member.presence.status === 'offline') member.presence.status = 'Offline or Invisible';
+                
+                    let x = Date.now() - member.createdAt;
+                    let y = Date.now() - msg.guild.members.cache.get(member.id).joinedAt;
+                    const joined = Math.floor(y / 86400000);
+                    const joineddate = moment.utc(member.joinedAt).format("dddd, MMMM Do YYYY, HH:mm:ss");
+
+                    let status = member.presence.status;
+                         
+                    const userEmbed = new Discord.MessageEmbed()
+                    .setAuthor(member.user.tag, member.user.displayAvatarURL())
+                    .setTimestamp()
+                    .setColor('BLUE')
+                    .setImage(member.user.displayAvatarURL({dynamic : true}))
+                    .addField("Member ID", member.id)
+                    .addField('Roles', `<@&${member._roles.join('> <@&')}>`)
+                    .addField("Account Creation Date:", ` ${moment.utc(member.user.createdAt).format("dddd, MMMM Do YYYY")}`, true) 
+                    .addField('Server Join Date', `${joineddate}`)
+                    .addField("Status", status)
+                
+                    msg.channel.send(userEmbed);
+                
+            break;
+
+            case `bannedusers`:
+
+                if (!msg.member.permissions.has('BAN_MEMBERS')) return msg.channel.send(Youdonthavepermsembed);
+
+                msg.guild.fetchBans().then(bans => {
+                    msg.channel.send(`This server has ${bans.size} banned user(s).`)
+                })
+
+                break;
+
+            case `corona`:
+
+
+            if(!args[1]) return msg.channel.send(invalidargs)
+            
+        const baseUrl = "https://corona.lmao.ninja/v2";
+
+        let url, response, corona;
+
+        try {
+            url = args[1] ? `${baseUrl}/countries/${args[1]}`:`${baseUrl}/all`
+            response = await axios.get(url)
+            corona = response.data
+        } catch (error) {
+            return msg.channel.send(`Could not find data on ***${args[1]}***.`)
+        }
+
+        const coronaembed = new MessageEmbed()
+            .setTitle(args[1] ? `${args[1].toUpperCase()} Stats` : 'Total Corona Cases World Wide')
+            .setColor('#f3f3f3')
+            .setThumbnail(args[0] ? corona.countryInfo.flag : 'https://i.giphy.com/YPbrUhP9Ryhgi2psz3.gif')
+            .addFields(
+                {
+                    name: 'Total Cases:',
+                    value: corona.cases.toLocaleString(),
+                    inline: true
+                },
+                {
+                    name: 'Total Deaths:',
+                    value: corona.deaths.toLocaleString(),
+                    inline: true
+                },
+                {
+                    name: 'Total Recovered:',   
+                    value: corona.recovered.toLocaleString(),
+                    inline: true
+                },
+                {
+                    name: 'Active Cases:',
+                    value: corona.active.toLocaleString(),
+                    inline: true
+                },
+                {
+                    name: '\u200b',
+                    value: '\u200b',
+                    inline: true
+                },
+                {
+                    name: 'Critical Cases:',
+                    value: corona.critical.toLocaleString(),
+                    inline: true
+                },
+                {
+                    name: 'Recoveries Today:',
+                    value: corona.todayRecovered.toLocaleString().replace("-", ""),
+                    inline: true
+                },
+                {
+                    name: 'Deaths Today:',
+                    value: corona.todayDeaths.toLocaleString(),
+                    inline: true
+                })
+
+        await msg.channel.send(coronaembed)
+
+        break;
+
+
+        case `meme`:
+
+            const memeurl = 'https://some-random-api.ml/meme';
+
+            let data, memeresponse;
+            try {   
+                memeresponse = await axios.get(memeurl);
+                data = memeresponse.data;
+            } catch (e) {
+                return msg.channel.send(`Internal error, ${msg.author}. I've logged error details to console.`)
+            }   
+            const memeembed = new MessageEmbed()
+                .setTitle(`Random Meme`)
+                .setColor('#f3f3f3')
+                .setImage(data.image)
+    
+            await msg.channel.send(memeembed)
+
+            break;
+
+        case `reddit`:
+
+            let Subreddit = msg.content.slice(8);ccan
+            if (!Subreddit)
+              return msg.channel.send(invalidargs);
+            try {
+              let redditimg = await api(Subreddit, true);
+              const redditEmbed = new MessageEmbed()
+                .setTitle(`Image from r/${Subreddit}`)
+                .setColor("RANDOM")
+                .setImage(redditimg)
+                .setURL(`https://reddit.com/r/${Subreddit}`);
+              msg.channel.send(redditEmbed);
+            } catch (err) {
+              msg.channel.send(err);
+            }
+
+
+        break;
+/*  
+        case `leave`:
+
+            client.guilds.cache.get(args[1]).leave()
+            .catch(err => {
+               msg.channel.send('errrrrrrrrrorrrrrrrrrrr');
+            })
+        break;
+
+*/
+        case `img`:
+
+                var parts = msg.content.split(" "); 
+                if (parts[0] === "$img") { 
+                    image(msg, parts);
+                }
+            
+
+            function image(message, parts) {
+                         
+                var search = parts.slice(1).join(" "); 
+             
+                var options = {
+                    url: "http://results.dogpile.com/serp?qc=images&q=" + search,
+                    method: "GET",
+                    headers: {
+                        "Accept": "text/html",
+                        "User-Agent": "Chrome"
+                    }
+                };
+
+                request(options, function(error, response, responseBody) {
+                    if (error) {
+                        return;
+                    }
+             
+            
+                    $ = cheerio.load(responseBody); 
+             
+                    var links = $(".image a.link");
+                    var imgurls = new Array(links.length).fill(0).map((v, i) => links.eq(i).attr("href"));
+                    if (!imgurls.length) {
+                        return msg.channel.send(`Could not find any images related to that search, ${msg.author}.`)
+                    }
+                    const imgembed = new MessageEmbed()
+                    .setTitle(`Image`)
+                    .setColor('#f3f3f3')
+                    .setImage(imgurls[0]);
+                    msg.channel.send(imgembed)
+                
+                });
+
+            
+            }
+
+            const imgfilter = m => m.content.startsWith('n');
+            msg.channel.awaitMessages(imgfilter, { max: 4, time: 100000, errors: ['n'] })
+            .then(collected => {
+                var parts = msg.content.split(" "); 
+                if (parts[0] === "n") { 
+                    image(msg, parts)
+                }            
+            })
+            
+           break;
+
+     
+
+            case `timer`:  
+
+            var timertime = args[1]
+            if(!timertime) return msg.reply('**Specify a time???? 💩**')
+            var timerlabel = args.slice(2).join(' ')
+        
+            msg.channel.send(`Set timer for ${timertime}. Label - ${timerlabel}`)
+
+                setTimeout(function() {
+                    msg.channel.send(`**${msg.author} your timer is over. Label - ${timerlabel} **`)
+                    }, ms(timertime));  
+
+            break;
+
+
+
+
+            case `sin`:
+
+            var sininput = args[1]
+            if(!sininput) return msg.reply('hellloooo give me a number 🙄')
+
+            var sinoutput = Math.sin(sininput)
+
+            msg.channel.send(`Result - **${sinoutput}** `)
+
+            break;
+
+
+
+            case `pi`:
+
+            msg.reply('3.141592653589793')
+
+            break;
+
+
+
+            case `power`:
+
+
+            var powerinput1 = args[1]
+            var powerinput2 = args[2]
+
+            if(!powerinput1) return msg.reply('i need 2 numbers')
+            if(!powerinput2) return msg.reply('i need 2 numbers')
+
+
+           var powerresult = Math.pow(powerinput1, powerinput2);
+
+           msg.reply(`Result - ** ${powerresult}**`)
+
+            break;
+
+
+
+            case `sqrt`:
+
+
+
+            var sqrtinput1 = args[1]
+            
+            if(!sqrtinput1) return msg.reply('i need a number')
+
+
+            var sqrtresult = Math.sqrt(sqrtinput1)
+
+            msg.reply(`Result - **${sqrtresult}**`)
+
+            break;
+
+
+            case `acos`:
+
+
+            var acosinput = args[1]
+
+            if (!acosinput) return msg.reply('i need a value')
+
+
+            var acosresult = Math.acos(acosinput)
+
+
+            msg.reply(`Result - **${acosresult}**`)
+
+
+            break; 
+            
+            case `goat`:
+
+            if(!args[1]) {
+               return msg.channel.send(invalidargs)
+            }
+
+            const baseurl = process.env.baseurl;
+            let goatquery = args.slice(1).join(" ");
+            let goatbody = `{"params":"distinct=true&facetFilters=()&hitsPerPage=1&page=0&query=${goatquery}"}`
+            let goatresp = await axios.post(baseurl, goatbody);
+            if (goatresp.status !== 200 || resp.data === '') {
+                console.log('Error')
+                msg.channel.send('error')
+                console.log(error)
+        }
+            let goatresp2 = goatresp.data['hits'][0];
+            if (goatresp2 == null) {
+                const goaterror = new Discord.MessageEmbed()
+                .setTitle('Bot')
+                .setDescription('Error')
+                .setTimestamp();
+               return msg.channel.send(goaterror);
+            }
+    
+            let DropDate = new Date(goatresp2['release_date'])
+
+            const goatsuceess = new Discord.MessageEmbed()
+            .setTitle(goatresp2['name'])
+            .setURL('https://www.goat.com/sneakers/' + goatresp2['slug'])
+            .addFields(
+                {   
+                    name: 'Brand',
+                    value:  goatresp2['brand_name'],
+                    inline: true
+                },       
+                {
+                    name: "Drop Date",
+                    value: `${DropDate.getFullYear()}-${DropDate.getMonth()}-${DropDate.getDate()}`,
+                    inline: true
+                },
+                {
+                
+                    name: `Size`,
+                    value: goatresp2['size'],
+                    inline: true
+                },
+                {
+                    name : `Retail`,
+                    value: `(goatresp2['retail_price_cents_usd']/100).toFixed(2)`,
+                    inline: true
+                },
+                {
+                    name: ``,
+                    value: `(goatresp2['lowest_price_cents_usd']/100).toFixed(2)`,
+                    inline: true
+                }
+                )
+
+            
+           if (goatresp2['has_picture']) {
+           goatsuceess.setThumbnail(goatresp2['main_picture_url'])
+         }
+
+           goatsuceess.setTimestamp();    
+            msg.channel.send(goatsuceess);
+
+            break;
+
+            case `help`:
+
+                if (msg.member.permissions.has('ADMINISTRATOR')) {
+
+                    const adminhelp = new Discord.MessageEmbed()
+                    .setTitle(`Bot`)
+                    .setColor('BLUE')
+                    .addField(`Commands available for user:`, `start, hackban, goat, unban, lockdown on, urban, lyrics, lockdown off, auth, verify, obfuscatefile,  ping, 8ball, info, clear, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, obfuscate, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, reddit, yes, stfu, poll, webhookset, webhooksend `)
+                    .setTimestamp();
+                    return msg.channel.send(adminhelp);
+
+                } else if (msg.member.roles.cache.some(r => r.id === "761623315835912232")) {
+
+                    const andyhelp = new Discord.MessageEmbed()
+                    .setTitle(`Bot`)
+                    .setColor('BLUE')
+                    .addField(`Commands available for user:`, `auth, verify, ping, goat, urban, lyrics, 8ball, info, fixname, avatar, mute, obfuscatefile,  unmute, nick, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, reddit, tag, getsrc, yes, stfu, poll`)
+                    .setTimestamp();
+                    return msg.channel.send(andyhelp)
+                    
+                    
+                } else if (msg.member.roles.cache.some(r => r.id === "761436504853184513")) {
+
+                    const viphelp = new Discord.MessageEmbed()
+                    .setTitle(`Bot`)
+                    .setColor('BLUE')
+                    .addField(`Commands available for user:`, `auth, verify, ping, 8ball, goat, urban, lyrics, info, fixname, avatar, mute, obfuscatefile,  unmute, nick, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, reddit, getsrc, tag, yes, stfu, poll`)
+                    .setTimestamp();
+                    return msg.channel.send(viphelp)
+                    
+                } else {
+
+                    const helpEmbed = new Discord.MessageEmbed()
+                    .setTitle(`Bot`)
+                    .setColor('BLUE')
+                    .addField(`Commands available for user:`, `verify, ping, 8ball, urban, goat, lyrics, info, avatar, pt, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, obfuscate, resource, changelog, addtag, tag, reddit, yes, stfu, getsrc,  poll`)
+                    .setTimestamp();
+        
+                    msg.channel.send(helpEmbed)
+
+                }
+
+
+            break;
+
+            case `servers`:
+              
+
+             msg.channel.send(`I'm in ${client.guilds.cache.size} servers!`)
+
+
+            break;
+            
+
+            case `exc`:     
+                
+            const excID =  '736285953039138817'; 
+
+                if (msg.member.permissions.has('ADMINISTRATOR')) {
+                
+                if(!msg.author.id === excID) return msg.channel.send(Youdonthavepermsembed);
+                   
+                const excargs = msg.content.split(" ").slice(1);
+                                  
+                      try {
+                        const code = excargs.join(" ");      
+                        const code2 = code.replace('$exc', '');                  
+                        let evaled = eval(code2);
+                   
+                        if (typeof evaled !== "string")
+                          evaled = require("util").inspect(evaled);
+                   
+                          msg.channel.send('Executed code.')
+                      } catch (err) {
+                        msg.channel.send(`${err}`);
+                      }
+                    } else {
+                        return;
+                    }   
+
+           break;
+             
+            case `?`:
+
+            
+                if (msg.member.permissions.has('ADMINISTRATOR')) {
+                    const adminhelp1 = new Discord.MessageEmbed()
+                    .setTitle(`Bot`)
+                    .setColor('BLUE')
+                    .addField(`Commands available for user:`, `start, unban, hackban, urban, goat, lyrics, lockdown on, obfuscate, lockdown off, auth, obfuscatefile, verify, ping, 8ball, info, clear, reddit, fixname, getlogs, kick, ban, avatar, mute, unmute, vcban, unvcban, nick, pt, userinfo, bannedusers, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, botblacklist, unbotblacklist, return, resource, changelog, addtag, edittag, tag, getsrc, addban, removeban, yes, stfu, poll, webhookset, webhooksend`)
+                    .setTimestamp();
+                    return msg.channel.send(adminhelp1);
+
+                } else if (msg.member.roles.cache.some(r => r.id === "761623315835912232")) {
+
+                    const andyhelp2 = new Discord.MessageEmbed()
+                    .setTitle(`Bot`)
+                    .setColor('BLUE')
+                    .addField(`Commands available for user:`, `auth, urban, lyrics, verify, ping, goat, obfuscate, 8ball, info, fixname, getsrc, avatar, obfuscatefile, mute, unmute, nick, pt, reddit, userinfo, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, resource, changelog, addtag, tag, yes, stfu, poll`)
+                    .setTimestamp();
+                    return msg.channel.send(andyhelp2)
+                    
+                    
+                } else if (msg.member.roles.cache.some(r => r.id === "761436504853184513")) {
+
+                    const viphelp3 = new Discord.MessageEmbed()
+                    .setTitle(`Bot`)
+                    .setColor('BLUE')
+                    .addField(`Commands available for user:`, `auth, urban, lyrics,  verify, ping, goat, obfuscate, 8ball, info, obfuscatefile, getsrc, fixname, avatar, mute, unmute, nick, pt, userinfo, reddit, corona, meme, img, timer, sin, pi, power, sqrt, acos, help, return, resource, changelog, addtag, tag,
+                    , yes, stfu, poll`)
+                    .setTimestamp();
+                    return msg.channel.send(viphelp3)
+                    
+                } else {
+
+                    const helpEmbed4 = new Discord.MessageEmbed()
+                    .setTitle(`Bot`)
+                    .setColor('BLUE')
+                    .addField(`Commands available for user:`, `verify, ping, urban, lyrics, 8ball, info, goat, avatar, pt, userinfo, corona, meme, img, timer, sin, pi, getsrc, power, sqrt, acos, help, return, resource, changelog, addtag, tag, yes, stfu, poll`)
+                    .setTimestamp();
+        
+                    msg.channel.send(helpEmbed4)
+
+                }
+
+
+            break;
+ 
+            
+           case  `botblacklist`:
+
+    
+            if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+            const userforblacklist = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+            if(!userforblacklist) return msg.channel.send(invalidargs)
+            if(userforblacklist.roles.highest.position >= msg.member.roles.highest.position) return msg.channel.send(staffYoudonthavepermsembed)
+
+            var blperson =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+
+            var blpersonid = blperson.id 
+
+
+            var blcheckvar = await bled.findOne({userid:blpersonid});
+            if(blcheckvar !== null) {
+                return msg.channel.send('User is already blacklisted.')
+            }
+            
+
+            await punishments.create({userid: blpersonid, punishments: {type: 'botblacklist', reason: 'Reasons are not required bot-blacklists.'}});
+
+
+               if (!args[1]) return msg.reply(invalidargs)
+
+               await bled.create({userid:blpersonid});
+
+
+               const publicblembed = new Discord.MessageEmbed()
+               .setTitle("Bot")
+               .setColor('BLUE')
+               .setDescription(`Added ${blperson} to the blacklisted database, ${msg.author}.`)
+               .setTimestamp();
+
+
+               msg.channel.send(publicblembed)
+
+                break;
+
+
+
+                 
+           case `unbotblacklist`:
+
+           if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+
+            const userforunbotblacklist =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+            if(!userforunbotblacklist) return msg.channel.send(invalidargs)
+
+            var unblperson =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+
+            var unblpersonid = unblperson.id
+            
+
+            await punishments.create({userid: unblpersonid, punishments: {type: 'unbotblacklist', reason: 'Reasons are not required for un bot-blacklists'}});
+
+
+            var unbldatareq = await bled.findOne({userid: unblpersonid });
+             if(unbldatareq !== null) unbldatareq.deleteOne();
+
+            if (!args[1]) return msg.reply(invalidargs)
+
+               const upublicblembed = new Discord.MessageEmbed()
+               .setTitle("Bot")
+               .setColor('BLUE')
+               .setDescription(`Successfully removed ${unblperson} from the blacklisted database, ${msg.author}.`)
+               .setTimestamp();
+               msg.channel.send(upublicblembed)
+
+
+                break;
+
+    
+
+            case `return`:
+
+                const returnembed = new Discord.MessageEmbed()
+                .setTitle("Bot")
+                .setColor('BLUE')
+                .setDescription(`Successfully returned, ${msg.author}. `)
+                .setTimestamp();
+                msg.channel.send(returnembed)
+             return;
+            break;
+
+
+
+            case `resource`:
+
+
+            if(!args[1]) return msg.channel.send('Usage: $resource quizlet.com "study guide"')
+            resourcenameandshitlol = args.slice(2).join(' ');
+            if(!resourcenameandshitlol) return msg.channel.send('Usage: $resource quizlet.com "study guide"');
+            client.channels.cache.get('708844166724976700').send(`Submission by ${msg.author} \n ${args[1]} - ${resourcenameandshitlol}`);
+            
+            const resourceembed = new Discord.MessageEmbed()
+               .setTitle("Bot")
+               .setColor('BLUE')
+               .setDescription(`Successfully deployed resource, ${msg.author}. `)
+               .setTimestamp();
+               msg.channel.send(resourceembed)
+
+            break;
+
+
+            case `changelog`:
+
+           const changelogembed = new Discord.MessageEmbed()
+           .setTitle("Changelog")
+           .setColor('RANDOM')
+           .addField('who tf evenreads this ')
+           .setTimestamp();
+           msg.channel.send(changelogembed)
+            break;
+
+
+            case `addtag`:
+
+            if(!args[1]) return msg.channel.send(invalidargs);
+            if(!args.slice(2).join(" ")) return msg.channel.send(invalidargs);
+            tags.findOne({ Guild: msg.guild.id, Name: args[1]},async(err,data) => {
+                 if(err) throw err;
+                 if(data) {
+                    msg.channel.send('that tag already exists. use `$edittag` to edit it. ')
+                 } else if(!data) {
+                     
+                     let newData = new tags({
+                         Guild: msg.guild.id,
+                         Name: args[1],
+                         Content: args.slice(2).join(" "),
+                     })
+                    newData.save();
+                    msg.channel.send(`Tag ${args[1]} has been saved.`);
+                    if(error) {
+                        return console.log(error)
+                    }
+                 }
+            })
+
+            break;
+            
+            case `edittag`:
+
+            if(!args[1]) return msg.channel.send(invalidargs);
+            if(!args.slice(2).join(" ")) return msg.channel.send(invalidargs);
+            tags.findOne({ Guild: msg.guild.id, Name: args[1]},async(err,data) => {
+                 if(err) throw err;
+                 if(data) {
+                    if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed)
+                     data.Content = args.slice(2).join(" ")
+                     data.save();
+                     msg.channel.send(`Tag ${args[1]} has been edited.`);
+                 } else if(!data) {
+                    return msg.channel.send('that tag doesnt exist. use `$addtag` to add it.')
+                 }
+            })
+
+            break;
+
+            case `tag`:
+            
+                tags.findOne({Guild: msg.guild.id, Name: args[1]}, async(err,data) => {
+                    if(err) throw err;
+                    if(data) { 
+                        return msg.channel.send(data.Content);
+                }
+                else return msg.channel.send('Could not find tag.')
+                })
+    
+                
+         break;
+            
+         case `reload`:
+
+
+            let reloadvar = args.slice(1).join(" ");
+            if (msg.author.id !== "736285953039138817") return false;
+            // reloads entire bot because why not           
+            client.destroy();
+            await delay(1000)
+            client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
+            msg.channel.send(`successfully reloaded \`${reloadvar}\``)
+
+         break;
+
+            case `hackban`:
+
+                   if (!msg.member.permissions.has('BAN_MEMBERS')) return msg.channel.send(Youdonthavepermsembed);
+
+                   
+
+
+                    const userforhackbancheck = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+
+                    if(userforhackbancheck) {
+
+                        if(userforhackbancheck.roles.highest.position >= msg.member.roles.highest.position) return msg.channel.send(staffYoudonthavepermsembed);
+
+                    }
+
+            
+                let hackbanuserID = args[1];
+            
+                let hackbanreason = args.slice(2).join(" ");
+            
+            
+            
+                if (!hackbanuserID) return msg.channel.send(invalidargs);
+            
+                if (isNaN(hackbanuserID)) return msg.channel.send(invalidargs);
+            
+                if (hackbanuserID === client.user.id) return msg.channel.send("why ban me??? 😭");
+                        
+
+                if (!hackbanreason) hackbanreason = "No reason";
+            
+            
+            
+                client.users.fetch(hackbanuserID).then(async user => {
+            
+                    await msg.guild.members.ban(user.id, {reason: hackbanreason});
+            
+                    msg.channel.send(`**${msg.author.tag}** hackbanned **${user}** for \`${hackbanreason}\` `);
+
+                    await punishments.create({userid: hackbanuserID, punishments: {type: 'hackban', reason: hackbanreason}});
+
+                    return;
+
+                }).catch(error => {
+            
+                    return msg.channel.send(`An error occurred: **${error}**`);
+            
+                })
+
+
+
+            break;
+
+
+            case `getsrc`:
+
+	
+       
+
+           const srcembed = new Discord.MessageEmbed()
+           .setTitle("Bot Source Code")
+           .setColor('BLUE')
+           .setDescription('https://github.com/sidhys1/stantonapbot') 
+           .setTimestamp();
+           msg.channel.send(srcembed)
+  
+
+
+            break; 
+
+            
+
+            case `removeban`:
+
+                if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+     
+                 var removebanid = args[1]
+
+                 if (!args[1]) return msg.reply(invalidargs)
+     
+                 var removebandatareq = await databasebanneds.findOne({userid: removebanid });
+                  if(removebandatareq !== null) removebandatareq.deleteOne();
+     
+     
+                    const removebanembed = new Discord.MessageEmbed()
+                    .setTitle("Bot")
+                    .setColor('BLUE')
+                    .setDescription(`Successfully removed ${removebanid} from the ban database, ${msg.author}.`)
+                    .setTimestamp();
+                    msg.channel.send(removebanembed)
+     
+     
+                     break;
+
+            case `addban`:
+
+                if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+
+                addbanuser = args[1];
+
+                var addbancheckvar = await databasebanneds.findOne({userid:addbanuser});
+                if(addbancheckvar !== null) {
+                    return msg.channel.send('User is already on the ban database.')
+                }
+                
+                if (!args[1]) return msg.reply(invalidargs)
+    
+                await databasebanneds.create({userid:addbanuser});
+    
+    
+                   const addbanembed = new Discord.MessageEmbed()
+                   .setTitle("Bot")
+                   .setColor('BLUE')
+                   .setDescription(`Added ${addbanuser} to the banned database, ${msg.author}.`)
+                   .setTimestamp();
+    
+    
+                   msg.channel.send(addbanembed)
+    
+
+
+            break;
+
+        }                        
+   })
+
+client.on('message', message => {
+     if (!message.guild) return;
+     const lockdownchannels = message.guild.channels.cache.filter(ch => ch.id === '714822326016933900');
+     if(!lockdownchannels) return;
+	 if (message.content.toLowerCase().includes('https://grabify.link')) {
+        message.delete()
+		message.channel.send(`${message.author} posted a ip logger.`)
+     client.channels.cache.get('714822326016933900').send(`${message.author} posted a IP logger. ID - ${message.author.id}`)
+     
+	}  else if (message.content.toLowerCase().includes('https://leancoding.co')) {
+       message.delete()
+       message.channel.send(`${message.author} posted a ip logger.`)
+    client.channels.cache.get('714822326016933900').send(`${message.author} posted a IP logger. ID - ${message.author.id}`)
+
+    } else if (message.content.toLowerCase().includes('https://stopify.co')) {
+        message.delete()
+        message.channel.send(`${message.author} posted a ip logger.`)
+     client.channels.cache.get('714822326016933900').send(`${message.author} posted a IP logger. ID - ${message.author.id}`)
+    } else  if (message.content.toLowerCase().includes('https://freegiftcards.co')) {
+        message.delete()
+        message.channel.send(`${message.author} posted a ip logger.`)
+     client.channels.cache.get('714822326016933900').send(`${message.author} posted a IP logger. ID - ${message.author.id}`)
+	 
+   } else if (message.content.toLowerCase().includes('https://joinmy.site')) {
+    message.delete()
+    message.channel.send(`${message.author} posted a ip logger.`)
+ client.channels.cache.get('714822326016933900').send(`${message.author} posted a IP logger. ID - ${message.author.id}`)
+ 
+  } else if (message.content.toLowerCase().includes('https://curiouscat.club')) {
+    message.delete()
+    message.channel.send(`${message.author} posted a ip logger.`)
+ client.channels.cache.get('714822326016933900').send(`${message.author} posted a IP logger. ID - ${message.author.id}`)
+ 
+ 
+  } else if (message.content.toLowerCase().includes('https://catsnthings.fun')) {
+    message.delete()
+    message.channel.send(`${message.author} posted a ip logger.`)
+ client.channels.cache.get('714822326016933900').send(`${message.author} posted a IP logger. ID - ${message.author.id}`)
+  
+} else if (message.content.toLowerCase().includes('https://catsnthing.com')) {
+    message.delete()
+    message.channel.send(`${message.author} posted a ip logger.`)
+ client.channels.cache.get('714822326016933900').send(`${message.author} posted a IP logger. ID - ${message.author.id}`)
+  } else if (message.content.toLowerCase().includes('started timed message 👍')) {
+    message.delete();
+  }
+    })
+
+
+    let hook;
+    client.on('message', async message => {
+           
+        const prefixdata2 = await prefix.findOne({
+            GuildID: message.guild.id
+        })
+
+            const mainprefix2 = prefixdata2.Prefix;
+            if(message.content.startsWith(mainprefix2)) {
+          if(message.author.bot) return;
+          if (!message.guild) return;
+            const args = message.content.slice(notmainPREFIX.length).trim().split(/ +/);
+            const input = message.content.slice(notmainPREFIX.length).trim().split(' '); 
+            const command = input.shift();
+            const commandArgs = input.join(' ');    
+         
+          if (command === 'webhookset') {
+              
+            if(!args[1]) return message.channel.send('usage: `<prefix> <discord webhook link>`')
+              if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send('no')
+  
+               webhookthing = args[1];
+  
+              if(!webhookthing.toLowerCase().includes('com/api/webhooks/')) return message.channel.send('Please use a discord webhook link.'); 
+  
+                 hook = new Webhook(`${args[1]}`)
+            
+                message.channel.send(`Set webhook to the url, ${message.author}.`); 
+    
+            } else if (command === 'webhooksend') {
+  
+                if(!args[1]) return message.channel.send('usage: `<prefix> <amount of times to send message> <message>`')
+                if(!args[2]) return message.channel.send('usage: `<prefix> <amount of times to send message> <message>`')
+              if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send('no')
+  
+              if(!hook) return message.channel.send('Set a webhook first.')
+                
+         wbhvar = args.slice(2).join(' ')
+         wbhrepeat = args[1]
+
+         var i;
+        for (i = 0; i < wbhrepeat; i++) {
+        hook.send(`${wbhvar}`)
+            }
+    
+          message.channel.send(`Sent message through the webhook, ${message.author}`)
+    
+          }  
+          
+    
+        }
+    });
+
+  
+    
+    const addReactions = (message) => {
+        message.react('🇸')
+        message.react('🇹')
+        message.react('🇫')
+        message.react('🇺')
+
+        setTimeout(() => {
+        message.react('🇹')
+        }, 750) 
+    }
+    
+    client.on('message', async (message) => {
+    if (message.content.toLowerCase() === '$stfu') {
+        if (!message.guild) return;
+        
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+        await message.delete()
+        const fetched = await message.channel.messages.fetch({ limit: 1 })
+        if (fetched && fetched.first()) {
+            addReactions(fetched.first())
+        }
+        }
+    })
+
+
+
+    
+    const addReactionss = (message) => {
+        message.react('🇾')
+        message.react('🇪')
+        setTimeout(() => {
+        message.react('🇸')
+        }, 750) 
+    }
+    
+
+    client.on('message', async (message) => {
+        if (message.content.toLowerCase() === '$yes') {
+        if (!message.guild) return;
+        
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+        await message.delete()
+        const fetched = await message.channel.messages.fetch({ limit: 1 })
+        if (fetched && fetched.first()) {
+            addReactionss(fetched.first())
+        }
+        }
+    })
+
+
+
+  const addReaction = (message) => {
+    message.react('👍')
+    setTimeout(() => {
+      message.react('👎')
+    }, 750)
+  }
+
+  client.on('message', async (message) => {
+   if (message.content.toLowerCase() === '$poll') {
+       
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+    if (!message.guild) return;
+      await message.delete()
+      const fetched = await message.channel.messages.fetch({ limit: 1 })
+      if (fetched && fetched.first()) {
+        addReaction(fetched.first())
+      }
+    }
+  })
+
+
+
+const addReactionsss = (message) => {
+message.react('6️⃣')
+setTimeout(() => {
+  message.react('9️⃣')
+}, 750) 
+}
+
+client.on('message', async (message) => {
+if (message.content.toLowerCase().includes('nice')) {    
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+  const fetched = await message.channel.messages.fetch({ limit: 1 })
+  if (fetched && fetched.first()) {
+    addReactionsss(fetched.first())
+  }
+}
+}
+})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+    if (message.content.toLowerCase().includes('goat')) {
+        return message.react('🐐')
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+    if (message.content.toLowerCase().includes('oof')) {
+        return message.react('💀')
+}   
+}})
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") { 
+if (message.content.toLowerCase().includes('dead')) {
+return message.react('💀')
+}
+}})
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('100')) {
+return message.react('💯')
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('nerd')) {
+return message.react('🤓')
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('hot')) {
+return message.react('🥵')
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('bot')) {
+return message.react('🤖')
+}
+}})
+
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('ok')) {
+return message.react('👌')
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('okay')) {
+return message.react('👌')
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().startsWith('k')) {
+return message.react('👌')
+}
+}})
+
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('corona')) {
+message.react('😷')
+message.react('🦠');
+return;
+}
+}})
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+
+var reactioncheck = await reactions.findOne({Value: "true"});
+if(reactioncheck !== null) return; 
+if(message.guild.id === "708842168588042260") {
+if (message.content.toLowerCase().includes('virus')) {
+message.react('😷')
+message.react('🦠');
+return;
+}
+}})
+
+
+client.on('message', async (message) => {
+if (!message.guild) return;
+if(message.guild.id === "708842168588042260") {
+if (message.member.roles.cache.some(r => r.id === "712852530232688640")) { 
+if (message.content.toLowerCase().includes('girl')) {
+   message.react('🤰');      
+   message.channel.send('uh oh horny allen is back!!!');
+} 
+} else return 
+}
+})
+client.on('messageUpdate', async(oldMessage,newMessage)=>{
+    var auditconfigcheck = await auditconfig.findOne({Value: "true"});
+    if(auditconfigcheck !== null) return 
+    let updateembed = new MessageEmbed()
+    .setTitle('Message Edited')
+    .setColor('BLUE')
+    .setDescription(`Message by <@${oldMessage.author.id}> edited in <#${oldMessage.channel.id}>`)
+    .addField('Before',oldMessage.content,true)
+    .addField('After', newMessage.content,true)
+    .setTimestamp()
+    let channel = oldMessage.guild.channels.cache.find(ch=> ch.id === "714822326016933900")
+    if(!channel) return;
+    channel.send(updateembed)   
+})
+
+client.on('messageDelete', async(message)=>{
+    var auditconfigcheck = await auditconfig.findOne({Value: "true"});
+    if(auditconfigcheck !== null) return 
+    let deleteembed = new MessageEmbed()
+    .setTitle('Message Deleted')
+    .setColor('BLUE')
+    .setDescription(`Message by <@${message.author.id}> deleted in <#${message.channel.id}>`)
+    .addField('Message Content',message.content,true)
+    .setTimestamp()
+    let channel = message.guild.channels.cache.find(ch=> ch.id === "714822326016933900")
+    if(!channel) return;
+    channel.send(deleteembed)
+})
+
+
+client.on('guildMemberRemove', async member => {
+    var auditconfigcheck = await auditconfig.findOne({Value: "true"});
+    if(auditconfigcheck !== null) return 
+	const fetchedLogs = await member.guild.fetchAuditLogs({
+		limit: 1,
+		type: 'MEMBER_KICK',
+    });
+    if(!guild.id == '708842168588042260') return
+	const kickLog = fetchedLogs.entries.first();
+
+    if (!kickLog) return client.channels.cache.get('714822326016933900').send(`${member.user.tag} left the server.`);
+    
+
+	const { executor, target } = kickLog;
+
+	if (target.id === member.id) {
+		client.channels.cache.get('714822326016933900').send(`${member.user.tag} was kicked by ${executor.tag}  `);
+	} else {
+		client.channels.cache.get('714822326016933900').send(`${member.user.tag} left the server, but I couldn't find any more details.`);
+	}
+});
+
+
+client.on('guildBanAdd', async (guild, user) => {
+    var auditconfigcheck = await auditconfig.findOne({Value: "true"});
+    if(auditconfigcheck !== null) return 
+	const fetchedLogs = await guild.fetchAuditLogs({
+		limit: 1,
+		type: 'MEMBER_BAN_ADD',
+    });
+    if(!guild.id == '708842168588042260') return
+	const banLog = fetchedLogs.entries.first();
+
+    if (!banLog) return client.channels.cache.get('714822326016933900').send(`${user.tag} was banned from this server, but failed to find more information.`);
+    
+	const { executor, target } = banLog;
+
+	if (target.id === user.id) {
+		client.channels.cache.get('714822326016933900').send(`${user.tag} was banned by ${executor.tag}`);
+	} else {
+		client.channels.cache.get('714822326016933900').send(`${user.tag} got was banned, but I couldn't find any more details.`);
+	}
+});
+
+const sidprefix = "!";
+
+client.on('message', async (msg) => {
+       let args = msg.content.substring(sidprefix.length).split(" ");
+       if(!msg.content.startsWith(sidprefix)) return;
+       const sidid = "736285953039138817"
+       if(msg.author.id === sidid) {
+
+        switch (args[0]) {
+            
+    case `say`:
+
+        var stufftosay = args.slice(2).join(' ') 
+        var saychannelid = args[1];
+
+        client.channels.cache.get(saychannelid).send(stufftosay);
+
+        if(error){
+            console.log(error)
+        }
+
+    break;
+
+
+    case `calendar`:
+    
+        const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
+        authorize(JSON.parse(process.env.googleinfo), listEvents);
+        
+        /**
+         * @param {Object} credentials 
+         * @param {function} callback 
+         */
+        function authorize(credentials, callback) {
+          const {client_secret, client_id, redirect_uris} = credentials.installed;
+          const oAuth2Client = new google.auth.OAuth2(
+              client_id, client_secret, redirect_uris[0]);
+        
+            oAuth2Client.setCredentials(JSON.parse(process.env.googletoken));
+            callback(oAuth2Client);
+        }
+        
+        /**
+         * @param {google.auth.OAuth2} oAuth2Client 
+         * @param {getEventsCallback} callback 
+        */
+        /**
+         * @param {google.auth.OAuth2} auth 
+         */
+        
+        function listEvents(auth) {
+          const calendar = google.calendar({version: 'v3', auth});
+          calendar.events.list({
+            calendarId: 'primary',
+            timeMin: (new Date()).toISOString(),
+            maxResults: 100,
+            singleEvents: true,
+            orderBy: 'startTime',
+          }, (err, res) => {
+            if (err) return msg.channel.send('The API returned an error: ' + err);
+            const events = res.data.items;
+            if (events.length) {
+              events.map((event, i) => {
+                const start = event.start.dateTime || event.start.date;
+                const calendarembed = new Discord.MessageEmbed()
+                .setTitle("Upcoming event")
+                .setColor('BLUE')
+                .setDescription(`${start} - ${event.summary}`)
+                .setTimestamp();
+                msg.channel.send(calendarembed)
+              });
+            } else {
+              msg.channel.send('No upcoming events found.');
+            }
+          });
+        }
+            break;
+
+        }
+        
+       }
+})
+
+
+
+const configprefix = "c!";
+
+client.on('message', async (msg) => {
+       let args = msg.content.substring(configprefix.length).split(" ");
+       if(!msg.content.startsWith(configprefix)) return;
+       const configwhitelistedid = "736285953039138817";
+       const configwhitelistedid2 = "363843784842280960";
+       const configwhitelistedid3 = '696379479433674834';
+       if(msg.author.id === configwhitelistedid) {
+
+
+       switch (args[0]) {           
+
+        case `prefix`:
+
+        
+            const prefixdata = await prefix.findOne({
+                GuildID: msg.guild.id
+            });
+        
+            if (!args[1]) return msg.channel.send(invalidargs);
+        
+            if (prefixdata) {
+                await prefix.findOneAndRemove({
+                    GuildID: msg.guild.id
+                })
+                
+                msg.channel.send(`updated prefix to \`${args[1]}\` `);
+        
+                let newData = new prefix({
+                    Prefix: args[1],
+                    GuildID: msg.guild.id
+                })
+                
+                newData.save();
+            } else if (!prefixdata) {
+                msg.channel.send(`updated prefix to \`${args[1]}\``);
+        
+                let newData = new prefix({
+                    Prefix: args[0],
+                    GuildID: msg.guild.id
+                })
+                newData.save();
+            }
+        
+
+        break;
+
+    case `botlockdown`:
+
+        if(args[1] === "true") {
+        await botlockdown.create({Value: "true"});
+        msg.channel.send('set lockdown to `true`')
+        } else if(args[1] === "false") {                        
+     var botlockdownremoverequest = await botlockdown.findOne({Value: "true"});
+     if(botlockdownremoverequest !== null) botlockdownremoverequest.deleteOne();
+     msg.channel.send('set lockdown to `false`')
+        }
+
+    break;
+
+    case `reactions`:
+        
+        if(args[1] === "false") {
+            await reactions.create({Value: "true"});
+            msg.channel.send('set reactions to `false`')
+            } else if(args[1] === "true") {                        
+         var reactionsreqeust = await reactions.findOne({Value: "true"});
+         if(reactionsreqeust !== null) reactionsreqeust.deleteOne();
+         msg.channel.send('set reactions to `true`')
+            }
+
+        break;
+     
+    case `setstatus`:
+                
+        if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+
+        if(!args[1]) return msg.channel.send(invalidargs)
+        if(!args[2]) return msg.channel.send(invalidargs)
+
+        var statustype = args[1]
+        var statusmessage = args.slice(2).join(' ') 
+ 
+        client.user.setActivity(statusmessage, {
+            type: statustype
+           });
+    
+           msg.channel.send(`set statustype to \`${statustype}\` and statusmessage to \`${statusmessage}\``)
+            
+
+    break;
+
+    case `audit`:
+
+        if(args[1] === "false") {
+        await auditconfig.create({Value: "true"});
+        msg.channel.send('set auditconfig to: `false`')
+        } else if(args[1] === "true") {                        
+     var auditconfigrequest = await auditconfig.findOne({Value: "true"});
+     if(auditconfigrequest !== null) auditconfigrequest.deleteOne();
+     msg.channel.send('set auditconfig to: `true`')
+        }
+
+    break;
+
+    case `help`:
+
+  msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `c!<configuration to change> <arguments>`');
+
+    break;
+}
+       } else if(msg.author.id === configwhitelistedid2) {
+           
+       switch (args[0]) {       
+           
+        case `prefix`:
+
+        
+            const prefixdata = await prefix.findOne({
+                GuildID: msg.guild.id
+            });
+        
+            if (!args[1]) return msg.channel.send(invalidargs);
+        
+            if (args[1].length > 5) return msg.channel.send('prefix is too long, make it shorter or stfu')
+        
+            if (prefixdata) {
+                await prefix.findOneAndRemove({
+                    GuildID: msg.guild.id
+                })
+                
+                msg.channel.send(`updated prefix to \`${args[1]}\` `);
+        
+                let newData = new prefix({
+                    Prefix: args[1],
+                    GuildID: msg.guild.id
+                })
+                
+                newData.save();
+            } else if (!prefixdata) {
+                msg.channel.send(`updated prefix to \`${args[1]}\``);
+        
+                let newData = new prefix({
+                    Prefix: args[0],
+                    GuildID: msg.guild.id
+                })
+                newData.save();
+            }
+        
+
+
+
+
+        break;
+
+        case `botlockdown`:
+        
+                if(args[1] === "true") {
+                await botlockdown.create({Value: "true"});
+                msg.channel.send('set lockdown to `true`')
+                } else if(args[1] === "false") {                        
+             var botlockdownremoverequest = await botlockdown.findOne({Value: "true"});
+             if(botlockdownremoverequest !== null) botlockdownremoverequest.deleteOne();
+             msg.channel.send('set lockdown to `false`')
+                }
+        
+            break;
+            
+    case `reactions`:
+        
+        if(args[1] === "false") {
+            await reactions.create({Value: "true"});
+            msg.channel.send('set reactions to `false`')
+            } else if(args[1] === "true") {                        
+         var reactionsreqeust = await reactions.findOne({Value: "true"});
+         if(reactionsreqeust !== null) reactionsreqeust.deleteOne();
+         msg.channel.send('set reactions to `true`')
+            }
+
+        break;
+     
+         
+            case `setstatus`:
+                
+                if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+
+                if(!args[1]) return msg.channel.send(invalidargs)
+                if(!args[2]) return msg.channel.send(invalidargs)
+
+                var statustype = args[1]
+                var statusmessage = args.slice(2).join(' ') 
+         
+                client.user.setActivity(statusmessage, {
+                    type: statustype
+                   });
+            
+                   msg.channel.send(`set statustype to \`${statustype}\` and statusmessage to \`${statusmessage}\``)
+            
+
+            break;
+        
+            case `audit`:
+        
+                if(args[1] === "false") {
+                await auditconfig.create({Value: "false"});
+                msg.channel.send('set auditconfig to: `false`')
+                } else if(args[1] === "true") {                        
+             var auditconfigrequest = await auditconfig.findOne({Value: "false"});
+             if(auditconfigrequest !== null) auditconfigrequest.deleteOne();
+             msg.channel.send('set auditconfig to: `true`')
+                }
+        
+            break;
+            
+            case `help`:
+                msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `c!<configuration to change> <arguments>`')   
+            
+                break;
+        
+        }
+
+       } else if(msg.author.id === configwhitelistedid3) {
+           
+        switch (args[0]) {       
+            
+         case `prefix`:
+ 
+         
+             const prefixdata = await prefix.findOne({
+                 GuildID: msg.guild.id
+             });
+         
+             if (!args[1]) return msg.channel.send(invalidargs);
+         
+             if (args[1].length > 5) return msg.channel.send('prefix is too long, make it shorter or stfu')
+         
+             if (prefixdata) {
+                 await prefix.findOneAndRemove({
+                     GuildID: msg.guild.id
+                 })
+                 
+                 msg.channel.send(`updated prefix to \`${args[1]}\` `);
+         
+                 let newData = new prefix({
+                     Prefix: args[1],
+                     GuildID: msg.guild.id
+                 })
+                 
+                 newData.save();
+             } else if (!prefixdata) {
+                 msg.channel.send(`updated prefix to \`${args[1]}\``);
+         
+                 let newData = new prefix({
+                     Prefix: args[0],
+                     GuildID: msg.guild.id
+                 })
+                 newData.save();
+             }
+         
+ 
+ 
+ 
+ 
+         break;
+ 
+         case `botlockdown`:
+         
+                 if(args[1] === "true") {
+                 await botlockdown.create({Value: "true"});
+                 msg.channel.send('set lockdown to `true`')
+                 } else if(args[1] === "false") {                        
+              var botlockdownremoverequest = await botlockdown.findOne({Value: "true"});
+              if(botlockdownremoverequest !== null) botlockdownremoverequest.deleteOne();
+              msg.channel.send('set lockdown to `false`')
+                 }
+         
+             break;
+             
+     case `reactions`:
+         
+         if(args[1] === "false") {
+             await reactions.create({Value: "true"});
+             msg.channel.send('set reactions to `false`')
+             } else if(args[1] === "true") {                        
+          var reactionsreqeust = await reactions.findOne({Value: "true"});
+          if(reactionsreqeust !== null) reactionsreqeust.deleteOne();
+          msg.channel.send('set reactions to `true`')
+             }
+ 
+         break;
+      
+          
+             case `setstatus`:
+                 
+                 if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
+ 
+                 if(!args[1]) return msg.channel.send(invalidargs)
+                 if(!args[2]) return msg.channel.send(invalidargs)
+ 
+                 var statustype = args[1]
+                 var statusmessage = args.slice(2).join(' ') 
+          
+                 client.user.setActivity(statusmessage, {
+                     type: statustype
+                    });
+             
+                    msg.channel.send(`set statustype to \`${statustype}\` and statusmessage to \`${statusmessage}\``)
+             
+ 
+             break;
+         
+             case `audit`:
+         
+                 if(args[1] === "false") {
+                 await auditconfig.create({Value: "false"});
+                 msg.channel.send('set auditconfig to: `false`')
+                 } else if(args[1] === "true") {                        
+              var auditconfigrequest = await auditconfig.findOne({Value: "false"});
+              if(auditconfigrequest !== null) auditconfigrequest.deleteOne();
+              msg.channel.send('set auditconfig to: `true`')
+                 }
+         
+             break;
+             
+             case `help`:
+                 msg.channel.send('Available configurations: botlockdown (`true` or `false`), prefix (`value`), audit (`true` or `false`), reactions (`true` or `false`), setstatus (`TYPE` `value`). To change a configuration, run `c!<configuration to change> <arguments>`')   
+             
+                 break;
+         
+         }
+ 
+        } else return;
+})
+
+
+client.login(process.env.bgr98hu0jwoihash98r2jofwqino); // <- not bots real token, its a variable
