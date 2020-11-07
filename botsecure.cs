@@ -12,6 +12,17 @@
                 static void Main(string[] args)
                 {         
                 
+
+        public async Task HandleCommand(SocketMessage messageParam)
+        {
+            var message = messageParam as SocketUserMessage;
+            if (message == null) return;
+            int argPos = 0;
+            if (!(message.HasCharPrefix(prefix, ref argPos) || message.HasMentionPrefix(client.CurrentUser, ref argPos))) return;
+            var context = new CommandContext(client, message)
+            var result = await commands.ExecuteAsync(context, argPos, services);
+            if (!result.IsSuccess) Console.WriteLine(result.ErrorReason); 
+        }
                    private async void Main()
                    {
                    
