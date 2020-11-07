@@ -11,4 +11,4 @@ This project is a bot for the discord server "Stanton AP". It includes databases
 
 # Affiliations
 
-This project is not affiliated with "Discord", "discord.js", "Soleno", or any other names that may appear in this project's source code. These are all simply dependencies that the project uses.
+This project is not affiliated with "Discord", "discord.js", or any other names that may appear in this project's source code. These are all simply dependencies that the project uses.
