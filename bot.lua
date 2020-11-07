@@ -42,7 +42,7 @@ local function exec(arg, msg)
 
     lines = table.concat(lines, '\n')
 
-    if #lines > 1990 then -- truncate long messages
+    if #lines > 1990 then 
         lines = lines:sub(1, 1990)
     end
 
@@ -68,7 +68,7 @@ client:on('messageCreate', function(message)
     local member = message.mentionedUsers.first
 
     if not member then
-      -- The user have not mentioned any member to be banned
+
       message:reply("EXTERNAL ERROR")
       return
     elseif not author:hasPermission("banMembers") then
