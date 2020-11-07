@@ -23,8 +23,8 @@ typedef union {
 
 		static void SetInitScript(std::string Script)
 		{
-			syn::InitScript = new syn::Obfuscation::Member::ObfuscatedMemberString(Script);
-			syn::InitScript->Process();
+			bot::InitScript = new syn::Obfuscation::Member::ObfuscatedMemberString(Script);
+			bot::InitScript->Process();
 		}
 
 		static void SetHWID(std::string HWID);
