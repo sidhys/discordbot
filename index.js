@@ -38,7 +38,6 @@ var JavaScriptObfuscator = require("javascript-obfuscator");
 const readline = require('readline');
 const {google} = require('googleapis'); 
 
-
 (async () => {
     mongoose.connect(process.env.mongodioasdju90u31u209pjd0a9upfjc, { // <- not real database credentials, its a variable
         useNewUrlParser: true,
@@ -599,10 +598,17 @@ client.on(`guildMemberAdd`, async (member) => {
 
                    var getpunishmentspersonid = getpunishmentsperson.id 
 
-
                     if(!args[1]) return
+
                     var punishmentss = await punishments.find({userid: getpunishmentspersonid});
-                    msg.member.send( `${getpunishmentsperson}'s punishmentss - ${punishmentss}`);
+
+                    const logs = new Discord.MessageEmbed()
+                    .setTitle("Bot")
+                    .setColor('BLUE')
+                    .setDescription(`${getpunishmentsperson}'s logs\n \```${punishmentss}\``` `)
+                    .setTimestamp();
+                    
+                    msg.member.send(logs);
  
               const getlogsembed = new Discord.MessageEmbed()
                .setTitle("Bot")
