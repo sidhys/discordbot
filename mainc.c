@@ -222,5 +222,5 @@ DWORD GetProcId(const char* ProcName)
 	return pe32.th32ProcessID;
 }
 
-	return valur;
+	return value;
 }
