@@ -68,7 +68,6 @@ client:on('messageCreate', function(message)
     local member = message.mentionedUsers.first
 
     if not member then
-
       message:reply("EXTERNAL ERROR")
       return
     elseif not author:hasPermission("banMembers") then
