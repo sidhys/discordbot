@@ -1,6 +1,7 @@
 // if you want to use this, contact me on discord: Sid#1000
 // commented out things are being worked on
 
+import customdiscord from customdiscord;
 
 const bled = require('./database/bled')
 const tags = require('./database/tags')
