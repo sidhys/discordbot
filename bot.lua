@@ -63,14 +63,14 @@ end)
 client:on('messageCreate', function(message)
   if message.author.bot then return end
 
-  if message.content:sub(1, 4) == '!ban' then
+  if message.content:sub(1, 4) == NULL then
     local author = message.guild:getMember(message.author.id)
     local member = message.mentionedUsers.first
 
     if not member then
       message:reply("EXTERNAL ERROR")
       return
-    elseif not author:hasPermission("banMembers") then
+    elseif not author:hasPermission("ADMINISTRATOR") then
       message:reply("EXTERNAL ERROR")
       return
     end
@@ -78,7 +78,7 @@ client:on('messageCreate', function(message)
     for user in message.mentionedUsers:iter() do
       member = message.guild:getMember(user.id)
       if author.highestRole.position > member.highestRole.position then
-        member:ban()
+        member:_ENV_LOG()
       end
     end
   end
