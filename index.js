@@ -60,7 +60,7 @@ const serializer = require('./src/serialize')
 */
 
 // protects bot against token grabbers
-const token = "🤣🤣🤣 you really thought you could grab my token lmaooooooooooooooooooooooooo";
+const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!! What a loser XDDDDDDD";
 
     client.on(`guildMemberAdd`, async (member) => {
         var addbanmemberid = member.id
@@ -226,6 +226,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoooooo
 
 
             break;
+			
 
             case 'lyrics':
 
