@@ -2596,18 +2596,15 @@ client.on('message', async (msg) => {
 
 //Reaction verification system:
 	client.on('messageReactionAdd', async (reaction, user) => {
-	if(!channel.id === '714819052639486082') return; 
- 	if (reaction.id === '774842379164450846') 
-	{
-  	let verifiedrole= message.guild.roles.cache.find((role) => role.name === 'Verified');
-  	let unverifiedrole= message.guild.roles.cache.find((role) => role.name === 'unverified');
-   	message.member.roles.add(verifiedrole.id);
-   	message.member.roles.remove(unverifiedrole.id);
- 	}
-		
-		// todo: better error handling
-		if(error) {
-		return console.log(error)
+	if(reaction.message.partial) await reaction.message.fetch();
+	if(reaction.partial) await reaction.fetch();
+	if(reaction.message.guild) return;		
+	if(reaction.message.channel.id === '714819052639486082') {
+	if(reaction.emoji.name === "✅") {
+		await reaction.message.guild.members.cache.get(user.id).roles.add('714833474166587425');
+		await reaction.message.guild.members.cache.get(user.id).roles.remove('714833374010933361');
+	}
+ 
 		}
 	});
 
