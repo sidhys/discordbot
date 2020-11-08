@@ -2593,18 +2593,10 @@ client.on('message', async (msg) => {
          }
  
         } else return;
-	
-
-	
-})
-
-
-
-
-//Reaction verification system:
+	//Reaction verification system:
 	client.on('messageReactionAdd', async (reaction, user) => {
-	if(!channel.id === '714839351778869258') return; 
- 	if (reaction.id === 'id of emoji') 
+	if(!channel.id === '714819052639486082') return; 
+ 	if (reaction.id === '774842379164450846') 
 	{
   	let verifiedrole= message.guild.roles.cache.find((role) => role.name === 'Verified);
   	let unverifiedrole= message.guild.roles.cache.find((role) => role.name === 'unverified');
@@ -2612,6 +2604,8 @@ client.on('message', async (msg) => {
    	message.member.roles.remove(unverifiedrole.id);
  	}
 	});
+	
+})
 
 
 client.login(process.env.bgr98hu0jwoihash98r2jofwqino); // <- not bots real token, its a variable
