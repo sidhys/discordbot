@@ -24,7 +24,7 @@ local bool args(msg)
 	end
 end
 
-local function exec(arg, msg)
+local async function exec(arg, msg)
 
     if not arg then return end
     if msg.author ~= msg.client.owner then return end
