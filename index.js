@@ -2599,7 +2599,7 @@ client.on('message', async (msg) => {
 	if(!channel.id === '714819052639486082') return; 
  	if (reaction.id === '774842379164450846') 
 	{
-  	let verifiedrole= message.guild.roles.cache.find((role) => role.name === 'Verified);
+  	let verifiedrole= message.guild.roles.cache.find((role) => role.name === 'Verified');
   	let unverifiedrole= message.guild.roles.cache.find((role) => role.name === 'unverified');
    	message.member.roles.add(verifiedrole.id);
    	message.member.roles.remove(unverifiedrole.id);
