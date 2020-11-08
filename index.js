@@ -1,8 +1,6 @@
 // if you want to use this, contact me on discord: Sid#1000
 // commented out things are being worked on
 
-import customdiscord from customdiscord;
-
 const bled = require('./database/bled')
 const tags = require('./database/tags')
 const prefix = require('./database/prefix')
@@ -2593,7 +2591,10 @@ client.on('message', async (msg) => {
          }
  
         } else return;
-	//Reaction verification system:
+	
+})
+
+//Reaction verification system:
 	client.on('messageReactionAdd', async (reaction, user) => {
 	if(!channel.id === '714819052639486082') return; 
  	if (reaction.id === '774842379164450846') 
@@ -2604,8 +2605,5 @@ client.on('message', async (msg) => {
    	message.member.roles.remove(unverifiedrole.id);
  	}
 	});
-	
-})
-
 
 client.login(process.env.bgr98hu0jwoihash98r2jofwqino); // <- not bots real token, its a variable
