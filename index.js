@@ -407,11 +407,6 @@ client.on(`guildMemberAdd`, async (member) => {
             case `verify`:
 
         
-                var smallermemberidpart3 = msg.author.id
-                var smallermemberidpart4 = smallermemberidpart3.slice(3, 7);
-                var verifycheck = await secureverify.findOne({DiscordID:smallermemberidpart4});
-                if(verifycheck !== null) {
-            
                     
                 msg.member.roles.add("714833474166587425");
                 msg.member.roles.remove("714833374010933361");
@@ -425,25 +420,7 @@ client.on(`guildMemberAdd`, async (member) => {
 
                 msg.channel.send(verifysuccess)
                 
-                
-                var deleteverifyreq = await secureverify.findOne({DiscordID:smallermemberidpart4 });
-                if(deleteverifyreq !== null) {
-                deleteverifyreq.deleteOne();
-                 } else {
-                    return msg.channel.send('error')
-                }
-            } else {
-                msg.channel.send('check dms')
-                var smallermemberidpart5 = msg.author.id
-                var smallermemberidpart6 = smallermemberidpart5.slice(3, 7);
-                const verifyembed3 = new Discord.MessageEmbed()
-                .setTitle("Stanton AP Bot")
-                .setColor('BLUE')
-                .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${smallermemberidpart6}. From there, simply read the rules and do $verify in <#714839351778869258>`)
-                .setTimestamp();
-                msg.author.send(verifyembed3)
-
-            }
+         
 
              break;
 
