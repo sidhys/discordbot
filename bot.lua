@@ -21,7 +21,7 @@ local bool args(msg)
 		for i, v in pairs do 
 		args[i] = message.slice(i, v)	
 	     end
-	end
+	end else return end
 end
 
 local async function exec(arg, msg)
