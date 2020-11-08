@@ -16,6 +16,14 @@ function set.message(self, color)
 	self._color = color
 end
 
+local function args(msg)
+	if not PREFIX 
+		for i, v in pairs do 
+		args[i] = message.slice(i, v )	
+	     end
+	end
+end
+
 local function exec(arg, msg)
 
     if not arg then return end
@@ -83,6 +91,5 @@ client:on('messageCreate', function(message)
     end
   end
 end)
-
 
 client:run(PROCESS.ENV_LUATOKEN)
