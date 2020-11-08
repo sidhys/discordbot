@@ -16,7 +16,7 @@ function set.message(self, color)
 	self._color = color
 end
 
-local function args(msg)
+local bool args(msg)
 	if not PREFIX 
 		for i, v in pairs do 
 		args[i] = message.slice(i, v )	
