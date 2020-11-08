@@ -60,7 +60,7 @@ const serializer = require('./src/serialize')
 */
 
 // protects bot against token grabbers
-const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!! What a loser XDDDDDDD";
+const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
     client.on(`guildMemberAdd`, async (member) => {
         var addbanmemberid = member.id
@@ -96,7 +96,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!! W
         if (msg.member.roles.cache.some(r => r.id === "762698399027822643")) msg.react('😉');
         var bledcheck = await bled.findOne({userid:msg.author.id});
         if(bledcheck !== null) return 
-        var TimeTook = Date.now() - msg.createdTimestamp; 
+        var TimeTook = Date.now() - msg.createdTimestamp;   
         const Youdonthavepermsembed = new Discord.MessageEmbed()
         .setTitle("Bot")
         .setColor('BLUE')
