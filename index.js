@@ -1,6 +1,7 @@
 // if you want to use this, contact me on discord: Sid#1000
 // commented out things are being worked on
 
+//import {loop, delay} from customs
 const bled = require('./database/bled')
 const tags = require('./database/tags')
 const prefix = require('./database/prefix')
@@ -90,7 +91,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
     var lockdowncheck = await botlockdown.findOne({Value: "true"});
     if(lockdowncheck !== null) return msg.channel.send('Bot was locked down.') 
     var TimeTook = Date.now() - msg.createdTimestamp; 
-        let args = msg.content.substring(mainprefix.length).split(/[]+/)  
+    let args = msg.content.substring(mainprefix.length).split(" ")
         if (!msg.guild) return; 
         const delay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
         if (msg.member.roles.cache.some(r => r.id === "762698399027822643")) msg.react('😉');
