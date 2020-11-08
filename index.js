@@ -84,14 +84,13 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!! W
     if (msg.content.toLowerCase().startsWith('<@!747789318831079506>')) {
         msg.channel.send(`My prefix is currently \`${prefixdata.Prefix}\` `)
     }
-        
-    
+   
         const mainprefix = prefixdata.Prefix;
         if(!msg.content.startsWith(mainprefix)) return;
     var lockdowncheck = await botlockdown.findOne({Value: "true"});
     if(lockdowncheck !== null) return msg.channel.send('Bot was locked down.') 
     var TimeTook = Date.now() - msg.createdTimestamp; 
-        let args = msg.content.substring(mainprefix.length).split(" ")  
+        let args = msg.content.substring(mainprefix.length).split(/[]+/)  
         if (!msg.guild) return; 
         const delay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
         if (msg.member.roles.cache.some(r => r.id === "762698399027822643")) msg.react('😉');
@@ -137,9 +136,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!! W
  
 
         switch (args[0]) {
-            
-    
-           
+
 
             case `start`:
 
