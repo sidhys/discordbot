@@ -1,7 +1,7 @@
 // if you want to use this, contact me on discord: Sid#1000
 // commented out things are being worked on
 
-
+import customdiscord from customdiscord;
 
 const bled = require('./database/bled')
 const tags = require('./database/tags')
@@ -63,17 +63,6 @@ const serializer = require('./src/serialize')
 
 // protects bot against token grabbers
 const token = "🤣🤣🤣 you really thought you could grab my token lmaooooooooooooooooooooooooo";
-
-client.on(`guildMemberAdd`, async (member) => {      
-    var smallermemberidpart1 = member.id
-    var smallmembberidpart2 = smallermemberidpart1.slice(3, 7);
-    const verifyembed2 = new Discord.MessageEmbed()
-    .setTitle("Stanton AP Bot")
-    .setColor('BLUE')
-    .setDescription(`Hello and welcome to Stanton AP! To verify, go to https://scpapverify.herokuapp.com/ and enter the ID ${smallmembberidpart2}. From there, simply read the rules and do $verify in <#714839351778869258>`)
-    .setTimestamp();
-    member.send(verifyembed2)
-})
 
     client.on(`guildMemberAdd`, async (member) => {
         var addbanmemberid = member.id
@@ -2604,6 +2593,18 @@ client.on('message', async (msg) => {
          }
  
         } else return;
+	//Reaction verification system:
+	client.on('messageReactionAdd', async (reaction, user) => {
+	if(!channel.id === '714839351778869258') return; 
+ 	if (reaction.id === 'id of emoji') 
+	{
+  	let verifiedrole= message.guild.roles.cache.find((role) => role.name === 'Verified);
+  	let unverifiedrole= message.guild.roles.cache.find((role) => role.name === 'unverified');
+   	message.member.roles.add(verifiedrole.id);
+   	message.member.roles.remove(unverifiedrole.id);
+ 	}
+	});
+	
 })
 
 
