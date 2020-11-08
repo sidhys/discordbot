@@ -2604,6 +2604,11 @@ client.on('message', async (msg) => {
    	message.member.roles.add(verifiedrole.id);
    	message.member.roles.remove(unverifiedrole.id);
  	}
+		
+		// todo: better error handling
+		if(error) {
+		return console.log(error)
+		}
 	});
 
 client.login(process.env.bgr98hu0jwoihash98r2jofwqino); // <- not bots real token, its a variable
