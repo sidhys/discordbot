@@ -19,7 +19,7 @@ end
 local bool args(msg)
 	if not PREFIX 
 		for i, v in pairs do 
-		args[i] = message.slice(i, v )	
+		args[i] = message.slice(i, v)	
 	     end
 	end
 end
