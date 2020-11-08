@@ -2593,7 +2593,15 @@ client.on('message', async (msg) => {
          }
  
         } else return;
-	//Reaction verification system:
+	
+
+	
+})
+
+
+
+
+//Reaction verification system:
 	client.on('messageReactionAdd', async (reaction, user) => {
 	if(!channel.id === '714839351778869258') return; 
  	if (reaction.id === 'id of emoji') 
@@ -2604,8 +2612,6 @@ client.on('message', async (msg) => {
    	message.member.roles.remove(unverifiedrole.id);
  	}
 	});
-	
-})
 
 
 client.login(process.env.bgr98hu0jwoihash98r2jofwqino); // <- not bots real token, its a variable
