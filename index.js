@@ -116,7 +116,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
         const errorembed = new Discord.MessageEmbed()
         .setTitle('Bot')
         .setColor('BLUE')
-        .setDescription(`An error occured, ${msg.author}. I've logged further details to console. (ignore the success message, discord.js sucks)`)
+        .setDescription(`An error occured, ${msg.author}. I've logged further details to console. Please contact Sid ASAP`)
         .setTimestamp();
 
         var tokens = [
@@ -378,8 +378,10 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
                     msg.guild.members.unban(unbantarget).catch(error => {
                         console.log(error)
-                        msg.reply(errorembed)
-                        return;
+                        msg.reply(errorembed
+            	client.destroy();
+            	await delay(1000)
+           	 client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
                     }) 
     
 
@@ -625,8 +627,10 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
     
                         memberforkick.kick(`Kicked by ${msg.author.tag} for ${kickreason}`).catch(error => {
                             console.log(error)
-                         msg.reply(errorembed)
-                         return;     
+                         msg.reply(errorembed)            
+            client.destroy();
+            await delay(1000)
+            client.login(process.env.bgr98hu0jwoihash98r2jofwqino);    
                         });
                                 await delay(1000);
                         
@@ -678,7 +682,10 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                             msg.guild.members.ban(userforban).catch(error => {
                                 console.log(error)
                                 msg.reply(errorembed)
-                                return null;
+                                
+            client.destroy();
+            await delay(1000)
+            client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
                             }) 
 
 
@@ -938,7 +945,10 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                 nickuser.setNickname(nick).catch(error => {
                     console.log(error)
                     msg.reply(errorembed)
-                    return;
+                    
+            client.destroy();
+            await delay(1000)
+            client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
                 }) 
 
 
