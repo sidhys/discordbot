@@ -2629,7 +2629,7 @@ client.on('message', async (msg) => {
 	if(reaction.partial) await reaction.fetch();
 	if(reaction.message.guild) return;		    
 	if(reaction.message.channel.id === '714819052639486082') {
-	if(reaction.emoji.name === "✅") {
+	if(reaction.emoji.name === "white_check_mark") {
 		console.log('requested')
 		await reaction.message.guild.members.cache.get(user.id).roles.add('714833474166587425');
 		await reaction.message.guild.members.cache.get(user.id).roles.remove('714833374010933361');
