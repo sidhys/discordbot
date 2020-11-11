@@ -383,6 +383,8 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                     }) 
     
 
+
+                    await delay(100)
                 
 
                     const unbanembed = new Discord.MessageEmbed()
@@ -621,7 +623,11 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
                         await delay(100);
     
-                        memberforkick.kick(`Kicked by ${msg.author.tag} for ${kickreason}`).then(() => {
+                        memberforkick.kick(`Kicked by ${msg.author.tag} for ${kickreason}`).catch(error => {
+                            console.log(error)
+                         msg.reply(errorembed)
+                         return;     
+                        });
                             
                         
                             const kickpublicembed = new Discord.MessageEmbed()
@@ -631,14 +637,9 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                             .setTimestamp();
                              msg.channel.send(kickpublicembed)
 
-                             
-
+                        
     
-                            }).catch(error => {
-                           console.log(error)
-                        msg.reply(errorembed)
-                        return;
-                            });
+                
                         } else {
                             msg.channel.send(`User has left the server, or internal error.`)
                         }
@@ -680,6 +681,8 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                                 return;
                             }) 
 
+
+                            await delay(100)
      
     
                              const publicbanembed = new Discord.MessageEmbed()
@@ -935,6 +938,9 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                     return;
                 }) 
 
+
+
+                await delay(100)
 
                 const nickembed = new Discord.MessageEmbed()
                 .setTitle("Bot")
@@ -2618,7 +2624,7 @@ client.on('message', async (msg) => {
 	client.on('messageReactionAdd', async (reaction, user) => {
 	if(reaction.message.partial) await reaction.message.fetch();
 	if(reaction.partial) await reaction.fetch();
-	if(reaction.message.guild) return;		
+	if(reaction.message.guild) return;		    
 	if(reaction.message.channel.id === '714819052639486082') {
 	if(reaction.emoji.name === "✅") {
 		console.log('requested')
