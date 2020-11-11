@@ -1695,7 +1695,14 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
             
                     await msg.guild.members.ban(user.id, {reason: hackbanreason});
             
-                    msg.channel.send(`**${msg.author.tag}** hackbanned **${user}** for \`${hackbanreason}\` `);
+
+
+                    const hackbanembed = new Discord.MessageEmbed()
+                    .setTitle("Bot")
+                    .setColor('BLUE')
+                    .setDescription(`Successfully hackbanned ${user}, ${msg.author}.`) 
+                    .setTimestamp();
+                    msg.channel.send(hackbanembed)         
 
                     await punishments.create({userid: hackbanuserID, punishments: {type: 'hackban', reason: hackbanreason}});
 
