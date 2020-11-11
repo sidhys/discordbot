@@ -116,7 +116,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
         const errorembed = new Discord.MessageEmbed()
         .setTitle('Bot')
         .setColor('BLUE')
-        .setDescription(`An error occured, ${msg.author}. I've logged further details to console. Please contact Sid ASAP`)
+        .setDescription(`An error occured, ${msg.author}. I've logged further details to console. Please contact Sid ASAP.`)
         .setTimestamp();
 
         var tokens = [
