@@ -657,6 +657,8 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                  const userforban =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
                     const userforbancheck = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
                     if(!userforbancheck) return msg.reply(invalidargs);
+		     if(args[1] === "696379479433674834") return msg.channel.send('stop trying to ban him bruh')
+		     if(args[1] === "<@!696379479433674834>") return msg.channel.send('stop trying to ban him bruh')
                     if(userforbancheck.roles.highest.position >= msg.member.roles.highest.position) return  msg.channel.send(staffYoudonthavepermsembed);
                     var banreason = args.slice(2).join(' ')
                     if (userforban) {
