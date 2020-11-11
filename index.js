@@ -379,21 +379,22 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                     msg.guild.members.unban(unbantarget).catch(error => {
                         console.log(error)
                         msg.reply(errorembed)
-			    return
+			let success = false
                     }) 
     
 
-
-                    await delay(1000)
-                
+	
+		if(!success === "false")
+		{
 
                     const unbanembed = new Discord.MessageEmbed()
                     .setTitle("Bot")
                     .setColor('BLUE')
                     .setDescription(`Successfully unbanned user <@${unbantarget}>, ${msg.author}.`)
                     .setTimestamp();
-                     msg.channel.send(unbanembed)
-
+		    msg.channel.send(unbanembed)
+		}
+			
                     break;
 
 
