@@ -921,8 +921,11 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
             case `nick`:
                          
                 if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed);
+                
 
                 let nickuser = msg.mentions.members.first() || msg.guild.members.cache.get(args[1]) 
+
+                if(nickuser.roles.highest.position >= msg.member.roles.highest.position) return  msg.channel.send(staffYoudonthavepermsembed);
 
                 let nick = args.slice(2).join(" ");             
 
