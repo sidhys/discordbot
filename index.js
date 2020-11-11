@@ -374,19 +374,19 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                  
                     const unbantarget = args[1]
 		    
-		    var success;
+		    var success = "true";
 
                     if(!unbantarget) return msg.channel.send(invalidargs)
 
                     msg.guild.members.unban(unbantarget).catch(error => {
                         console.log(error)
                         msg.reply(errorembed)
-			let success = false
+			var success = false
                     }) 
     
 
 	
-		if(!success === "false")
+		if(success === "true")
 		{
 
                     const unbanembed = new Discord.MessageEmbed()
