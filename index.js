@@ -378,7 +378,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
                     msg.guild.members.unban(unbantarget).catch(error => {
                         console.log(error)
-                        msg.reply(errorembed
+                        msg.reply(errorembed)
             	client.destroy();
             	await delay(1000)
            	 client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
