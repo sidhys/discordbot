@@ -380,7 +380,6 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                         console.log(error)
                         msg.reply(errorembed)
             	client.destroy();
-            	await delay(1000)
            	 client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
                     }) 
     
@@ -629,7 +628,6 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                             console.log(error)
                          msg.reply(errorembed)            
             client.destroy();
-            await delay(1000)
             client.login(process.env.bgr98hu0jwoihash98r2jofwqino);    
                         });
                                 await delay(1000);
@@ -684,7 +682,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                                 msg.reply(errorembed)
                                 
             client.destroy();
-            await delay(1000)
+         
             client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
                             }) 
 
@@ -947,7 +945,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                     msg.reply(errorembed)
                     
             client.destroy();
-            await delay(1000)
+      
             client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
                 }) 
 
@@ -1654,7 +1652,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
             if (msg.author.id !== "736285953039138817") return false;
             // reloads entire bot because why not           
             client.destroy();
-            await delay(1000)
+   
             client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
             msg.channel.send(`successfully reloaded \`${reloadvar}\``)
 
