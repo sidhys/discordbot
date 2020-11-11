@@ -1,7 +1,7 @@
-// if you want to use this, contact me on discord: Sid#1000
+
 // commented out things are being worked on
 
-//import {loop, delay} from customs
+import {loop, delay} from customs
 const bled = require('./database/bled')
 const tags = require('./database/tags')
 const prefix = require('./database/prefix')
@@ -1100,7 +1100,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
         case `img`:
 
                 var parts = msg.content.split(" "); 
-                if (parts[0] === "$img") { 
+                if (parts[0] === `${mainprefix}img`) { 
                     image(msg, parts);
                 }
             
