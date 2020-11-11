@@ -108,19 +108,29 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
         .setColor('BLUE')   
         .setDescription(`You can not run this command on staff, ${msg.author}.`)
         .setTimestamp();
-
-
         const invalidargs = new Discord.MessageEmbed()
         .setTitle("Bot")
         .setColor('BLUE')
         .setDescription(`Invalid argument, ${msg.author}.`)
         .setTimestamp();
-        
-        
+        const errorembed = new Discord.MessageEmbed()
+        .setTitle('Error')
+        .setColor('BLUE')
+        .setDescription(error)
+        .setTimestamp();
+
         var tokens = [
             "a", "b", "c","d","e","f","g","h","i","j","k","l","m","n","o","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z"]       
 
-         
+        
+            
+
+            if(error) {
+                msg.reply(errorembed)
+                return
+            }
+
+
             function generateToken() {
                 var tokencharacters = tokens;
                 var finaltoken = '';
