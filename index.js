@@ -678,13 +678,13 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                             msg.guild.members.ban(userforban).catch(error => {
                                 console.log(error)
                                 msg.reply(errorembed)
-                                return;
+                                return null;
                             }) 
 
 
                             await delay(1000)
      
-    
+     
                              const publicbanembed = new Discord.MessageEmbed()
                              .setTitle("Bot")
                              .setColor('BLUE')
