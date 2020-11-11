@@ -376,16 +376,14 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
                     if(!unbantarget) return msg.channel.send(invalidargs)
 
-                    msg.guild.members.unban(unbantarget)
+                    msg.guild.members.unban(unbantarget).catch(error => {
+                        console.log(error)
+                        msg.reply(errorembed)
+                        return;
+                    }) 
     
 
-                    
-            if(error) {
-                console.log(error)
-                msg.reply(errorembed)
-                return;
-            }
-
+                
 
                     const unbanembed = new Discord.MessageEmbed()
                     .setTitle("Bot")
@@ -625,16 +623,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
     
                         memberforkick.kick(`Kicked by ${msg.author.tag} for ${kickreason}`).then(() => {
                             
-                            
-                            
                         
-            if(error) {
-                console.log(error)
-                msg.reply(errorembed)
-                return;
-            }
-
-
                             const kickpublicembed = new Discord.MessageEmbed()
                             .setTitle("Bot")
                             .setColor('BLUE')
@@ -645,9 +634,10 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                              
 
     
-                            }).catch(err => {
-                                msg.channel.send(`Internal error, ${msg.author}. I've logged error details to console.`)
-                                console.log(err);
+                            }).catch(error => {
+                           console.log(error)
+                        msg.reply(errorembed)
+                        return;
                             });
                         } else {
                             msg.channel.send(`User has left the server, or internal error.`)
@@ -684,15 +674,11 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
     
                              await delay(100);
 
-                            msg.guild.members.ban(userforban);
-
-
-                                                    
-            if(error) {
-                console.log(error)
-                msg.reply(errorembed)
-                return;
-            }
+                            msg.guild.members.ban(userforban).catch(error => {
+                                console.log(error)
+                                msg.reply(errorembed)
+                                return;
+                            }) 
 
      
     
@@ -943,14 +929,11 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                 if (!nick) return msg.reply(invalidargs);
 
 
-                nickuser.setNickname(nick);
-
-                                        
-            if(error) {
-                console.log(error)
-                msg.reply(errorembed)
-                return;
-            }
+                nickuser.setNickname(nick).catch(error => {
+                    console.log(error)
+                    msg.reply(errorembed)
+                    return;
+                }) 
 
 
                 const nickembed = new Discord.MessageEmbed()
@@ -1710,7 +1693,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
                 }).catch(error => {
             
-                    return msg.channel.send(`An error occurred: **${error}**`);
+                    return msg.channel.send(`${error}`);
             
                 })
 
@@ -2230,10 +2213,6 @@ client.on('message', async (msg) => {
         var saychannelid = args[1];
 
         client.channels.cache.get(saychannelid).send(stufftosay);
-
-        if(error){
-            console.log(error)
-        }
 
     break;
 
