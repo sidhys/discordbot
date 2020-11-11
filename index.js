@@ -114,21 +114,15 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
         .setDescription(`Invalid argument, ${msg.author}.`)
         .setTimestamp();
         const errorembed = new Discord.MessageEmbed()
-        .setTitle('Error')
+        .setTitle('Bot')
         .setColor('BLUE')
-        .setDescription(error)
+        .setDescription(`An error occured, ${msg.author}. I've logged further details to console.`)
         .setTimestamp();
 
         var tokens = [
             "a", "b", "c","d","e","f","g","h","i","j","k","l","m","n","o","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y","Z"]       
 
         
-            
-
-            if(error) {
-                msg.reply(errorembed)
-                return
-            }
 
 
             function generateToken() {
@@ -161,7 +155,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
                     setTimeout(function() {
                          msg.channel.send(startmessage);
-                         msg.channel.send(`$start ${starttime} ${startmessage}`)    
+                         msg.channel.send(`${mainprefix}start ${starttime} ${startmessage}`)    
                          }, ms(starttime));                     
 
 
@@ -359,17 +353,12 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
              var authperson = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
 
              var authrole = msg.guild.roles.cache.find(role => role.name === "Verified");
-             var authrole2 = msg.guild.roles.cache.find(role => role.name === "unverified");
 
                     if (!args[1]) return msg.reply(invalidargs)
 
 
                 if (!authrole2) return msg.reply('Error');
-                if (!authrole) return msg.reply('Error');
-                
                 authperson.roles.add(authrole.id);
-                authperson.roles.remove(authrole2.id);
-
                 const authembed = new Discord.MessageEmbed()
                 .setTitle("Bot")
                 .setColor('BLUE')
@@ -388,6 +377,15 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                     if(!unbantarget) return msg.channel.send(invalidargs)
 
                     msg.guild.members.unban(unbantarget)
+    
+
+                    
+            if(error) {
+                console.log(error)
+                msg.reply(errorembed)
+                return;
+            }
+
 
                     const unbanembed = new Discord.MessageEmbed()
                     .setTitle("Bot")
@@ -626,6 +624,16 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                         await delay(100);
     
                         memberforkick.kick(`Kicked by ${msg.author.tag} for ${kickreason}`).then(() => {
+                            
+                            
+                            
+                        
+            if(error) {
+                console.log(error)
+                msg.reply(errorembed)
+                return;
+            }
+
 
                             const kickpublicembed = new Discord.MessageEmbed()
                             .setTitle("Bot")
@@ -669,7 +677,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                             const banembed = new Discord.MessageEmbed()
                             .setTitle("Ban")
                             .setColor('BLUE')
-                            .setDescription(`You were banned from ${ msg.guild.name} for ${banreason}.`)
+                            .setDescription(`You were banned from ${msg.guild.name} for ${banreason}.`)
                             .addField("Token", firetokengenerator)
                             .setTimestamp();
                              userforban.send(banembed)
@@ -677,6 +685,15 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                              await delay(100);
 
                             msg.guild.members.ban(userforban);
+
+
+                                                    
+            if(error) {
+                console.log(error)
+                msg.reply(errorembed)
+                return;
+            }
+
      
     
                              const publicbanembed = new Discord.MessageEmbed()
@@ -927,6 +944,14 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
 
                 nickuser.setNickname(nick);
+
+                                        
+            if(error) {
+                console.log(error)
+                msg.reply(errorembed)
+                return;
+            }
+
 
                 const nickembed = new Discord.MessageEmbed()
                 .setTitle("Bot")
