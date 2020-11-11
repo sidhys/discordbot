@@ -373,6 +373,8 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                 if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
                  
                     const unbantarget = args[1]
+		    
+		    var success;
 
                     if(!unbantarget) return msg.channel.send(invalidargs)
 
@@ -384,7 +386,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
     
 
 	
-		if(!success)
+		if(!success === "false")
 		{
 
                     const unbanembed = new Discord.MessageEmbed()
