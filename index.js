@@ -384,7 +384,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
     
 
 
-                    await delay(100)
+                    await delay(1000)
                 
 
                     const unbanembed = new Discord.MessageEmbed()
@@ -628,7 +628,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                          msg.reply(errorembed)
                          return;     
                         });
-                            
+                                await delay(1000);
                         
                             const kickpublicembed = new Discord.MessageEmbed()
                             .setTitle("Bot")
@@ -682,7 +682,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                             }) 
 
 
-                            await delay(100)
+                            await delay(1000)
      
     
                              const publicbanembed = new Discord.MessageEmbed()
@@ -943,7 +943,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
 
 
-                await delay(100)
+                await delay(1000)
 
                 const nickembed = new Discord.MessageEmbed()
                 .setTitle("Bot")
