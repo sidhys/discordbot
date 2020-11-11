@@ -373,8 +373,8 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                 if (!msg.member.permissions.has('ADMINISTRATOR')) return msg.channel.send(Youdonthavepermsembed);
                  
                     const unbantarget = args[1]
-		    
-		    var success = "true";
+		    // global var
+		    let success = "true";
 
                     if(!unbantarget) return msg.channel.send(invalidargs)
 
