@@ -384,7 +384,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 			 success = false
                     }) 
     
-
+ 		await delay(100)
 	
 		if(success === "true")
 		{
