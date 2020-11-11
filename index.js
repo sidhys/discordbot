@@ -379,8 +379,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                     msg.guild.members.unban(unbantarget).catch(error => {
                         console.log(error)
                         msg.reply(errorembed)
-            	client.destroy();
-           	 client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
+			    return
                     }) 
     
 
@@ -627,8 +626,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                         memberforkick.kick(`Kicked by ${msg.author.tag} for ${kickreason}`).catch(error => {
                             console.log(error)
                          msg.reply(errorembed)            
-            client.destroy();
-            client.login(process.env.bgr98hu0jwoihash98r2jofwqino);    
+           return    
                         });
                                 await delay(1000);
                         
@@ -681,9 +679,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                                 console.log(error)
                                 msg.reply(errorembed)
                                 
-            client.destroy();
-         
-            client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
+      return
                             }) 
 
 
@@ -944,9 +940,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                     console.log(error)
                     msg.reply(errorembed)
                     
-            client.destroy();
-      
-            client.login(process.env.bgr98hu0jwoihash98r2jofwqino);
+            return
                 }) 
 
 
