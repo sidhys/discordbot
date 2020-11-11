@@ -381,7 +381,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                     msg.guild.members.unban(unbantarget).catch(error => {
                         console.log(error)
                         msg.reply(errorembed)
-			var success = false
+			 success = false
                     }) 
     
 
