@@ -1,7 +1,6 @@
 
 // commented out things are being worked on
 
-import {loop, delay} from customs
 const bled = require('./database/bled')
 const tags = require('./database/tags')
 const prefix = require('./database/prefix')
