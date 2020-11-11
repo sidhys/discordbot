@@ -384,7 +384,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
     
 
 	
-		if(!success === "false")
+		if(!success)
 		{
 
                     const unbanembed = new Discord.MessageEmbed()
