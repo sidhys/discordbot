@@ -234,8 +234,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
           if (!args[1]) return msg.channel.send(invalidargs)
         try {
-            msg.channel.send('attempting to find lyrics')
-            var songTitle = args.slice(1).join(' ')
+	    var songTitle = args.slice(1).join(' ')
             var lyrics = await solenolyrics.requestLyricsFor(args.slice(1).join(' '));
             var title = await solenolyrics.requestTitleFor(args.slice(1).join(' '));
             var albumCover = await solenolyrics.requestIconFor(args.slice(1).join(' '));
@@ -244,8 +243,8 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
             console.log(err)
             return msg.channel.send(`couldnt find that song https://tenor.com/view/cheese-tomandjerry-gif-5876589`);
         }
-
         if(lyrics === undefined) return msg.channel.send(`couldnt find the song https://tenor.com/view/cheese-tomandjerry-gif-5876589 `)
+			msg.channel.send(`found lyrics (took genius ${TimeTook) ms to respond`)
     for(let i = 0; i < lyrics.length; i += 1800) {
     const smallerlyrics = lyrics.substring(i, Math.min(lyrics.length, i + 1800));
 	   let lyricsEmbed = new Discord.MessageEmbed()
@@ -256,7 +255,6 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
             .setTitle(`Lyrics for ${title} by ${songAuthor}`)
             .setThumbnail(albumCover)
             .setColor("BLUE");
-
             msg.channel.send(lyricsEmbed)
 }
     
