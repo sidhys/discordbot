@@ -241,8 +241,8 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
             var albumCover = await solenolyrics.requestIconFor(args.slice(1).join(' '));
             var songAuthor = await solenolyrics.requestAuthorFor(args.slice(1).join(' '));
 	if(lyricssuccess === "false") return;
-        }.catch (err) {
-            console.log(err)
+        } catch (error) {
+            console.log(error)
             return msg.channel.send(`couldnt find that song https://tenor.com/view/cheese-tomandjerry-gif-5876589`);
         }
         if(lyrics === undefined) return msg.channel.send(`couldnt find the song https://tenor.com/view/cheese-tomandjerry-gif-5876589 `)
@@ -576,7 +576,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
                    var getpunishmentspersonid = getpunishmentsperson.id 
 
-                    if(!args[1]) return
+                    if(!args[1]) return msg.reply()
 
                     var punishmentss = await punishments.find({userid: getpunishmentspersonid});
 
