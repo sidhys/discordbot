@@ -117,7 +117,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
         const errorembed = new Discord.MessageEmbed()
         .setTitle('Bot')
         .setColor('BLUE')
-        .setDescription(`An error occured, ${msg.author}. I've logged further details to console. Please contact Sid ASAP.`)
+        .setDescription(`An error occured, ${msg.author}. I've logged further details to console.`)
         .setTimestamp();
 
         var tokens = [
@@ -234,11 +234,17 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
           if (!args[1]) return msg.channel.send(invalidargs)
         try {
+	let lyricssuccess = true
 	    var songTitle = args.slice(1).join(' ')
-            var lyrics = await solenolyrics.requestLyricsFor(args.slice(1).join(' '));
+            var lyrics = await solenolyrics.requestLyricsFor(args.slice(1).join(' ')).catch(error => {
+                        console.log(error)
+                        msg.reply(errorembed)
+			 lyricssuccess = false
+                    }) 
             var title = await solenolyrics.requestTitleFor(args.slice(1).join(' '));
             var albumCover = await solenolyrics.requestIconFor(args.slice(1).join(' '));
             var songAuthor = await solenolyrics.requestAuthorFor(args.slice(1).join(' '));
+	if(lyricssuccess === "false") return;
         } catch (err) {
             console.log(err)
             return msg.channel.send(`couldnt find that song https://tenor.com/view/cheese-tomandjerry-gif-5876589`);
@@ -658,14 +664,13 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                  const userforban =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
                     const userforbancheck = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
                     if(!userforbancheck) return msg.reply(invalidargs);
-		     if(args[1] === "696379479433674834") return msg.channel.send('stop trying to ban him bruh')
-		     if(args[1] === "<@!696379479433674834>") return msg.channel.send('stop trying to ban him bruh')
                     if(userforbancheck.roles.highest.position >= msg.member.roles.highest.position) return  msg.channel.send(staffYoudonthavepermsembed);
                     var banreason = args.slice(2).join(' ')
                     if (userforban) {
                         const memberforban = msg.guild.member(userforban);
                         if (memberforban) {
 
+			let bansuccess = true
 
                             banid = userforban.id
 
@@ -683,15 +688,14 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
                             msg.guild.members.ban(userforban).catch(error => {
                                 console.log(error)
-                                msg.reply(errorembed)
-                                
-      return
+                                bansuccess = false
                             }) 
 
 
                             await delay(1000)
      
-     
+ 
+				if(bansuccess === "true") {
                              const publicbanembed = new Discord.MessageEmbed()
                              .setTitle("Bot")
                              .setColor('BLUE')
@@ -699,7 +703,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                              .setTimestamp();
                               msg.channel.send(publicbanembed)
 
-                                
+				}
                         } else {
                             msg.reply('User has left the server, or internal error.')
                         }
@@ -767,7 +771,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
                     
                     person.roles.remove(mainrole.id);
-                    person.roles.add(muterole.id);
+                    person.roles.add(muterole.id)
 
 
                     const muteembed = new Discord.MessageEmbed()
