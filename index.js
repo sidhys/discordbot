@@ -244,7 +244,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
             return msg.channel.send(`couldnt find that song https://tenor.com/view/cheese-tomandjerry-gif-5876589`);
         }
         if(lyrics === undefined) return msg.channel.send(`couldnt find the song https://tenor.com/view/cheese-tomandjerry-gif-5876589 `)
-			msg.channel.send(`found lyrics (took genius ${TimeTook) ms to respond`)
+			msg.channel.send(`found lyrics (took genius ${TimeTook} ms to respond`)
     for(let i = 0; i < lyrics.length; i += 1800) {
     const smallerlyrics = lyrics.substring(i, Math.min(lyrics.length, i + 1800));
 	   let lyricsEmbed = new Discord.MessageEmbed()
