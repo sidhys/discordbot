@@ -10,6 +10,7 @@ const secureverify = require('./database/secureverify');
 const botlockdown = require('./database/botlockdown');
 const auditconfig = require('./database/auditconfig');
 const react = require ('./database/reactions');
+const discordTTS = require('discord-tts')
 const { error } = require('console');
 const { REPL_MODE_STRICT } = require('repl');
 const reactions = require('./database/reactions');
@@ -926,6 +927,28 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
                break; 
            
+               case `tts`:
+
+                let voiceChannel = msg.member.voice.channel
+        let text = args.slice(1).join(" ")
+        if (!voiceChannel){
+      return msg.channel.send("join a vc")
+   }
+    if (!text) {
+         return msg.channel.send("what do i say ")
+    } 
+        msg.channel.send("started tts")
+        voiceChannel.join().then(connection => {
+            const stream = discordTTS.getVoiceStream(text);
+            const dispatcher = connection.play(stream);
+            dispatcher.on("finish",()=>voiceChannel.leave())
+        });
+
+
+
+
+               break;
+            
             case `nick`:
                          
                 if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed);
