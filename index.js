@@ -245,8 +245,10 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
         }
 
         if(lyrics === undefined) return msg.channel.send(`couldnt find the song https://tenor.com/view/cheese-tomandjerry-gif-5876589 `)
-        let lyricsEmbed = new Discord.MessageEmbed()
-            .setDescription(lyrics)
+    for(let i = 0; i < lyrics.length; i += 1800) {
+    const smallerlyrics = lyrics.substring(i, Math.min(str.length, i + 2000));
+	   let lyricsEmbed = new Discord.MessageEmbed()
+            .setDescription(smallerlyrics)
             .setFooter(`Requested by ${msg.author.username}`, msg.author.displayAvatarURL({ 
                 dynamic: true
             }))
@@ -255,7 +257,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
             .setColor("BLUE");
 
             msg.channel.send(lyricsEmbed)
-            
+}
     
         break;
 
