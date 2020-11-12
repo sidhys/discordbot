@@ -688,6 +688,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
 
                             msg.guild.members.ban(userforban).catch(error => {
                                 console.log(error)
+				 msg.channel.send(errorembed)
                                 bansuccess = false
                             }) 
 
