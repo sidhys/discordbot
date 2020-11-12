@@ -236,16 +236,12 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
         try {
 	let lyricssuccess = true
 	    var songTitle = args.slice(1).join(' ')
-            var lyrics = await solenolyrics.requestLyricsFor(args.slice(1).join(' ')).catch(error => {
-                        console.log(error)
-                        msg.reply(errorembed)
-			 lyricssuccess = false
-                    }) 
+            var lyrics = await solenolyrics.requestLyricsFor(args.slice(1).join(' '))
             var title = await solenolyrics.requestTitleFor(args.slice(1).join(' '));
             var albumCover = await solenolyrics.requestIconFor(args.slice(1).join(' '));
             var songAuthor = await solenolyrics.requestAuthorFor(args.slice(1).join(' '));
 	if(lyricssuccess === "false") return;
-        } catch (err) {
+        }.catch (err) {
             console.log(err)
             return msg.channel.send(`couldnt find that song https://tenor.com/view/cheese-tomandjerry-gif-5876589`);
         }
