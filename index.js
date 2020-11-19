@@ -1,8 +1,7 @@
 
 // commented out things are being worked on
 
-/*
-@author {sid} 
+/* 
 @param {Discord}
 @param {database}
 @param {strict}
