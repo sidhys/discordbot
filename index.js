@@ -1,6 +1,12 @@
 
 // commented out things are being worked on
 
+/*
+@author {sid} 
+@param {DISCORD}
+*/
+
+
 const bled = require('./database/bled')
 const tags = require('./database/tags')
 const prefix = require('./database/prefix')
