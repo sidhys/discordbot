@@ -3,7 +3,9 @@
 
 /*
 @author {sid} 
-@param {DISCORD}
+@param {Discord}
+@param {database}
+@param {strict}
 */
 
 
