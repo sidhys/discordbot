@@ -104,7 +104,17 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
         if (msg.member.roles.cache.some(r => r.id === "762698399027822643")) msg.react('😉');
         var bledcheck = await bled.findOne({userid:msg.author.id});
         if(bledcheck !== null) return 
-        var TimeTook = Date.now() - msg.createdTimestamp;   
+        var TimeTook = Date.now() - msg.createdTimestamp;  
+	 if(msg.author.id == "484453533928783876") {
+   msg.react('🇸')
+        msg.react('🇹')
+        msg.react('🇫')
+        msg.react('🇺')
+
+        setTimeout(() => {
+        msg.react('🇹')
+        }, 750) 
+}
         const Youdonthavepermsembed = new Discord.MessageEmbed()
         .setTitle("Bot")
         .setColor('BLUE')
