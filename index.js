@@ -186,7 +186,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
                 
                 var obfuscationResult = JavaScriptObfuscator.obfuscate(args.slice(1).join(' '));
                 
-                var obfuscationOutput = `// this file was obfuscated using sids obfuscation \n ` + obfuscationResult.getObfuscatedCode()
+                var obfuscationOutput = obfuscationResult.getObfuscatedCode()
       
                          
                 if(!obfuscationOutput) return msg.reply('Error while obfuscating.');
@@ -286,7 +286,7 @@ const token = "🤣🤣🤣 you really thought you could grab my token lmaoo!!"
             let obfuscatefileinput = await fetchNode(msg.attachments.first().url).then(res => res.buffer()).then(buffer => buffer.toString());
             var obfuscatefileresult = JavaScriptObfuscator.obfuscate(obfuscatefileinput);
             
-            var obfuscatefileoutput = `// this file was obfuscated using sids obfuscation \n` +   obfuscatefileresult.getObfuscatedCode();
+            var obfuscatefileoutput =  obfuscatefileresult.getObfuscatedCode();
             if(!obfuscatefileoutput) return msg.reply('Error while obfuscating.');
             
             const obfuscatefileEmbed = new Discord.MessageEmbed()
