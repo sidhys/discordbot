@@ -1,11 +1,4 @@
 
-// commented out things are being worked on
-
-/* 
-@param {Discord}
-@param {database}
-@param {strict}
-*/
 
 
 const bled = require('./database/bled')
