@@ -2664,23 +2664,6 @@ client.on('message', async (msg) => {
 	
 })
 
-//Reaction verification system:
-	client.on('messageReactionAdd', async (reaction, user) => {
-	if(reaction.message.partial) await reaction.message.fetch();
-	if(reaction.partial) await reaction.fetch();
-	if(reaction.message.guild) return;		    
-	if(reaction.message.channel.id === '714819052639486082') {
-	if(reaction.emoji.name === "white_check_mark") {
-		console.log('requested')
-		await reaction.message.guild.members.cache.get(user.id).roles.add('714833474166587425');
-		await reaction.message.guild.members.cache.get(user.id).roles.remove('714833374010933361');
-		
-		if(error) {
-		console.log(error)
-		}
-	}
- 
-		}
-	});
+
 
 client.login(process.env.bgr98hu0jwoihash98r2jofwqino); // <- not bots real token, its a variable
