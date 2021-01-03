@@ -10,7 +10,7 @@ fs.readFile('./index.ts', "UTF-8", function(err, data) {
   
 var obfuscationResult = JavaScriptObfuscator.obfuscate(data);
 
-fs.writeFile('./index-obfuscated.ts', obfuscationResult.getObfuscatedCode(), function(err){
+fs.writeFile('./index-obfuscated.js', obfuscationResult.getObfuscatedCode(), function(err){
     if(err){
          console.log(err)
          throw new err;
