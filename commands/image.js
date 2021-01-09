@@ -38,13 +38,13 @@ module.exports = {
             var links = $(".image a.link");
             var imgurls = new Array(links.length).fill(0).map((v, i) => links.eq(i).attr("href"));
             if (!imgurls.length) {
-                return msg.channel.send(`Could not find any images related to that search, ${message.author}.`)
+                return message.channel.send(`Could not find any images related to that search, ${message.author}.`)
             }
             const imgembed = new MessageEmbed()
             .setTitle(`Image`)
             .setColor('#f3f3f3')
             .setImage(imgurls[0]);
-            msg.channel.send(imgembed)
+            message.channel.send(imgembed)
         
         });
 
