@@ -7,7 +7,7 @@ module.exports = {
 	description: 'Returns information on a command, or lists commands.',
 	aliases: ['help', '?', 'cmds', 'commands'],
 	execute(message, args) {
-	const data = [];
+     const data = [];
     const { commands } = message.client;
 
     if (!args.length) {
