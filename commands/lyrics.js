@@ -20,7 +20,7 @@ module.exports = {
             return message.channel.send(`Could not find song.`);
         }
         if(lyrics === undefined) return message.channel.send(`Could not find song.`);
-			message.channel.send(`found lyrics (took genius ${Date.now() - message.createdTimestamp} ms to return JSON file)`)
+	message.channel.send(`found lyrics (took genius ${Date.now() - message.createdTimestamp} ms to return JSON file)`)
     for(let i = 0; i < lyrics.length; i += 1800) {
     const smallerlyrics = lyrics.substring(i, Math.min(lyrics.length, i + 1800));
 	   let lyricsEmbed = new Discord.MessageEmbed()
