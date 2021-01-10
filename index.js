@@ -62,7 +62,7 @@ client.on('message', async message => {
         const indexerror = new Discord.MessageEmbed()
         .setTitle("Bot")
         .setColor('BLUE')
-        .setDescription(`Failed to execute file, ${message.author}. Please contact with the error text ${erorr}`)
+        .setDescription(`Failed to execute file, ${message.author}. Please contact us with the error text ${erorr}`)
         .setTimestamp();
          message.channel.send(indexerror)
     }
