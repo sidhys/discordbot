@@ -1,11 +1,17 @@
-const bottoken = "ENTER YOUR BOT TOKEN HERE";
-const mongoosecred = "ENTER YOUR MONGOOSE LOGIN HERE";
+const config = require("./config.js");
 
 const fs = require('fs');
 const Discord = require('discord.js');
 const mongoose = require('mongoose')
 
-const client = new Discord.Client({partials: ["MESSAGE", "CHANNEL", "REACTION"]});
+const client;
+if(config.allowpartials = true) {
+    client = new Discord.Client({partials: ["MESSAGE", "CHANNEL", "REACTION"]});
+} else if (config.allowpartials = false) {
+    client = new Discord.Client;
+} else {
+    throw "Can't access config.allowpartials!";
+}
 
 client.commands = new Discord.Collection();
 
@@ -17,16 +23,26 @@ for (const file of commandFiles) {
 }
 
 (async () => {
-    mongoose.connect(mongoosecred, {    
+    mongoose.connect(config.mongodbcred, {    
         useNewUrlParser: true,
         useUnifiedTopology: true
     }).then(() => console.log('Connected to database.'));
 })();
 
 
+function eval() {
+    if (config.eval = true) {
+        eval(client)
+    } else if (config.eval = false) {
+        eval(client)
+    } else {
+        throw "Can't access config.eval!";
+    }
+}
+
 client.on('ready', () => {
     console.log('Connected to bot.')
-    eval(client)
+    
 })
 
 const prefix = "!";
@@ -38,13 +54,11 @@ client.on('message', async message => {
     const commandName = args.shift().toLowerCase();
     const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
     if (!command) return;
-    if (command.guildOnly && message.channel.type === 'dm') {
-        return;
-    }
+    if(config.allowdm = false && message.channel.type === 'dm') return;
     try {
         command.execute(message, args);
     } catch (error) {
-        console.error(error);
+        if(config.logerrors = true) console.error(error);
         const indexerror = new Discord.MessageEmbed()
         .setTitle("Bot")
         .setColor('BLUE')
@@ -54,6 +68,6 @@ client.on('message', async message => {
     }
 }); 
 
-client.login(bottoken)
+client.login(config.token);
 
 
