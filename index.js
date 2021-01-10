@@ -42,7 +42,7 @@ function eval() {
 
 client.on('ready', () => {
     console.log('Connected to bot.')
-    
+    eval();
 })
 
 const prefix = "!";
