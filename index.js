@@ -30,10 +30,10 @@ for (const file of commandFiles) {
 })();
 
 
-function eval() {
-    if (config.eval = true) {
+function eval(a) {
+    if (a = true) {
         eval(client)
-    } else if (config.eval = false) {
+    } else if (a = false) {
         eval(client)
     } else {
         throw "Can't access config.eval!";
@@ -42,7 +42,7 @@ function eval() {
 
 client.on('ready', () => {
     console.log('Connected to bot.')
-    eval();
+    eval(config.eval);
 })
 
 const prefix = "!";
