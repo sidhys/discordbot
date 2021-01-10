@@ -58,7 +58,7 @@ client.on('message', async message => {
     try {
         command.execute(message, args);
     } catch (error) {
-        if(config.logerrors = true) console.error(error);
+        if(config.logerrors = true) console.log(error);
         const indexerror = new Discord.MessageEmbed()
         .setTitle("Bot")
         .setColor('BLUE')
