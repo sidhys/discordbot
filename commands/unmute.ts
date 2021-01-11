@@ -25,8 +25,7 @@ module.exports = {
         const umuteembed = new Discord.MessageEmbed()
         .setTitle("Unmute")
         .setColor('BLUE')
-        .setDescription(`You were unmuted in ${msg.guild.name} with reason ${umreason}. `)
-        .addField("Token", firetokengenerator)
+        .setDescription(`You were unmuted in ${msg.guild.name} with reason ${umreason}.`)
         .setTimestamp();
         uperson.send(umuteembed)
 

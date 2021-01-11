@@ -1,10 +1,10 @@
-const config = require("./config.js");
+const config = require("./config.ts");
 
 const fs = require('fs');
 const Discord = require('discord.js');
 const mongoose = require('mongoose')
 
-const client;
+var client;
 if(config.allowpartials = true) {
     client = new Discord.Client({partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 } else if (config.allowpartials = false) {
@@ -15,7 +15,7 @@ if(config.allowpartials = true) {
 
 client.commands = new Discord.Collection();
 
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.ts'));
 
 for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);

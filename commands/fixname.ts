@@ -1,10 +1,11 @@
 const Discord = require('discord.js')
+const MessageEmbed = require('discord.js')
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
 module.exports = {
     name: 'fixname',
     aliases: ['fixname', 'namefix'],
     description: `Updates a users name if they have a unpingable / rude name `,
-	async execute(message, args) {
+	async execute(msg, args) {
 
         if (!msg.member.permissions.has('MANAGE_MESAGES')) return msg.channel.send(Youdonthavepermsembed(message));
 
@@ -29,13 +30,13 @@ module.exports = {
         .setDescription(`Successfully changed ${fixnameuserping}'s nickname to \`${fixnick}\`, ${msg.author}.`)
         .setTimestamp();
 
-        message.channel.send(fixnickembed)
+        msg.channel.send(fixnickembed)
 
 
         } else  if(fixnameusernoping) {
 
         
-        var fixnamenoping2 = message.guild.members.cache.get(args[1]) 
+        var fixnamenoping2 = msg.guild.members.cache.get(args[1]) 
 
         var fixnamenoping3 = fixnamenoping2.id
 
@@ -43,7 +44,7 @@ module.exports = {
 
         let fixnick2 = 'No Name ' + fixnamecomplete2        
 
-        if(!fixnameusernoping) return message.reply(invalidargs);
+        if(!fixnameusernoping) return msg.reply(invalidargs);
 
         fixnameusernoping.setNickname(fixnick2);
 

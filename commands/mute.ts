@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
+const ms = require('ms')
 module.exports = {
     name: 'mute',
     aliases: ['mute'],
@@ -39,7 +40,6 @@ module.exports = {
         .setTitle("Mute")
         .setColor('BLUE')
         .setDescription(`You were muted in ${msg.guild.name} for ${args[2]} minutes with reason ${mutereason}.`)
-        .addField("Token", firetokengenerator)
         .setTimestamp();
         person.send(muteembed)
 
@@ -62,8 +62,7 @@ module.exports = {
              person.roles.remove(muterole.id);
              person.send(muteembed3)
              }, ms(time));                                                                                                                                                                     
-    
-    break;
+
 	},
 };
 

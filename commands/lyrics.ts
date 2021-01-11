@@ -14,7 +14,7 @@ module.exports = {
             var title = await solenolyrics.requestTitleFor(args.slice(0).join(' '));
             var albumCover = await solenolyrics.requestIconFor(args.slice(0).join(' '));
             var songAuthor = await solenolyrics.requestAuthorFor(args.slice(0).join(' '));
-	if(lyricssuccess === "false") return message.send(errorembed(message))
+	if(lyricssuccess = false) return message.send(errorembed(message))
         } catch (error) {
             console.log(error)
             return message.channel.send(`Could not find song.`);

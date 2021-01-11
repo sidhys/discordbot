@@ -10,7 +10,7 @@ module.exports = {
         if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(Youdonthavepermsembed(message));
                  
         const unbantarget = args[0]
-        let success = "true";
+        let success = true;
 
         if(!unbantarget) return message.channel.send(invalidargs(message))
 
@@ -22,7 +22,7 @@ module.exports = {
 
    await delay(100)
 
-    if(success === "true")
+    if(success = true)
     {
 
         const unbanembed = new Discord.MessageEmbed()
