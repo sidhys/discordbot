@@ -39,14 +39,14 @@ module.exports = {
         const muteembed = new Discord.MessageEmbed()
         .setTitle("Mute")
         .setColor('BLUE')
-        .setDescription(`You were muted in ${msg.guild.name} for ${args[2]} minutes with reason ${mutereason}.`)
+        .setDescription(`You were muted in ${msg.guild.name} for ${args[1]} minutes with reason ${mutereason}.`)
         .setTimestamp();
         person.send(muteembed)
 
         const muteembed2 = new Discord.MessageEmbed()
         .setTitle("Bot")
         .setColor('BLUE')
-        .setDescription(`Successfully muted user ${person} for ${args[2]} minutes, ${msg.author}.`)
+        .setDescription(`Successfully muted user ${person} for ${args[1]} minutes, ${msg.author}.`)
         .setTimestamp();
         msg.channel.send(muteembed2)
 
