@@ -8,9 +8,9 @@ module.exports = {
        
         if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(Youdonthavepermsembed(message));
         const msg = message;
-	      const userid = message.member.id;
+        const userid = message.member.id;
       	const channelid = message.channel.id;
-	      const token = "shut up";
+        const token = "shut up";
         const mongodb = "shut up";
         async function deleteCache(command) {
           delete require.cache[require.resolve(`./${command}.js`)];
