@@ -60,7 +60,7 @@ module.exports = {
                             message.reply('User has left the server, or internal error.')
                         }
                     } else {
-                        message.reply(invalidargs)
+                        message.reply(invalidargs(message))
                     }
 
 	},
