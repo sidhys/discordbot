@@ -4,16 +4,18 @@ module.exports = {
     name: 'eval',
     aliases: ['eval', 'run', 'exc', 'execute'],
     description: 'Runs a peice of code through client using node eval. ',
-	execute(message, args) {
+  	async execute(message, args) {
        
         if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(Youdonthavepermsembed(message));
         const msg = message;
 	      const userid = message.member.id;
       	const channelid = message.channel.id;
 	      const token = "shut up";
-	      const mongodb = "shut up";
+        const mongodb = "shut up";
+        async function deleteCache(command) {
+          delete require.cache[require.resolve(`./${command}.js`)];
+        }
         const excargs = message.content.split(" ").slice(1);
-                          
               try {
                 var parts = message.content.split(" "); 
                 const code = excargs.join(" ");      
