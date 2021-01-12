@@ -1,7 +1,7 @@
 var config = {};
 
-config.token = "PUT YOUR TOKEN HERE";
-config.mongodbcred = "PUT YOUR MONGODB CREDENTIALS HERE";
+config.token = process.env.token; 
+config.mongodbcred = process.env.mongodb; 
 config.logerrors = true;
 config.allowdm = false;
 config.allowpartials = true;

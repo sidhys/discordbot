@@ -11,7 +11,8 @@ module.exports = {
             .setTitle("Ping Test")
             .setColor('BLUE')
             .addField("Ping", pingms)
-            .setTimestamp();
+            .setTimestamp()
+            .setFooter("If the ping is negative, it's discord.js being weird 😨")
         message.channel.send(pingEmbed)
 	},
 };

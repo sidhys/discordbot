@@ -11,9 +11,9 @@ module.exports = {
     const { commands } = message.client;
 
     if (!args.length) {
-        data.push('Here\'s a list of all my commands:');
+        data.push('**All commands**');
         data.push(commands.map(command => command.name).join(', '));
-        data.push(`\nYou can send \`${prefix}help [command name]\` to get info on a specific command.`);
+        data.push('`Run !help [command] to get info on a certain command.`');
         return message.channel.send(data)
     }
     const name = args[0].toLowerCase();

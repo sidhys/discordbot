@@ -10,10 +10,8 @@ module.exports = {
     description: 'Returns a image on the search',
 	execute(message, args) {
         var parts = message.content.split(" "); 
-        if (parts[0] === `!img`) { 
-            image(message, parts);
-        }
-    
+            image(message, parts);    
+
     function image(message, parts) {
                  
         var search = parts.slice(1).join(" "); 
@@ -40,7 +38,7 @@ module.exports = {
             if (!imgurls.length) {
                 return message.channel.send(`Could not find any images related to that search, ${message.author}.`)
             }
-            const imgembed = new MessageEmbed()
+            const imgembed = new Discord.MessageEmbed()
             .setTitle(`Image`)
             .setColor('#f3f3f3')
             .setImage(imgurls[0]);

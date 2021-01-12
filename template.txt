@@ -1,0 +1,11 @@
+const Discord = require('discord.js')
+const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
+module.exports = {
+    name: '',
+    aliases: [''],
+    description: '',
+	execute(message, args) {
+    
+	},
+};
+

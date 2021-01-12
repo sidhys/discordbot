@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
     "discord.js": "^12.4.1",
     "fs": "^0.0.1-security",
     "mongoose": "^5.10.14",
     "node-fetch": "^2.6.1",
     "querystring": "^0.2.0",
+    "request": "^2.88.2",
     "solenolyrics": "^5.0.0"
   },
   "devDependencies": {},

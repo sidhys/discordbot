@@ -7,11 +7,11 @@ module.exports = {
 	execute(message, args) {
         const msg = message;
         if (!msg.member.permissions.has('KICK_MEMBERS')) return msg.channel.send(Youdonthavepermsembed(message));
-        const userforkickcheck =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
-        if(!userforkickcheck) return msg.reply(invalidargs);
+        const userforkickcheck =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[0]))
+        if(!userforkickcheck) return msg.reply(invalidargs(message));
         if(userforkickcheck.roles.highest.position >= msg.member.roles.highest.position) return  msg.channel.send(staffYoudonthavepermsembed(message));
-        var kickreason = args.slice(2).join(' ')
-        const userforkick =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+        var kickreason = args.slice(1).join(' ')
+        const userforkick =  msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[0]))
         if (userforkick) {
             const memberforkick = msg.guild.member(userforkick);
 

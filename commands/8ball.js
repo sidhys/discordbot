@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const MessageEmbed = require('discord.js')
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
 module.exports = {
     name: '8ball',
@@ -14,10 +13,11 @@ module.exports = {
             "Probably not"
         ]       
 
-            let embed = new MessageEmbed()
+            let embed = new Discord.MessageEmbed()
             .addField("Answer", (res[Math.floor(Math.random() * res.length)]))
             .setColor('42c2f4')
-            .setTimestamp();
+            .setTimestamp()
+            .setFooter('🎱');
             message.channel.send(embed);
 	},
 };

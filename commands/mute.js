@@ -8,15 +8,15 @@ module.exports = {
 	execute(message, args) {
         const msg = message
         if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed(message));
-        const userformutecheck = (msg.mentions.members.first() || msg.guild.members.cache.get(args[1]));
+        const userformutecheck = (msg.mentions.members.first() || msg.guild.members.cache.get(args[0]));
         if(!userformutecheck) return msg.reply(invalidargs(message));
        if(userformutecheck.roles.highest.position >= msg.member.roles.highest.position) return  msg.channel.send(staffYoudonthavepermsembed(message))
-        var person = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+        var person = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[0]))
        if(!person) return msg.reply(errorembed(message));
 
-            var dontcrashonmuteplease = args[2]
-            var time = args[2] + 'm';   
-            var mutereason = args.slice(3).join(' ')
+            var dontcrashonmuteplease = args[1]
+            var time = args[1] + 'm';   
+            var mutereason = args.slice(2).join(' ')
 
         if(!dontcrashonmuteplease) return msg.channel.send(invalidargs(message));
 
@@ -33,7 +33,7 @@ module.exports = {
 
         
         person.roles.remove(mainrole.id);
-        person.roles.add(muterole.id)
+        person.roles.add(muterole.id)   
 
 
         const muteembed = new Discord.MessageEmbed()

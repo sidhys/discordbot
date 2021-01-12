@@ -46,16 +46,13 @@ module.exports = {
                                 bansuccess = "false"
                             }) 
 
-
-                            await delay(1000)
-     
- 
 				        if(bansuccess === "true") {
                              const publicbanembed = new Discord.MessageEmbed()
                              .setTitle("Bot")
                              .setColor('BLUE')
                              .setDescription(`Successfully banned user ${userforban}, ${message.author}.`)
-                             .setTimestamp();
+                             .setTimestamp()
+                             .setFooter("bye bye lol");
                               message.channel.send(publicbanembed)
 
 				}

@@ -9,7 +9,8 @@ module.exports = {
         if(!message.member.permissions.has('MANAGE_MESSAGES')) return message.channel.send(Youdonthavepermsembed(message))
         if (!args[0]) return message.channel.send(invalidargs(message))
         try {
-	let lyricssuccess = true
+        message.channel.send('Loading..');
+	    let lyricssuccess = true
             var lyrics = await solenolyrics.requestLyricsFor(args.slice(0).join(' '))
             var title = await solenolyrics.requestTitleFor(args.slice(0).join(' '));
             var albumCover = await solenolyrics.requestIconFor(args.slice(0).join(' '));
@@ -20,7 +21,6 @@ module.exports = {
             return message.channel.send(`Could not find song.`);
         }
         if(lyrics === undefined) return message.channel.send(`Could not find song.`);
-	message.channel.send(`found lyrics (took genius ${Date.now() - message.createdTimestamp} ms to return JSON file)`)
     for(let i = 0; i < lyrics.length; i += 1800) {
     const smallerlyrics = lyrics.substring(i, Math.min(lyrics.length, i + 1800));
 	   let lyricsEmbed = new Discord.MessageEmbed()

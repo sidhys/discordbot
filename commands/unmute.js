@@ -8,13 +8,13 @@ module.exports = {
         const msg = message;
 
         if (!msg.member.permissions.has('MANAGE_NICKNAMES')) return msg.channel.send(Youdonthavepermsembed(message));
-        var uperson = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[1]))
+        var uperson = msg.guild.member(msg.mentions.users.first() || msg.guild.members.cache.get(args[0]))
         if(!uperson) return msg.reply(invalidargs(message));
         
 
         var umainrole = msg.guild.roles.cache.find(role => role.name === "Verified");
         var umuterole = msg.guild.roles.cache.find(role => role.name === "Muted");
-        var umreason = args.slice(2).join(' ')
+        var umreason = args.slice(1).join(' ')
 
         if(!umuterole) return msg.reply("**Could not find the Muted role.**");
 

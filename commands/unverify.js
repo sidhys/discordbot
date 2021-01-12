@@ -14,9 +14,8 @@ module.exports = {
 
            if (!unverifyperson) return message.channel.send(errorembed(message));
            
-            
-        unverifyperson.roles.remove("714833474166587425");
-        unverifyperson.roles.add("714833374010933361");
+
+        unverifyperson.roles.remove("772221967389425735");
                     
 
           const unverifysuccess = new Discord.MessageEmbed()

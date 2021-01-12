@@ -14,9 +14,12 @@ module.exports =  {
 
         if(!args[0]) return message.channel.send(invalidargs(message))
 
+        message.channel.send("Loading..")
+        
         const { list } = await fetchNode(`https://api.urbandictionary.com/v0/define?${searchString}`).then(response => response.json())
 
         try {
+
             const [answer] = list
 
             const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str)

@@ -7,12 +7,12 @@ module.exports = {
 	execute(message, args) {
     
         if (!message.member.permissions.has('MANAGE_MESSAGES')) message.channel.send(Youdonthavepermsembed(message));
-        if (!args[1]) return message.reply(invalidargs(message))
+        if (!args[0]) return message.reply(invalidargs(message))
         message.channel.bulkDelete(args[0]);
           const purgeembed = new Discord.MessageEmbed()
              .setTitle("Bot")
              .setColor('BLUE')
-             .setDescription(`Successfully purged ${args[1]} messages, ${message.author}.`)
+             .setDescription(`Successfully purged ${args[0]} messages, ${message.author}.`)
              .setTimestamp();
         
         message.channel.send(purgeembed)
