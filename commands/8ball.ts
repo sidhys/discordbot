@@ -1,4 +1,5 @@
 const Discord = require('discord.js')
+const MessageEmbed = require('discord.js')
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
 module.exports = {
     name: '8ball',
