@@ -8,10 +8,10 @@ module.exports = {
        
         if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(Youdonthavepermsembed(message));
         const msg = message;
-	const userid = message.member.id;
-	const channelid = message.channel.id;
-	const token = "shut up";
-	const mongodb = "shut up";
+	      const userid = message.member.id;
+      	const channelid = message.channel.id;
+	      const token = "shut up";
+	      const mongodb = "shut up";
         const excargs = message.content.split(" ").slice(1);
                           
               try {
