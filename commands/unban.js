@@ -9,20 +9,21 @@ module.exports = {
         const delay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));    
         if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(Youdonthavepermsembed(message));
                  
-        const unbantarget = args[0]
-        let success = true;
+        const unbantarget = args[0];
+		
+        let success = "NULL";
 
         if(!unbantarget) return message.channel.send(invalidargs(message))
 
         message.guild.members.unban(unbantarget).catch(error => {
             console.log(error)
             message.reply(errorembed(message))
-            success = false
+            success = "false"
         }) 
 
    await delay(100)
 
-    if(success = true)
+    if(!success = "FALSE")
     {
 
         const unbanembed = new Discord.MessageEmbed()
