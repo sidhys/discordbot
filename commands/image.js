@@ -2,24 +2,23 @@ const Discord = require('discord.js')
 const cheerio = require('cheerio')
 const axios = require('axios')
 const request = require('request')
-
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
 module.exports = {
     name: 'image',
     aliases: ['img', 'image'],
     description: 'Returns a image on the search',
-	execute(message, args) {
-        var parts = message.content.split(" "); 
-            image(message, parts);    
+	async execute(message, args) {
+    var parts = message.content.split(" "); 
+    image(message, parts);    
 
-    function image(message, parts) {
+    function image(message, parts)  {
                  
         var search = parts.slice(1).join(" "); 
      
         var options = {
             url: "http://results.dogpile.com/serp?qc=images&q=" + search,
             method: "GET",
-            headers: {
+             headers: {
                 "Accept": "text/html",
                 "User-Agent": "Chrome"
             }
@@ -27,7 +26,7 @@ module.exports = {
 
         request(options, function(error, response, responseBody) {
             if (error) {
-                return;
+                return message.reply(errorembed(message));
             }
      
     
