@@ -15,8 +15,7 @@ module.exports = {
 
         if(fixnameusernoping) {
 
-        
-        var fixnamenoping2 = msg.guild.members.cache.get(args[1]) 
+        var fixnamenoping2 = msg.guild.members.cache.get(args[0]) 
 
         var fixnamenoping3 = fixnamenoping2.id
 

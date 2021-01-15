@@ -1,4 +1,4 @@
-const { Discord , MessageEmbed }  = require('discord.js')
+const Discord  = require('discord.js')
 const ms = require('ms')
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
 module.exports = {
