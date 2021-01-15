@@ -13,27 +13,7 @@ module.exports = {
         
         let fixnameusernoping = msg.guild.members.cache.get(args[0]) 
 
-        if(fixnameuserping) {
-
-        var fixnamestart = fixnameuserping.id 
-
-        var fixnamecomplete = fixnamestart.slice(3, 7);
-
-        let fixnick = 'No Name ' + fixnamecomplete         
-
-
-        fixnameuserping.setNickname(fixnick);
-
-        const fixnickembed = new Discord.MessageEmbed()
-        .setTitle("Bot")
-        .setColor('BLUE')
-        .setDescription(`Successfully changed ${fixnameuserping}'s nickname to \`${fixnick}\`, ${msg.author}.`)
-        .setTimestamp();
-
-        msg.channel.send(fixnickembed)
-
-
-        } else if(fixnameusernoping) {
+        if(fixnameusernoping) {
 
         
         var fixnamenoping2 = msg.guild.members.cache.get(args[1]) 
@@ -56,7 +36,25 @@ module.exports = {
         message.channel.send(fixnickembed2)
 
 
-        } else message.channel.send(invalidargs(messsage));
+        } else {
+	 var fixnamestart = fixnameuserping.id 
+	 
+        var fixnamecomplete = fixnamestart.slice(3, 7);
+
+        let fixnick = 'No Name ' + fixnamecomplete         
+
+
+        fixnameuserping.setNickname(fixnick);
+
+        const fixnickembed = new Discord.MessageEmbed()
+        .setTitle("Bot")
+        .setColor('BLUE')
+        .setDescription(`Successfully changed ${fixnameuserping}'s nickname to \`${fixnick}\`, ${msg.author}.`)
+        .setTimestamp();
+
+        msg.channel.send(fixnickembed)
+
+	}
 	},
 };
 
