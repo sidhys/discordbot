@@ -33,7 +33,7 @@ module.exports = {
         msg.channel.send(fixnickembed)
 
 
-        } else  if(fixnameusernoping) {
+        } else if(fixnameusernoping) {
 
         
         var fixnamenoping2 = msg.guild.members.cache.get(args[1]) 
@@ -44,7 +44,7 @@ module.exports = {
 
         let fixnick2 = 'No Name ' + fixnamecomplete2        
 
-        if(!fixnameusernoping) return msg.reply(invalidargs);
+        if(!fixnameusernoping) return msg.reply(invalidargs(message));
 
         fixnameusernoping.setNickname(fixnick2);
 
@@ -56,7 +56,7 @@ module.exports = {
         message.channel.send(fixnickembed2)
 
 
-        } else return;
+        } else message.channel.send(invalidargs(messsage));
 	},
 };
 
