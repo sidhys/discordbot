@@ -6,8 +6,9 @@ module.exports = {
     description: 'Verifies you in the discord server.',
 	execute(message, args) {
 
-        message.member.roles.add("714833474166587425");
-        message.member.roles.remove("714833374010933361");
+    
+      var role = message.guild.roles.cache.find(role => role.name === "Verified");
+        message.member.roles.add(role.id);
 
           const verifysuccess = new Discord.MessageEmbed()
                .setTitle("Success")

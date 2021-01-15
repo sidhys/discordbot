@@ -14,8 +14,9 @@ module.exports = {
 
            if (!unverifyperson) return message.channel.send(errorembed(message));
            
+        var role = message.guild.roles.cache.find(role => role.name === "Verified");
 
-        unverifyperson.roles.remove("772221967389425735");
+        unverifyperson.roles.remove(role.id);
                     
 
           const unverifysuccess = new Discord.MessageEmbed()
