@@ -8,7 +8,6 @@ module.exports = {
 
         let nickuser = msg.mentions.members.first() || msg.guild.members.cache.get(args[0]) 
 
-        if(nickuser.roles.highest.position >= msg.member.roles.highest.position) return msg.channel.send(staffYoudonthavepermsembed(msg));
 
         let nick = args.slice(1).join(" ");             
 
