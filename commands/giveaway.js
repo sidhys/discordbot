@@ -25,12 +25,10 @@ module.exports = {
 
             if (prize) {
             message.delete()
-            gchannel.send(":tada: **NEW GIVEAWAY** :tada:")
         	} else return message.channel.send(invalidargs(message))
-
             let gembed = new Discord.MessageEmbed()
-                .setTitle(`Prize: **${prize}**`)
-                .setDescription(`React with :tada: to enter the giveaway!\nHosted By: **${message.author}**\nTime to join: **${time}**`)
+                .setTitle(`New Giveaway`)
+                .setDescription(`React with :tada: to enter the giveaway! \nPrize: **${prize}**\nHosted By: **${message.author}**\nTime to join: **${time}**`)
                 .setTimestamp()
                 .setColor('BLUE');
             let n = await gchannel.send(gembed)
