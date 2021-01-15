@@ -30,9 +30,9 @@ module.exports = {
 
             let gembed = new Discord.MessageEmbed()
                 .setTitle(`Prize: **${prize}**`)
-                .setDescription(`React with :tada: to enter the giveaway!\nHosted By: **${message.author}**\nTime: **${time}**`)
-                .setTimestamp(Date.now + ms(args[0]))
-                .setColor('BLUE')
+                .setDescription(`React with :tada: to enter the giveaway!\nHosted By: **${message.author}**\nTime to join: **${time}**`)
+                .setTimestamp()
+                .setColor('BLUE');
             let n = await gchannel.send(gembed)
             n.react("🎉")
             setTimeout(() => {
