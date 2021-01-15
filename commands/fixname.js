@@ -7,7 +7,7 @@ module.exports = {
     description: `Updates a users name if they have a unpingable / rude name `,
 	async execute(msg, args) {
 
-        if (!msg.member.permissions.has('MANAGE_MESAGES')) return msg.channel.send(Youdonthavepermsembed(message));
+        if (!msg.member.permissions.has('MANAGE_MESAGES')) return msg.channel.send(Youdonthavepermsembed(msg));
 
         let fixnameuserping = msg.mentions.members.first() 
         
@@ -23,7 +23,7 @@ module.exports = {
 
         let fixnick2 = 'No Name ' + fixnamecomplete2        
 
-        if(!fixnameusernoping) return msg.reply(invalidargs(message));
+        if(!fixnameusernoping) return msg.reply(invalidargs(msg));
 
         fixnameusernoping.setNickname(fixnick2);
 
@@ -32,7 +32,7 @@ module.exports = {
         .setColor('BLUE')
         .setDescription(`Successfully changed ${fixnameusernoping}'s nickname to \`${fixnick2}\`, ${msg.author}.`)
         .setTimestamp();
-        message.channel.send(fixnickembed2)
+        msg.channel.send(fixnickembed2)
 
 
         } else {
