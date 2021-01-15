@@ -14,7 +14,6 @@ module.exports = {
                     if(userforbancheck.roles.highest.position >= message.member.roles.highest.position) return  message.channel.send(staffYoudonthavepermsembed(message));
                     if(!args[1] ){
                         if(args[2]) {
-                          
                         } else {
                         const banembed = new Discord.MessageEmbed()
                         .setTitle("Bot")
