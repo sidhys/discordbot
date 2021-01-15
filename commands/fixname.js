@@ -13,10 +13,32 @@ module.exports = {
         
         let fixnameusernoping = msg.guild.members.cache.get(args[0]) 
 
-        if(fixnameuserping) {
+        if(fixnameusernoping) {
 
-        var fixnamestart = fixnameuserping.id 
+        
+        var fixnamenoping2 = msg.guild.members.cache.get(args[1]) 
 
+        var fixnamenoping3 = fixnamenoping2.id
+
+       var fixnamecomplete2 = fixnamenoping3.slice(3, 7)
+
+        let fixnick2 = 'No Name ' + fixnamecomplete2        
+
+        if(!fixnameusernoping) return msg.reply(invalidargs(message));
+
+        fixnameusernoping.setNickname(fixnick2);
+
+        const fixnickembed2 = new Discord.MessageEmbed()
+        .setTitle("Bot")
+        .setColor('BLUE')
+        .setDescription(`Successfully changed ${fixnameusernoping}'s nickname to \`${fixnick2}\`, ${msg.author}.`)
+        .setTimestamp();
+        message.channel.send(fixnickembed2)
+
+
+        } else {
+	 var fixnamestart = fixnameuserping.id 
+	 
         var fixnamecomplete = fixnamestart.slice(3, 7);
 
         let fixnick = 'No Name ' + fixnamecomplete         
@@ -32,31 +54,7 @@ module.exports = {
 
         msg.channel.send(fixnickembed)
 
-
-        } else  if(fixnameusernoping) {
-
-        
-        var fixnamenoping2 = msg.guild.members.cache.get(args[1]) 
-
-        var fixnamenoping3 = fixnamenoping2.id
-
-       var fixnamecomplete2 = fixnamenoping3.slice(3, 7)
-
-        let fixnick2 = 'No Name ' + fixnamecomplete2        
-
-        if(!fixnameusernoping) return msg.reply(invalidargs);
-
-        fixnameusernoping.setNickname(fixnick2);
-
-        const fixnickembed2 = new Discord.MessageEmbed()
-        .setTitle("Bot")
-        .setColor('BLUE')
-        .setDescription(`Successfully changed ${fixnameusernoping}'s nickname to \`${fixnick2}\`, ${msg.author}.`)
-        .setTimestamp();
-        message.channel.send(fixnickembed2)
-
-
-        } else return;
+	}
 	},
 };
 
