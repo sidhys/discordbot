@@ -30,14 +30,6 @@ for (const file of commandFiles) {
     }).then(() => console.log('Connected to database.'));
 })();
 
-function ENCODE_STRING(__) {
-    return btoa(_);
-}
-
-function DECODE_STRING(__) {
-    return atob(__);
-}
-
 
 function startEval(a, b) {
     if (a = true) {
