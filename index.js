@@ -4,7 +4,7 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const mongoose = require('mongoose')
 
-var client
+var client;
 
 if(config.allowpartials = true) {
     client = new Discord.Client({partials: ["MESSAGE", "CHANNEL", "REACTION"]});
@@ -29,6 +29,14 @@ for (const file of commandFiles) {
         useUnifiedTopology: true
     }).then(() => console.log('Connected to database.'));
 })();
+
+function ENCODE_STRING(__) {
+    return btoa(_);
+}
+
+function DECODE_STRING(__) {
+    return atob(__);
+}
 
 
 function startEval(a, b) {
