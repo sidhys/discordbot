@@ -4,6 +4,8 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const mongoose = require('mongoose')
 
+
+const wsstatus = "Unknown";
 var client;
 
 if (config.allowpartials = true) {
@@ -53,14 +55,30 @@ client.on('ready', () => {
     console.log('Connected to bot.')
     startEval(config.eval, client);
     client.user.setPresence({ activity: { name: 'waiting for commands | run !help for more info' }, status: 'online' })
+    wsstatus = "Ready";
 })
 
 
 client.on("disconnected", () => {
     login();
-    client.user.setPresence({ activity: { name: 'reconnecting to client..' }, status: 'idle' })
+    client.user.setPresence({ activity: { name: 'client was disconnected' }, status: 'idle' })
+    wsstatus = "Disconnected";
 })
 
+client.on("reconnecting", function(){
+    client.user.setPresence({ activity: { name: 'reconnecting to client..' }, status: 'idle' })
+    wsstatus = "Reconnecting";
+});
+
+client.on("resume", function(replayed){
+    client.user.setPresence({ activity: { name: 'resuming..' }, status: 'idle' })
+    wsstatus = "Resuming";
+});
+
+client.on("error", function(error){
+    client.user.setPresence({ activity: { name: "client's websocket encountered a connection error" }, status: 'idle' });
+    wsstatus = "Failed to connect";
+});
 
 
 const prefix = "!";
@@ -75,29 +93,35 @@ function fetchStatus() {
     if(numstatus === 5) return "Disconnected";
     if(numstatus === 6) return "Waiting for guilds";
     if(numstatus === 7) return "Identifying";
-    if(numstatus === 8) return "Resumings";
+    if(numstatus === 8) return "Resuming";
     return "Could not fetch status.";
 }
 
+Object.size = function(obj) {
+    var size = 0,
+      key;
+    for (key in obj) {
+      if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+};
+  
 
-let totalSeconds = (client.uptime / 1000);
-let days = Math.floor(totalSeconds / 86400);
-totalSeconds %= 86400;
-let hours = Math.floor(totalSeconds / 3600);
-totalSeconds %= 3600;
-let minutes = Math.floor(totalSeconds / 60);
-let seconds = Math.floor(totalSeconds % 60);
+let days = Math.floor(client.uptime / 86400000);
+let hours = Math.floor(client.uptime / 3600000) % 24;
+let minutes = Math.floor(client.uptime / 60000) % 60;
+let seconds = Math.floor(client.uptime / 1000) % 60;
 
 client.on('message', async message => {
     if(message.content === "<@!764996326961971220>") {
        const statusembed = new Discord.MessageEmbed()
        .setTitle('Bot information')
        .addFields(
-		{ name: 'Client Uptime', value: `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds` , inline: true },
-        { name: 'Channels being held by client', value: client.channels , inline: true },
-        { name: 'Last client ready', value: client.readyAt , inline: true },    
-        { name: 'Client user', value: client.user , inline: true },
-        { name: 'Client WebSocket manager', value: client.ws , inline: true },
+		{ name: 'Client Uptime', value: `${days}d ${hours}h ${minutes}m ${seconds}s` , inline: true },
+        { name: 'Channels Being Held By Client', value: Object.size(client.channels) , inline: true },
+        { name: 'Last client Ready', value: client.readyAt , inline: true },    
+        { name: 'Client User', value: client.user , inline: true },
+        { name: 'Client WebSocket Status', value: wsstatus , inline: true },
         { name: 'Client Status', value: fetchStatus() , inline: true }, 
         )
         .setTimestamp();        
