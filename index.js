@@ -52,14 +52,15 @@ function startEval(a, b) {
 client.on('ready', () => {
     console.log('Connected to bot.')
     startEval(config.eval, client);
-    client.setActivity("for commands | run !help for a list of commands", { type: "listening" });
+    client.user.setPresence({ activity: { name: 'waiting for commands | run !help for more info' }, status: 'online' })
 })
 
 
 client.on("disconnected", () => {
     login();
-    client.setActivity(`reconnecting to client | last connected at ${client.readyAt}`, { type: "playing" });
+    client.user.setPresence({ activity: { name: 'reconnecting to client..' }, status: 'idle' })
 })
+
 
 
 const prefix = "!";
