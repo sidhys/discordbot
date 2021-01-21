@@ -6,8 +6,10 @@ const mongoose = require('mongoose')
 
 var client;
 
-if(config.allowpartials = true) {
-    client = new Discord.Client({partials: ["MESSAGE", "CHANNEL", "REACTION"]});
+if (config.allowpartials = true) {
+    client = new Discord.Client({
+        partials: ["MESSAGE", "CHANNEL", "REACTION"]
+    });
 } else if (config.allowpartials = false) {
     client = new Discord.Client;
 } else {
@@ -19,25 +21,25 @@ client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
-	const command = require(`./commands/${file}`);
-	client.commands.set(command.name, command);
+    const command = require(`./commands/${file}`);
+    client.commands.set(command.name, command);
 }
 
 
-if(config.startdb) {
-(async () => {
-    mongoose.connect(config.mongodbcred, {    
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    }).then(() => console.log('Connected to database.'));
-})();
+if (config.startdb) {
+    (async () => {
+        mongoose.connect(config.mongodbcred, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        }).then(() => console.log('Connected to database.'));
+    })();
 }
 
 function startEval(a, b) {
     if (a = true) {
         eval(b)
     } else if (a = false) {
-       console.log('Skipped eval')
+        console.log('Skipped eval')
     } else {
         throw "Can't access config.eval!";
     }
@@ -46,10 +48,24 @@ function startEval(a, b) {
 client.on('ready', () => {
     console.log('Connected to bot.')
     startEval(config.eval, client);
+    client.user.setStatus("online")
+    client.user.setActivity("for commands | run !help for a list of commands", {
+    type: "listening"
+});
+
+
+})
+
+client.on("disconnected", () => {
+    client.user.setStatus("idle")
+    client.user.setActivity(`reconnecting to client | last connected at ${client.readyAt}`, {
+        type: "playing"
+    })
 })
 
 const prefix = "!";
 
+    
 
 client.on('message', async message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
@@ -61,15 +77,14 @@ client.on('message', async message => {
     try {
         command.execute(message, args);
     } catch (error) {
-        if(config.logerrors = true) console.log(error);
+        if (config.logerrors = true) console.log(error);
         const indexerror = new Discord.MessageEmbed()
-        .setTitle("Bot")
-        .setColor('BLUE')
-        .setDescription(`Failed to execute file, ${message.author}. Please contact us with the error text ${erorr}`)
-        .setTimestamp();
-         message.channel.send(indexerror)
+            .setTitle("Bot")
+            .setColor('BLUE')
+            .setDescription(`Failed to execute file, ${message.author}. Please contact us with the error text ${erorr}`)
+            .setTimestamp();
+        message.channel.send(indexerror)
     }
-}); 
+});
 
 client.login(config.token);
-
