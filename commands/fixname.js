@@ -31,6 +31,7 @@ module.exports = {
         .setTitle("Bot")
         .setColor('BLUE')
         .setDescription(`Successfully changed ${fixnameusernoping}'s nickname to \`${fixnick2}\`, ${msg.author}.`)
+        .setFooter('nn lol')
         .setTimestamp();
         msg.channel.send(fixnickembed2)
 
@@ -49,6 +50,7 @@ module.exports = {
         .setTitle("Bot")
         .setColor('BLUE')
         .setDescription(`Successfully changed ${fixnameuserping}'s nickname to \`${fixnick}\`, ${msg.author}.`)
+        .setFooter('nn lol')
         .setTimestamp();
 
         msg.channel.send(fixnickembed)

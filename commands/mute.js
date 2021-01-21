@@ -26,7 +26,7 @@ module.exports = {
         var muterole = msg.guild.roles.cache.find(role => role.name === config.mutedrole);
 
 
-        if(!mainrole) return msg.reply('** Could not find the main role. **')
+        if(!mainrole) return msg.reply('** Could not find the main role. ** ')
         if(!muterole) return msg.reply("**Could not find the Muted role.**");
 
         if(!time){
@@ -49,6 +49,7 @@ module.exports = {
         .setTitle("Bot")
         .setColor('BLUE')
         .setDescription(`Successfully muted user ${person} for ${args[1]} minutes, ${msg.author}.`)
+        .setFooter('they will shut up now')
         .setTimestamp();
         msg.channel.send(muteembed2)
 

@@ -27,6 +27,7 @@ module.exports = {
         .setTitle("Bot")
         .setColor('BLUE')
         .setDescription(`Successfully changed ${nickuser}'s nickname to \`${nick}\`, ${msg.author}.`)
+        .setFooter(`${nick} is a pretty cringe nickname ngl`)
         .setTimestamp();
         msg.channel.send(nickembed) 
 	},

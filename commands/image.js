@@ -40,7 +40,9 @@ module.exports = {
             const imgembed = new Discord.MessageEmbed()
             .setTitle(`Image`)
             .setColor('#f3f3f3')
-            .setImage(imgurls[0]);
+            .setImage(imgurls[0])
+            .setFooter('if it doesnt load its not my fault')
+            .setTimestamp;
             message.channel.send(imgembed)
         
         });

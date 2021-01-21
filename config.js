@@ -8,6 +8,6 @@ config.allowpartials = true;
 config.eval = true;
 config.verifiedrole = "Verified";
 config.mutedrole = "Muted";
-config.startdb = false;
+config.startdb = true;
 
 module.exports = config;
