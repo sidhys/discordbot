@@ -114,7 +114,7 @@ client.on('message', async message => {
        .addFields(
 		{ name: 'Client Uptime', value: ms(client.uptime, { long: true }) , inline: true },
         { name: 'Channels Being Held By Client', value: Object.size(client.channels) , inline: true },
-        { name: 'Last client Ready', value: client.readyAt , inline: true },    
+        { name: 'Last Client Ready', value: client.readyAt , inline: true },    
         { name: 'Client User', value: client.user , inline: true },
         { name: 'Client WebSocket Status', value: wsstatus , inline: true },
         { name: 'Client Status', value: fetchStatus() , inline: true }, 
