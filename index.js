@@ -25,7 +25,6 @@ for (const file of commandFiles) {
     client.commands.set(command.name, command);
 }
 
-
 if (config.startdb) {
     (async () => {
         mongoose.connect(config.mongodbcred, {
@@ -33,6 +32,11 @@ if (config.startdb) {
             useUnifiedTopology: true
         }).then(() => console.log('Connected to database.'));
     })();
+}
+
+
+function login() {
+    client.login(config.token);
 }
 
 function startEval(a, b) {
@@ -48,18 +52,15 @@ function startEval(a, b) {
 client.on('ready', () => {
     console.log('Connected to bot.')
     startEval(config.eval, client);
-    client.user.setActivity("for commands | run !help for a list of commands", {
-    type: "listening"
-});
-
-
+    client.user.setActivity("for commands | run !help for a list of commands", { type: "listening" });
 })
+
 
 client.on("disconnected", () => {
-    client.user.setActivity(`reconnecting to client | last connected at ${client.readyAt}`, {
-        type: "playing"
-    })
+    login();
+    client.user.setActivity(`reconnecting to client | last connected at ${client.readyAt}`, { type: "playing" });
 })
+
 
 const prefix = "!";
 
@@ -85,4 +86,4 @@ client.on('message', async message => {
     }
 });
 
-client.login(config.token);
+login();
