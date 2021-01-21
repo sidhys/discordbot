@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 const mongoose = require('mongoose')
 
 
-const wsstatus = "Unknown";
+var wsstatus = "Unknown";
 var client;
 
 if (config.allowpartials = true) {
