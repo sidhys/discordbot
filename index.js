@@ -84,7 +84,7 @@ client.on("error", function(error){
 const prefix = "!";
 
 function fetchStatus() {
-    const numstatus = client.status;
+    const numstatus = client.ws.status;
     if(numstatus == 0) return "Ready";
     if(numstatus == 1) return "Connecting";
     if(numstatus == 2) return "Reconnecting";
