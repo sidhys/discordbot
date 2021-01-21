@@ -1,3 +1,4 @@
+const config = require("../config.js");
 const Discord = require('discord.js')
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
 const ms = require('ms')
@@ -21,10 +22,11 @@ module.exports = {
         if(!dontcrashonmuteplease) return msg.channel.send(invalidargs(message));
 
     
-        var mainrole = msg.guild.roles.cache.find(role => role.name === "Verified");    
-        var muterole = msg.guild.roles.cache.find(role => role.name === "Muted");
+        var mainrole = msg.guild.roles.cache.find(role => role.name === config.verifiedrole); 
+        var muterole = msg.guild.roles.cache.find(role => role.name === config.mutedrole);
 
 
+        if(!mainrole) return msg.reply('** Could not find the main role ( ex. verified ) ')
         if(!muterole) return msg.reply("**Could not find the Muted role.**");
 
         if(!time){

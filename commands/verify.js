@@ -1,5 +1,7 @@
+const config = require('../config.js')
 const Discord = require('discord.js')
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
+const config = require('../config');
 module.exports = {
     name: 'verify',
     aliases: ['verify'],
@@ -7,7 +9,7 @@ module.exports = {
 	execute(message, args) {
 
     
-      var role = message.guild.roles.cache.find(role => role.name === "Verified");
+      var role = message.guild.roles.cache.find(role => role.name === config.verifiedrole);
         message.member.roles.add(role.id);
 
           const verifysuccess = new Discord.MessageEmbed()

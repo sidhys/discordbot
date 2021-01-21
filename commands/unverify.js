@@ -1,3 +1,4 @@
+const config = require("../config.js");
 const Discord = require('discord.js')
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
 module.exports = {
@@ -14,7 +15,7 @@ module.exports = {
 
            if (!unverifyperson) return message.channel.send(errorembed(message));
            
-        var role = message.guild.roles.cache.find(role => role.name === "Verified");
+        var role = message.guild.roles.cache.find(role => role.name === config.verifiedrole);
 
         unverifyperson.roles.remove(role.id);
                     

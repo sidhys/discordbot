@@ -6,5 +6,7 @@ config.logerrors = true;
 config.allowdm = false;
 config.allowpartials = true;
 config.eval = true;
+config.verifiedrole = "Verified";
+config.mutedrole = "Muted";
 
 module.exports = config;

@@ -1,3 +1,5 @@
+const config = require("../config.js");
+
 const Discord = require('discord.js')
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
 module.exports = {
@@ -12,8 +14,8 @@ module.exports = {
         if(!uperson) return msg.reply(invalidargs(message));
         
 
-        var umainrole = msg.guild.roles.cache.find(role => role.name === "Verified");
-        var umuterole = msg.guild.roles.cache.find(role => role.name === "Muted");
+        var umainrole = msg.guild.roles.cache.find(role => role.name === config.verifiedrole);
+        var umuterole = msg.guild.roles.cache.find(role => role.name === config.mutedrole);
         var umreason = args.slice(1).join(' ')
 
         if(!umuterole) return msg.reply("**Could not find the Muted role.**");
