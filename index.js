@@ -112,7 +112,7 @@ client.on('message', async message => {
        const statusembed = new Discord.MessageEmbed()
        .setTitle('Bot information')
        .addFields(
-		{ name: 'Client Uptime', value: ms(this.client.uptime, { long: true }) , inline: true },
+		{ name: 'Client Uptime', value: ms(client.uptime, { long: true }) , inline: true },
         { name: 'Channels Being Held By Client', value: Object.size(client.channels) , inline: true },
         { name: 'Last client Ready', value: client.readyAt , inline: true },    
         { name: 'Client User', value: client.user , inline: true },
