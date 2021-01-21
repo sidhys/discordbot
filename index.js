@@ -3,7 +3,7 @@ const config = require("./config.js");
 const fs = require('fs');
 const Discord = require('discord.js');
 const mongoose = require('mongoose')
-
+const moment = require("moment");
 
 var wsstatus = "Unknown";
 var client;
@@ -107,17 +107,17 @@ Object.size = function(obj) {
 };
   
 
-let days = Math.floor(client.uptime / 86400000);
-let hours = Math.floor(client.uptime / 3600000) % 24;
-let minutes = Math.floor(client.uptime / 60000) % 60;
-let seconds = Math.floor(client.uptime / 1000) % 60;
+
+require("moment-duration-format");
+const uptime = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
+
 
 client.on('message', async message => {
     if(message.content === "<@!764996326961971220>") {
        const statusembed = new Discord.MessageEmbed()
        .setTitle('Bot information')
        .addFields(
-		{ name: 'Client Uptime', value: `${days}d ${hours}h ${minutes}m ${seconds}s` , inline: true },
+		{ name: 'Client Uptime', value: uptime , inline: true },
         { name: 'Channels Being Held By Client', value: Object.size(client.channels) , inline: true },
         { name: 'Last client Ready', value: client.readyAt , inline: true },    
         { name: 'Client User', value: client.user , inline: true },
