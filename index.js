@@ -3,7 +3,7 @@ const config = require("./config.js");
 const fs = require('fs');
 const Discord = require('discord.js');
 const mongoose = require('mongoose')
-const moment = require("moment");
+const prettyMilliseconds = require("pretty-ms");
 
 var wsstatus = "Unknown";
 var client;
@@ -107,9 +107,7 @@ Object.size = function(obj) {
 };
   
 
-
-require("moment-duration-format");
-const uptime = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
+const uptime = `Uptime: ${prettyMilliseconds(client.uptime)}`
 
 
 client.on('message', async message => {
