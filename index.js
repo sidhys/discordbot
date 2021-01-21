@@ -81,16 +81,22 @@ function fetchStatus() {
 const clientstatus = fetchStatus();
 
 
+let totalSeconds = (client.uptime / 1000);
+let days = Math.floor(totalSeconds / 86400);
+totalSeconds %= 86400;
+let hours = Math.floor(totalSeconds / 3600);
+totalSeconds %= 3600;
+let minutes = Math.floor(totalSeconds / 60);
+let seconds = Math.floor(totalSeconds % 60);
 
 client.on('message', async message => {
     if(message.content === "<@!764996326961971220>") {
        const statusembed = new Discord.MessageEmbed()
        .setTitle('Bot information')
        .addFields(
-		{ name: 'Client Uptime', value: client.uptime , inline: true },
+		{ name: 'Client Uptime', value: `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds` , inline: true },
         { name: 'Channels being held by client', value: client.channels , inline: true },
-        { name: 'Last client ready', value: client.readyAt , inline: true },
-        { name: 'Uptime', value: client.uptime , inline: true },
+        { name: 'Last client ready', value: client.readyAt , inline: true },    
         { name: 'Client user', value: client.user , inline: true },
         { name: 'Client WebSocket manager', value: client.ws , inline: true },
         { name: 'Client Status', value: clientstatus , inline: true }, 
