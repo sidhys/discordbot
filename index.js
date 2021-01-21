@@ -52,13 +52,13 @@ function startEval(a, b) {
 client.on('ready', () => {
     console.log('Connected to bot.')
     startEval(config.eval, client);
-    client.user.setActivity("for commands | run !help for a list of commands", { type: "listening" });
+    client.setActivity("for commands | run !help for a list of commands", { type: "listening" });
 })
 
 
 client.on("disconnected", () => {
     login();
-    client.user.setActivity(`reconnecting to client | last connected at ${client.readyAt}`, { type: "playing" });
+    client.setActivity(`reconnecting to client | last connected at ${client.readyAt}`, { type: "playing" });
 })
 
 
