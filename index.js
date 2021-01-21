@@ -47,7 +47,7 @@ function startEval(a, b) {
 
 client.on('ready', () => {
     console.log('Connected to bot.')
-    startEval(config.eval, client);s
+    startEval(config.eval, client);
     client.user.setActivity("for commands | run !help for a list of commands", {
     type: "listening"
 });
