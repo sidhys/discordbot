@@ -3,7 +3,7 @@ const config = require("./config.js");
 const fs = require('fs');
 const Discord = require('discord.js');
 const mongoose = require('mongoose')
-const prettyMilliseconds = require("pretty-ms");
+const ms = require('ms');
 
 var wsstatus = "Unknown";
 var client;
@@ -107,15 +107,12 @@ Object.size = function(obj) {
 };
   
 
-const uptime = `Uptime: ${prettyMilliseconds(client.uptime)}`
-
-
 client.on('message', async message => {
     if(message.content === "<@!764996326961971220>") {
        const statusembed = new Discord.MessageEmbed()
        .setTitle('Bot information')
        .addFields(
-		{ name: 'Client Uptime', value: uptime , inline: true },
+		{ name: 'Client Uptime', value: ms(this.client.uptime, { long: true }) , inline: true },
         { name: 'Channels Being Held By Client', value: Object.size(client.channels) , inline: true },
         { name: 'Last client Ready', value: client.readyAt , inline: true },    
         { name: 'Client User', value: client.user , inline: true },
