@@ -85,15 +85,15 @@ const prefix = "!";
 
 function fetchStatus() {
     const numstatus = client.status;
-    if(numstatus === 0) return "Ready";
-    if(numstatus === 1) return "Connecting";
-    if(numstatus === 2) return "Reconnecting";
-    if(numstatus === 3) return "Idle";
-    if(numstatus === 4) return "Nearly";
-    if(numstatus === 5) return "Disconnected";
-    if(numstatus === 6) return "Waiting for guilds";
-    if(numstatus === 7) return "Identifying";
-    if(numstatus === 8) return "Resuming";
+    if(numstatus == 0) return "Ready";
+    if(numstatus == 1) return "Connecting";
+    if(numstatus == 2) return "Reconnecting";
+    if(numstatus == 3) return "Idle";
+    if(numstatus == 4) return "Nearly";
+    if(numstatus == 5) return "Disconnected";
+    if(numstatus == 6) return "Waiting for guilds";
+    if(numstatus == 7) return "Identifying";
+    if(numstatus == 8) return "Resuming";
     return "Could not fetch status.";
 }
 
