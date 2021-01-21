@@ -23,6 +23,7 @@ for (const file of commandFiles) {
 	client.commands.set(command.name, command);
 }
 
+
 if(config.startdb) {
 (async () => {
     mongoose.connect(config.mongodbcred, {    

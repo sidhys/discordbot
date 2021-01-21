@@ -1,7 +1,6 @@
 const config = require('../config.js')
 const Discord = require('discord.js')
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
-const config = require('../config');
 module.exports = {
     name: 'verify',
     aliases: ['verify'],
