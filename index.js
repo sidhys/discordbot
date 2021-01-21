@@ -56,6 +56,7 @@ client.on('ready', () => {
     startEval(config.eval, client);
     client.user.setPresence({ activity: { name: 'waiting for commands | run !help for more info' }, status: 'online' })
     wsstatus = "Ready";
+    console.log('Websocket is ready!')
 })
 
 
@@ -63,21 +64,25 @@ client.on("disconnected", () => {
     login();
     client.user.setPresence({ activity: { name: 'client was disconnected' }, status: 'idle' })
     wsstatus = "Disconnected";
+    console.log('Websocket was disconnected!')
 })
 
 client.on("reconnecting", function(){
     client.user.setPresence({ activity: { name: 'reconnecting to client..' }, status: 'idle' })
     wsstatus = "Reconnecting";
+    console.log('Websocket is reconnecting!')
 });
 
 client.on("resume", function(replayed){
     client.user.setPresence({ activity: { name: 'resuming..' }, status: 'idle' })
     wsstatus = "Resuming";
+    console.log('Websocket is resuming!')
 });
 
 client.on("error", function(error){
     client.user.setPresence({ activity: { name: "client's websocket encountered a connection error" }, status: 'idle' });
     wsstatus = "Failed to connect";
+    console.log('Websocket failed to connect!')
 });
 
 
