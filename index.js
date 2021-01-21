@@ -23,13 +23,14 @@ for (const file of commandFiles) {
 	client.commands.set(command.name, command);
 }
 
+if(config.startdb) {
 (async () => {
     mongoose.connect(config.mongodbcred, {    
         useNewUrlParser: true,
         useUnifiedTopology: true
     }).then(() => console.log('Connected to database.'));
 })();
-
+}
 
 function startEval(a, b) {
     if (a = true) {
