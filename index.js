@@ -76,9 +76,8 @@ function fetchStatus() {
     if(numstatus === 6) return "Waiting for guilds";
     if(numstatus === 7) return "Identifying";
     if(numstatus === 8) return "Resumings";
+    return "Could not fetch status.";
 }
-
-const clientstatus = fetchStatus();
 
 
 let totalSeconds = (client.uptime / 1000);
@@ -99,7 +98,7 @@ client.on('message', async message => {
         { name: 'Last client ready', value: client.readyAt , inline: true },    
         { name: 'Client user', value: client.user , inline: true },
         { name: 'Client WebSocket manager', value: client.ws , inline: true },
-        { name: 'Client Status', value: clientstatus , inline: true }, 
+        { name: 'Client Status', value: fetchStatus() , inline: true }, 
         )
         .setTimestamp();        
        message.channel.send(statusembed)
