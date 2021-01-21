@@ -47,8 +47,7 @@ function startEval(a, b) {
 
 client.on('ready', () => {
     console.log('Connected to bot.')
-    startEval(config.eval, client);
-    client.user.setStatus("online")
+    startEval(config.eval, client);s
     client.user.setActivity("for commands | run !help for a list of commands", {
     type: "listening"
 });
@@ -57,7 +56,6 @@ client.on('ready', () => {
 })
 
 client.on("disconnected", () => {
-    client.user.setStatus("idle")
     client.user.setActivity(`reconnecting to client | last connected at ${client.readyAt}`, {
         type: "playing"
     })
