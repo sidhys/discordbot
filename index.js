@@ -65,9 +65,40 @@ client.on("disconnected", () => {
 
 const prefix = "!";
 
-    
+function fetchStatus() {
+    const numstatus = client.status;
+    if(numstatus === 0) return "Ready";
+    if(numstatus === 1) return "Connecting";
+    if(numstatus === 2) return "Reconnecting";
+    if(numstatus === 3) return "Idle";
+    if(numstatus === 4) return "Nearly";
+    if(numstatus === 5) return "Disconnected";
+    if(numstatus === 6) return "Waiting for guilds";
+    if(numstatus === 7) return "Identifying";
+    if(numstatus === 8) return "Resumings";
+}
+
+const clientstatus = fetchStatus();
+
+
 
 client.on('message', async message => {
+    if(message.content === "<@!764996326961971220>") {
+       const statusembed = new Discord.MessageEmbed()
+       .setTitle('Bot information')
+       .addFields(
+		{ name: 'Client Uptime', value: client.uptime , inline: true },
+        { name: 'Channels being held by client', value: client.channels , inline: true },
+        { name: 'Last client ready', value: client.readyAt , inline: true },
+        { name: 'Uptime', value: client.uptime , inline: true },
+        { name: 'Client user', value: client.user , inline: true },
+        { name: 'Client WebSocket manager', value: client.ws , inline: true },
+        { name: 'Client Status', value: clientstatus , inline: true }, 
+        )
+        .setTimestamp();        
+       message.channel.send(statusembed)
+        return;     
+    } 
     if (!message.content.startsWith(prefix) || message.author.bot) return;
     let args = message.content.substring(prefix.length).split(" ")
     const commandName = args.shift().toLowerCase();
