@@ -32,9 +32,7 @@ if (config.startdb) {
         mongoose.connect(config.mongodbcred, {
             useNewUrlParser: true,
             useUnifiedTopology: true
-        }).then(() => {
-            if(client.shard.ids[0] === 0) console.log('Connected to database.')
-        });
+        }).then(() => console.log(`[Shard ${shardnum}] Connected to database.`));
     })();
 }
 
@@ -56,7 +54,7 @@ function startEval(a, b) {
 const shardnum = client.shard.ids[0] + 1;
 
 client.on('ready', () => {
-    if(client.shard.ids[0] === 0) console.log('Connected to bot.')
+    console.log(`[Shard ${shardnum}] Connected to bot.`)
     startEval(config.eval, client);
     client.user.setPresence({ activity: { name: 'waiting for commands | run !help for more info' }, status: 'online' })
     wsstatus = "Ready";
