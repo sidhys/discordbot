@@ -47,13 +47,13 @@ function startEval(a, b) {
     if (a = true) {
         eval(b)
     } else if (a = false) {
-        if(client.shard.ids[0] === 0)   console.log('Skipped eval')
+        if(client.shard.ids[0] === 0)  console.log('Skipped eval')
     } else {
         throw "Can't access config.eval!";
     }
 }
 
-const shardnum = client.shards.ids[0];
+const shardnum = client.shard.ids[0] + 1;
 
 client.on('ready', () => {
     if(client.shard.ids[0] === 0) console.log('Connected to bot.')
