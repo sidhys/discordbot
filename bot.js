@@ -126,7 +126,7 @@ client.on('message', async message => {
         { name: 'Last Client Ready', value: client.readyAt , inline: true },    
         { name: 'Client User', value: client.user , inline: true }, 
         { name: 'Client Status', value: fetchStatus() , inline: true }, 
-        { name: 'Client WebSocket Status', value: wsstatus , inline: true },
+        { name: 'Shard', value: shardnum , inline: true }, 
         )
         .setTimestamp();        
        message.channel.send(statusembed)
