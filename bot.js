@@ -53,7 +53,7 @@ function startEval(a, b) {
     }
 }
 
-const shardnum = client.shards.id[0];
+const shardnum = client.shards.ids[0];
 
 client.on('ready', () => {
     if(client.shard.ids[0] === 0) console.log('Connected to bot.')
