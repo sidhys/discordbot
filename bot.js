@@ -58,7 +58,7 @@ client.on('ready', () => {
     startEval(config.eval, client);
     client.user.setPresence({ activity: { name: 'waiting for commands | run !help for more info' }, status: 'online' })
     wsstatus = "Ready";
-    if(client.shard.ids[0] === 0) console.log(`[Shard ${this.shard.ids.join(',')}] Websocket is ready!`)
+    console.log(`[Shard ${this.shard.id}] Websocket is ready!`)
 })
 
 
@@ -66,25 +66,25 @@ client.on("disconnected", () => {
     login();    
     client.user.setPresence({ activity: { name: 'client was disconnected' }, status: 'idle' })
     wsstatus = "Disconnected";
-    console.log(`[Shard ${this.shard.ids.join(',')}] Websocket was disconnected!`)
+    console.log(`[Shard ${this.shard.id}] Websocket was disconnected!`)
 })
 
 client.on("reconnecting", function(){
     client.user.setPresence({ activity: { name: 'reconnecting to client..' }, status: 'idle' })
     wsstatus = "Reconnecting";
-    console.log(`[Shard ${this.shard.ids.join(',')}] Websocket is reconnecting!`)
+    console.log(`[Shard ${this.shard.id}] Websocket is reconnecting!`)
 });
 
 client.on("resume", function(replayed){
     client.user.setPresence({ activity: { name: 'resuming..' }, status: 'idle' })
     wsstatus = "Resuming";
-    console.log(`[Shard ${this.shard.ids.join(',')}] Websocket is resuming!`)
+    console.log(`[Shard ${this.shard.id}] Websocket is resuming!`)
 });
 
 client.on("error", function(error){
     client.user.setPresence({ activity: { name: "client's websocket encountered a connection error" }, status: 'idle' });
     wsstatus = "Failed to connect";
-    console.log(`[Shard ${this.shard.ids.join(',')}] Websocket failed to connect!`)
+    console.log(`[Shard ${this.shard.id}] Websocket failed to connect!`)
 });
 
 
