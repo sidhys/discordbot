@@ -8,6 +8,7 @@ const manager = new ShardingManager("./bot.js", {
     totalShards: 10
 });
 
-manager.spawn();
-
 manager.on("shardCreate", shard => console.log(`Shard ${shard.id} has been connected.`))
+
+
+manager.spawn();

@@ -32,7 +32,9 @@ if (config.startdb) {
         mongoose.connect(config.mongodbcred, {
             useNewUrlParser: true,
             useUnifiedTopology: true
-        }).then(() => console.log('Connected to database.'));
+        }).then(() => {
+            if(client.shards.ids[0] === 0) console.log('Connected to database.')
+        });
     })();
 }
 
@@ -45,44 +47,44 @@ function startEval(a, b) {
     if (a = true) {
         eval(b)
     } else if (a = false) {
-        console.log('Skipped eval')
+        if(client.shards.ids[0] === 0)   console.log('Skipped eval')
     } else {
         throw "Can't access config.eval!";
     }
 }
 
 client.on('ready', () => {
-    console.log('Connected to bot.')
+    if(client.shards.ids[0] === 0) console.log('Connected to bot.')
     startEval(config.eval, client);
     client.user.setPresence({ activity: { name: 'waiting for commands | run !help for more info' }, status: 'online' })
     wsstatus = "Ready";
-    console.log('Websocket is ready!')
+    if(client.shards.ids[0] === 0) console.log(`[Shard ${client.shard.id}] Websocket is ready!`)
 })
 
 
 client.on("disconnected", () => {
-    login();
+    login();    
     client.user.setPresence({ activity: { name: 'client was disconnected' }, status: 'idle' })
     wsstatus = "Disconnected";
-    console.log('Websocket was disconnected!')
+    console.log(`[Shard ${client.shard.id}] Websocket was disconnected!`)
 })
 
 client.on("reconnecting", function(){
     client.user.setPresence({ activity: { name: 'reconnecting to client..' }, status: 'idle' })
     wsstatus = "Reconnecting";
-    console.log('Websocket is reconnecting!')
+    console.log(`[Shard ${client.shard.id}] Websocket is reconnecting!`)
 });
 
 client.on("resume", function(replayed){
     client.user.setPresence({ activity: { name: 'resuming..' }, status: 'idle' })
     wsstatus = "Resuming";
-    console.log('Websocket is resuming!')
+    console.log(`[Shard ${client.shard.id}] Websocket is resuming!`)
 });
 
 client.on("error", function(error){
     client.user.setPresence({ activity: { name: "client's websocket encountered a connection error" }, status: 'idle' });
     wsstatus = "Failed to connect";
-    console.log('Websocket failed to connect!')
+    console.log(`[Shard ${client.shard.id}] Websocket failed to connect!`)
 });
 
 
@@ -104,7 +106,7 @@ function fetchStatus() {
 
 Object.size = function(obj) {
     var size = 0,
-      key;
+    key;
     for (key in obj) {
       if (obj.hasOwnProperty(key)) size++;
     }
@@ -120,9 +122,9 @@ client.on('message', async message => {
 		{ name: 'Client Uptime', value: ms(client.uptime, { long: true }) , inline: true },
         { name: 'Channels Being Held By Client', value: Object.size(client.channels) , inline: true },
         { name: 'Last Client Ready', value: client.readyAt , inline: true },    
-        { name: 'Client User', value: client.user , inline: true },
-        { name: 'Client WebSocket Status', value: wsstatus , inline: true },
+        { name: 'Client User', value: client.user , inline: true }, 
         { name: 'Client Status', value: fetchStatus() , inline: true }, 
+        { name: 'Shard', value: client.shard.id , inline: true }, 
         )
         .setTimestamp();        
        message.channel.send(statusembed)
