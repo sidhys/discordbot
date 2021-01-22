@@ -33,7 +33,7 @@ if (config.startdb) {
             useNewUrlParser: true,
             useUnifiedTopology: true
         }).then(() => {
-            if(client.shards.ids[0] === 0) console.log('Connected to database.')
+            if(client.shard.ids[0] === 0) console.log('Connected to database.')
         });
     })();
 }
@@ -47,18 +47,18 @@ function startEval(a, b) {
     if (a = true) {
         eval(b)
     } else if (a = false) {
-        if(client.shards.ids[0] === 0)   console.log('Skipped eval')
+        if(client.shard.ids[0] === 0)   console.log('Skipped eval')
     } else {
         throw "Can't access config.eval!";
     }
 }
 
 client.on('ready', () => {
-    if(client.shards.ids[0] === 0) console.log('Connected to bot.')
+    if(client.shard.ids[0] === 0) console.log('Connected to bot.')
     startEval(config.eval, client);
     client.user.setPresence({ activity: { name: 'waiting for commands | run !help for more info' }, status: 'online' })
     wsstatus = "Ready";
-    if(client.shards.ids[0] === 0) console.log(`[Shard ${client.shard.id}] Websocket is ready!`)
+    if(client.shard.ids[0] === 0) console.log(`[Shard ${client.shard.id}] Websocket is ready!`)
 })
 
 
