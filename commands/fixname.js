@@ -13,6 +13,13 @@ module.exports = {
         
         let fixnameusernoping = msg.guild.members.cache.get(args[0]) 
 
+        
+        if(!fixnameusernoping) {
+            if(!fixnameuserping) 
+            return msg.reply(invalidargs(msg));
+        }
+
+
         if(fixnameusernoping) {
 
         var fixnamenoping2 = msg.guild.members.cache.get(args[0]) 
@@ -22,8 +29,6 @@ module.exports = {
        var fixnamecomplete2 = fixnamenoping3.slice(3, 7)
 
         let fixnick2 = 'No Name ' + fixnamecomplete2        
-
-        if(!fixnameusernoping) return msg.reply(invalidargs(msg));
 
         fixnameusernoping.setNickname(fixnick2);
 

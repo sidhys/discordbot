@@ -7,11 +7,11 @@ module.exports = {
     description: 'Unverifies [x] user from the server for [y] reason.',
 	execute(message, args) {
      
-        if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(Youdonthavepermsembed);
+        if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(Youdonthavepermsembed(message));
 
         var unverifyperson = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]))
 
-           if (!args[0]) return message.reply(invalidargs)
+           if (!args[0]) return message.reply(invalidargs(message))
 
            if (!unverifyperson) return message.channel.send(errorembed(message));
            

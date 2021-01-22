@@ -19,8 +19,8 @@ module.exports = {
 
         nickuser.setNickname(nick).catch(error => {
             console.log(error)
-            msg.reply(errorembed(msg    ))
-                    return
+            msg.reply(errorembed(msg))
+            return
         }) 
 
         const nickembed = new Discord.MessageEmbed()
