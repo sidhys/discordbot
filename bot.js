@@ -58,7 +58,7 @@ client.on('ready', () => {
     startEval(config.eval, client);
     client.user.setPresence({ activity: { name: 'waiting for commands | run !help for more info' }, status: 'online' })
     wsstatus = "Ready";
-    if(client.shard.ids[0] === 0) console.log(`[Shard ${client.shard.id}] Websocket is ready!`)
+    if(client.shard.ids[0] === 0) console.log(`[Shard ${this.shard.ids.join(',')}] Websocket is ready!`)
 })
 
 
@@ -66,25 +66,25 @@ client.on("disconnected", () => {
     login();    
     client.user.setPresence({ activity: { name: 'client was disconnected' }, status: 'idle' })
     wsstatus = "Disconnected";
-    console.log(`[Shard ${client.shard.id}] Websocket was disconnected!`)
+    console.log(`[Shard ${this.shard.ids.join(',')}] Websocket was disconnected!`)
 })
 
 client.on("reconnecting", function(){
     client.user.setPresence({ activity: { name: 'reconnecting to client..' }, status: 'idle' })
     wsstatus = "Reconnecting";
-    console.log(`[Shard ${client.shard.id}] Websocket is reconnecting!`)
+    console.log(`[Shard ${this.shard.ids.join(',')}] Websocket is reconnecting!`)
 });
 
 client.on("resume", function(replayed){
     client.user.setPresence({ activity: { name: 'resuming..' }, status: 'idle' })
     wsstatus = "Resuming";
-    console.log(`[Shard ${client.shard.id}] Websocket is resuming!`)
+    console.log(`[Shard ${this.shard.ids.join(',')}] Websocket is resuming!`)
 });
 
 client.on("error", function(error){
     client.user.setPresence({ activity: { name: "client's websocket encountered a connection error" }, status: 'idle' });
     wsstatus = "Failed to connect";
-    console.log(`[Shard ${client.shard.id}] Websocket failed to connect!`)
+    console.log(`[Shard ${this.shard.ids.join(',')}] Websocket failed to connect!`)
 });
 
 
@@ -124,7 +124,7 @@ client.on('message', async message => {
         { name: 'Last Client Ready', value: client.readyAt , inline: true },    
         { name: 'Client User', value: client.user , inline: true }, 
         { name: 'Client Status', value: fetchStatus() , inline: true }, 
-        { name: 'Shard', value: client.shard.id , inline: true }, 
+        { name: 'Client WebSocket Status', value: wsstatus , inline: true },
         )
         .setTimestamp();        
        message.channel.send(statusembed)
