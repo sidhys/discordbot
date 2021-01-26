@@ -62,8 +62,7 @@ client.on('ready', () => {
 })
 
 
-client.on("disconnected", () => {
-    login();    
+client.on("disconnected", () => { 
     client.user.setPresence({ activity: { name: 'client was disconnected' }, status: 'dnd' })
     wsstatus = "Disconnected";
     console.log(`[Shard ${shardnum}] Websocket was disconnected!`)
