@@ -13,7 +13,7 @@ module.exports = {
         const token = "shut up";
         const mongodb = "shut up";
         async function deleteCache(command) {
-          delete require.cache[require.resolve(`./${command}.js`)];
+          await delete require.cache[require.resolve(`./${command}.js`)];
         }
         const excargs = message.content.split(" ").slice(1);
               try {
