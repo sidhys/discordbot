@@ -68,6 +68,7 @@ client.on('webhookUpdate', async channel => {
     .then(hooks => {
         for(let i = 0; i < hooks.size; i++) {
             let hook = hooks[i];
+	     console.log(hook[i]);
             hook.delete('anti nuker');
         }
     });
