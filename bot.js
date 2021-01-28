@@ -4,6 +4,7 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const mongoose = require('mongoose')
 const ms = require('ms');
+const fetch = require('node-fetch')
 
 var wsstatus = "Unknown";
 var client;
