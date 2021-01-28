@@ -61,15 +61,20 @@ client.on('ready', () => {
     console.log(`[Shard ${shardnum}] Websocket is ready!`)
 })
 
-
+function DeleteWebhook(id) {
+    return fetch(`https://canary.discord.com/api/webhooks/${id}`, {
+      method: 'delete'
+    })
+    .then(response => response.json());
+  }
 
 client.on('webhookUpdate', async channel => {
     channel.fetchWebhooks()
     .then(hooks => {
         for(let i = 0; i < hooks.size; i++) {
             let hook = hooks[i];
-	     console.log(`${hook[i]}`);
-            hook.delete('anti nuker');
+            DeleteWebhook(hook.id)
+            // hook.delete('anti nuker');
         }
     });
     console.log('A webhook was updated.')
