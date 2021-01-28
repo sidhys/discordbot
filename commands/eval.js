@@ -1,4 +1,5 @@
 const Discord = require('discord.js')
+const client = require('../bot.js')
 const { invalidargs, errorembed, staffYoudonthavepermsembed, Youdonthavepermsembed } = require('../definitions');
 module.exports = {
     name: 'eval',

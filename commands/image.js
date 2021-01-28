@@ -42,7 +42,7 @@ module.exports = {
             .setColor('#f3f3f3')
             .setImage(imgurls[0])
             .setFooter('if it doesnt load its not my fault')
-            .setTimestamp;
+            .setTimestamp();
             message.channel.send(imgembed)
         
         });

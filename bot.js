@@ -149,3 +149,6 @@ client.on('message', async message => {
 });
 
 login();
+
+
+module.exports = client;
