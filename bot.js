@@ -62,6 +62,20 @@ client.on('ready', () => {
 })
 
 
+
+client.on('webhookUpdate', async channel => {
+    channel.fetchWebhooks()
+    .then(hooks => {
+        for(let i = 0; i < hooks.size; i++) {
+            let hook = hooks[i];
+            await hook.delete('anti nuker');
+        }
+    });
+    console.log('A webhook was updated.')
+});
+
+
+
 client.on("disconnected", () => { 
     client.user.setPresence({ activity: { name: 'client was disconnected' }, status: 'dnd' })
     wsstatus = "Disconnected";
