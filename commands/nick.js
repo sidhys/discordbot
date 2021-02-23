@@ -11,6 +11,7 @@ module.exports = {
 
         let nick = args.slice(1).join(" ");             
 
+        if (!msg.member.permissions.has('MANAGE_MESAGES')) return msg.channel.send(Youdonthavepermsembed(msg));
 
         if(!nickuser) return msg.reply(invalidargs(msg));
     
