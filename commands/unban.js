@@ -23,7 +23,7 @@ module.exports = {
 
    await delay(100)
 
-    if(!success === "FALSE")
+    if(!success === "false")
     {
 
         const unbanembed = new Discord.MessageEmbed()
