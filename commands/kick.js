@@ -38,7 +38,6 @@ module.exports = {
                 .setTitle("Bot")
                 .setColor('BLUE')
                 .setDescription(`Successfully kicked user ${userforkick}, ${msg.author}.`)
-                .setFooter('bye bye lol')
                 .setTimestamp();
                  msg.channel.send(kickpublicembed)
 
