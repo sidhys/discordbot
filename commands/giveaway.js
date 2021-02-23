@@ -29,7 +29,6 @@ module.exports = {
             let gembed = new Discord.MessageEmbed()
                 .setTitle(`New Giveaway`)
                 .setDescription(`React with :tada: to enter the giveaway! \nPrize: **${prize}**\nHosted By: **${message.author}**\nTime to join: **${time}**`)
-                .setFooter('i love free stuff')
                 .setTimestamp()
                 .setColor('BLUE');
             let n = await gchannel.send(gembed)
