@@ -107,7 +107,7 @@ client.on("error", function(error){
 });
 
 
-const prefix = "!";
+const prefix = "?";
 
 function fetchStatus() {
     const numstatus = client.ws.status;
