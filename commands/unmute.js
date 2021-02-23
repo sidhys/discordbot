@@ -36,7 +36,7 @@ module.exports = {
         .setTitle("Bot")
         .setColor('BLUE')
         .setDescription(`Successfully un-muted ${uperson}, ${msg.author}.`)
-        .setFooter('they have been un-shut upped')
+ 
         .setTimestamp();
         msg.channel.send(umuteembed2)
 
