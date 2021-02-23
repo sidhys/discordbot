@@ -49,7 +49,6 @@ module.exports = {
         .setTitle("Bot")
         .setColor('BLUE')
         .setDescription(`Successfully muted user ${person} for ${args[1]} minutes, ${msg.author}.`)
-        .setFooter('they will shut up now')
         .setTimestamp();
         msg.channel.send(muteembed2)
 
