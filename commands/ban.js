@@ -50,8 +50,7 @@ module.exports = {
                              .setTitle("Bot")
                              .setColor('BLUE')
                              .setDescription(`Successfully banned user ${userforban}, ${message.author}.`)
-                             .setTimestamp()
-                             .setFooter("bye bye lol");
+                             .setTimestamp();
                               message.channel.send(publicbanembed)
 
 				}
