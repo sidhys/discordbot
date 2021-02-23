@@ -17,7 +17,6 @@ module.exports = {
             .addField("Answer", (res[Math.floor(Math.random() * res.length)]))
             .setColor('42c2f4')
             .setTimestamp()
-            .setFooter('8 balls');
             message.channel.send(embed);
 	},
 };
