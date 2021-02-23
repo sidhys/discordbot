@@ -30,7 +30,11 @@ module.exports = {
 
         let fixnick2 = 'No Name ' + fixnamecomplete2        
 
+	try {
         fixnameusernoping.setNickname(fixnick2);
+	} catch(err) {
+	message.channel.send('failed to change nickname :(')
+	}
 
         const fixnickembed2 = new Discord.MessageEmbed()
         .setTitle("Bot")
@@ -48,7 +52,11 @@ module.exports = {
         let fixnick = 'No Name ' + fixnamecomplete         
 
 
+	try {
         fixnameuserping.setNickname(fixnick);
+	} catch(err) {
+	message.channel.send('failed to change nickname :(')
+	}
 
         const fixnickembed = new Discord.MessageEmbed()
         .setTitle("Bot")
