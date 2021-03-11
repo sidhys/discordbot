@@ -33,7 +33,7 @@ module.exports = {
                             const banembed = new Discord.MessageEmbed()
                             .setTitle("Ban")
                             .setColor('BLUE')
-                            .setDescription(`You were banned from ${message.guild.name} for ${banreason}.`)
+                            .setDescription(`You were banned from ${message.guild.name}.`)
                             .setTimestamp();
                              userforban.send(banembed)
     
